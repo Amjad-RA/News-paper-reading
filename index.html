@@ -88,6 +88,14 @@
   .ph .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
   .ph .seen { flex: none; font-size: 12px; font-weight: 600; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 1px 8px; }
   .ph .seen.zero { color: var(--muted); background: var(--surface-2); font-weight: 500; }
+  .more { margin-top: 6px; font-size: 13px; }
+  .more > summary { cursor: pointer; color: var(--accent); font-weight: 600; list-style: none; }
+  .more > summary::-webkit-details-marker { display: none; }
+  .more > summary::after { content: " ▾"; }
+  .more[open] > summary::after { content: " ▴"; }
+  .more ul { margin: 6px 0 0; padding-left: 16px; color: var(--muted); }
+  .more li { margin: 4px 0; line-height: 1.35; }
+  .more li .ml { font-size: 13px; margin-top: 1px; }
   .ph .tip { display: block; font-size: 13px; color: var(--muted); margin-top: 4px; }
   .grp { margin: 18px 0 8px; font-size: 15px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
   .grp:first-child { margin-top: 4px; }
@@ -314,7 +322,9 @@
         <div class="ph"><span class="top"><span class="en">${mark(p.en, pterm)}</span>
           <span class="seen${p.src.length ? "" : " zero"}" title="Headlines in your papers that use it">${p.src.length ? "×" + p.src.length : "new"}</span></span>
           ${mlSpan(p.ml, pterm)}${p.tip ? `<span class="tip">${mark(p.tip, pterm)}</span>` : ""}
-          ${p.src.length ? `<span class="src">“${esc(p.src[0])}”${p.src.length > 1 ? ` +${p.src.length - 1} more` : ""}</span>` : ""}</div>`).join("")}</div>` : "";
+          ${p.src.length ? `<span class="src">“${esc(p.src[0])}”</span>` : ""}
+          ${p.src.length > 1 ? `<details class="more"${t ? " open" : ""}><summary>View ${p.src.length - 1} more example${p.src.length > 2 ? "s" : ""}</summary>
+            <ul>${p.src.slice(1).map((h) => `<li>“${esc(h)}”${mlSpan((byTitle.get(h) || {}).ml, "")}</li>`).join("")}</ul></details>` : ""}</div>`).join("")}</div>` : "";
     }).join("");
   }
 
