@@ -212,6 +212,7 @@
 <script src="guide.js"></script>
 <script src="core.js"></script>
 <script src="notes.js"></script>
+<script src="feed.js"></script>
 <script>
 (function () {
   const $ = (s) => document.querySelector(s);
@@ -238,6 +239,16 @@
     .slice()
     .sort((a, b) => String(b.date).localeCompare(String(a.date)))
     .flatMap((d) => (d.items || []).map((it) => ({ ...it, date: d.date })));
+  // Daily headlines saved by the GitHub Action (feed.js): title, section, link only.
+  {
+    const have = new Set(headlines.map((h) => h.title.toLowerCase()));
+    (Array.isArray(window.FEED) ? window.FEED : []).forEach((d) => (d.items || []).forEach((it) => {
+      if (!it.title || have.has(it.title.toLowerCase())) return;
+      have.add(it.title.toLowerCase());
+      headlines.push({ ...it, date: d.date, feed: true });
+    }));
+    headlines.sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  }
   const byTitle = new Map(headlines.map((h) => [h.title, h]));
 
   // Which rules each headline illustrates (from the guide's examples).

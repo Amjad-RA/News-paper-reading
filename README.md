@@ -11,3 +11,11 @@ A page for learning to read English newspapers, with Malayalam help. Live at htt
 - `notes.js`: headlines by newspaper date, with Malayalam meaning, notes and key words. The Headlines tab shows the key ones by default (those that use a rule or a core word).
 - `guide.js`: the headline rules and their examples.
 - `core.js`: the core vocabulary shown in the Phrases tab.
+
+## Daily headlines (automatic)
+
+`.github/workflows/headlines.yml` runs every morning (06:47 IST) and saves the
+day's headlines from The Hindu's public RSS feeds into `feed.js`, keeping the
+last 100 days. Only the headline, section and link are saved. These headlines
+appear in the Headlines tab and are counted in the Phrases tab. To run it now:
+GitHub → Actions → "Save daily headlines" → Run workflow.
