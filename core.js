@@ -1,5 +1,6 @@
 /*
- * Core newspaper vocabulary: the short list worth learning.
+ * Core newspaper vocabulary: the short list worth learning. A word shows in
+ * the Phrases tab only once it appears in a headline in notes.js.
  *
  * Only words that keep coming back in Indian English newspapers are kept here.
  * One-off words (names, sports slang, single-story terms) stay with their

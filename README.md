@@ -3,7 +3,7 @@
 A page for learning to read English newspapers, with Malayalam help. Live at https://amjad-ra.github.io/News-paper-reading/
 
 - **Learn:** the rules of headline English (tense, dropped words, colons, quotes, stacked nouns, idioms, abbreviations), each shown with real headlines from The Hindu.
-- **Phrases:** a short core list of words that keep coming back in newspapers, grouped by type (headline verbs, linking words, courts, politics, crime, economy, idioms, abbreviations). Each shows how many of your headlines use it, most repeated first.
+- **Phrases:** recurring newspaper words that actually appear in your headlines, grouped by type, with the word highlighted in each example headline. Most repeated first; the list grows as you add papers.
 - **Headlines:** every headline as a list or as accordions with a short note, key phrases and the rules it uses. **Practice** hides the Malayalam until you tap it.
 
 ## Files

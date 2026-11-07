@@ -235,15 +235,15 @@
   // Core vocabulary (core.js), counted against your headlines so the most
   // repeated words come first in each group.
   const reEsc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const hayFor = (h) => [h.title, ...(h.words || []).map((w) => w.en)].join(" | ");
   const phrases = (Array.isArray(window.CORE) ? window.CORE : []).flatMap((grp, gi) =>
     grp.items.map((it, ii) => {
       const rx = (it.m || ["\\b" + reEsc(it.en) + "\\b"]).map((x) => new RegExp(x, /^[A-Z]/.test(it.en) ? "" : "i"));
-      const src = headlines.filter((h) => rx.some((r) => r.test(hayFor(h)))).map((h) => h.title);
-      return { ...it, gi, ii, src, titleHit: headlines.filter((h) => rx.some((r) => r.test(h.title))).map((h) => h.title) };
-    }).sort((x, y) => y.src.length - x.src.length || x.ii - y.ii));
+      const src = headlines.filter((h) => rx.some((r) => r.test(h.title))).map((h) => h.title);
+      return { ...it, gi, ii, rx, src };
+    }).filter((p) => p.src.length) // only words that actually appear in a headline
+      .sort((x, y) => y.src.length - x.src.length || x.ii - y.ii));
   // Key headlines: ones that teach a rule or use a core word. The rest are one-off stories.
-  const keyTitles = new Set([...rulesFor.keys(), ...phrases.flatMap((p) => p.titleHit)]);
+  const keyTitles = new Set([...rulesFor.keys(), ...phrases.flatMap((p) => p.src)]);
 
   // Theme
   const savedTheme = store.get("theme");
@@ -289,7 +289,7 @@
         <p><b>How to use this page</b></p>
         <ol class="steps">
           <li>Read the ${GUIDE.length} rules below: headline English has its own grammar. <span class="ml">തലക്കെട്ടുകൾക്ക് സ്വന്തം വ്യാകരണമുണ്ട്.</span></li>
-          <li>Learn the ${phrases.length} core words in <b>Phrases</b>, most repeated first. <span class="ml">ഈ വാക്കുകൾ അറിഞ്ഞാൽ പത്രം എളുപ്പം.</span></li>
+          <li>Learn the ${phrases.length} words in <b>Phrases</b>, taken from real headlines, most repeated first. <span class="ml">ഈ വാക്കുകൾ അറിഞ്ഞാൽ പത്രം എളുപ്പം.</span></li>
           <li>In <b>Headlines</b>, turn on <b>Practice</b>, read each headline, say its meaning, then tap to check. <span class="ml">സ്വയം പരീക്ഷിക്കുക.</span></li>
         </ol>
       </div>
@@ -309,22 +309,26 @@
 
   // Phrases
   let pterm = "";
+  const hl = (text, rx) => {
+    let out = esc(text);
+    rx.forEach((r) => { out = out.replace(new RegExp(r.source, r.flags + "g"), (m) => `<b>${m}</b>`); });
+    return out;
+  };
   function renderPhrases() {
     const t = pterm.toLowerCase();
     const list = phrases.filter((p) => !t || [p.en, p.ml, p.tip || ""].join(" ").toLowerCase().includes(t));
-    const seen = phrases.filter((p) => p.src.length).length;
-    $("#pcount").textContent = t ? `${list.length} of ${phrases.length} core words`
-      : `${phrases.length} core words · ${seen} already in your papers · most repeated first`;
+    $("#pcount").textContent = t ? `${list.length} of ${phrases.length} words`
+      : `${phrases.length} words from your headlines · most repeated first`;
     if (!list.length) { $("#phrases").innerHTML = `<div class="empty"><h2>No word matches “${esc(pterm)}”</h2></div>`; return; }
     $("#phrases").innerHTML = CORE.map((grp, gi) => {
       const ps = list.filter((p) => p.gi === gi);
       return ps.length ? `<h3 class="grp">${esc(grp.g)} <span class="ml">${esc(grp.gm)}</span></h3><div class="phrases">${ps.map((p) => `
         <div class="ph"><span class="top"><span class="en">${mark(p.en, pterm)}</span>
-          <span class="seen${p.src.length ? "" : " zero"}" title="Headlines in your papers that use it">${p.src.length ? "×" + p.src.length : "new"}</span></span>
+          <span class="seen" title="Headlines that use it">×${p.src.length}</span></span>
           ${mlSpan(p.ml, pterm)}${p.tip ? `<span class="tip">${mark(p.tip, pterm)}</span>` : ""}
-          ${p.src.length ? `<span class="src">“${esc(p.src[0])}”</span>` : ""}
+          ${p.src.length ? `<span class="src">“${hl(p.src[0], p.rx)}”</span>` : ""}
           ${p.src.length > 1 ? `<details class="more"${t ? " open" : ""}><summary>View ${p.src.length - 1} more example${p.src.length > 2 ? "s" : ""}</summary>
-            <ul>${p.src.slice(1).map((h) => `<li>“${esc(h)}”${mlSpan((byTitle.get(h) || {}).ml, "")}</li>`).join("")}</ul></details>` : ""}</div>`).join("")}</div>` : "";
+            <ul>${p.src.slice(1).map((h) => `<li>“${hl(h, p.rx)}”${mlSpan((byTitle.get(h) || {}).ml, "")}</li>`).join("")}</ul></details>` : ""}</div>`).join("")}</div>` : "";
     }).join("");
   }
 
