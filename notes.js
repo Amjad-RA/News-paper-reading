@@ -1,9 +1,9 @@
 /*
  * 100 Days of The Hindu: headline notes data.
  *
- * Add one object per day to NOTES. The page renders whatever is here.
+ * Add one object per day to NOTES, in any order. The page sorts them by
+ * date and numbers them: the earliest paper is Day 1.
  * Each day:
- *   day      number   1 to 100
  *   date     string   "YYYY-MM-DD" (the paper's date)
  *   edition  string   optional, e.g. "Kozhikode city edition · Front page"
  *   items    array    the headlines picked for that day
@@ -19,7 +19,6 @@
  *
  * Example of the shape (not real data):
  *   {
- *     day: 1,
  *     date: "2026-07-30",
  *     items: [
  *       {
@@ -36,7 +35,154 @@
  */
 window.NOTES = [
   {
-    day: 1,
+    date: "2026-11-06",
+    edition: "Kozhikode city edition · Front page",
+    items: [
+      {
+        title: "Summary revision to begin in 6 States, U.T.s",
+        ml: "6 സംസ്ഥാനങ്ങളിലും കേന്ദ്രഭരണ പ്രദേശങ്ങളിലും വോട്ടർ പട്ടികയുടെ സംക്ഷിപ്ത പുതുക്കൽ ആരംഭിക്കുന്നു",
+        section: "National",
+        note: "The Election Commission announced the annual special summary revision (SSR) of electoral rolls in six States/UTs where the SIR is over, to enrol eligible voters, especially first-timers. Giving Aadhaar details in Forms 6 and 8 stays voluntary.",
+        noteMl: "പുതിയ വോട്ടർമാരെ ചേർക്കാനുള്ള വാർഷിക പുതുക്കൽ; ആധാർ നൽകുന്നത് നിർബന്ധമല്ല.",
+        words: [
+          { en: "summary revision", ml: "സംക്ഷിപ്ത പുതുക്കൽ (വോട്ടർ പട്ടിക)" },
+          { en: "enrol", ml: "പേര് ചേർക്കുക" },
+          { en: "first-timers", ml: "ആദ്യമായി വോട്ട് ചെയ്യുന്നവർ" },
+          { en: "voluntary", ml: "സ്വമേധയാ, നിർബന്ധമില്ലാത്ത" }
+        ]
+      },
+      {
+        title: "24-hour rule starts from detention: SC",
+        ml: "24 മണിക്കൂർ നിയമം തടഞ്ഞുവെക്കുന്ന നിമിഷം മുതൽ തുടങ്ങും: സുപ്രീം കോടതി",
+        section: "National",
+        note: "The Supreme Court held that 'arrest' begins the moment an official touches a person to restrain their liberty, so the 24-hour limit to produce them before a magistrate starts from that very second.",
+        noteMl: "അറസ്റ്റിലായ ആളെ 24 മണിക്കൂറിനകം മജിസ്ട്രേറ്റിന് മുന്നിൽ ഹാജരാക്കണം; സമയം തുടങ്ങുന്നത് പിടികൂടുന്ന നിമിഷം മുതൽ.",
+        words: [
+          { en: "detention", ml: "തടഞ്ഞുവെക്കൽ, കസ്റ്റഡി" },
+          { en: "restrain", ml: "തടയുക" },
+          { en: "liberty", ml: "സ്വാതന്ത്ര്യം" },
+          { en: "produce before a magistrate", ml: "മജിസ്ട്രേറ്റിന് മുന്നിൽ ഹാജരാക്കുക" }
+        ]
+      },
+      {
+        title: "15th Five Year Plan to be in 'project mode'",
+        ml: "15-ാം പഞ്ചവത്സര പദ്ധതി 'പ്രോജക്ട് മോഡിൽ'",
+        section: "Kerala",
+        note: "Kerala's 15th Plan (2027–2032) will be prepared project by project, aiming to raise the State's GSDP from ₹16 lakh crore to ₹28 lakh crore, about 7% growth a year.",
+        noteMl: "സംസ്ഥാന ആഭ്യന്തര ഉത്പാദനം ₹28 ലക്ഷം കോടിയാക്കുക ലക്ഷ്യം.",
+        words: [
+          { en: "Five Year Plan", ml: "പഞ്ചവത്സര പദ്ധതി" },
+          { en: "GSDP", ml: "സംസ്ഥാന ആഭ്യന്തര ഉത്പാദനം" },
+          { en: "a departure from", ml: "...ൽ നിന്നുള്ള വ്യതിചലനം, മാറ്റം" }
+        ]
+      },
+      {
+        title: "No compromise on safety aspects: AERB chief",
+        ml: "സുരക്ഷാ കാര്യങ്ങളിൽ വിട്ടുവീഴ്ചയില്ല: AERB മേധാവി",
+        section: "National",
+        note: "Atomic Energy Regulatory Board chairperson A.K. Balasubramanian said safety will not be compromised as private players enter India's nuclear energy sector.",
+        noteMl: "ആണവോർജ മേഖലയിലേക്ക് സ്വകാര്യ കമ്പനികൾ വരുന്നതിലെ ആശങ്കകൾക്ക് മറുപടി.",
+        words: [
+          { en: "compromise", ml: "വിട്ടുവീഴ്ച" },
+          { en: "allay concerns", ml: "ആശങ്കകൾ ദൂരീകരിക്കുക" },
+          { en: "regulatory", ml: "നിയന്ത്രണ" }
+        ]
+      },
+      {
+        title: "Nedumbassery crash: car's speed put at 162 kmph",
+        ml: "നെടുമ്പാശ്ശേരി അപകടം: കാറിന്റെ വേഗം മണിക്കൂറിൽ 162 കി.മീ. എന്ന് കണക്കാക്കി",
+        section: "Kerala",
+        note: "A technical report says the luxury car that mowed down three youngsters at Nedumbassery last month was doing 162 kmph five seconds before the crash.",
+        noteMl: "മൂന്ന് യുവാക്കളുടെ മരണത്തിനിടയാക്കിയ അപകടം.",
+        words: [
+          { en: "put at", ml: "...എന്ന് കണക്കാക്കി" },
+          { en: "mowed down", ml: "ഇടിച്ചുവീഴ്ത്തി" }
+        ]
+      },
+      {
+        title: "No chopper deal was pending when CM took special flight, SPC tells Lok Ayukta",
+        ml: "മുഖ്യമന്ത്രി പ്രത്യേക വിമാനയാത്ര നടത്തുമ്പോൾ ഹെലികോപ്റ്റർ കരാർ നിലവിലുണ്ടായിരുന്നില്ലെന്ന് സംസ്ഥാന പോലീസ് മേധാവി ലോകായുക്തയോട്",
+        section: "Kerala",
+        note: "State Police Chief Ravada Chandrasekhar told the Lok Ayukta that no request to extend the helicopter service was pending when Chief Minister V.D. Satheesan flew to oversee relief in rain-hit Malappuram; the old agreement had ended on September 19, 2026.",
+        noteMl: "ഹെലികോപ്റ്റർ യാത്രയെക്കുറിച്ചുള്ള പരാതിയിൽ ലോകായുക്തയ്ക്ക് വിശദീകരണം.",
+        words: [
+          { en: "chopper", ml: "ഹെലികോപ്റ്റർ (headline ശൈലി)" },
+          { en: "pending", ml: "തീർപ്പാകാത്ത" },
+          { en: "SPC (State Police Chief)", ml: "സംസ്ഥാന പോലീസ് മേധാവി" },
+          { en: "baseless", ml: "അടിസ്ഥാനരഹിതം" }
+        ]
+      },
+      {
+        title: "'Zero tolerance against violence on campuses'",
+        ml: "'ക്യാമ്പസുകളിലെ അക്രമത്തോട് ഒരു തരത്തിലുള്ള സഹിഷ്ണുതയുമില്ല'",
+        section: "Kerala",
+        note: "Higher Education Minister Roji M. John said the government will not allow violence on campuses, after SFI activists suspended at Sree Sankaracharya University staged a protest.",
+        noteMl: "ഉദ്ധരണി ചിഹ്നം = ഇത് ഒരാൾ പറഞ്ഞ വാക്കുകളാണ്.",
+        words: [
+          { en: "zero tolerance", ml: "ഒട്ടും അനുവദിക്കില്ല" },
+          { en: "'quotes' in a headline", ml: "ആരോ പറഞ്ഞത്, പത്രത്തിന്റെ അഭിപ്രായമല്ല" }
+        ]
+      },
+      {
+        title: "Staff union criticises move to 'destroy PSC'",
+        ml: "'പിഎസ്‌സിയെ തകർക്കാനുള്ള' നീക്കത്തെ ജീവനക്കാരുടെ സംഘടന വിമർശിക്കുന്നു",
+        section: "Kerala",
+        note: "The Kerala PSC Employees Union protested at the Secretariat against the inquiry into alleged irregularities in some exams, calling it an attempt to destroy the PSC.",
+        noteMl: "പരീക്ഷാ ക്രമക്കേട് അന്വേഷണത്തിനെതിരെ പ്രതിഷേധം.",
+        words: [
+          { en: "move", ml: "നീക്കം, നടപടി" },
+          { en: "discrepancies", ml: "പൊരുത്തക്കേടുകൾ" },
+          { en: "slanderous", ml: "അപകീർത്തികരമായ" }
+        ]
+      },
+      {
+        title: "Cheranalloor car crash: High Court grants anticipatory bail to judge",
+        ml: "ചേരാനല്ലൂർ കാർ അപകടം: ജഡ്ജിക്ക് ഹൈക്കോടതി മുൻകൂർ ജാമ്യം അനുവദിച്ചു",
+        section: "Kerala",
+        note: "The High Court granted anticipatory bail to a judicial officer whose minor son was allegedly driving in the crash that killed a 55-year-old motorist at Cheranalloor, Kochi, on October 25.",
+        noteMl: "പ്രായപൂർത്തിയാകാത്ത മകൻ ഓടിച്ച കാർ ഇടിച്ച് ഒരാൾ മരിച്ച കേസ്.",
+        words: [
+          { en: "anticipatory bail", ml: "മുൻകൂർ ജാമ്യം" },
+          { en: "minor", ml: "പ്രായപൂർത്തിയാകാത്തയാൾ" },
+          { en: "allegedly", ml: "ആരോപിക്കപ്പെടുന്നത് പ്രകാരം" }
+        ]
+      },
+      {
+        title: "Saudi Arabia warns of danger in oil hub",
+        ml: "എണ്ണ കേന്ദ്രത്തിൽ അപകടഭീഷണിയെന്ന് സൗദി അറേബ്യയുടെ മുന്നറിയിപ്പ്",
+        section: "World",
+        note: "A warning linked to Houthi attacks in the region.",
+        noteMl: "ഹൂതി ആക്രമണങ്ങളുമായി ബന്ധപ്പെട്ട്.",
+        words: [
+          { en: "hub", ml: "പ്രധാന കേന്ദ്രം" },
+          { en: "warns of", ml: "...നെക്കുറിച്ച് മുന്നറിയിപ്പ് നൽകുന്നു" }
+        ]
+      },
+      {
+        title: "'Zero MDR for all UPI payments not viable'",
+        ml: "'എല്ലാ യുപിഐ ഇടപാടുകൾക്കും എംഡിആർ ഒഴിവാക്കുന്നത് പ്രായോഗികമല്ല'",
+        section: "Business",
+        note: "NPCI told the Supreme Court that keeping the merchant discount rate at zero for every UPI payment is not sustainable.",
+        noteMl: "MDR = കച്ചവടക്കാരിൽ നിന്ന് ഈടാക്കുന്ന ഇടപാട് ഫീസ്.",
+        words: [
+          { en: "MDR (merchant discount rate)", ml: "കച്ചവടക്കാരൻ നൽകേണ്ട ഇടപാട് ഫീസ്" },
+          { en: "viable", ml: "പ്രായോഗികം, ലാഭകരമായി നടത്താവുന്ന" }
+        ]
+      },
+      {
+        title: "Ronaldo bids adieu to international football",
+        ml: "റൊണാൾഡോ അന്താരാഷ്ട്ര ഫുട്ബോളിൽ നിന്ന് വിടവാങ്ങി",
+        section: "Sport",
+        note: "Cristiano Ronaldo calls it a day with the national team.",
+        noteMl: "അന്താരാഷ്ട്ര കരിയറിന് വിരാമം.",
+        words: [
+          { en: "bid adieu", ml: "വിടപറയുക" },
+          { en: "call it a day", ml: "നിർത്തുക, വിരമിക്കുക" }
+        ]
+      }
+    ]
+  },
+  {
     date: "2026-11-07",
     edition: "Kozhikode city edition · Front page",
     items: [

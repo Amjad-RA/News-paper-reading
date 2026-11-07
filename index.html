@@ -199,9 +199,11 @@
 <script>
 (function () {
   const TOTAL_DAYS = 100;
+  // Days are numbered by date order: the earliest paper is Day 1.
   const notes = (Array.isArray(window.NOTES) ? window.NOTES : [])
     .slice()
-    .sort((a, b) => (a.day || 0) - (b.day || 0));
+    .sort((a, b) => String(a.date).localeCompare(String(b.date)))
+    .map((d, i) => ({ ...d, day: i + 1 }));
 
   const $ = (s) => document.querySelector(s);
   const main = $("#main");
