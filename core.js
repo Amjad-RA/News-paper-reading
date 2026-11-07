@@ -6,7 +6,8 @@
  * One-off words (names, sports slang, single-story terms) stay with their
  * headline in notes.js and are not shown in the Phrases tab.
  *
- * Each group: { g: "English name", gm: "Malayalam name", items: [...] }
+ * Each group: { g: "English name", gm: "Malayalam name",
+ *               d / dm: one-line description in English / Malayalam, items: [...] }
  * Each item:  { en, ml, tip (optional, short usage hint), m (optional array of
  *              regex strings used to count how often it appears in your
  *              headlines; defaults to the word itself) }
@@ -17,6 +18,7 @@
 window.CORE = [
   {
     g: "Headline verbs", gm: "തലക്കെട്ടിലെ ചെറു ക്രിയകൾ",
+    d: "Short, punchy verbs headlines use in place of longer ones.", dm: "നീണ്ട വാക്കുകൾക്ക് പകരം തലക്കെട്ടിൽ വരുന്ന ചെറു ക്രിയകൾ.",
     items: [
       { en: "row", ml: "വിവാദം, തർക്കം", tip: "'Sabarimala ghee row' = നെയ്യ് വിവാദം", m: ["(?<!in a )\\brows?\\b"] },
       { en: "probe", ml: "അന്വേഷണം / അന്വേഷിക്കുക", m: ["\\bprob(e|es|ed)\\b"] },
@@ -45,6 +47,7 @@ window.CORE = [
   },
   {
     g: "Linking words", gm: "ബന്ധിപ്പിക്കുന്ന വാക്കുകൾ",
+    d: "Small words that tell you how two facts connect.", dm: "രണ്ട് കാര്യങ്ങൾ തമ്മിലുള്ള ബന്ധം കാണിക്കുന്ന വാക്കുകൾ.",
     items: [
       { en: "amid", ml: "...നിടയിൽ", m: ["\\bamid(st)?\\b"] },
       { en: "over", ml: "...നെച്ചൊല്ലി, ...സംബന്ധിച്ച്", tip: "'row over X' = X-നെച്ചൊല്ലി വിവാദം", m: ["\\bover\\b"] },
@@ -60,6 +63,7 @@ window.CORE = [
   },
   {
     g: "Courts & law", gm: "കോടതി, നിയമം",
+    d: "Words from court and police reports.", dm: "കോടതി, പോലീസ് വാർത്തകളിലെ വാക്കുകൾ.",
     items: [
       { en: "plea", ml: "ഹർജി", m: ["\\bpleas?\\b"] },
       { en: "petition", ml: "ഹർജി, അപേക്ഷ", m: ["\\bpetitions?\\b"] },
@@ -82,6 +86,7 @@ window.CORE = [
   },
   {
     g: "Government & politics", gm: "ഭരണം, രാഷ്ട്രീയം",
+    d: "Words about ministers, elections and government orders.", dm: "മന്ത്രിമാർ, തിരഞ്ഞെടുപ്പ്, സർക്കാർ ഉത്തരവുകൾ.",
     items: [
       { en: "Opposition", ml: "പ്രതിപക്ഷം", m: ["\\bOpposition\\b"] },
       { en: "Leader of the Opposition (LoP)", ml: "പ്രതിപക്ഷ നേതാവ്", m: ["\\bLeader of (the )?Opposition\\b|\\bLoP\\b"] },
@@ -104,6 +109,7 @@ window.CORE = [
   },
   {
     g: "Crime, accidents & scandals", gm: "കുറ്റം, അപകടം, അഴിമതി",
+    d: "Words from crime, accident and scam stories.", dm: "കുറ്റകൃത്യം, അപകടം, അഴിമതി വാർത്തകൾ.",
     items: [
       { en: "booked", ml: "കേസെടുത്തു", m: ["\\bbooked\\b"] },
       { en: "nabbed", ml: "പിടികൂടി", m: ["\\bnab(bed|s)?\\b"] },
@@ -120,6 +126,7 @@ window.CORE = [
   },
   {
     g: "Economy & numbers", gm: "സാമ്പത്തികം, കണക്കുകൾ",
+    d: "Money, growth and figures.", dm: "പണം, വളർച്ച, കണക്കുകൾ.",
     items: [
       { en: "GDP / GSDP", ml: "ആഭ്യന്തര ഉത്പാദനം (രാജ്യം / സംസ്ഥാനം)", m: ["\\bG(S)?DP\\b"] },
       { en: "surge / slump", ml: "കുതിച്ചുയരൽ / ഇടിവ്", m: ["\\b(surge|slump)s?\\b"] },
@@ -131,6 +138,7 @@ window.CORE = [
   },
   {
     g: "Idioms", gm: "ശൈലികൾ",
+    d: "Phrases whose meaning is not literal.", dm: "വാക്കർത്ഥമല്ല, ശൈലീ അർത്ഥമാണ്.",
     items: [
       { en: "lock horns", ml: "ഏറ്റുമുട്ടുക", m: ["\\blocks? horns\\b"] },
       { en: "under a cloud", ml: "സംശയത്തിന്റെ നിഴലിൽ" },
@@ -147,6 +155,7 @@ window.CORE = [
   },
   {
     g: "Abbreviations", gm: "ചുരുക്കെഴുത്തുകൾ",
+    d: "Short forms you must expand in your head.", dm: "ചുരുക്കെഴുത്തുകൾ, മനസ്സിൽ പൂർണരൂപം വായിക്കുക.",
     items: [
       { en: "SC / HC", ml: "സുപ്രീം കോടതി / ഹൈക്കോടതി", m: ["\\bSC\\b|\\bHC\\b|\\bSupreme Court\\b|\\bHigh Court\\b"] },
       { en: "CM", ml: "മുഖ്യമന്ത്രി", m: ["\\bCM\\b|\\bChief Minister\\b"] },
