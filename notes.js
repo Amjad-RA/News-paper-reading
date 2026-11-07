@@ -36,7 +36,7 @@
 window.NOTES = [
   {
     date: "2026-11-06",
-    edition: "Kozhikode city edition · Front page",
+    edition: "Kozhikode city edition · Pages 1, 4–7",
     items: [
       {
         title: "Summary revision to begin in 6 States, U.T.s",
@@ -178,6 +178,215 @@ window.NOTES = [
         words: [
           { en: "bid adieu", ml: "വിടപറയുക" },
           { en: "call it a day", ml: "നിർത്തുക, വിരമിക്കുക" }
+        ]
+      },
+      {
+        title: "Higher Education dept. seeks explanation from CU over pro-VC's appointment",
+        ml: "പ്രോ-വിസി നിയമനത്തിൽ കാലിക്കറ്റ് സർവകലാശാലയോട് ഉന്നത വിദ്യാഭ്യാസ വകുപ്പ് വിശദീകരണം തേടി",
+        section: "p.4 Kozhikode",
+        note: "The department wants to know how the pro-VC was relieved from his parent institution and allowed to take charge on deputation without the government's prior sanction.",
+        noteMl: "സർക്കാരിന്റെ മുൻകൂർ അനുമതിയില്ലാതെ ഡെപ്യൂട്ടേഷനിൽ ചുമതലയേറ്റതാണ് പ്രശ്നം.",
+        words: [
+          { en: "seeks explanation", ml: "വിശദീകരണം തേടുന്നു" },
+          { en: "deputation", ml: "ഡെപ്യൂട്ടേഷൻ, മറ്റൊരു സ്ഥാപനത്തിലേക്ക് താൽക്കാലിക നിയമനം" },
+          { en: "prior sanction", ml: "മുൻകൂർ അനുമതി" }
+        ]
+      },
+      {
+        title: "Calicut University to overhaul UG, PG curricula with AI, computing knowledge",
+        ml: "AI, കമ്പ്യൂട്ടിംഗ് അറിവുകൾ ഉൾപ്പെടുത്തി ബിരുദ, ബിരുദാനന്തര സിലബസ് കാലിക്കറ്റ് സർവകലാശാല സമഗ്രമായി പരിഷ്കരിക്കും",
+        section: "p.4 Kozhikode",
+        note: "The university plans a complete revision of its undergraduate and postgraduate courses to add artificial intelligence and computing.",
+        noteMl: "എല്ലാ കോഴ്സുകളിലും AI പഠനം.",
+        words: [
+          { en: "overhaul", ml: "അടിമുടി പരിഷ്കരിക്കുക" },
+          { en: "curricula", ml: "പാഠ്യപദ്ധതികൾ (curriculum-ന്റെ ബഹുവചനം)" }
+        ]
+      },
+      {
+        title: "Communal harmony committees to be formed in grama panchayats",
+        ml: "ഗ്രാമപഞ്ചായത്തുകളിൽ സാമുദായിക സൗഹാർദ സമിതികൾ രൂപീകരിക്കും",
+        section: "p.4 Kozhikode",
+        note: "Kozhikode District Collector directed that committees be set up in every grama panchayat to promote communal harmony.",
+        noteMl: "ജില്ലാ കളക്ടറുടെ നിർദേശം.",
+        words: [
+          { en: "communal harmony", ml: "സാമുദായിക സൗഹാർദം" },
+          { en: "to be formed", ml: "രൂപീകരിക്കും (headline-ലെ 'to' = ഭാവി)" }
+        ]
+      },
+      {
+        title: "Excursion row: CCTV footage released",
+        ml: "വിനോദയാത്ര വിവാദം: സിസിടിവി ദൃശ്യങ്ങൾ പുറത്തുവിട്ടു",
+        section: "p.4 Kozhikode",
+        note: "In the controversy over a Meenangadi school excursion, CCTV footage linked to the trip was released.",
+        noteMl: "വിവാദത്തിൽ പുതിയ തെളിവ്.",
+        words: [
+          { en: "row", ml: "വിവാദം, തർക്കം" },
+          { en: "footage", ml: "ദൃശ്യങ്ങൾ" }
+        ]
+      },
+      {
+        title: "Sabarimala gears up for pilgrimage season",
+        ml: "തീർത്ഥാടന കാലത്തിനായി ശബരിമല ഒരുങ്ങുന്നു",
+        section: "p.4 Kozhikode",
+        note: "Preparations are on for the season starting November 16, with road work to be finished by November 12.",
+        noteMl: "മണ്ഡലകാലം നവംബർ 16-ന് തുടങ്ങും.",
+        words: [
+          { en: "gears up", ml: "തയ്യാറെടുക്കുന്നു" },
+          { en: "pilgrimage", ml: "തീർത്ഥാടനം" }
+        ]
+      },
+      {
+        title: "Injunction on web series based on Koodathayi case challenged in High Court",
+        ml: "കൂടത്തായി കേസിനെ ആസ്പദമാക്കിയ വെബ് സീരീസിനുള്ള വിലക്ക് ഹൈക്കോടതിയിൽ ചോദ്യം ചെയ്തു",
+        section: "p.4 Kozhikode",
+        note: "JioStar moved the Kerala High Court against the order stopping the release of a web series on the Koodathayi serial murder case.",
+        noteMl: "റിലീസിനുള്ള വിലക്ക് നീക്കണമെന്ന് ആവശ്യം.",
+        words: [
+          { en: "injunction", ml: "കോടതി വിലക്ക്, നിരോധന ഉത്തരവ്" },
+          { en: "challenged", ml: "ചോദ്യം ചെയ്തു" }
+        ]
+      },
+      {
+        title: "CU garden notified as biodiversity heritage site",
+        ml: "കാലിക്കറ്റ് സർവകലാശാല ഉദ്യാനം ജൈവവൈവിധ്യ പൈതൃക കേന്ദ്രമായി പ്രഖ്യാപിച്ചു",
+        section: "p.4 Kozhikode",
+        note: "The State government officially declared the Calicut University botanical garden at Tenhipalam a Biodiversity Heritage Site.",
+        noteMl: "ഔദ്യോഗിക വിജ്ഞാപനം ഇറങ്ങി.",
+        words: [
+          { en: "notified", ml: "ഔദ്യോഗികമായി വിജ്ഞാപനം ചെയ്തു" },
+          { en: "heritage", ml: "പൈതൃകം" }
+        ]
+      },
+      {
+        title: "Rising tourist footfall exposes safety gaps at eco-tourism spots",
+        ml: "വിനോദസഞ്ചാരികളുടെ എണ്ണം കൂടിയതോടെ ഇക്കോ-ടൂറിസം കേന്ദ്രങ്ങളിലെ സുരക്ഷാ വീഴ്ചകൾ പുറത്തായി",
+        section: "p.5 Region",
+        note: "Remote spots in Kozhikode lack ambulances and trained rescue staff, delaying help for accident victims; around 20 people have drowned at Kariyathumpara in the past decade.",
+        noteMl: "ആംബുലൻസും രക്ഷാപ്രവർത്തകരും ഇല്ല.",
+        words: [
+          { en: "footfall", ml: "സന്ദർശകരുടെ എണ്ണം" },
+          { en: "exposes", ml: "തുറന്നുകാട്ടുന്നു" },
+          { en: "safety gaps", ml: "സുരക്ഷാ പോരായ്മകൾ" }
+        ]
+      },
+      {
+        title: "Kozhikode to host MERGE FUTURE 2027 business and technology summit in January",
+        ml: "MERGE FUTURE 2027 ബിസിനസ്-സാങ്കേതിക ഉച്ചകോടിക്ക് ജനുവരിയിൽ കോഴിക്കോട് വേദിയാകും",
+        section: "p.5 Region",
+        note: "The Calicut Forum for IT (CAFIT) and Government Cyberpark will hold the summit on January 9–10, 2027, at the Calicut Trade Centre.",
+        noteMl: "ജനുവരി 9, 10 തീയതികളിൽ.",
+        words: [
+          { en: "host", ml: "ആതിഥ്യം വഹിക്കുക, വേദിയാകുക" },
+          { en: "summit", ml: "ഉച്ചകോടി" }
+        ]
+      },
+      {
+        title: "3 held on charge of assault, robbery",
+        ml: "ആക്രമണം, കവർച്ച കുറ്റങ്ങൾക്ക് മൂന്നുപേർ അറസ്റ്റിൽ",
+        section: "p.5 Region",
+        note: "Kasaragod police arrested three people for allegedly assaulting and robbing a young man and woman.",
+        noteMl: "കാസർകോട്.",
+        words: [
+          { en: "held", ml: "അറസ്റ്റ് ചെയ്യപ്പെട്ടു (headline ശൈലി)" },
+          { en: "on charge of", ml: "...കുറ്റം ചുമത്തി" }
+        ]
+      },
+      {
+        title: "PSC chief, members, under CB scanner",
+        ml: "പിഎസ്‌സി ചെയർമാനും അംഗങ്ങളും ക്രൈംബ്രാഞ്ച് അന്വേഷണത്തിൽ",
+        section: "p.6 Keralam",
+        note: "The Crime Branch registered an FIR against the Kerala PSC Chairperson and members over alleged irregularities in an exam for Fisheries Extension Officer.",
+        noteMl: "പരീക്ഷാ ക്രമക്കേട് ആരോപണം.",
+        words: [
+          { en: "under scanner", ml: "അന്വേഷണ വിധേയം" },
+          { en: "CB (Crime Branch)", ml: "ക്രൈംബ്രാഞ്ച്" },
+          { en: "irregularities", ml: "ക്രമക്കേടുകൾ" }
+        ]
+      },
+      {
+        title: "CM's power purchase stance under a cloud",
+        ml: "വൈദ്യുതി വാങ്ങലിലെ മുഖ്യമന്ത്രിയുടെ നിലപാട് സംശയത്തിന്റെ നിഴലിൽ",
+        section: "p.6 Keralam",
+        note: "Chief Minister V.D. Satheesan said buying power from Himachal Pradesh would have cost an extra ₹2,232 crore; that claim is now being questioned.",
+        noteMl: "മുഖ്യമന്ത്രിയുടെ കണക്കുകൾ ചോദ്യം ചെയ്യപ്പെടുന്നു.",
+        words: [
+          { en: "under a cloud", ml: "സംശയത്തിന്റെ നിഴലിൽ" },
+          { en: "stance", ml: "നിലപാട്" }
+        ]
+      },
+      {
+        title: "Relay fast by suspended SSUS students continues",
+        ml: "സസ്പെൻഡ് ചെയ്യപ്പെട്ട സംസ്കൃത സർവകലാശാല വിദ്യാർത്ഥികളുടെ റിലേ നിരാഹാരം തുടരുന്നു",
+        section: "p.6 Keralam",
+        note: "SFI students suspended by Sree Sankaracharya University of Sanskrit, Kalady, are continuing their protest fast.",
+        noteMl: "സസ്പെൻഷൻ പിൻവലിക്കണമെന്ന് ആവശ്യം.",
+        words: [
+          { en: "relay fast", ml: "ഊഴമിട്ടുള്ള നിരാഹാര സമരം" },
+          { en: "suspended", ml: "സസ്പെൻഡ് ചെയ്യപ്പെട്ട" }
+        ]
+      },
+      {
+        title: "From Keralam to LA, a Mayor's saga",
+        ml: "കേരളത്തിൽ നിന്ന് ലോസ് ആഞ്ചലസിലേക്ക്: ഒരു മേയറുടെ കഥ",
+        section: "p.6 Keralam",
+        note: "The story of Nithya Raman, born in Kerala, who has been elected Mayor of Los Angeles.",
+        noteMl: "നിത്യ രാമന്റെ ജീവിതയാത്ര.",
+        words: [
+          { en: "saga", ml: "നീണ്ട കഥ, ഇതിഹാസം" }
+        ]
+      },
+      {
+        title: "Jijo Mathew, Kiran Babu to lead KUWJ State committee",
+        ml: "കെയുഡബ്ല്യുജെ സംസ്ഥാന സമിതിയെ ജിജോ മാത്യുവും കിരൺ ബാബുവും നയിക്കും",
+        section: "p.6 In brief",
+        note: "Jijo Mathew (Malayala Manorama) is State president and K. Kiran Babu (News 24) general secretary of the Kerala Union of Working Journalists.",
+        noteMl: "പത്രപ്രവർത്തക യൂണിയൻ ഭാരവാഹികൾ.",
+        words: [
+          { en: "to lead", ml: "നയിക്കും" }
+        ]
+      },
+      {
+        title: "New posting for former Kochi City police chief",
+        ml: "മുൻ കൊച്ചി സിറ്റി പോലീസ് മേധാവിക്ക് പുതിയ നിയമനം",
+        section: "p.6 In brief",
+        note: "Kaliraj Mahesh Kumar, removed as Kochi City police chief in October amid criticism of the Cheranalloor crash probe, has been posted as IG, Crimes-II.",
+        noteMl: "ചേരാനല്ലൂർ കേസിനെ തുടർന്ന് മാറ്റിയ ഉദ്യോഗസ്ഥൻ.",
+        words: [
+          { en: "posting", ml: "നിയമനം" }
+        ]
+      },
+      {
+        title: "BJP leaders meet President over 'irregularities' in KPSC",
+        ml: "കേരള പിഎസ്‌സിയിലെ 'ക്രമക്കേടുകളെ'ക്കുറിച്ച് ബിജെപി നേതാക്കൾ രാഷ്ട്രപതിയെ കണ്ടു",
+        section: "p.7 South",
+        note: "BJP leaders urged President Droupadi Murmu to act on the former Kerala Governor's recommendation to remove the PSC Chairman.",
+        noteMl: "പിഎസ്‌സി ചെയർമാനെ നീക്കണമെന്ന് ആവശ്യം.",
+        words: [
+          { en: "over", ml: "...നെച്ചൊല്ലി, ...സംബന്ധിച്ച്" },
+          { en: "'irregularities' in quotes", ml: "ആരോപണം മാത്രം, തെളിഞ്ഞിട്ടില്ല" }
+        ]
+      },
+      {
+        title: "10 missing rescue personnel traced",
+        ml: "കാണാതായ 10 രക്ഷാപ്രവർത്തകരെ കണ്ടെത്തി",
+        section: "p.7 South",
+        note: "Ten rescue workers who went missing in floodwaters in Khammam, Telangana, were found.",
+        noteMl: "തെലങ്കാനയിലെ ഖമ്മം.",
+        words: [
+          { en: "traced", ml: "കണ്ടെത്തി" },
+          { en: "personnel", ml: "ഉദ്യോഗസ്ഥർ, ജീവനക്കാർ" }
+        ]
+      },
+      {
+        title: "22 stranded in flash floods rescued in A.P.",
+        ml: "ആന്ധ്രയിൽ മിന്നൽ പ്രളയത്തിൽ കുടുങ്ങിയ 22 പേരെ രക്ഷപ്പെടുത്തി",
+        section: "p.7 South",
+        note: "Andhra Pradesh police rescued 22 workers trapped by flash floods.",
+        noteMl: "എല്ലാവരും സുരക്ഷിതർ.",
+        words: [
+          { en: "stranded", ml: "കുടുങ്ങിപ്പോയ" },
+          { en: "flash floods", ml: "മിന്നൽ പ്രളയം" }
         ]
       }
     ]
