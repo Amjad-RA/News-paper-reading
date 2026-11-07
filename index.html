@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>100 Days of The Hindu</title>
-<meta name="description" content="Learn to read English newspaper headlines with Malayalam explanations, using real headlines from The Hindu.">
+<title>100 Days of Newspaper English</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Learn to read English newspaper headlines with Malayalam explanations, using real newspaper headlines. Personal, non-commercial study project.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600&family=Source+Serif+4:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -155,6 +156,7 @@
   .empty h2 { color: var(--text); font-size: 18px; margin: 0 0 6px; }
   mark { background: var(--hl); color: inherit; border-radius: 3px; padding: 0 1px; }
   footer { color: var(--muted); font-size: 13px; padding: 24px 0 40px; border-top: 1px solid var(--border); }
+  footer p { margin: 0 0 6px; }
 
   @media (max-width: 520px) {
     .tabs button[data-tab] { padding: 10px; }
@@ -166,8 +168,8 @@
 <body>
 <div class="wrap">
   <header>
-    <div class="kicker">The Hindu · Learn to read the newspaper</div>
-    <h1>100 Days of The Hindu</h1>
+    <div class="kicker">Personal study project · Learn to read the newspaper</div>
+    <h1>100 Days of Newspaper English</h1>
     <p class="sub">Learn the rules and phrases of headline English, then practise on real headlines. <span class="ml">ഇംഗ്ലീഷ് പത്രം തടസ്സമില്ലാതെ വായിക്കാൻ.</span></p>
   </header>
 
@@ -211,7 +213,10 @@
   </main>
 
   <footer>
-    Headlines are from <a href="https://www.thehindu.com/" rel="noopener">The Hindu</a>. The rules, notes and Malayalam meanings are study aids written for this page.
+    <p><b>Personal, non-commercial study project.</b> Not affiliated with, endorsed by or connected to The Hindu or THG Publishing.</p>
+    <p>Headlines quoted for study are © <a href="https://www.thehindu.com/" rel="noopener">The Hindu</a> and link to the original where available; read the full stories there. No article text or images are copied. The rules, notes and Malayalam meanings are study aids written for this page.</p>
+    <p class="ml">ഇത് വ്യക്തിപരമായ പഠനത്തിനുള്ള പേജ് മാത്രം; ദി ഹിന്ദുവുമായി ബന്ധമില്ല.</p>
+    <p>If you own any content here and want it removed, please open an issue on the <a href="https://github.com/Amjad-RA/News-paper-reading/issues" rel="noopener">GitHub repository</a>.</p>
   </footer>
 </div>
 
@@ -402,27 +407,26 @@
   const matches = (it) => !term || [it.title, it.ml, it.note, it.noteMl, it.section,
     ...(it.words || []).flatMap((w) => [w.en, w.ml])].join(" ").toLowerCase().includes(term.toLowerCase());
   const meta = (it) => [fmtDate(it.date), it.section].filter(Boolean).map(esc).join(" · ") +
-    (it.feed ? ` <span class="badge" title="Saved automatically; no notes yet">Daily feed</span>` : "");
+    (it.feed ? ` <span class="badge" title="Saved from the RSS feed; no notes yet">Feed</span>` : "");
 
-  // Source filter: everything, only headlines with notes, or only the daily feed.
+  // Source filter: everything, only headlines with notes, or only feed headlines.
   const ACTIONS_URL = "https://github.com/Amjad-RA/News-paper-reading/actions/workflows/headlines.yml";
   const feedItems = headlines.filter((h) => h.feed);
   let hsrc = ["all", "notes", "feed"].includes(store.get("hsrc")) ? store.get("hsrc") : "all";
   function renderSrc() {
     const btn = (k, label, n) => `<button type="button" data-hsrc="${k}" aria-pressed="${hsrc === k}">${label} <span class="n">${n}</span></button>`;
     $("#hsrc").innerHTML = btn("all", "All", headlines.length) +
-      btn("notes", "With notes", headlines.length - feedItems.length) + btn("feed", "Daily feed", feedItems.length);
+      btn("notes", "With notes", headlines.length - feedItems.length) + btn("feed", "Feed", feedItems.length);
     const fi = $("#feedinfo");
     fi.hidden = hsrc !== "feed";
     if (hsrc === "feed") {
       const days = new Set(feedItems.map((h) => h.date)).size;
-      fi.innerHTML = feedItems.length
-        ? `<p>Saved automatically every morning (6:47 IST): headline, section and link only. Last saved: <b>${esc(fmtDate(feedItems[0].date))}</b> · ${feedItems.length} headlines over ${days} day${days === 1 ? "" : "s"} (keeps 100).</p>
-           <p class="ml">ദിവസവും രാവിലെ തലക്കെട്ടുകൾ തനിയെ ചേർക്കും. മലയാളം അർത്ഥം വേണമെങ്കിൽ Claude-നോട് ചോദിക്കുക.</p>
-           <p><a href="${ACTIONS_URL}" target="_blank" rel="noopener">Update now on GitHub</a></p>`
-        : `<p>No daily headlines yet. They are saved every morning at 6:47 IST.</p>
-           <p class="ml">ദിവസവും രാവിലെ തലക്കെട്ടുകൾ തനിയെ ഇവിടെ വരും.</p>
-           <p><a href="${ACTIONS_URL}" target="_blank" rel="noopener">Fetch now on GitHub</a> (Run workflow)</p>`;
+      fi.innerHTML = (feedItems.length
+        ? `<p>Headlines saved from the RSS feed (headline, section and link only). Last saved: <b>${esc(fmtDate(feedItems[0].date))}</b> · ${feedItems.length} headlines over ${days} day${days === 1 ? "" : "s"}.</p>`
+        : `<p>No feed headlines saved yet.</p>`) +
+        `<p>Runs only when you press <b>Run workflow</b> on GitHub. The daily schedule is off while this site is public.</p>
+         <p class="ml">GitHub-ൽ Run workflow അമർത്തുമ്പോൾ മാത്രം തലക്കെട്ടുകൾ ചേർക്കും.</p>
+         <p><a href="${ACTIONS_URL}" target="_blank" rel="noopener">Run it on GitHub</a></p>`;
     }
   }
   $("#hsrc").addEventListener("click", (e) => {
