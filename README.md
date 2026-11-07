@@ -9,23 +9,13 @@ Live page: https://amjad-ra.github.io/News-paper-reading/
 
 - **Learn:** the rules of headline English (tense, dropped words, colons, quotes, stacked nouns, idioms, abbreviations), each shown with real headlines.
 - **Phrases:** recurring newspaper words that actually appear in the headlines, split by type (headline verbs, linking words, courts, politics, crime, economy, idioms, abbreviations). Tap a type to see only that type; each type is a collapsible section with a short explanation. The word is highlighted in each example headline.
-- **Headlines:** list and detailed (accordion) views. Filter by source (with notes / feed). Practice mode hides the Malayalam until you tap it.
+- **Headlines:** list and detailed (accordion) views. Practice mode hides the Malayalam until you tap it.
 
 ## Files
 
 - `notes.js`: headlines by newspaper date, with Malayalam meaning, notes and key words. The Headlines tab shows the key ones by default (those that use a rule or a core word).
 - `guide.js`: the headline rules and their examples.
 - `core.js`: the core vocabulary shown in the Phrases tab.
-- `feed.js`: headlines saved by the workflow below (headline, section, link only).
-
-## Feed workflow (manual)
-
-`.github/workflows/headlines.yml` saves headlines from The Hindu's public RSS
-feeds into `feed.js` (headline, section and link only). It keeps everything
-unless you enter a number in "Keep headlines from the last N days". It runs
-only when you press **Actions → "Save daily headlines" → Run workflow**. The
-automatic daily schedule is switched off while this repository is public; see
-the comment in the workflow file before switching it on.
 
 ## Notice
 

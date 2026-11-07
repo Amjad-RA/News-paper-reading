@@ -130,10 +130,6 @@
   .list .t { font-weight: 600; }
   .list .ml { display: block; }
   .meta { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
-  .badge { display: inline-block; font-size: 11px; font-weight: 600; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 0 7px; margin-left: 4px; vertical-align: 1px; }
-  .feedinfo { background: var(--accent-soft); border-radius: var(--radius); padding: 10px 14px; font-size: 14px; margin: 4px 0 6px; }
-  .feedinfo p { margin: 2px 0; }
-  .feedinfo a { color: var(--accent); font-weight: 600; }
   .acc { display: flex; flex-direction: column; gap: 10px; }
   details.hd { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
   details.hd > summary { list-style: none; cursor: pointer; padding: 14px 16px; display: flex; align-items: center; gap: 12px; }
@@ -208,8 +204,6 @@
         </div>
         <label class="check"><input type="checkbox" class="practice"> Practice</label>
       </div>
-      <nav class="types" id="hsrc" aria-label="Headline source"></nav>
-      <div class="feedinfo" id="feedinfo" hidden></div>
       <div class="count" id="hcount" aria-live="polite"></div>
       <div id="headlines"></div>
     </section>
@@ -227,7 +221,6 @@
 <script src="guide.js"></script>
 <script src="core.js"></script>
 <script src="notes.js"></script>
-<script src="feed.js"></script>
 <script>
 (function () {
   const $ = (s) => document.querySelector(s);
@@ -254,16 +247,6 @@
     .slice()
     .sort((a, b) => String(b.date).localeCompare(String(a.date)))
     .flatMap((d) => (d.items || []).map((it) => ({ ...it, date: d.date })));
-  // Daily headlines saved by the GitHub Action (feed.js): title, section, link only.
-  {
-    const have = new Set(headlines.map((h) => h.title.toLowerCase()));
-    (Array.isArray(window.FEED) ? window.FEED : []).forEach((d) => (d.items || []).forEach((it) => {
-      if (!it.title || have.has(it.title.toLowerCase())) return;
-      have.add(it.title.toLowerCase());
-      headlines.push({ ...it, date: d.date, feed: true });
-    }));
-    headlines.sort((a, b) => String(b.date).localeCompare(String(a.date)));
-  }
   const byTitle = new Map(headlines.map((h) => [h.title, h]));
 
   // Which rules each headline illustrates (from the guide's examples).
@@ -410,40 +393,14 @@
   });
   const matches = (it) => !term || [it.title, it.ml, it.note, it.noteMl, it.section,
     ...(it.words || []).flatMap((w) => [w.en, w.ml])].join(" ").toLowerCase().includes(term.toLowerCase());
-  const meta = (it) => [fmtDate(it.date), it.section].filter(Boolean).map(esc).join(" · ") +
-    (it.feed ? ` <span class="badge" title="Saved from the RSS feed; no notes yet">Feed</span>` : "");
+  const meta = (it) => [fmtDate(it.date), it.section].filter(Boolean).map(esc).join(" · ");
 
-  // Source filter: everything, only headlines with notes, or only feed headlines.
-  const ACTIONS_URL = "https://github.com/Amjad-RA/News-paper-reading/actions/workflows/headlines.yml";
-  const feedItems = headlines.filter((h) => h.feed);
-  let hsrc = ["all", "notes", "feed"].includes(store.get("hsrc")) ? store.get("hsrc") : "all";
-  function renderSrc() {
-    const btn = (k, label, n) => `<button type="button" data-hsrc="${k}" aria-pressed="${hsrc === k}">${label} <span class="n">${n}</span></button>`;
-    $("#hsrc").innerHTML = btn("all", "All", headlines.length) +
-      btn("notes", "With notes", headlines.length - feedItems.length) + btn("feed", "Feed", feedItems.length);
-    const fi = $("#feedinfo");
-    fi.hidden = hsrc !== "feed";
-    if (hsrc === "feed") {
-      const days = new Set(feedItems.map((h) => h.date)).size;
-      fi.innerHTML = (feedItems.length
-        ? `<p>Headlines saved from the RSS feed (headline, section and link only). Last saved: <b>${esc(fmtDate(feedItems[0].date))}</b> · ${feedItems.length} headlines over ${days} day${days === 1 ? "" : "s"}.</p>`
-        : `<p>No feed headlines saved yet.</p>`) +
-        `<p>Runs only when you press <b>Run workflow</b> on GitHub. The daily schedule is off while this site is public.</p>
-         <p class="ml">GitHub-ൽ Run workflow അമർത്തുമ്പോൾ മാത്രം തലക്കെട്ടുകൾ ചേർക്കും.</p>
-         <p><a href="${ACTIONS_URL}" target="_blank" rel="noopener">Run it on GitHub</a></p>`;
-    }
-  }
-  $("#hsrc").addEventListener("click", (e) => {
-    const b = e.target.closest("[data-hsrc]"); if (!b) return;
-    hsrc = b.dataset.hsrc; store.set("hsrc", hsrc); renderSrc(); renderHeadlines();
-  });
 
   function renderHeadlines() {
     document.querySelectorAll(".seg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
-    const src = hsrc === "feed" ? feedItems : hsrc === "notes" ? headlines.filter((h) => !h.feed) : headlines;
+    const src = headlines;
     const pool = allH || term ? src : src.filter((h) => keyTitles.has(h.title));
     const items = pool.filter(matches);
-    if (hsrc === "feed" && !feedItems.length) { $("#hcount").innerHTML = ""; $("#headlines").innerHTML = ""; return; }
     $("#hcount").innerHTML = term ? `${items.length} of ${src.length} headlines`
       : allH ? `All ${src.length} headlines · <button type="button" class="linkbtn" id="togall">Key only</button>`
       : `${items.length} key headlines (use a rule or a core word) · <button type="button" class="linkbtn" id="togall">Show all ${src.length}</button>`;
@@ -490,7 +447,7 @@
   $("#q").addEventListener("input", (e) => { clearTimeout(t1); t1 = setTimeout(() => { term = e.target.value.trim(); renderHeadlines(); }, 120); });
   $("#pq").addEventListener("input", (e) => { clearTimeout(t2); t2 = setTimeout(() => { pterm = e.target.value.trim(); renderPhrases(); }, 120); });
 
-  renderLearn(); renderTypes(); renderPhrases(); renderSrc(); renderHeadlines(); showTab(tab);
+  renderLearn(); renderTypes(); renderPhrases(); renderHeadlines(); showTab(tab);
 
   // Guide examples should be real headlines from notes.js.
   GUIDE.forEach((r) => (r.examples || []).forEach((ex) => {
