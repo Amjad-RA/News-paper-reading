@@ -1,5 +1,5 @@
 /*
- * 100 Days of Newspaper English: headline notes data.
+ * Pathram Padikkam: headline notes data.
  *
  * Add one object per newspaper date to NOTES, in any order. The page shows
  * every headline in one list, newest date first.

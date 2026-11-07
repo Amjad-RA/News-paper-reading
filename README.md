@@ -1,4 +1,4 @@
-# 100 Days of Newspaper English
+# Pathram Padikkam (പത്രം പഠിക്കാം): Learn Newspaper English
 
 A personal, non-commercial study page for learning to read English newspaper
 headlines, with Malayalam explanations.
