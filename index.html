@@ -4,212 +4,227 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>100 Days of The Hindu</title>
-<meta name="description" content="Short notes on The Hindu headlines with Malayalam meanings, 100 days.">
+<meta name="description" content="Learn to read English newspaper headlines with Malayalam explanations, using real headlines from The Hindu.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600&family=Source+Serif+4:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #f7f5f0;
-    --surface: #ffffff;
-    --surface-2: #f0ede6;
-    --text: #1d1b18;
-    --muted: #6b665d;
-    --border: #e2ddd3;
-    --accent: #1f4e8c;
-    --accent-soft: #e4ecf7;
-    --ml: #7a3e00;
-    --radius: 12px;
+    --bg: #f7f5f0; --surface: #ffffff; --surface-2: #f0ede6;
+    --text: #1d1b18; --muted: #6b665d; --border: #e2ddd3;
+    --accent: #1f4e8c; --accent-soft: #e4ecf7; --ml: #7a3e00;
+    --hl: #fff1b8; --radius: 12px;
     --shadow: 0 1px 2px rgba(0,0,0,.05), 0 2px 8px rgba(0,0,0,.04);
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #141413;
-      --surface: #1d1d1b;
-      --surface-2: #262623;
-      --text: #ece9e2;
-      --muted: #a29d93;
-      --border: #34332f;
-      --accent: #8cb4ec;
-      --accent-soft: #22324a;
-      --ml: #f0b37a;
-      --shadow: none;
+      --bg: #141413; --surface: #1d1d1b; --surface-2: #262623;
+      --text: #ece9e2; --muted: #a29d93; --border: #34332f;
+      --accent: #8cb4ec; --accent-soft: #22324a; --ml: #f0b37a;
+      --hl: #5a4a10; --shadow: none;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #141413;
-    --surface: #1d1d1b;
-    --surface-2: #262623;
-    --text: #ece9e2;
-    --muted: #a29d93;
-    --border: #34332f;
-    --accent: #8cb4ec;
-    --accent-soft: #22324a;
-    --ml: #f0b37a;
-    --shadow: none;
+    --bg: #141413; --surface: #1d1d1b; --surface-2: #262623;
+    --text: #ece9e2; --muted: #a29d93; --border: #34332f;
+    --accent: #8cb4ec; --accent-soft: #22324a; --ml: #f0b37a;
+    --hl: #5a4a10; --shadow: none;
   }
-
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font: 16px/1.55 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
-  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
   .ml { font-family: "Noto Sans Malayalam", sans-serif; color: var(--ml); }
   .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+  a { color: var(--accent); }
 
-  header { padding: 32px 0 16px; }
+  header { padding: 28px 0 12px; }
   .kicker { color: var(--muted); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; }
   h1 { font-family: "Source Serif 4", Georgia, serif; font-size: clamp(28px, 6vw, 40px); line-height: 1.15; margin: 6px 0 4px; }
   .sub { margin: 0; color: var(--muted); }
-  .sub .ml { color: var(--muted); }
 
-  .stats { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; }
-  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 6px 14px; font-size: 14px; color: var(--muted); }
-  .stat b { color: var(--text); font-variant-numeric: tabular-nums; }
-  .progress { height: 6px; background: var(--surface-2); border-radius: 99px; margin-top: 14px; overflow: hidden; }
-  .progress > span { display: block; height: 100%; background: var(--accent); width: 0; transition: width .4s; }
+  .tabs { position: sticky; top: 0; z-index: 6; background: var(--bg); display: flex; gap: 4px; border-bottom: 1px solid var(--border); padding-top: 8px; }
+  .tabs button[data-tab] { font: inherit; font-weight: 600; font-size: 15px; background: none; border: 0; color: var(--muted); padding: 10px 14px; border-bottom: 3px solid transparent; cursor: pointer; }
+  .tabs button[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+  .tabs .sp { flex: 1; }
+  .icon-btn { flex: none; font: inherit; font-size: 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--muted); padding: 8px 11px; cursor: pointer; align-self: center; margin-bottom: 4px; }
 
-  .toolbar {
-    position: sticky; top: 0; z-index: 5;
-    background: var(--bg);
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
-  }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 14px 0 4px; }
   .search { flex: 1 1 220px; position: relative; }
-  .search input {
-    width: 100%; font: inherit; padding: 10px 12px 10px 36px;
-    border: 1px solid var(--border); border-radius: 10px;
-    background: var(--surface); color: var(--text);
-  }
+  .search input { width: 100%; font: inherit; padding: 10px 12px 10px 36px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--text); }
   .search input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
   .search svg { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--muted); }
   .seg { flex: none; display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--surface); }
-  .seg button {
-    font: inherit; font-size: 14px; font-weight: 500; border: 0; background: none; color: var(--muted);
-    padding: 9px 14px; cursor: pointer;
-  }
+  .seg button { font: inherit; font-size: 14px; font-weight: 500; border: 0; background: none; color: var(--muted); padding: 9px 14px; cursor: pointer; }
   .seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); }
-  .icon-btn {
-    flex: none; font: inherit; font-size: 14px; border: 1px solid var(--border); border-radius: 10px;
-    background: var(--surface); color: var(--muted); padding: 9px 12px; cursor: pointer;
-  }
-  .icon-btn:hover, .seg button:hover { color: var(--text); }
+  .check { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--muted); cursor: pointer; }
+  .count { font-size: 13px; color: var(--muted); padding: 6px 0 8px; }
 
-  main { padding: 16px 0 48px; }
+  main { padding: 12px 0 48px; }
+  .panel[hidden] { display: none; }
 
-  /* List view */
+  /* Learn */
+  .intro { background: var(--accent-soft); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 16px; }
+  .intro p { margin: 4px 0; }
+  .intro .ml { color: var(--text); }
+  .steps { margin: 6px 0 0; padding-left: 20px; }
+  .steps li { margin: 4px 0; }
+  .rule { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); margin-bottom: 12px; scroll-margin-top: 64px; }
+  .rule > summary { list-style: none; cursor: pointer; padding: 14px 16px; display: flex; gap: 12px; align-items: flex-start; }
+  .rule > summary::-webkit-details-marker { display: none; }
+  .num { flex: none; width: 30px; height: 30px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-weight: 600; font-size: 14px; }
+  .rule h3 { margin: 0; font-size: 17px; line-height: 1.35; }
+  .pattern { display: inline-block; margin-top: 4px; font-size: 13px; color: var(--muted); background: var(--surface-2); border-radius: 6px; padding: 1px 7px; }
+  .rule-body { padding: 0 16px 14px 58px; }
+  .rule-body > .ml { margin: 0 0 10px; color: var(--text); }
+  .ex { border-left: 3px solid var(--accent); padding: 4px 0 4px 12px; margin: 10px 0; }
+  .ex .h { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 16px; line-height: 1.35; }
+  .ex .r { font-size: 14px; color: var(--muted); }
+  .ex .ml { font-size: 14px; }
+
+  /* Phrases */
+  .phrases { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+  .ph { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
+  .ph .en { font-weight: 600; }
+  .ph .ml { display: block; font-size: 15px; margin-top: 2px; }
+  .ph .src { display: block; font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.35; }
+  .ml.hide { color: transparent !important; background: var(--surface-2); border-radius: 6px; cursor: pointer; user-select: none; }
+  .ml.hide mark { background: none; color: transparent; }
+
+  /* Headlines */
   .list { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
   .list li { padding: 12px 16px; border-top: 1px solid var(--border); }
-  .meta { font-size: 13px; color: var(--muted); margin-top: 2px; }
   .list li:first-child { border-top: 0; }
   .list .t { font-weight: 600; }
-  .list .t a { color: inherit; text-decoration: none; }
-  .list .t a:hover { text-decoration: underline; }
-  .list .ml { font-size: 15px; }
-  .tag { display: inline-block; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); background: var(--surface-2); border-radius: 6px; padding: 1px 6px; margin-left: 6px; vertical-align: 2px; }
-
-  /* Detailed view: accordion */
+  .list .ml { display: block; }
+  .meta { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
   .acc { display: flex; flex-direction: column; gap: 10px; }
-  details.day { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
-  details.day > summary {
-    list-style: none; cursor: pointer; padding: 14px 16px;
-    display: flex; align-items: center; gap: 12px;
-  }
-  details.day > summary::-webkit-details-marker { display: none; }
-  .badge { flex: none; width: 44px; height: 44px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+  details.hd { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+  details.hd > summary { list-style: none; cursor: pointer; padding: 14px 16px; display: flex; align-items: center; gap: 12px; }
+  details.hd > summary::-webkit-details-marker { display: none; }
   .sum-main { flex: 1; min-width: 0; }
   .sum-main .d { display: block; font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 17px; line-height: 1.3; }
-  .sum-main .sm { display: block; font-size: 15px; margin-top: 2px; }
-  .sum-main .c { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
+  .sum-main .ml { display: block; font-size: 15px; margin-top: 2px; }
   .chev { flex: none; color: var(--muted); transition: transform .2s; }
-  details[open] .chev { transform: rotate(180deg); }
-  .items { padding: 0 16px 8px; }
-  .item { border-top: 1px solid var(--border); padding: 12px 0 8px; }
-  .item h3 { font-family: "Source Serif 4", Georgia, serif; font-size: 18px; line-height: 1.3; margin: 0 0 4px; }
-  .item h3 a { color: inherit; text-decoration: none; }
-  .item h3 a:hover { text-decoration: underline; }
-  .item .ml.mean { font-size: 16px; font-weight: 600; margin: 0 0 6px; }
-  .item p { margin: 4px 0; }
-  .item .note { color: var(--text); }
-  .item .noteml { font-size: 15px; color: var(--muted); }
-  .words { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; padding: 0; list-style: none; }
+  details[open] > summary .chev { transform: rotate(180deg); }
+  .hd-body { padding: 0 16px 12px; }
+  .hd-body > div { border-top: 1px solid var(--border); padding-top: 12px; }
+  .hd-body p { margin: 4px 0; }
+  .hd-body .noteml { font-size: 15px; color: var(--muted); }
+  .lbl { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 12px 0 4px; }
+  .words { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0; list-style: none; }
   .words li { background: var(--surface-2); border-radius: 8px; padding: 3px 9px; font-size: 14px; }
   .words li .ml { margin-left: 4px; }
+  .rules-used { display: flex; flex-wrap: wrap; gap: 6px; }
+  .rules-used button { font: inherit; font-size: 13px; border: 1px solid var(--border); background: var(--surface); color: var(--accent); border-radius: 999px; padding: 2px 10px; cursor: pointer; text-align: left; }
 
-  .empty {
-    text-align: center; padding: 48px 20px; background: var(--surface);
-    border: 1px dashed var(--border); border-radius: var(--radius); color: var(--muted);
-  }
+  .empty { text-align: center; padding: 40px 20px; background: var(--surface); border: 1px dashed var(--border); border-radius: var(--radius); color: var(--muted); }
   .empty h2 { color: var(--text); font-size: 18px; margin: 0 0 6px; }
-  .empty p { margin: 4px 0; }
-  .empty code { background: var(--surface-2); padding: 1px 6px; border-radius: 5px; font-size: 14px; }
-
-  mark { background: #ffe58a; color: inherit; border-radius: 3px; padding: 0 1px; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) mark { background: #6b5a12; } }
-  :root[data-theme="dark"] mark { background: #6b5a12; }
-
+  mark { background: var(--hl); color: inherit; border-radius: 3px; padding: 0 1px; }
   footer { color: var(--muted); font-size: 13px; padding: 24px 0 40px; border-top: 1px solid var(--border); }
-  footer a { color: var(--accent); }
 
   @media (max-width: 520px) {
-    .list li { grid-template-columns: 1fr; }
+    .tabs button[data-tab] { padding: 10px; }
     .toolbar .search { flex-basis: 100%; }
-    .toolbar .seg { flex: 1; }
-    .toolbar .seg button { flex: 1; }
+    .rule-body { padding-left: 16px; }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div class="kicker">The Hindu · Headline notes</div>
+    <div class="kicker">The Hindu · Learn to read the newspaper</div>
     <h1>100 Days of The Hindu</h1>
-    <p class="sub">Short notes on the day's headlines, each with its Malayalam meaning. <span class="ml">തലക്കെട്ടുകളും മലയാളം അർത്ഥവും.</span></p>
-    <div class="stats" id="stats"></div>
+    <p class="sub">Learn the rules and phrases of headline English, then practise on real headlines. <span class="ml">ഇംഗ്ലീഷ് പത്രം തടസ്സമില്ലാതെ വായിക്കാൻ.</span></p>
   </header>
 
-  <div class="toolbar">
-    <label class="search">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input id="q" type="search" placeholder="Search titles, meanings, notes… / തിരയുക" aria-label="Search">
-    </label>
-    <div class="seg" role="group" aria-label="View">
-      <button type="button" data-view="list" aria-pressed="true">List</button>
-      <button type="button" data-view="detail" aria-pressed="false">Detailed</button>
-    </div>
-    <button type="button" class="icon-btn" id="toggleAll" hidden>Expand all</button>
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="learn">Learn</button>
+    <button role="tab" data-tab="phrases">Phrases</button>
+    <button role="tab" data-tab="headlines">Headlines</button>
+    <span class="sp"></span>
     <button type="button" class="icon-btn" id="theme" aria-label="Toggle theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:block"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
-  </div>
+  </nav>
 
-  <main id="main"></main>
+  <main>
+    <section class="panel" id="p-learn"></section>
+
+    <section class="panel" id="p-phrases">
+      <div class="toolbar">
+        <label class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="pq" type="search" placeholder="Search phrases… / തിരയുക" aria-label="Search phrases"></label>
+        <label class="check"><input type="checkbox" class="practice"> Practice: hide Malayalam</label>
+      </div>
+      <div class="count" id="pcount"></div>
+      <div id="phrases"></div>
+    </section>
+
+    <section class="panel" id="p-headlines">
+      <div class="toolbar">
+        <label class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="Search headlines… / തിരയുക" aria-label="Search headlines"></label>
+        <div class="seg" role="group" aria-label="View">
+          <button type="button" data-view="list" aria-pressed="true">List</button>
+          <button type="button" data-view="detail" aria-pressed="false">Detailed</button>
+        </div>
+        <label class="check"><input type="checkbox" class="practice"> Practice</label>
+      </div>
+      <div class="count" id="hcount"></div>
+      <div id="headlines"></div>
+    </section>
+  </main>
 
   <footer>
-    Headlines are from <a href="https://www.thehindu.com/" rel="noopener">The Hindu</a>; the notes and Malayalam meanings are study aids written for this page.
+    Headlines are from <a href="https://www.thehindu.com/" rel="noopener">The Hindu</a>. The rules, notes and Malayalam meanings are study aids written for this page.
   </footer>
 </div>
 
+<script src="guide.js"></script>
 <script src="notes.js"></script>
 <script>
 (function () {
-  // One flat list of headlines, newest paper first.
-  const notes = (Array.isArray(window.NOTES) ? window.NOTES : [])
-    .slice()
-    .sort((a, b) => String(b.date).localeCompare(String(a.date)))
-    .flatMap((d) => (d.items || []).map((it) => ({ ...it, date: d.date })));
-
   const $ = (s) => document.querySelector(s);
-  const main = $("#main");
-  const q = $("#q");
-  const toggleAll = $("#toggleAll");
-
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   };
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const mark = (s, term) => {
+    const e = esc(s);
+    if (!term) return e;
+    const re = new RegExp(esc(term).replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
+    return e.replace(re, (m) => `<mark>${m}</mark>`);
+  };
+  const fmtDate = (iso) => {
+    const d = new Date(iso + "T00:00:00");
+    return isNaN(d) ? (iso || "") : d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
+  };
+  const chev = `<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>`;
+
+  const GUIDE = Array.isArray(window.GUIDE) ? window.GUIDE : [];
+  const headlines = (Array.isArray(window.NOTES) ? window.NOTES : [])
+    .slice()
+    .sort((a, b) => String(b.date).localeCompare(String(a.date)))
+    .flatMap((d) => (d.items || []).map((it) => ({ ...it, date: d.date })));
+  const byTitle = new Map(headlines.map((h) => [h.title, h]));
+
+  // Which rules each headline illustrates (from the guide's examples).
+  const rulesFor = new Map();
+  GUIDE.forEach((r, i) => (r.examples || []).forEach((ex) => {
+    if (!rulesFor.has(ex.h)) rulesFor.set(ex.h, []);
+    if (!rulesFor.get(ex.h).includes(i)) rulesFor.get(ex.h).push(i);
+  }));
+
+  // Phrase bank: every key word from every headline, de-duplicated.
+  const phraseMap = new Map();
+  headlines.forEach((h) => (h.words || []).forEach((w) => {
+    const key = w.en.toLowerCase();
+    if (!phraseMap.has(key)) phraseMap.set(key, { en: w.en, ml: w.ml, src: [] });
+    phraseMap.get(key).src.push(h.title);
+  }));
+  const sortKey = (s) => s.replace(/^[^A-Za-z0-9]+/, "");
+  const phrases = [...phraseMap.values()].sort((a, b) =>
+    sortKey(a.en).localeCompare(sortKey(b.en), "en", { sensitivity: "base" }));
 
   // Theme
   const savedTheme = store.get("theme");
@@ -222,112 +237,129 @@
     store.set("theme", next);
   });
 
-  // Stats
-  $("#stats").innerHTML = `<span class="stat"><b>${notes.length}</b> headlines</span>`;
+  // Practice mode: hide Malayalam until tapped.
+  let practice = store.get("practice") === "1";
+  document.querySelectorAll(".practice").forEach((c) => {
+    c.checked = practice;
+    c.addEventListener("change", () => {
+      practice = c.checked; store.set("practice", practice ? "1" : "0");
+      document.querySelectorAll(".practice").forEach((o) => (o.checked = practice));
+      renderPhrases(); renderHeadlines();
+    });
+  });
+  const mlSpan = (text, term) => text
+    ? `<span class="ml${practice ? " hide" : ""}"${practice ? ' title="Tap to reveal"' : ""}>${mark(text, term)}</span>` : "";
+  document.addEventListener("click", (e) => {
+    const el = e.target.closest(".ml.hide");
+    if (el) { el.classList.remove("hide"); e.preventDefault(); e.stopPropagation(); }
+  }, true);
 
-  // Helpers
-  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
-    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  // Tabs
+  let tab = ["learn", "phrases", "headlines"].includes(store.get("tab")) ? store.get("tab") : "learn";
+  function showTab(t) {
+    tab = t; store.set("tab", t);
+    document.querySelectorAll(".tabs [data-tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === t)));
+    document.querySelectorAll(".panel").forEach((p) => (p.hidden = p.id !== "p-" + t));
+  }
+  document.querySelectorAll(".tabs [data-tab]").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab)));
+
+  // Learn
+  function renderLearn() {
+    $("#p-learn").innerHTML = `
+      <div class="intro">
+        <p><b>How to use this page</b></p>
+        <ol class="steps">
+          <li>Read the ${GUIDE.length} rules below: headline English has its own grammar. <span class="ml">തലക്കെട്ടുകൾക്ക് സ്വന്തം വ്യാകരണമുണ്ട്.</span></li>
+          <li>Learn the ${phrases.length} words in <b>Phrases</b>. <span class="ml">ഈ വാക്കുകൾ അറിഞ്ഞാൽ പത്രം എളുപ്പം.</span></li>
+          <li>In <b>Headlines</b>, turn on <b>Practice</b>, read each headline, say its meaning, then tap to check. <span class="ml">സ്വയം പരീക്ഷിക്കുക.</span></li>
+        </ol>
+      </div>
+      ${GUIDE.map((r, i) => `
+        <details class="rule" id="rule-${i + 1}">
+          <summary><span class="num">${i + 1}</span>
+            <span style="flex:1"><h3>${esc(r.title)}</h3><span class="pattern">${esc(r.pattern)}</span></span>${chev}
+          </summary>
+          <div class="rule-body">
+            <p class="ml">${esc(r.ml)}</p>
+            ${(r.examples || []).map((ex) => `
+              <div class="ex"><div class="h">${esc(ex.h)}</div>
+                <div class="r">${esc(ex.read)}</div><div class="ml">${esc(ex.ml)}</div></div>`).join("")}
+          </div>
+        </details>`).join("")}`;
+  }
+
+  // Phrases
+  let pterm = "";
+  function renderPhrases() {
+    const t = pterm.toLowerCase();
+    const list = phrases.filter((p) => !t || (p.en + " " + p.ml).toLowerCase().includes(t));
+    $("#pcount").textContent = `${list.length} of ${phrases.length} phrases`;
+    $("#phrases").innerHTML = list.length ? `<div class="phrases">${list.map((p) => `
+      <div class="ph"><span class="en">${mark(p.en, pterm)}</span>${mlSpan(p.ml, pterm)}
+        <span class="src">“${esc(p.src[0])}”${p.src.length > 1 ? ` +${p.src.length - 1} more` : ""}</span></div>`).join("")}</div>`
+      : `<div class="empty"><h2>No phrase matches “${esc(pterm)}”</h2></div>`;
+  }
+
+  // Headlines
   let term = "";
-  const hl = (s) => {
-    const e = esc(s);
-    if (!term) return e;
-    const re = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
-    return e.replace(re, (m) => `<mark>${m}</mark>`);
-  };
-  const fmtDate = (iso) => {
-    if (!iso) return "";
-    const d = new Date(iso + "T00:00:00");
-    return isNaN(d) ? iso : d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
-  };
-  const title = (it) => it.url
-    ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${hl(it.title)}</a>`
-    : hl(it.title);
-  const matches = (it) => {
-    if (!term) return true;
-    const hay = [it.title, it.ml, it.note, it.noteMl, it.section,
-      ...(it.words || []).flatMap((w) => [w.en, w.ml])].join(" ").toLowerCase();
-    return hay.includes(term.toLowerCase());
-  };
-  const filtered = () => notes.filter(matches);
+  let view = store.get("view") === "detail" ? "detail" : "list";
+  const matches = (it) => !term || [it.title, it.ml, it.note, it.noteMl, it.section,
+    ...(it.words || []).flatMap((w) => [w.en, w.ml])].join(" ").toLowerCase().includes(term.toLowerCase());
   const meta = (it) => [fmtDate(it.date), it.section].filter(Boolean).map(esc).join(" · ");
 
-  // Views
-  let view = store.get("view") === "detail" ? "detail" : "list";
-
-  function emptyState() {
-    if (!notes.length) {
-      return `<div class="empty">
-        <h2>No notes yet</h2>
-        <p class="ml">കുറിപ്പുകൾ ഇതുവരെ ചേർത്തിട്ടില്ല.</p>
-        <p>Add headlines to <code>notes.js</code> and they will show up here.</p>
-      </div>`;
+  function renderHeadlines() {
+    document.querySelectorAll(".seg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
+    const items = headlines.filter(matches);
+    $("#hcount").textContent = `${items.length} of ${headlines.length} headlines`;
+    const out = $("#headlines");
+    if (!items.length) {
+      out.innerHTML = headlines.length
+        ? `<div class="empty"><h2>Nothing matches “${esc(term)}”</h2></div>`
+        : `<div class="empty"><h2>No headlines yet</h2><p>Add them to <code>notes.js</code>.</p></div>`;
+      return;
     }
-    return `<div class="empty"><h2>Nothing matches “${esc(term)}”</h2><p>Try another word.</p></div>`;
+    if (view === "list") {
+      out.innerHTML = `<ul class="list">${items.map((it) => `
+        <li><div class="t">${mark(it.title, term)}</div>${mlSpan(it.ml, term)}<span class="meta">${meta(it)}</span></li>`).join("")}</ul>`;
+      return;
+    }
+    out.innerHTML = `<div class="acc">${items.map((it) => {
+      const rs = rulesFor.get(it.title) || [];
+      return `
+      <details class="hd"${term ? " open" : ""}>
+        <summary><span class="sum-main"><span class="d">${mark(it.title, term)}</span>${mlSpan(it.ml, term)}<span class="meta">${meta(it)}</span></span>${chev}</summary>
+        <div class="hd-body"><div>
+          ${it.note ? `<p>${mark(it.note, term)}</p>` : ""}
+          ${it.noteMl ? `<p class="ml noteml">${mark(it.noteMl, term)}</p>` : ""}
+          ${it.words && it.words.length ? `<div class="lbl">Key phrases</div><ul class="words">${it.words.map((w) =>
+            `<li>${mark(w.en, term)}<span class="ml">${mark(w.ml, term)}</span></li>`).join("")}</ul>` : ""}
+          ${rs.length ? `<div class="lbl">Headline rules used</div><div class="rules-used">${rs.map((i) =>
+            `<button type="button" data-rule="${i + 1}">Rule ${i + 1}: ${esc(GUIDE[i].title)}</button>`).join("")}</div>` : ""}
+          ${it.url ? `<p><a href="${esc(it.url)}" target="_blank" rel="noopener">Read on The Hindu</a></p>` : ""}
+        </div></div>
+      </details>`; }).join("")}</div>`;
   }
 
-  function renderList(items) {
-    return `<ul class="list">${items.map((it) => `
-      <li>
-        <div class="t">${title(it)}</div>
-        ${it.ml ? `<div class="ml">${hl(it.ml)}</div>` : ""}
-        <div class="meta">${meta(it)}</div>
-      </li>`).join("")}</ul>`;
-  }
-
-  function renderDetail(items) {
-    const open = !!term;
-    return `<div class="acc">${items.map((it) => `
-      <details class="day"${open ? " open" : ""}>
-        <summary>
-          <span class="sum-main">
-            <span class="d">${hl(it.title)}</span>
-            ${it.ml ? `<span class="ml sm">${hl(it.ml)}</span>` : ""}
-            <span class="c">${meta(it)}</span>
-          </span>
-          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-        </summary>
-        <div class="items">
-          <article class="item">
-            ${it.note ? `<p class="note">${hl(it.note)}</p>` : ""}
-            ${it.noteMl ? `<p class="ml noteml">${hl(it.noteMl)}</p>` : ""}
-            ${it.words && it.words.length ? `<ul class="words">${it.words.map((w) =>
-              `<li>${hl(w.en)}<span class="ml">${hl(w.ml)}</span></li>`).join("")}</ul>` : ""}
-            ${it.url ? `<p><a href="${esc(it.url)}" target="_blank" rel="noopener">Read on The Hindu</a></p>` : ""}
-          </article>
-        </div>
-      </details>`).join("")}</div>`;
-  }
-
-  function render() {
-    const days = filtered();  // matching headlines
-    document.querySelectorAll(".seg button").forEach((b) =>
-      b.setAttribute("aria-pressed", String(b.dataset.view === view)));
-    toggleAll.hidden = view !== "detail" || !days.length;
-    if (!days.length) { main.innerHTML = emptyState(); return; }
-    main.innerHTML = view === "list" ? renderList(days) : renderDetail(days);
-    syncToggle();
-  }
-
-  function syncToggle() {
-    const all = [...main.querySelectorAll("details.day")];
-    toggleAll.textContent = all.length && all.every((d) => d.open) ? "Collapse all" : "Expand all";
-  }
-
-  document.querySelectorAll(".seg button").forEach((b) => b.addEventListener("click", () => {
-    view = b.dataset.view; store.set("view", view); render();
-  }));
-  toggleAll.addEventListener("click", () => {
-    const all = [...main.querySelectorAll("details.day")];
-    const openAll = !all.every((d) => d.open);
-    all.forEach((d) => (d.open = openAll));
-    syncToggle();
+  $("#headlines").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-rule]");
+    if (!b) return;
+    showTab("learn");
+    const d = document.getElementById("rule-" + b.dataset.rule);
+    d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" });
   });
-  main.addEventListener("toggle", syncToggle, true);
-  let t;
-  q.addEventListener("input", () => { clearTimeout(t); t = setTimeout(() => { term = q.value.trim(); render(); }, 120); });
+  document.querySelectorAll(".seg button").forEach((b) => b.addEventListener("click", () => {
+    view = b.dataset.view; store.set("view", view); renderHeadlines();
+  }));
+  let t1, t2;
+  $("#q").addEventListener("input", (e) => { clearTimeout(t1); t1 = setTimeout(() => { term = e.target.value.trim(); renderHeadlines(); }, 120); });
+  $("#pq").addEventListener("input", (e) => { clearTimeout(t2); t2 = setTimeout(() => { pterm = e.target.value.trim(); renderPhrases(); }, 120); });
 
-  render();
+  renderLearn(); renderPhrases(); renderHeadlines(); showTab(tab);
+
+  // Guide examples should be real headlines from notes.js.
+  GUIDE.forEach((r) => (r.examples || []).forEach((ex) => {
+    if (!byTitle.has(ex.h)) console.warn("Guide example not in notes.js:", ex.h);
+  }));
 })();
 </script>
 </body>

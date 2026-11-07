@@ -1,15 +1,12 @@
-# 100 Days of The Hindu: headline notes
+# 100 Days of The Hindu
 
-Short notes on The Hindu headlines, each with its Malayalam meaning, shown at `index.html`.
+A page for learning to read English newspapers, with Malayalam help. Live at https://amjad-ra.github.io/News-paper-reading/
 
-- **List view:** every headline with its day, date and Malayalam meaning.
-- **Detailed view:** one accordion section per day, with the note, Malayalam note and vocabulary.
-- Search across titles, meanings and notes; light/dark theme.
+- **Learn:** the rules of headline English (tense, dropped words, colons, quotes, stacked nouns, idioms, abbreviations), each shown with real headlines from The Hindu.
+- **Phrases:** every key word and phrase from the headlines, A to Z, with its Malayalam meaning and the headline it came from.
+- **Headlines:** every headline as a list or as accordions with a short note, key phrases and the rules it uses. **Practice** hides the Malayalam until you tap it.
 
-## Adding notes
+## Files
 
-Edit `notes.js` and add one object per day to `window.NOTES`. The field list is in the comment at the top of that file.
-
-## GitHub Pages
-
-Settings → Pages → Build and deployment → Deploy from a branch → pick the branch and `/ (root)`.
+- `notes.js`: headlines by newspaper date, with Malayalam meaning, notes and key words. The Phrases tab is built from this.
+- `guide.js`: the headline rules and their examples.
