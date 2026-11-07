@@ -21,7 +21,8 @@ Live page: https://amjad-ra.github.io/News-paper-reading/
 ## Feed workflow (manual)
 
 `.github/workflows/headlines.yml` saves headlines from The Hindu's public RSS
-feeds into `feed.js` (headline, section and link only; last 100 days). It runs
+feeds into `feed.js` (headline, section and link only). It keeps everything
+unless you enter a number in "Keep headlines from the last N days". It runs
 only when you press **Actions → "Save daily headlines" → Run workflow**. The
 automatic daily schedule is switched off while this repository is public; see
 the comment in the workflow file before switching it on.

@@ -8,6 +8,10 @@ name: Save daily headlines
 #     - cron: "17 1 * * *"   # 06:47 IST every day
 on:
   workflow_dispatch:
+    inputs:
+      keep_days:
+        description: "Keep headlines from the last N days (0 = keep everything)"
+        default: "0"
 
 permissions:
   contents: write
@@ -25,6 +29,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 scripts/fetch_headlines.py
+        env:
+          KEEP_DAYS: ${{ inputs.keep_days }}
       - name: Commit if changed
         run: |
           git add feed.js

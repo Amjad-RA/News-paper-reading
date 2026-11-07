@@ -3,20 +3,22 @@
 
 Reads the newspaper's public RSS feeds, which are published for feed readers.
 Only the headline, its section and the link are kept: no summaries, no
-article text. Headlines older than KEEP_DAYS are dropped.
+article text. Set KEEP_DAYS (environment variable) to drop headlines older
+than that many days; 0 or unset keeps everything.
 
 Run: python3 scripts/fetch_headlines.py   (writes feed.js in the repo root)
 """
 import datetime as dt
 import email.utils
 import json
+import os
 import pathlib
 import re
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
 
-KEEP_DAYS = 100
+KEEP_DAYS = int(os.environ.get("KEEP_DAYS") or 0)  # 0 = keep everything
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 BASE = "https://www.thehindu.com"
 FEEDS = {
@@ -85,7 +87,7 @@ def main():
             day = days.setdefault(it.pop("date"), {"items": []})
             day["items"].append(it)
             added += 1
-    cutoff = (dt.datetime.now(IST).date() - dt.timedelta(days=KEEP_DAYS)).isoformat()
+    cutoff = (dt.datetime.now(IST).date() - dt.timedelta(days=KEEP_DAYS)).isoformat() if KEEP_DAYS > 0 else ""
     feed = [{"date": k, "items": v["items"]} for k, v in sorted(days.items(), reverse=True) if k >= cutoff]
     OUT.write_text(HEADER + json.dumps(feed, ensure_ascii=False, indent=1) + ";\n", encoding="utf-8")
     print(f"added {added} headlines; {sum(len(d['items']) for d in feed)} kept over {len(feed)} days")
