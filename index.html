@@ -467,7 +467,7 @@
             `<li>${mark(w.en, term)}<span class="ml">${mark(w.ml, term)}</span></li>`).join("")}</ul>` : ""}
           ${rs.length ? `<div class="lbl">Headline rules used</div><div class="rules-used">${rs.map((i) =>
             `<button type="button" data-rule="${i + 1}">Rule ${i + 1}: ${esc(GUIDE[i].title)}</button>`).join("")}</div>` : ""}
-          ${it.url ? `<p><a href="${esc(it.url)}" target="_blank" rel="noopener">Read on The Hindu</a></p>` : ""}
+          ${it.url ? `<p><a href="${esc(it.url)}" target="_blank" rel="noopener">Read the full story</a></p>` : ""}
         </div></div>
       </details>`; }).join("")}</div>`;
   }

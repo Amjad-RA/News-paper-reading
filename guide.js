@@ -1,6 +1,6 @@
 /*
  * How to read a newspaper headline: the rules of "headline English".
- * Every example is a real headline from The Hindu collected in notes.js.
+ * Every example is a real headline collected in notes.js.
  *
  * Each rule:
  *   title    short English name of the rule
