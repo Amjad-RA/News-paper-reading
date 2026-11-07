@@ -82,15 +82,11 @@
   .ex .ml { font-size: 14px; }
 
   /* Phrases */
-  .phrases { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
-  .phrases .letter { padding: 4px 16px; background: var(--surface-2); color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: .06em; border-top: 1px solid var(--border); }
-  .phrases .letter:first-child { border-top: 0; }
-  .ph { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 2px 16px; padding: 10px 16px; border-top: 1px solid var(--border); }
-  .phrases .letter + .ph { border-top: 0; }
+  .phrases { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+  .ph { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
   .ph .en { font-weight: 600; }
-  .ph .ml { font-size: 15px; }
-  .ph .src { grid-column: 1 / -1; font-size: 12px; color: var(--muted); line-height: 1.35; }
-  @media (max-width: 520px) { .ph { grid-template-columns: 1fr; } }
+  .ph .ml { display: block; font-size: 15px; margin-top: 2px; }
+  .ph .src { display: block; font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.35; }
   .ml.hide { color: transparent !important; background: var(--surface-2); border-radius: 6px; cursor: pointer; user-select: none; }
   .ml.hide mark { background: none; color: transparent; }
 
@@ -298,13 +294,9 @@
     const t = pterm.toLowerCase();
     const list = phrases.filter((p) => !t || (p.en + " " + p.ml).toLowerCase().includes(t));
     $("#pcount").textContent = `${list.length} of ${phrases.length} phrases`;
-    let last = "";
-    $("#phrases").innerHTML = list.length ? `<ul class="phrases">${list.map((p) => {
-      const L = (p.en.replace(/^[^A-Za-z0-9]+/, "")[0] || "#").toUpperCase();
-      const head = L !== last ? `<li class="letter">${(last = L)}</li>` : "";
-      return `${head}<li class="ph"><span class="en">${mark(p.en, pterm)}</span>${mlSpan(p.ml, pterm)}
-        <span class="src">“${esc(p.src[0])}”${p.src.length > 1 ? ` +${p.src.length - 1} more` : ""}</span></li>`;
-    }).join("")}</ul>`
+    $("#phrases").innerHTML = list.length ? `<div class="phrases">${list.map((p) => `
+      <div class="ph"><span class="en">${mark(p.en, pterm)}</span>${mlSpan(p.ml, pterm)}
+        <span class="src">“${esc(p.src[0])}”${p.src.length > 1 ? ` +${p.src.length - 1} more` : ""}</span></div>`).join("")}</div>`
       : `<div class="empty"><h2>No phrase matches “${esc(pterm)}”</h2></div>`;
   }
 
