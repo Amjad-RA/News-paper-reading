@@ -85,6 +85,14 @@
   .phrases { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
   .ph { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
   .ph .en { font-weight: 600; }
+  .ph .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .ph .seen { flex: none; font-size: 12px; font-weight: 600; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 1px 8px; }
+  .ph .seen.zero { color: var(--muted); background: var(--surface-2); font-weight: 500; }
+  .ph .tip { display: block; font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .grp { margin: 18px 0 8px; font-size: 15px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+  .grp:first-child { margin-top: 4px; }
+  .grp .ml { font-size: 14px; font-weight: 500; }
+  .linkbtn { background: none; border: 0; padding: 0; color: var(--accent); font: inherit; cursor: pointer; text-decoration: underline; }
   .ph .ml { display: block; font-size: 15px; margin-top: 2px; }
   .ph .src { display: block; font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.35; }
   .ml.hide { color: transparent !important; background: var(--surface-2); border-radius: 6px; cursor: pointer; user-select: none; }
@@ -179,6 +187,7 @@
 </div>
 
 <script src="guide.js"></script>
+<script src="core.js"></script>
 <script src="notes.js"></script>
 <script>
 (function () {
@@ -215,16 +224,18 @@
     if (!rulesFor.get(ex.h).includes(i)) rulesFor.get(ex.h).push(i);
   }));
 
-  // Phrase bank: every key word from every headline, de-duplicated.
-  const phraseMap = new Map();
-  headlines.forEach((h) => (h.words || []).forEach((w) => {
-    const key = w.en.toLowerCase();
-    if (!phraseMap.has(key)) phraseMap.set(key, { en: w.en, ml: w.ml, src: [] });
-    phraseMap.get(key).src.push(h.title);
-  }));
-  const sortKey = (s) => s.replace(/^[^A-Za-z0-9]+/, "");
-  const phrases = [...phraseMap.values()].sort((a, b) =>
-    sortKey(a.en).localeCompare(sortKey(b.en), "en", { sensitivity: "base" }));
+  // Core vocabulary (core.js), counted against your headlines so the most
+  // repeated words come first in each group.
+  const reEsc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const hayFor = (h) => [h.title, ...(h.words || []).map((w) => w.en)].join(" | ");
+  const phrases = (Array.isArray(window.CORE) ? window.CORE : []).flatMap((grp, gi) =>
+    grp.items.map((it, ii) => {
+      const rx = (it.m || ["\\b" + reEsc(it.en) + "\\b"]).map((x) => new RegExp(x, /^[A-Z]/.test(it.en) ? "" : "i"));
+      const src = headlines.filter((h) => rx.some((r) => r.test(hayFor(h)))).map((h) => h.title);
+      return { ...it, gi, ii, src, titleHit: headlines.filter((h) => rx.some((r) => r.test(h.title))).map((h) => h.title) };
+    }).sort((x, y) => y.src.length - x.src.length || x.ii - y.ii));
+  // Key headlines: ones that teach a rule or use a core word. The rest are one-off stories.
+  const keyTitles = new Set([...rulesFor.keys(), ...phrases.flatMap((p) => p.titleHit)]);
 
   // Theme
   const savedTheme = store.get("theme");
@@ -270,7 +281,7 @@
         <p><b>How to use this page</b></p>
         <ol class="steps">
           <li>Read the ${GUIDE.length} rules below: headline English has its own grammar. <span class="ml">തലക്കെട്ടുകൾക്ക് സ്വന്തം വ്യാകരണമുണ്ട്.</span></li>
-          <li>Learn the ${phrases.length} words in <b>Phrases</b>. <span class="ml">ഈ വാക്കുകൾ അറിഞ്ഞാൽ പത്രം എളുപ്പം.</span></li>
+          <li>Learn the ${phrases.length} core words in <b>Phrases</b>, most repeated first. <span class="ml">ഈ വാക്കുകൾ അറിഞ്ഞാൽ പത്രം എളുപ്പം.</span></li>
           <li>In <b>Headlines</b>, turn on <b>Practice</b>, read each headline, say its meaning, then tap to check. <span class="ml">സ്വയം പരീക്ഷിക്കുക.</span></li>
         </ol>
       </div>
@@ -292,25 +303,40 @@
   let pterm = "";
   function renderPhrases() {
     const t = pterm.toLowerCase();
-    const list = phrases.filter((p) => !t || (p.en + " " + p.ml).toLowerCase().includes(t));
-    $("#pcount").textContent = `${list.length} of ${phrases.length} phrases`;
-    $("#phrases").innerHTML = list.length ? `<div class="phrases">${list.map((p) => `
-      <div class="ph"><span class="en">${mark(p.en, pterm)}</span>${mlSpan(p.ml, pterm)}
-        <span class="src">“${esc(p.src[0])}”${p.src.length > 1 ? ` +${p.src.length - 1} more` : ""}</span></div>`).join("")}</div>`
-      : `<div class="empty"><h2>No phrase matches “${esc(pterm)}”</h2></div>`;
+    const list = phrases.filter((p) => !t || [p.en, p.ml, p.tip || ""].join(" ").toLowerCase().includes(t));
+    const seen = phrases.filter((p) => p.src.length).length;
+    $("#pcount").textContent = t ? `${list.length} of ${phrases.length} core words`
+      : `${phrases.length} core words · ${seen} already in your papers · most repeated first`;
+    if (!list.length) { $("#phrases").innerHTML = `<div class="empty"><h2>No word matches “${esc(pterm)}”</h2></div>`; return; }
+    $("#phrases").innerHTML = CORE.map((grp, gi) => {
+      const ps = list.filter((p) => p.gi === gi);
+      return ps.length ? `<h3 class="grp">${esc(grp.g)} <span class="ml">${esc(grp.gm)}</span></h3><div class="phrases">${ps.map((p) => `
+        <div class="ph"><span class="top"><span class="en">${mark(p.en, pterm)}</span>
+          <span class="seen${p.src.length ? "" : " zero"}" title="Headlines in your papers that use it">${p.src.length ? "×" + p.src.length : "new"}</span></span>
+          ${mlSpan(p.ml, pterm)}${p.tip ? `<span class="tip">${mark(p.tip, pterm)}</span>` : ""}
+          ${p.src.length ? `<span class="src">“${esc(p.src[0])}”${p.src.length > 1 ? ` +${p.src.length - 1} more` : ""}</span>` : ""}</div>`).join("")}</div>` : "";
+    }).join("");
   }
 
   // Headlines
   let term = "";
   let view = store.get("view") === "detail" ? "detail" : "list";
+  let allH = store.get("allh") === "1";
+  $("#hcount").addEventListener("click", (e) => {
+    if (!e.target.closest("#togall")) return;
+    allH = !allH; store.set("allh", allH ? "1" : "0"); renderHeadlines();
+  });
   const matches = (it) => !term || [it.title, it.ml, it.note, it.noteMl, it.section,
     ...(it.words || []).flatMap((w) => [w.en, w.ml])].join(" ").toLowerCase().includes(term.toLowerCase());
   const meta = (it) => [fmtDate(it.date), it.section].filter(Boolean).map(esc).join(" · ");
 
   function renderHeadlines() {
     document.querySelectorAll(".seg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
-    const items = headlines.filter(matches);
-    $("#hcount").textContent = `${items.length} of ${headlines.length} headlines`;
+    const pool = allH || term ? headlines : headlines.filter((h) => keyTitles.has(h.title));
+    const items = pool.filter(matches);
+    $("#hcount").innerHTML = term ? `${items.length} of ${headlines.length} headlines`
+      : allH ? `All ${headlines.length} headlines · <button type="button" class="linkbtn" id="togall">Key only</button>`
+      : `${items.length} key headlines (use a rule or a core word) · <button type="button" class="linkbtn" id="togall">Show all ${headlines.length}</button>`;
     const out = $("#headlines");
     if (!items.length) {
       out.innerHTML = headlines.length

@@ -1,0 +1,162 @@
+/*
+ * Core newspaper vocabulary: the short list worth learning.
+ *
+ * Only words that keep coming back in Indian English newspapers are kept here.
+ * One-off words (names, sports slang, single-story terms) stay with their
+ * headline in notes.js and are not shown in the Phrases tab.
+ *
+ * Each group: { g: "English name", gm: "Malayalam name", items: [...] }
+ * Each item:  { en, ml, tip (optional, short usage hint), m (optional array of
+ *              regex strings used to count how often it appears in your
+ *              headlines; defaults to the word itself) }
+ *
+ * The page counts each word in the headlines in notes.js, so the most
+ * repeated words rise to the top as you add more papers.
+ */
+window.CORE = [
+  {
+    g: "Headline verbs", gm: "തലക്കെട്ടിലെ ചെറു ക്രിയകൾ",
+    items: [
+      { en: "row", ml: "വിവാദം, തർക്കം", tip: "'Sabarimala ghee row' = നെയ്യ് വിവാദം", m: ["(?<!in a )\\brows?\\b"] },
+      { en: "probe", ml: "അന്വേഷണം / അന്വേഷിക്കുക", m: ["\\bprob(e|es|ed)\\b"] },
+      { en: "curb(s)", ml: "നിയന്ത്രണം / നിയന്ത്രിക്കുക", m: ["\\bcurbs?\\b"] },
+      { en: "held", ml: "അറസ്റ്റ് ചെയ്യപ്പെട്ടു", tip: "Headline-ൽ 'held' = arrested" },
+      { en: "seeks", ml: "ആവശ്യപ്പെടുന്നു, തേടുന്നു", m: ["\\bseek(s|ing)?\\b"] },
+      { en: "moots", ml: "നിർദേശിക്കുന്നു", m: ["\\bmoot(s|ed)?\\b"] },
+      { en: "mulls", ml: "ആലോചിക്കുന്നു", m: ["\\bmulls?\\b"] },
+      { en: "eyes", ml: "ലക്ഷ്യമിടുന്നു", m: ["\\beyes\\b"] },
+      { en: "slams / flays / raps", ml: "രൂക്ഷമായി വിമർശിക്കുന്നു", m: ["\\b(slams?|flays?|raps)\\b"] },
+      { en: "urges", ml: "ആവശ്യപ്പെടുന്നു, പ്രേരിപ്പിക്കുന്നു", m: ["\\burges?\\b"] },
+      { en: "warns (of)", ml: "മുന്നറിയിപ്പ് നൽകുന്നു", m: ["\\bwarns?\\b"] },
+      { en: "defends", ml: "ന്യായീകരിക്കുന്നു", m: ["\\bdefends?\\b"] },
+      { en: "nod", ml: "അനുമതി", tip: "'gets nod' = അനുമതി കിട്ടി" },
+      { en: "hike", ml: "വർധന", m: ["\\bhikes?\\b"] },
+      { en: "axe", ml: "ഒഴിവാക്കുക, പിരിച്ചുവിടുക", m: ["\\baxe[ds]?\\b"] },
+      { en: "seize", ml: "പിടിച്ചെടുക്കുക", m: ["\\bseiz(e|es|ed)\\b"] },
+      { en: "quash", ml: "(കോടതി) റദ്ദാക്കുക", m: ["\\bquash(es|ed)?\\b"] },
+      { en: "ousted", ml: "പുറത്താക്കപ്പെട്ട", m: ["\\boust(s|ed)?\\b"] },
+      { en: "shifted", ml: "സ്ഥലം മാറ്റി", m: ["\\bshifted\\b"] },
+      { en: "reinstates", ml: "പുനഃസ്ഥാപിക്കുന്നു", m: ["\\breinstate(s|d)?\\b"] },
+      { en: "nears", ml: "...നോട് അടുക്കുന്നു", m: ["\\bnears\\b"] },
+      { en: "gears up", ml: "തയ്യാറെടുക്കുന്നു", m: ["\\bgears? up\\b"] },
+      { en: "set to", ml: "...ാൻ പോകുന്നു (ഉടൻ)", m: ["\\bset to\\b"] },
+    ],
+  },
+  {
+    g: "Linking words", gm: "ബന്ധിപ്പിക്കുന്ന വാക്കുകൾ",
+    items: [
+      { en: "amid", ml: "...നിടയിൽ", m: ["\\bamid(st)?\\b"] },
+      { en: "over", ml: "...നെച്ചൊല്ലി, ...സംബന്ധിച്ച്", tip: "'row over X' = X-നെച്ചൊല്ലി വിവാദം", m: ["\\bover\\b"] },
+      { en: "as", ml: "...പ്പോൾ / ...തിനാൽ", m: ["\\bas\\b(?! high)"] },
+      { en: "ahead of", ml: "...നു മുന്നോടിയായി" },
+      { en: "following", ml: "...നെ തുടർന്ന്" },
+      { en: "despite", ml: "...ഉണ്ടായിട്ടും" },
+      { en: "on charge of", ml: "...കുറ്റം ചുമത്തി", m: ["\\bon (the )?charges? of\\b"] },
+      { en: "as high as", ml: "...വരെ ഉയർന്ന" },
+      { en: "put at", ml: "...എന്ന് കണക്കാക്കി" },
+      { en: "in a row", ml: "തുടർച്ചയായി", m: ["\\bin a row\\b"] },
+    ],
+  },
+  {
+    g: "Courts & law", gm: "കോടതി, നിയമം",
+    items: [
+      { en: "plea", ml: "ഹർജി", m: ["\\bpleas?\\b"] },
+      { en: "petition", ml: "ഹർജി, അപേക്ഷ", m: ["\\bpetitions?\\b"] },
+      { en: "bail", ml: "ജാമ്യം", m: ["\\bbail\\b"] },
+      { en: "anticipatory bail", ml: "മുൻകൂർ ജാമ്യം" },
+      { en: "stay", ml: "സ്റ്റേ, നടപടി തൽക്കാലം നിർത്തിവെക്കൽ", m: ["\\bstays?\\b"] },
+      { en: "injunction", ml: "കോടതി വിലക്ക്" },
+      { en: "contempt (of court)", ml: "കോടതിയലക്ഷ്യം", m: ["\\bcontempt\\b"] },
+      { en: "ruling / verdict", ml: "വിധി", m: ["\\b(ruling|verdict)s?\\b"] },
+      { en: "chargesheet", ml: "കുറ്റപത്രം", m: ["\\bcharge ?sheet(s|ed)?\\b"] },
+      { en: "prosecution", ml: "ക്രിമിനൽ നടപടി, വിചാരണ", m: ["\\bprosecut(e|ion|ed)\\b"] },
+      { en: "prior sanction", ml: "മുൻകൂർ അനുമതി" },
+      { en: "show-cause notice", ml: "കാരണം കാണിക്കൽ നോട്ടീസ്", m: ["\\bshow[- ]cause\\b"] },
+      { en: "detention", ml: "തടഞ്ഞുവെക്കൽ, കസ്റ്റഡി", m: ["\\bdetent?ion\\b|\\bdetained\\b"] },
+      { en: "remand", ml: "റിമാൻഡ് (ജയിലിൽ/കസ്റ്റഡിയിൽ വെക്കൽ)", m: ["\\bremand(ed)?\\b"] },
+      { en: "acquitted / convicted", ml: "കുറ്റവിമുക്തനാക്കി / കുറ്റക്കാരനെന്ന് വിധിച്ചു", m: ["\\b(acquit(ted|s)?|convict(ed|s)?)\\b"] },
+      { en: "Bench", ml: "ബെഞ്ച് (കേസ് കേൾക്കുന്ന ജഡ്ജിമാർ)", m: ["\\bBench\\b"] },
+      { en: "apex court", ml: "സുപ്രീം കോടതി" },
+    ],
+  },
+  {
+    g: "Government & politics", gm: "ഭരണം, രാഷ്ട്രീയം",
+    items: [
+      { en: "Opposition", ml: "പ്രതിപക്ഷം", m: ["\\bOpposition\\b"] },
+      { en: "Leader of the Opposition (LoP)", ml: "പ്രതിപക്ഷ നേതാവ്", m: ["\\bLeader of (the )?Opposition\\b|\\bLoP\\b"] },
+      { en: "Cabinet", ml: "മന്ത്രിസഭ", m: ["\\bCabinet\\b"] },
+      { en: "Bill / Act", ml: "ബിൽ (നിർദിഷ്ട നിയമം) / നിയമം", m: ["\\bBill\\b|\\bAct\\b"] },
+      { en: "ordinance", ml: "ഓർഡിനൻസ് (താൽക്കാലിക നിയമം)", m: ["\\bordinances?\\b"] },
+      { en: "notified", ml: "ഔദ്യോഗികമായി വിജ്ഞാപനം ചെയ്തു", m: ["\\bnotif(ied|ies|y|ication)\\b"] },
+      { en: "draft", ml: "കരട്", m: ["\\bdraft\\b"] },
+      { en: "norms", ml: "നിബന്ധനകൾ", m: ["\\bnorms?\\b"] },
+      { en: "panel", ml: "സമിതി", m: ["\\bpanels?\\b"] },
+      { en: "poll(s) / bypoll", ml: "തിരഞ്ഞെടുപ്പ് / ഉപതിരഞ്ഞെടുപ്പ്", m: ["\\b(by)?polls?\\b"] },
+      { en: "electoral roll", ml: "വോട്ടർ പട്ടിക", m: ["\\belectoral rolls?\\b"] },
+      { en: "enumeration", ml: "കണക്കെടുപ്പ്", m: ["\\benumeration\\b"] },
+      { en: "stance", ml: "നിലപാട്", m: ["\\bstance\\b"] },
+      { en: "overhaul", ml: "അടിമുടി പരിഷ്കരണം", m: ["\\boverhaul\\b"] },
+      { en: "posting / deputation", ml: "നിയമനം / താൽക്കാലിക മാറ്റനിയമനം", m: ["\\b(posting|deputation)\\b"] },
+      { en: "office-bearers", ml: "ഭാരവാഹികൾ", m: ["\\boffice-bearers\\b"] },
+      { en: "regulatory", ml: "നിയന്ത്രണ (സംവിധാനം)", m: ["\\bregulat(ory|or|ion)\\b"] },
+    ],
+  },
+  {
+    g: "Crime, accidents & scandals", gm: "കുറ്റം, അപകടം, അഴിമതി",
+    items: [
+      { en: "booked", ml: "കേസെടുത്തു", m: ["\\bbooked\\b"] },
+      { en: "nabbed", ml: "പിടികൂടി", m: ["\\bnab(bed|s)?\\b"] },
+      { en: "toll", ml: "മരണസംഖ്യ", tip: "'toll rises to 10' = മരണം 10 ആയി", m: ["\\btoll\\b"] },
+      { en: "allegedly", ml: "ആരോപിക്കപ്പെടുന്നത് പ്രകാരം", m: ["\\balleg(e|ed|edly|ation|ations)\\b"] },
+      { en: "irregularities", ml: "ക്രമക്കേടുകൾ" },
+      { en: "misappropriation", ml: "തിരിമറി, ദുരുപയോഗം" },
+      { en: "under scanner", ml: "അന്വേഷണ വിധേയം", m: ["\\bunder (the )?scanner\\b"] },
+      { en: "mowed down", ml: "(വാഹനം) ഇടിച്ചുവീഴ്ത്തി", m: ["\\bmow(ed|s)? down\\b"] },
+      { en: "turn fatal", ml: "മാരകമാകുന്നു", m: ["\\bturns? fatal\\b"] },
+      { en: "stranded", ml: "കുടുങ്ങിപ്പോയ" },
+      { en: "traced", ml: "കണ്ടെത്തി" },
+    ],
+  },
+  {
+    g: "Economy & numbers", gm: "സാമ്പത്തികം, കണക്കുകൾ",
+    items: [
+      { en: "GDP / GSDP", ml: "ആഭ്യന്തര ഉത്പാദനം (രാജ്യം / സംസ്ഥാനം)", m: ["\\bG(S)?DP\\b"] },
+      { en: "surge / slump", ml: "കുതിച്ചുയരൽ / ഇടിവ്", m: ["\\b(surge|slump)s?\\b"] },
+      { en: "inflation", ml: "വിലക്കയറ്റം" },
+      { en: "fiscal deficit", ml: "ധനക്കമ്മി" },
+      { en: "viable", ml: "പ്രായോഗികം, ലാഭകരം", m: ["\\bviab(le|ility)\\b"] },
+      { en: "liability", ml: "ബാധ്യത", m: ["\\bliabilit(y|ies)\\b"] },
+    ],
+  },
+  {
+    g: "Idioms", gm: "ശൈലികൾ",
+    items: [
+      { en: "lock horns", ml: "ഏറ്റുമുട്ടുക", m: ["\\blocks? horns\\b"] },
+      { en: "under a cloud", ml: "സംശയത്തിന്റെ നിഴലിൽ" },
+      { en: "setback", ml: "തിരിച്ചടി", m: ["\\bsetbacks?\\b"] },
+      { en: "call it a day", ml: "നിർത്തുക, വിരമിക്കുക", m: ["\\bcalls? it a day\\b"] },
+      { en: "bid adieu", ml: "വിടപറയുക", m: ["\\bbids? adieu\\b"] },
+      { en: "free rein", ml: "തടസ്സമില്ലാത്ത സ്വാതന്ത്ര്യം" },
+      { en: "zero tolerance", ml: "ഒട്ടും അനുവദിക്കില്ല" },
+      { en: "come under fire", ml: "വിമർശനം നേരിടുക", m: ["\\bunder fire\\b"] },
+      { en: "on the cards", ml: "ഉടൻ സംഭവിക്കാൻ സാധ്യത" },
+      { en: "U-turn", ml: "നിലപാട് മാറ്റം" },
+      { en: "red tape", ml: "ചുവപ്പുനാട, ഉദ്യോഗസ്ഥ കാലതാമസം" },
+    ],
+  },
+  {
+    g: "Abbreviations", gm: "ചുരുക്കെഴുത്തുകൾ",
+    items: [
+      { en: "SC / HC", ml: "സുപ്രീം കോടതി / ഹൈക്കോടതി", m: ["\\bSC\\b|\\bHC\\b|\\bSupreme Court\\b|\\bHigh Court\\b"] },
+      { en: "CM", ml: "മുഖ്യമന്ത്രി", m: ["\\bCM\\b|\\bChief Minister\\b"] },
+      { en: "ECI / EC", ml: "തിരഞ്ഞെടുപ്പ് കമ്മീഷൻ", m: ["\\bECI?\\b|\\bElection Commission\\b"] },
+      { en: "MLA / MP", ml: "നിയമസഭാംഗം / പാർലമെന്റ് അംഗം", m: ["\\bMLAs?\\b|\\bMPs?\\b"] },
+      { en: "FIR", ml: "പ്രഥമ വിവര റിപ്പോർട്ട്", m: ["\\bFIRs?\\b"] },
+      { en: "PIL", ml: "പൊതുതാൽപര്യ ഹർജി", m: ["\\bPILs?\\b"] },
+      { en: "CB / SPC", ml: "ക്രൈംബ്രാഞ്ച് / സംസ്ഥാന പോലീസ് മേധാവി", m: ["\\bCB\\b|\\bSPC\\b|\\bCrime Branch\\b"] },
+      { en: "PSC", ml: "പബ്ലിക് സർവീസ് കമ്മീഷൻ", m: ["\\bPSC\\b"] },
+      { en: "govt. / dept.", ml: "സർക്കാർ / വകുപ്പ്", m: ["\\bgovt\\b|\\bdept\\b|\\bgovernment\\b"] },
+      { en: "AQI", ml: "വായു ഗുണനിലവാര സൂചിക", m: ["\\bAQI\\b"] },
+    ],
+  },
+];
