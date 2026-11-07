@@ -103,10 +103,9 @@
 
   /* List view */
   .list { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
-  .list li { display: grid; grid-template-columns: 64px 1fr; gap: 4px 12px; padding: 12px 16px; border-top: 1px solid var(--border); }
+  .list li { padding: 12px 16px; border-top: 1px solid var(--border); }
+  .meta { font-size: 13px; color: var(--muted); margin-top: 2px; }
   .list li:first-child { border-top: 0; }
-  .list .dayno { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 2px; }
-  .list .dayno b { display: block; color: var(--accent); font-size: 15px; }
   .list .t { font-weight: 600; }
   .list .t a { color: inherit; text-decoration: none; }
   .list .t a:hover { text-decoration: underline; }
@@ -123,12 +122,13 @@
   details.day > summary::-webkit-details-marker { display: none; }
   .badge { flex: none; width: 44px; height: 44px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-weight: 600; font-variant-numeric: tabular-nums; }
   .sum-main { flex: 1; min-width: 0; }
-  .sum-main .d { font-weight: 600; }
-  .sum-main .c { font-size: 14px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sum-main .d { display: block; font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 17px; line-height: 1.3; }
+  .sum-main .sm { display: block; font-size: 15px; margin-top: 2px; }
+  .sum-main .c { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
   .chev { flex: none; color: var(--muted); transition: transform .2s; }
   details[open] .chev { transform: rotate(180deg); }
   .items { padding: 0 16px 8px; }
-  .item { border-top: 1px solid var(--border); padding: 14px 0; }
+  .item { border-top: 1px solid var(--border); padding: 12px 0 8px; }
   .item h3 { font-family: "Source Serif 4", Georgia, serif; font-size: 18px; line-height: 1.3; margin: 0 0 4px; }
   .item h3 a { color: inherit; text-decoration: none; }
   .item h3 a:hover { text-decoration: underline; }
@@ -157,8 +157,6 @@
 
   @media (max-width: 520px) {
     .list li { grid-template-columns: 1fr; }
-    .list .dayno { display: flex; gap: 8px; align-items: baseline; }
-    .list .dayno b { display: inline; }
     .toolbar .search { flex-basis: 100%; }
     .toolbar .seg { flex: 1; }
     .toolbar .seg button { flex: 1; }
@@ -172,7 +170,6 @@
     <h1>100 Days of The Hindu</h1>
     <p class="sub">Short notes on the day's headlines, each with its Malayalam meaning. <span class="ml">തലക്കെട്ടുകളും മലയാളം അർത്ഥവും.</span></p>
     <div class="stats" id="stats"></div>
-    <div class="progress" aria-hidden="true"><span id="bar"></span></div>
   </header>
 
   <div class="toolbar">
@@ -198,12 +195,11 @@
 <script src="notes.js"></script>
 <script>
 (function () {
-  const TOTAL_DAYS = 100;
-  // Days are numbered by date order: the earliest paper is Day 1.
+  // One flat list of headlines, newest paper first.
   const notes = (Array.isArray(window.NOTES) ? window.NOTES : [])
     .slice()
-    .sort((a, b) => String(a.date).localeCompare(String(b.date)))
-    .map((d, i) => ({ ...d, day: i + 1 }));
+    .sort((a, b) => String(b.date).localeCompare(String(a.date)))
+    .flatMap((d) => (d.items || []).map((it) => ({ ...it, date: d.date })));
 
   const $ = (s) => document.querySelector(s);
   const main = $("#main");
@@ -227,11 +223,7 @@
   });
 
   // Stats
-  const totalItems = notes.reduce((n, d) => n + (d.items ? d.items.length : 0), 0);
-  $("#stats").innerHTML =
-    `<span class="stat"><b>${notes.length}</b> / ${TOTAL_DAYS} days</span>` +
-    `<span class="stat"><b>${totalItems}</b> headlines</span>`;
-  $("#bar").style.width = Math.min(100, notes.length / TOTAL_DAYS * 100) + "%";
+  $("#stats").innerHTML = `<span class="stat"><b>${notes.length}</b> headlines</span>`;
 
   // Helpers
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
@@ -257,9 +249,8 @@
       ...(it.words || []).flatMap((w) => [w.en, w.ml])].join(" ").toLowerCase();
     return hay.includes(term.toLowerCase());
   };
-  const filtered = () => notes
-    .map((d) => ({ ...d, items: (d.items || []).filter(matches) }))
-    .filter((d) => d.items.length);
+  const filtered = () => notes.filter(matches);
+  const meta = (it) => [fmtDate(it.date), it.section].filter(Boolean).map(esc).join(" · ");
 
   // Views
   let view = store.get("view") === "detail" ? "detail" : "list";
@@ -269,52 +260,47 @@
       return `<div class="empty">
         <h2>No notes yet</h2>
         <p class="ml">കുറിപ്പുകൾ ഇതുവരെ ചേർത്തിട്ടില്ല.</p>
-        <p>Add days to <code>notes.js</code> and they will show up here.</p>
+        <p>Add headlines to <code>notes.js</code> and they will show up here.</p>
       </div>`;
     }
     return `<div class="empty"><h2>Nothing matches “${esc(term)}”</h2><p>Try another word.</p></div>`;
   }
 
-  function renderList(days) {
-    const rows = days.flatMap((d) => d.items.map((it) => `
+  function renderList(items) {
+    return `<ul class="list">${items.map((it) => `
       <li>
-        <div class="dayno"><b>Day ${d.day}</b>${esc(fmtDate(d.date))}</div>
-        <div>
-          <div class="t">${title(it)}${it.section ? `<span class="tag">${esc(it.section)}</span>` : ""}</div>
-          ${it.ml ? `<div class="ml">${hl(it.ml)}</div>` : ""}
-        </div>
-      </li>`)).join("");
-    return `<ul class="list">${rows}</ul>`;
+        <div class="t">${title(it)}</div>
+        ${it.ml ? `<div class="ml">${hl(it.ml)}</div>` : ""}
+        <div class="meta">${meta(it)}</div>
+      </li>`).join("")}</ul>`;
   }
 
-  function renderDetail(days) {
+  function renderDetail(items) {
     const open = !!term;
-    return `<div class="acc">${days.map((d) => `
+    return `<div class="acc">${items.map((it) => `
       <details class="day"${open ? " open" : ""}>
         <summary>
-          <span class="badge">${d.day}</span>
           <span class="sum-main">
-            <span class="d">Day ${d.day}${d.date ? " · " + esc(fmtDate(d.date)) : ""}</span>
-            ${d.edition ? `<span class="c">${esc(d.edition)}</span>` : ""}
-            <span class="c">${d.items.length} headline${d.items.length === 1 ? "" : "s"} · ${esc(d.items[0].title)}</span>
+            <span class="d">${hl(it.title)}</span>
+            ${it.ml ? `<span class="ml sm">${hl(it.ml)}</span>` : ""}
+            <span class="c">${meta(it)}</span>
           </span>
           <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
         </summary>
-        <div class="items">${d.items.map((it) => `
+        <div class="items">
           <article class="item">
-            <h3>${title(it)}${it.section ? `<span class="tag">${esc(it.section)}</span>` : ""}</h3>
-            ${it.ml ? `<p class="ml mean">${hl(it.ml)}</p>` : ""}
             ${it.note ? `<p class="note">${hl(it.note)}</p>` : ""}
             ${it.noteMl ? `<p class="ml noteml">${hl(it.noteMl)}</p>` : ""}
             ${it.words && it.words.length ? `<ul class="words">${it.words.map((w) =>
               `<li>${hl(w.en)}<span class="ml">${hl(w.ml)}</span></li>`).join("")}</ul>` : ""}
-          </article>`).join("")}
+            ${it.url ? `<p><a href="${esc(it.url)}" target="_blank" rel="noopener">Read on The Hindu</a></p>` : ""}
+          </article>
         </div>
       </details>`).join("")}</div>`;
   }
 
   function render() {
-    const days = filtered();
+    const days = filtered();  // matching headlines
     document.querySelectorAll(".seg button").forEach((b) =>
       b.setAttribute("aria-pressed", String(b.dataset.view === view)));
     toggleAll.hidden = view !== "detail" || !days.length;

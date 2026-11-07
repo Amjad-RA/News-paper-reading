@@ -1,8 +1,8 @@
 /*
  * 100 Days of The Hindu: headline notes data.
  *
- * Add one object per day to NOTES, in any order. The page sorts them by
- * date and numbers them: the earliest paper is Day 1.
+ * Add one object per newspaper date to NOTES, in any order. The page shows
+ * every headline in one list, newest date first.
  * Each day:
  *   date     string   "YYYY-MM-DD" (the paper's date)
  *   edition  string   optional, e.g. "Kozhikode city edition · Front page"
