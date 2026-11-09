@@ -708,5 +708,437 @@ window.NOTES = [
         ]
       }
     ]
+  },
+  {
+    date: "2026-11-09",
+    edition: "Online · top news (8–9 Nov)",
+    items: [
+      {
+        "title": "Special Sub-Inspector of Police beaten to death in Theni",
+        "ml": "തേനിയിൽ സ്പെഷ്യൽ സബ് ഇൻസ്പെക്ടറെ അടിച്ചുകൊന്നു",
+        "section": "Tamil Nadu",
+        "note": "An SSI was killed after he stopped a group filming reels with crackers on the road.",
+        "noteMl": "റോഡിൽ പടക്കം പൊട്ടിച്ച് റീൽസ് എടുത്തവരെ ചോദ്യം ചെയ്ത പോലീസുകാരനെ കൊലപ്പെടുത്തി.",
+        "words": [
+          {
+            "en": "beaten to death",
+            "ml": "അടിച്ചുകൊന്നു"
+          },
+          {
+            "en": "Sub-Inspector (SI)",
+            "ml": "സബ് ഇൻസ്പെക്ടർ"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/cities/Madurai/special-sub-inspector-of-police-beaten-to-death-in-theni/article71681282.ece"
+      },
+      {
+        "title": "Delhi's air quality slips into 'severe' category morning after Deepavali, AQI at 404",
+        "ml": "ദീപാവലി പിറ്റേന്ന് ഡൽഹിയിലെ വായു 'അതിഗുരുതര' നിലയിലേക്ക്; AQI 404",
+        "section": "Delhi",
+        "note": "Firecrackers on Deepavali night pushed Delhi's air into the worst AQI band.",
+        "noteMl": "ദീപാവലി പടക്കം കാരണം ഡൽഹിയിലെ വായു ഏറ്റവും മോശം നിലയിൽ.",
+        "words": [
+          {
+            "en": "slips into",
+            "ml": "...ലേക്ക് താഴുന്നു"
+          },
+          {
+            "en": "AQI (Air Quality Index)",
+            "ml": "വായു ഗുണനിലവാര സൂചിക"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/cities/Delhi/delhis-air-quality-slips-into-severe-category-morning-after-deepavali-aqi-at-404/article71681305.ece"
+      },
+      {
+        "title": "Oil falls as Donald Trump says new Iran attacks ‘unlikely’",
+        "ml": "പുതിയ ഇറാൻ ആക്രമണങ്ങൾക്ക് സാധ്യതയില്ലെന്ന് ട്രംപ്; എണ്ണവില ഇടിഞ്ഞു",
+        "section": "Business",
+        "note": "Crude oil prices dropped because Trump said more strikes on Iran were not likely.",
+        "noteMl": "ട്രംപിന്റെ പ്രസ്താവനയെ തുടർന്ന് എണ്ണവില കുറഞ്ഞു.",
+        "words": [
+          {
+            "en": "falls",
+            "ml": "(വില) ഇടിയുന്നു"
+          },
+          {
+            "en": "unlikely",
+            "ml": "സാധ്യതയില്ലാത്ത"
+          }
+        ],
+        "url": "https://www.thehindu.com/business/Economy/oil-falls-as-donald-trump-says-new-iran-attacks-unlikely/article71681302.ece"
+      },
+      {
+        "title": "Police raid home of ex-President of Paraguay",
+        "ml": "പരാഗ്വേ മുൻ പ്രസിഡന്റിന്റെ വീട്ടിൽ പോലീസ് റെയ്ഡ്",
+        "section": "World",
+        "note": "The former President is accused of moving government deposits to a troubled bank.",
+        "noteMl": "സർക്കാർ നിക്ഷേപം ഒരു ബാങ്കിലേക്ക് മാറ്റിയെന്നാണ് ആരോപണം.",
+        "words": [
+          {
+            "en": "raid",
+            "ml": "റെയ്ഡ്, മിന്നൽ പരിശോധന"
+          },
+          {
+            "en": "ex-",
+            "ml": "മുൻ (ex-President = മുൻ പ്രസിഡന്റ്)"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/international/police-raid-home-of-ex-president-of-paraguay/article71681272.ece"
+      },
+      {
+        "title": "G7 Ministers meet on efforts to end Ukraine conflict, halt new Iran war",
+        "ml": "യുക്രെയ്ൻ സംഘർഷം അവസാനിപ്പിക്കാനും ഇറാൻ യുദ്ധം തടയാനും ജി7 മന്ത്രിമാരുടെ യോഗം",
+        "section": "World",
+        "note": "Foreign Ministers of the seven big industrial nations are meeting on two wars.",
+        "noteMl": "ഏഴ് വ്യാവസായിക രാജ്യങ്ങളുടെ മന്ത്രിമാർ രണ്ട് യുദ്ധങ്ങളെക്കുറിച്ച് ചർച്ച ചെയ്യുന്നു.",
+        "words": [
+          {
+            "en": "halt",
+            "ml": "നിർത്തുക, തടയുക"
+          },
+          {
+            "en": "efforts to",
+            "ml": "...ക്കാനുള്ള ശ്രമങ്ങൾ"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/international/g7-ministers-meeting-in-paris-russia-ukraine-conflict-us-israel-strikes-on-iran/article71681281.ece"
+      },
+      {
+        "title": "19 Indian seafarers stranded in Yemen evacuated, Embassy says",
+        "ml": "യെമനിൽ കുടുങ്ങിയ 19 ഇന്ത്യൻ നാവികരെ ഒഴിപ്പിച്ചെന്ന് എംബസി",
+        "section": "India",
+        "note": "The Indian Embassy says 19 sailors stuck in Yemen have been brought out safely.",
+        "noteMl": "യെമനിൽ കുടുങ്ങിയ നാവികർ സുരക്ഷിതർ.",
+        "words": [
+          {
+            "en": "stranded",
+            "ml": "കുടുങ്ങിപ്പോയ"
+          },
+          {
+            "en": "evacuated",
+            "ml": "ഒഴിപ്പിച്ചു"
+          },
+          {
+            "en": "seafarers",
+            "ml": "നാവികർ, കപ്പൽ ജീവനക്കാർ"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/national/indian-seafarers-stranded-in-yemen-evacuated/article71681203.ece"
+      },
+      {
+        "title": "Pope Leo takes Milei to task as he visits divided Argentina",
+        "ml": "ഭിന്നിച്ചുനിൽക്കുന്ന അർജന്റീന സന്ദർശിക്കവേ മിലെയെ മാർപാപ്പ വിമർശിച്ചു",
+        "section": "World",
+        "note": "The Pope spoke up for the poor and disabled, an indirect criticism of the President's spending cuts.",
+        "noteMl": "ദരിദ്രർക്കും ഭിന്നശേഷിക്കാർക്കും വേണ്ടി മാർപാപ്പ സംസാരിച്ചു; സർക്കാരിന്റെ വെട്ടിക്കുറവിനെതിരെ പരോക്ഷ വിമർശനം.",
+        "words": [
+          {
+            "en": "take to task",
+            "ml": "ശാസിക്കുക, വിമർശിക്കുക"
+          },
+          {
+            "en": "divided",
+            "ml": "ഭിന്നിച്ച"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/international/pope-leo-takes-milei-to-task-as-he-visits-divided-argentina/article71681249.ece"
+      },
+      {
+        "title": "Karnataka tests petrol samples at 67 locations over ethanol blending complaints: CM Shivakumar",
+        "ml": "എഥനോൾ കലർത്തൽ പരാതിയെ തുടർന്ന് 67 ഇടങ്ങളിൽ പെട്രോൾ സാമ്പിൾ പരിശോധിച്ചു: മുഖ്യമന്ത്രി ശിവകുമാർ",
+        "section": "Karnataka",
+        "note": "After complaints about ethanol in petrol, the State checked samples at pumps and depots.",
+        "noteMl": "പെട്രോളിൽ എഥനോൾ കൂടുതലാണെന്ന പരാതി പരിശോധിക്കുന്നു.",
+        "words": [
+          {
+            "en": "over",
+            "ml": "...നെച്ചൊല്ലി, ...സംബന്ധിച്ച്"
+          },
+          {
+            "en": "blending",
+            "ml": "കലർത്തൽ"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/national/karnataka/karnataka-tests-petrol-samples-at-67-locations-over-ethanol-blending-complaints-cm-shivakumar/article71681265.ece"
+      },
+      {
+        "title": "Air pollution over 50 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali",
+        "ml": "പടക്ക നിരോധനം ലംഘിച്ചതോടെ ഡൽഹിയിൽ വായുമലിനീകരണം ലോകാരോഗ്യ സംഘടനയുടെ പരിധിയുടെ 50 മടങ്ങ്",
+        "section": "Delhi",
+        "note": "People burst crackers despite the ban, and pollution went far beyond safe limits.",
+        "noteMl": "നിരോധനം ലംഘിച്ച് പടക്കം പൊട്ടിച്ചു; മലിനീകരണം അതിരുകടന്നു.",
+        "words": [
+          {
+            "en": "defy",
+            "ml": "ലംഘിക്കുക, അനുസരിക്കാതിരിക്കുക"
+          },
+          {
+            "en": "ban",
+            "ml": "നിരോധനം"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/cities/Delhi/air-pollution-over-50-times-who-limit-in-parts-of-delhi-as-people-defy-ban-on-firecrackers-on-deepavali/article71681210.ece"
+      },
+      {
+        "title": "Egypt train collision kills 7, injures 125: Health Ministry",
+        "ml": "ഈജിപ്തിൽ ട്രെയിനുകൾ കൂട്ടിയിടിച്ച് 7 മരണം, 125 പേർക്ക് പരിക്ക്: ആരോഗ്യ മന്ത്രാലയം",
+        "section": "World",
+        "note": "One train ran into the back of another near Cairo.",
+        "noteMl": "കെയ്റോയ്ക്കടുത്ത് ഒരു ട്രെയിൻ മറ്റൊന്നിന്റെ പിന്നിൽ ഇടിച്ചു.",
+        "words": [
+          {
+            "en": "collision",
+            "ml": "കൂട്ടിയിടി"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/international/egypt-train-collision-giza-to-fayoum-crash-updates-november-8-2026/article71681077.ece"
+      },
+      {
+        "title": "Fire engulfs Jammu’s Nehru Market, guts around 12 shops",
+        "ml": "ജമ്മുവിലെ നെഹ്റു മാർക്കറ്റിൽ തീപിടിത്തം; 12 കടകൾ കത്തിനശിച്ചു",
+        "section": "Jammu and Kashmir",
+        "note": "A fire spread through a market in Jammu and destroyed about 12 shops.",
+        "noteMl": "മാർക്കറ്റിലെ തീപിടിത്തത്തിൽ കടകൾ നശിച്ചു.",
+        "words": [
+          {
+            "en": "engulfs",
+            "ml": "(തീ) വിഴുങ്ങുന്നു, പടർന്നുപിടിക്കുന്നു"
+          },
+          {
+            "en": "guts",
+            "ml": "പൂർണമായി കത്തിനശിപ്പിക്കുന്നു"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/fire-engulfs-jammus-nehru-market-guts-around-12-shops/article71681226.ece"
+      },
+      {
+        "title": "Chennai Open tennis: Singles final postponed due to rain, unhealthy air quality",
+        "ml": "ചെന്നൈ ഓപ്പൺ ടെന്നിസ്: മഴയും മോശം വായുവും കാരണം സിംഗിൾസ് ഫൈനൽ മാറ്റിവെച്ചു",
+        "section": "Sport",
+        "note": "Rain and bad air forced organisers to move the final to the next morning.",
+        "noteMl": "ഫൈനൽ അടുത്ത ദിവസം രാവിലേക്ക് മാറ്റി.",
+        "words": [
+          {
+            "en": "postponed",
+            "ml": "മാറ്റിവെച്ചു"
+          },
+          {
+            "en": "due to",
+            "ml": "...കാരണം"
+          }
+        ],
+        "url": "https://www.thehindu.com/sport/tennis/chennai-open-tennis-singles-final-postponed-due-to-rain-and-air-quality/article71681215.ece"
+      },
+      {
+        "title": "Democrats eye Musk, Miller probes after midterm rout",
+        "ml": "ഇടക്കാല തിരഞ്ഞെടുപ്പിലെ വൻ വിജയത്തിന് ശേഷം മസ്കിനെതിരെയും മില്ലറിനെതിരെയും അന്വേഷണത്തിന് ഡെമോക്രാറ്റുകൾ",
+        "section": "World",
+        "note": "After winning Congress, Democrats plan to investigate Elon Musk and Stephen Miller.",
+        "noteMl": "കോൺഗ്രസ് നേടിയ ഡെമോക്രാറ്റുകൾ അന്വേഷണങ്ങൾ ആസൂത്രണം ചെയ്യുന്നു.",
+        "words": [
+          {
+            "en": "eye",
+            "ml": "ലക്ഷ്യമിടുന്നു"
+          },
+          {
+            "en": "probes",
+            "ml": "അന്വേഷണങ്ങൾ"
+          },
+          {
+            "en": "rout",
+            "ml": "വൻ പരാജയം (എതിരാളിയുടെ), തൂത്തുവാരൽ"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/international/democrats-eye-musk-miller-probes-after-midterm-rout/article71681171.ece"
+      },
+      {
+        "title": "Thick smog blankets Delhi on Deepavali night, AQI at 20 stations ‘severe’",
+        "ml": "ദീപാവലി രാത്രി ഡൽഹിയെ കനത്ത പുകമഞ്ഞ് മൂടി; 20 സ്റ്റേഷനുകളിൽ AQI 'അതിഗുരുതരം'",
+        "section": "Delhi",
+        "note": "Smog covered the city; 20 monitoring stations showed the worst air category.",
+        "noteMl": "നഗരം പുകമഞ്ഞിൽ മൂടി.",
+        "words": [
+          {
+            "en": "smog",
+            "ml": "പുകമഞ്ഞ്"
+          },
+          {
+            "en": "blankets",
+            "ml": "(പുതപ്പ് പോലെ) മൂടുന്നു"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/cities/Delhi/delhi-air-quality-deepavali-cracker-ban-ver-poor/article71681158.ece"
+      },
+      {
+        "title": "Habitual offender arrested for murdering 65-year-old woman in Bengaluru",
+        "ml": "ബെംഗളൂരുവിൽ 65 വയസ്സുകാരിയെ കൊലപ്പെടുത്തിയ സ്ഥിരം കുറ്റവാളി അറസ്റ്റിൽ",
+        "section": "Karnataka",
+        "note": "A man with a criminal record was arrested for a woman's murder.",
+        "noteMl": "സ്ഥിരം കുറ്റവാളി അറസ്റ്റിൽ.",
+        "words": [
+          {
+            "en": "habitual offender",
+            "ml": "സ്ഥിരം കുറ്റവാളി"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/national/karnataka/habitual-offender-arrested-for-murdering-65-year-old-woman-in-bengaluru/article71678977.ece"
+      },
+      {
+        "title": "Eisenkot warns of Israel crisis as he seeks to replace Netanyahu’s government",
+        "ml": "നെതന്യാഹു സർക്കാരിനെ മാറ്റാൻ ശ്രമിക്കവേ ഇസ്രായേൽ പ്രതിസന്ധിയെക്കുറിച്ച് ഐസൻകോട്ടിന്റെ മുന്നറിയിപ്പ്",
+        "section": "World",
+        "note": "Gadi Eisenkot has been asked to try to form a new government in Israel.",
+        "noteMl": "പുതിയ സർക്കാർ രൂപീകരിക്കാൻ ഐസൻകോട്ടിന് അവസരം.",
+        "words": [
+          {
+            "en": "warns of",
+            "ml": "...നെക്കുറിച്ച് മുന്നറിയിപ്പ് നൽകുന്നു"
+          },
+          {
+            "en": "seeks to",
+            "ml": "...ാൻ ശ്രമിക്കുന്നു"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/international/eisenkot-warns-of-israel-crisis-as-he-seeks-to-replace-netanyahus-government/article71681159.ece"
+      },
+      {
+        "title": "Trump vows comeback as bitter showdown with Congress looms",
+        "ml": "കോൺഗ്രസുമായി കടുത്ത ഏറ്റുമുട്ടൽ ആസന്നമായിരിക്കെ തിരിച്ചുവരുമെന്ന് ട്രംപിന്റെ പ്രതിജ്ഞ",
+        "section": "World",
+        "note": "After the midterm defeat, Trump promises to bounce back; a fight with the new Congress is coming.",
+        "noteMl": "തോൽവിക്ക് ശേഷം തിരിച്ചുവരുമെന്ന് ട്രംപ്.",
+        "words": [
+          {
+            "en": "vows",
+            "ml": "പ്രതിജ്ഞ ചെയ്യുന്നു"
+          },
+          {
+            "en": "showdown",
+            "ml": "നേർക്കുനേർ ഏറ്റുമുട്ടൽ"
+          },
+          {
+            "en": "looms",
+            "ml": "ആസന്നമാകുന്നു (ഭീഷണിയായി)"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/international/trump-vows-comeback-as-bitter-showdown-with-congress-looms/article71681120.ece"
+      },
+      {
+        "title": "P.T. Usha complains to IOA electoral officer over WhatsApp campaign for SOM polls",
+        "ml": "SOM തിരഞ്ഞെടുപ്പിലെ വാട്സ്ആപ്പ് പ്രചാരണത്തെച്ചൊല്ലി പി.ടി. ഉഷ IOA തിരഞ്ഞെടുപ്പ് ഉദ്യോഗസ്ഥന് പരാതി നൽകി",
+        "section": "Sport",
+        "note": "The IOA president says a WhatsApp vote appeal broke the election code of conduct.",
+        "noteMl": "പെരുമാറ്റച്ചട്ട ലംഘനമെന്ന് പരാതി.",
+        "words": [
+          {
+            "en": "polls",
+            "ml": "തിരഞ്ഞെടുപ്പ്"
+          },
+          {
+            "en": "IOA",
+            "ml": "ഇന്ത്യൻ ഒളിമ്പിക് അസോസിയേഷൻ"
+          }
+        ],
+        "url": "https://www.thehindu.com/sport/pt-usha-complains-to-ioa-electoral-officer-over-whatsapp-campaign-for-som-polls/article71681125.ece"
+      },
+      {
+        "title": "Rajajinagar murders: Two more bodies recovered near Chamundi hills in Mysuru",
+        "ml": "രാജാജിനഗർ കൊലപാതകങ്ങൾ: ചാമുണ്ഡി കുന്നിന് സമീപം രണ്ട് മൃതദേഹങ്ങൾ കൂടി കണ്ടെടുത്തു",
+        "section": "Bengaluru",
+        "note": "Five bodies have now been found in the case; police are searching for two more.",
+        "noteMl": "അഞ്ച് മൃതദേഹങ്ങൾ കണ്ടെത്തി; തിരച്ചിൽ തുടരുന്നു.",
+        "words": [
+          {
+            "en": "recovered",
+            "ml": "കണ്ടെടുത്തു"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/cities/bangalore/rajajinagar-murders-two-more-bodies-recovered-near-chamundi-hills-in-mysuru/article71680991.ece"
+      },
+      {
+        "title": "Jean Drèze urges T.N. govt. to take strict action amid report of ‘fake book’ at Kalaignar Centenary Library",
+        "ml": "കലൈഞ്ജർ ലൈബ്രറിയിലെ 'വ്യാജ പുസ്തകം' റിപ്പോർട്ടിനിടെ കർശന നടപടിക്ക് തമിഴ്നാട് സർക്കാരിനോട് ജീൻ ഡ്രെസ്",
+        "section": "Tamil Nadu",
+        "note": "The economist asks the State to act on a report of a possibly AI-made fake book in a public library.",
+        "noteMl": "AI ഉപയോഗിച്ച് ഉണ്ടാക്കിയതെന്ന് സംശയിക്കുന്ന പുസ്തകത്തിനെതിരെ നടപടി വേണമെന്ന്.",
+        "words": [
+          {
+            "en": "urges",
+            "ml": "ആവശ്യപ്പെടുന്നു"
+          },
+          {
+            "en": "amid",
+            "ml": "...നിടയിൽ"
+          },
+          {
+            "en": "T.N.",
+            "ml": "തമിഴ്നാട്"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/national/tamil-nadu/jean-dreze-fake-book-publisher-tn-madurai-kalaignar-centenary-library/article71681030.ece"
+      },
+      {
+        "title": "Minister Agnimitra Paul says rose water to be used for mist spraying in Kolkata; environmentalist slams move",
+        "ml": "കൊൽക്കത്തയിൽ പനിനീർ തളിക്കുമെന്ന് മന്ത്രി; നീക്കത്തെ പരിസ്ഥിതി പ്രവർത്തകൻ വിമർശിച്ചു",
+        "section": "Kolkata",
+        "note": "A plan to spray rose water against pollution drew criticism.",
+        "noteMl": "മലിനീകരണം കുറയ്ക്കാൻ പനിനീർ തളിക്കൽ; വിമർശനം.",
+        "words": [
+          {
+            "en": "slams",
+            "ml": "രൂക്ഷമായി വിമർശിക്കുന്നു"
+          },
+          {
+            "en": "move",
+            "ml": "നീക്കം, നടപടി"
+          },
+          {
+            "en": "to be used",
+            "ml": "ഉപയോഗിക്കും ('to' = ഭാവി)"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/cities/kolkata/minister-agnimitra-paul-says-rose-water-to-be-used-for-mist-spraying-in-kolkata-environmentalist-slams-move/article71681027.ece"
+      },
+      {
+        "title": "Assam OIL facility fire: death toll rises to four as another injured dies; four suspended",
+        "ml": "അസം ഓയിൽ ഇന്ത്യ പ്ലാന്റിലെ തീപിടിത്തം: ഒരാൾ കൂടി മരിച്ചു, മരണം നാലായി; നാലുപേർക്ക് സസ്പെൻഷൻ",
+        "section": "Assam",
+        "note": "One more injured worker died; four employees were suspended and an inquiry ordered.",
+        "noteMl": "മരണസംഖ്യ നാലായി; അന്വേഷണം പ്രഖ്യാപിച്ചു.",
+        "words": [
+          {
+            "en": "death toll",
+            "ml": "മരണസംഖ്യ"
+          },
+          {
+            "en": "suspended",
+            "ml": "സസ്പെൻഡ് ചെയ്യപ്പെട്ടു"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/national/assam/assam-oil-facility-fire-death-toll-rises-to-four-as-another-injured-dies-four-suspended/article71681016.ece"
+      },
+      {
+        "title": "NGT issues notice to Tirunelveli Collector over threats to Tamirabharani fish species",
+        "ml": "താമ്രപർണി മത്സ്യ ഇനങ്ങൾക്കുള്ള ഭീഷണി: തിരുനെൽവേലി കളക്ടർക്ക് ഹരിത ട്രൈബ്യൂണൽ നോട്ടീസ്",
+        "section": "Tamil Nadu",
+        "note": "The green tribunal took up the issue on its own after a newspaper report.",
+        "noteMl": "പത്ര റിപ്പോർട്ടിനെ തുടർന്ന് ട്രൈബ്യൂണൽ സ്വമേധയാ കേസെടുത്തു.",
+        "words": [
+          {
+            "en": "NGT (National Green Tribunal)",
+            "ml": "ദേശീയ ഹരിത ട്രൈബ്യൂണൽ"
+          },
+          {
+            "en": "issues notice",
+            "ml": "നോട്ടീസ് അയയ്ക്കുന്നു"
+          },
+          {
+            "en": "suo motu",
+            "ml": "സ്വമേധയാ (കോടതി)"
+          }
+        ],
+        "url": "https://www.thehindu.com/news/national/tamil-nadu/ngt-issues-notice-to-tirunelveli-collector-over-threats-to-tamirabharani-fish-species/article71679299.ece"
+      }
+    ]
   }
 ];

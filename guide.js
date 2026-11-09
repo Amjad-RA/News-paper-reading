@@ -15,7 +15,8 @@ window.GUIDE = [
     ml: "തലക്കെട്ടിൽ present tense കണ്ടാൽ അത് ഇപ്പോൾ നടക്കുന്നതല്ല, ഇന്നലെ നടന്ന കാര്യമാണ്. വാർത്തയ്ക്ക് പുതുമ തോന്നിക്കാൻ ഇങ്ങനെ എഴുതുന്നു.",
     examples: [
       { h: "Democrats seize Congress in major setback to Trump", read: "The Democrats have won control of Congress.", ml: "ഡെമോക്രാറ്റുകൾ കോൺഗ്രസ് പിടിച്ചെടുത്തു." },
-      { h: "SC questions curbs as Delhi AQI nears 400", read: "The Supreme Court questioned the curbs.", ml: "സുപ്രീം കോടതി ചോദ്യം ചെയ്തു." }
+      { h: "SC questions curbs as Delhi AQI nears 400", read: "The Supreme Court questioned the curbs.", ml: "സുപ്രീം കോടതി ചോദ്യം ചെയ്തു." },
+      { h: "Oil falls as Donald Trump says new Iran attacks ‘unlikely’", read: "Oil prices fell because Trump said...", ml: "എണ്ണവില ഇടിഞ്ഞു (കഴിഞ്ഞ കാര്യം)." }
     ]
   },
   {
@@ -25,7 +26,8 @@ window.GUIDE = [
     examples: [
       { h: "Kozhikode to host MERGE FUTURE 2027 business and technology summit in January", read: "Kozhikode will host the summit.", ml: "കോഴിക്കോട് ആതിഥ്യം വഹിക്കും." },
       { h: "Summary revision to begin in 6 States, U.T.s", read: "The summary revision will begin.", ml: "പുതുക്കൽ ആരംഭിക്കും." },
-      { h: "Communal harmony committees to be formed in grama panchayats", read: "Committees will be formed.", ml: "സമിതികൾ രൂപീകരിക്കും." }
+      { h: "Communal harmony committees to be formed in grama panchayats", read: "Committees will be formed.", ml: "സമിതികൾ രൂപീകരിക്കും." },
+      { h: "Minister Agnimitra Paul says rose water to be used for mist spraying in Kolkata; environmentalist slams move", read: "Rose water will be used...", ml: "പനിനീർ ഉപയോഗിക്കും (ഭാവി)." }
     ]
   },
   {
@@ -35,7 +37,9 @@ window.GUIDE = [
     examples: [
       { h: "Excise Commissioner shifted amid differences with Minister", read: "The Excise Commissioner has been shifted.", ml: "കമ്മീഷണറെ സ്ഥലം മാറ്റി." },
       { h: "3 held on charge of assault, robbery", read: "Three people have been held (arrested).", ml: "മൂന്നുപേരെ അറസ്റ്റ് ചെയ്തു." },
-      { h: "India-born Nithya Raman elected Los Angeles mayor", read: "Nithya Raman has been elected.", ml: "തിരഞ്ഞെടുക്കപ്പെട്ടു." }
+      { h: "India-born Nithya Raman elected Los Angeles mayor", read: "Nithya Raman has been elected.", ml: "തിരഞ്ഞെടുക്കപ്പെട്ടു." },
+      { h: "19 Indian seafarers stranded in Yemen evacuated, Embassy says", read: "Seafarers who were stranded have been evacuated.", ml: "കുടുങ്ങിയവരെ ഒഴിപ്പിച്ചു." },
+      { h: "Habitual offender arrested for murdering 65-year-old woman in Bengaluru", read: "A habitual offender has been arrested...", ml: "അറസ്റ്റ് ചെയ്യപ്പെട്ടു." }
     ]
   },
   {
@@ -53,7 +57,8 @@ window.GUIDE = [
     ml: "അവസാനം ': SC' പോലെ കണ്ടാൽ, മുന്നിലുള്ളത് ആ വ്യക്തിയോ സ്ഥാപനമോ പറഞ്ഞതാണ്. പത്രത്തിന്റെ അഭിപ്രായമല്ല.",
     examples: [
       { h: "24-hour rule starts from detention: SC", read: "The Supreme Court says the 24-hour rule starts from detention.", ml: "സുപ്രീം കോടതി പറഞ്ഞു." },
-      { h: "No compromise on safety aspects: AERB chief", read: "The AERB chief says there will be no compromise.", ml: "AERB മേധാവി പറഞ്ഞു." }
+      { h: "No compromise on safety aspects: AERB chief", read: "The AERB chief says there will be no compromise.", ml: "AERB മേധാവി പറഞ്ഞു." },
+      { h: "Egypt train collision kills 7, injures 125: Health Ministry", read: "The Health Ministry says the collision killed 7.", ml: "ആരോഗ്യ മന്ത്രാലയം പറയുന്നു." }
     ]
   },
   {
@@ -62,7 +67,8 @@ window.GUIDE = [
     ml: "തുടക്കത്തിൽ വിഷയം, colon-ന് ശേഷം പുതിയ വിവരം.",
     examples: [
       { h: "Nedumbassery crash: car's speed put at 162 kmph", read: "About the Nedumbassery crash: the car's speed is estimated at 162 kmph.", ml: "നെടുമ്പാശ്ശേരി അപകടം: വേഗം 162 കി.മീ." },
-      { h: "Cheranalloor car crash: High Court grants anticipatory bail to judge", read: "About the Cheranalloor crash: the HC granted bail.", ml: "ചേരാനല്ലൂർ അപകടം: മുൻകൂർ ജാമ്യം." }
+      { h: "Cheranalloor car crash: High Court grants anticipatory bail to judge", read: "About the Cheranalloor crash: the HC granted bail.", ml: "ചേരാനല്ലൂർ അപകടം: മുൻകൂർ ജാമ്യം." },
+      { h: "Rajajinagar murders: Two more bodies recovered near Chamundi hills in Mysuru", read: "About the Rajajinagar murders: two more bodies were found.", ml: "വിഷയം: രാജാജിനഗർ കൊലപാതകങ്ങൾ." }
     ]
   },
   {
@@ -71,7 +77,8 @@ window.GUIDE = [
     ml: "Quote-ൽ ഉള്ളത് ആരോ പറഞ്ഞതോ ആരോപിച്ചതോ ആണ്. പത്രം അത് ശരിയെന്ന് പറയുന്നില്ല.",
     examples: [
       { h: "BJP leaders meet President over 'irregularities' in KPSC", read: "BJP alleges irregularities; it is not proven.", ml: "'ക്രമക്കേട്' എന്നത് ആരോപണം മാത്രം." },
-      { h: "'Zero tolerance against violence on campuses'", read: "These are the Minister's own words.", ml: "മന്ത്രി പറഞ്ഞ വാക്കുകൾ." }
+      { h: "'Zero tolerance against violence on campuses'", read: "These are the Minister's own words.", ml: "മന്ത്രി പറഞ്ഞ വാക്കുകൾ." },
+      { h: "Oil falls as Donald Trump says new Iran attacks ‘unlikely’", read: "'unlikely' is Trump's view, not the paper's.", ml: "'സാധ്യതയില്ല' എന്നത് ട്രംപിന്റെ വാക്ക്." }
     ]
   },
   {
@@ -80,7 +87,8 @@ window.GUIDE = [
     ml: "തലക്കെട്ടിൽ comma = 'and'.",
     examples: [
       { h: "Prithviraj, Kunchacko Boban Forest dept. brand ambassadors", read: "Prithviraj and Kunchacko Boban are the Forest department's brand ambassadors.", ml: "പൃഥ്വിരാജും കുഞ്ചാക്കോ ബോബനും." },
-      { h: "3 held on charge of assault, robbery", read: "...on charges of assault and robbery.", ml: "ആക്രമണവും കവർച്ചയും." }
+      { h: "3 held on charge of assault, robbery", read: "...on charges of assault and robbery.", ml: "ആക്രമണവും കവർച്ചയും." },
+      { h: "Fire engulfs Jammu’s Nehru Market, guts around 12 shops", read: "Fire engulfs the market and guts 12 shops.", ml: "തീ പടർന്നു, കടകൾ കത്തിനശിച്ചു." }
     ]
   },
   {
@@ -98,7 +106,9 @@ window.GUIDE = [
     ml: "'as' = ...ന്നതിനിടെ / ...ന്നതിനാൽ.",
     examples: [
       { h: "SC questions curbs as Delhi AQI nears 400", read: "...while Delhi's AQI nears 400.", ml: "AQI 400-ലേക്ക് അടുക്കവേ." },
-      { h: "Railway tracks turn fatal as train knocks down tiger on Kollam-Shencottah route", read: "...because a train knocked down a tiger.", ml: "ട്രെയിൻ ഇടിച്ചതോടെ." }
+      { h: "Railway tracks turn fatal as train knocks down tiger on Kollam-Shencottah route", read: "...because a train knocked down a tiger.", ml: "ട്രെയിൻ ഇടിച്ചതോടെ." },
+      { h: "Pope Leo takes Milei to task as he visits divided Argentina", read: "...while he visits Argentina.", ml: "സന്ദർശിക്കുന്നതിനിടെ." },
+      { h: "Air pollution over 50 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali", read: "...because people defied the ban.", ml: "നിരോധനം ലംഘിച്ചതിനാൽ." }
     ]
   },
   {
@@ -107,7 +117,8 @@ window.GUIDE = [
     ml: "പല noun-കൾ ഒന്നിച്ചു വന്നാൽ അവസാനത്തെ വാക്കാണ് പ്രധാനം. പിന്നിൽ നിന്ന് മുന്നോട്ട് വായിക്കുക.",
     examples: [
       { h: "OBC creamy layer ruling will not alter past allocations: SC", read: "the ruling ← on the creamy layer ← among OBCs", ml: "OBC ക്രീമി ലെയറിനെക്കുറിച്ചുള്ള വിധി." },
-      { h: "In setback to govt., HC reinstates Milma union dissolved over Sabarimala ghee row", read: "the row ← over ghee ← at Sabarimala", ml: "ശബരിമല നെയ്യ് വിവാദം." }
+      { h: "In setback to govt., HC reinstates Milma union dissolved over Sabarimala ghee row", read: "the row ← over ghee ← at Sabarimala", ml: "ശബരിമല നെയ്യ് വിവാദം." },
+      { h: "Assam OIL facility fire: death toll rises to four as another injured dies; four suspended", read: "fire → at a facility → of OIL → in Assam", ml: "തീപിടിത്തം ← പ്ലാന്റിലെ ← ഓയിൽ ഇന്ത്യയുടെ ← അസമിലെ" }
     ]
   },
   {
@@ -117,7 +128,8 @@ window.GUIDE = [
     examples: [
       { h: "Excursion row: CCTV footage released", read: "row = controversy", ml: "row = വിവാദം" },
       { h: "Draft report on Labour Codes moots higher minimum wages, wider eligibility for bonus", read: "moots = proposes", ml: "moot = നിർദേശിക്കുക" },
-      { h: "No chopper deal was pending when CM took special flight, SPC tells Lok Ayukta", read: "chopper = helicopter", ml: "chopper = ഹെലികോപ്റ്റർ" }
+      { h: "No chopper deal was pending when CM took special flight, SPC tells Lok Ayukta", read: "chopper = helicopter", ml: "chopper = ഹെലികോപ്റ്റർ" },
+      { h: "Democrats eye Musk, Miller probes after midterm rout", read: "eye = plan; probes = investigations; rout = big win", ml: "eye = ലക്ഷ്യമിടുന്നു; probe = അന്വേഷണം; rout = തൂത്തുവാരൽ" }
     ]
   },
   {
@@ -127,7 +139,8 @@ window.GUIDE = [
     examples: [
       { h: "CPI(M), Congress lock horns over liquor licences", read: "lock horns = clash, fight", ml: "കൊമ്പുകോർക്കുക = ഏറ്റുമുട്ടുക" },
       { h: "CM's power purchase stance under a cloud", read: "under a cloud = in doubt", ml: "സംശയത്തിന്റെ നിഴലിൽ" },
-      { h: "Ronaldo bids adieu to international football", read: "bid adieu = say goodbye, retire", ml: "വിടപറയുക" }
+      { h: "Ronaldo bids adieu to international football", read: "bid adieu = say goodbye, retire", ml: "വിടപറയുക" },
+      { h: "Pope Leo takes Milei to task as he visits divided Argentina", read: "take someone to task = criticise them", ml: "ശാസിക്കുക, വിമർശിക്കുക" }
     ]
   },
   {
