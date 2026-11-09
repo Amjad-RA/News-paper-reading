@@ -156,6 +156,9 @@
   footer { color: var(--muted); font-size: 13px; padding: 24px 0 40px; border-top: 1px solid var(--border); }
   footer p { margin: 0 0 6px; }
   .dedication { margin-bottom: 12px !important; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 0 7px; margin-left: 4px; vertical-align: 1px; }
+  .srcinfo { background: var(--accent-soft); border-radius: var(--radius); padding: 10px 14px; font-size: 14px; margin: 4px 0 6px; }
+  .srcinfo .ml { display: block; margin-top: 4px; }
 
   @media (max-width: 520px) {
     .tabs button[data-tab] { padding: 10px; }
@@ -204,6 +207,8 @@
         </div>
         <label class="check"><input type="checkbox" class="practice"> Practice</label>
       </div>
+      <nav class="types" id="hsrc" aria-label="Headline source"></nav>
+      <p class="srcinfo" id="srcinfo" hidden>Top-news headlines saved automatically after each day ends, so this list is always one day behind. Only the headline text is kept. <span class="ml" lang="ml">ഓരോ ദിവസവും കഴിഞ്ഞ ശേഷം തലക്കെട്ടുകൾ മാത്രം തനിയെ ചേർക്കുന്നു. മലയാളം അർത്ഥം വേണമെങ്കിൽ Claude-നോട് ചോദിക്കുക.</span></p>
       <div class="count" id="hcount" aria-live="polite"></div>
       <div id="headlines"></div>
     </section>
@@ -212,7 +217,7 @@
   <footer>
     <p class="dedication">Dedicated to my wife, Deena.</p>
     <p><b>Personal, non-commercial study project.</b> Not affiliated with, endorsed by or connected to The Hindu or THG Publishing.</p>
-    <p>Headlines quoted for study are © <a href="https://www.thehindu.com/" rel="noopener">The Hindu</a> and link to the original where available; read the full stories there. No article text or images are copied. The rules, notes and Malayalam meanings are study aids written for this page.</p>
+    <p>Headlines quoted for study are © <a href="https://www.thehindu.com/" rel="noopener">The Hindu</a> and link to the original where available; read the full stories there. No article text or images are copied. Daily headlines are saved only after the day has ended, as headline text without links. The rules, notes and Malayalam meanings are study aids written for this page.</p>
     <p class="ml">ഇത് വ്യക്തിപരമായ പഠനത്തിനുള്ള പേജ് മാത്രം; ദി ഹിന്ദുവുമായി ബന്ധമില്ല.</p>
     <p>If you own any content here and want it removed, please open an issue on the <a href="https://github.com/Amjad-RA/News-paper-reading/issues" rel="noopener">GitHub repository</a>.</p>
   </footer>
@@ -221,6 +226,7 @@
 <script src="guide.js"></script>
 <script src="core.js"></script>
 <script src="notes.js"></script>
+<script src="daily.js"></script>
 <script>
 (function () {
   const $ = (s) => document.querySelector(s);
@@ -247,6 +253,16 @@
     .slice()
     .sort((a, b) => String(b.date).localeCompare(String(a.date)))
     .flatMap((d) => (d.items || []).map((it) => ({ ...it, date: d.date })));
+  // Yesterday's headlines saved after each day ends (daily.js): headline text only.
+  {
+    const have = new Set(headlines.map((h) => h.title.toLowerCase()));
+    (Array.isArray(window.DAILY) ? window.DAILY : []).forEach((d) => (d.items || []).forEach((t) => {
+      if (typeof t !== "string" || !t || have.has(t.toLowerCase())) return;
+      have.add(t.toLowerCase());
+      headlines.push({ title: t, date: d.date, daily: true });
+    }));
+    headlines.sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  }
   const byTitle = new Map(headlines.map((h) => [h.title, h]));
 
   // Which rules each headline illustrates (from the guide's examples).
@@ -393,12 +409,27 @@
   });
   const matches = (it) => !term || [it.title, it.ml, it.note, it.noteMl, it.section,
     ...(it.words || []).flatMap((w) => [w.en, w.ml])].join(" ").toLowerCase().includes(term.toLowerCase());
-  const meta = (it) => [fmtDate(it.date), it.section].filter(Boolean).map(esc).join(" · ");
+  const meta = (it) => [fmtDate(it.date), it.section].filter(Boolean).map(esc).join(" · ") +
+    (it.daily ? ` <span class="badge" title="Saved automatically; no notes yet">Daily</span>` : "");
+
+  // Source filter: everything, only headlines with notes, or only daily headlines.
+  const dailyItems = headlines.filter((h) => h.daily);
+  let hsrc = ["all", "notes", "daily"].includes(store.get("hsrc2")) ? store.get("hsrc2") : "all";
+  function renderSrc() {
+    const btn = (k, label, n) => `<button type="button" data-hsrc="${k}" aria-pressed="${hsrc === k}">${label} <span class="n">${n}</span></button>`;
+    $("#hsrc").innerHTML = btn("all", "All", headlines.length) +
+      btn("notes", "With notes", headlines.length - dailyItems.length) + btn("daily", "Daily", dailyItems.length);
+    $("#srcinfo").hidden = hsrc !== "daily";
+  }
+  $("#hsrc").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-hsrc]"); if (!b) return;
+    hsrc = b.dataset.hsrc; store.set("hsrc2", hsrc); renderSrc(); renderHeadlines();
+  });
 
 
   function renderHeadlines() {
     document.querySelectorAll(".seg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
-    const src = headlines;
+    const src = hsrc === "daily" ? dailyItems : hsrc === "notes" ? headlines.filter((h) => !h.daily) : headlines;
     const pool = allH || term ? src : src.filter((h) => keyTitles.has(h.title));
     const items = pool.filter(matches);
     $("#hcount").innerHTML = term ? `${items.length} of ${src.length} headlines`
@@ -406,6 +437,7 @@
       : `${items.length} key headlines (use a rule or a core word) · <button type="button" class="linkbtn" id="togall">Show all ${src.length}</button>`;
     const out = $("#headlines");
     if (!items.length) {
+      if (hsrc === "daily" && !dailyItems.length) { $("#hcount").textContent = ""; out.innerHTML = `<div class="empty"><h2>No daily headlines yet</h2><p>They are saved just after midnight, one day behind.</p></div>`; return; }
       out.innerHTML = headlines.length
         ? `<div class="empty"><h2>Nothing matches “${esc(term)}”</h2></div>`
         : `<div class="empty"><h2>No headlines yet</h2><p>Add them to <code>notes.js</code>.</p></div>`;
@@ -447,7 +479,7 @@
   $("#q").addEventListener("input", (e) => { clearTimeout(t1); t1 = setTimeout(() => { term = e.target.value.trim(); renderHeadlines(); }, 120); });
   $("#pq").addEventListener("input", (e) => { clearTimeout(t2); t2 = setTimeout(() => { pterm = e.target.value.trim(); renderPhrases(); }, 120); });
 
-  renderLearn(); renderTypes(); renderPhrases(); renderHeadlines(); showTab(tab);
+  renderLearn(); renderTypes(); renderPhrases(); renderSrc(); renderHeadlines(); showTab(tab);
 
   // Guide examples should be real headlines from notes.js.
   GUIDE.forEach((r) => (r.examples || []).forEach((ex) => {

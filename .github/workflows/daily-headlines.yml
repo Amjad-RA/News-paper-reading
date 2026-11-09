@@ -1,0 +1,31 @@
+name: Save yesterday's headlines
+
+on:
+  schedule:
+    - cron: "47 18 * * *"   # 00:17 IST: saves the day that just ended
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-headlines
+  cancel-in-progress: false
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tools/daily_headlines.py
+      - name: Commit if changed
+        run: |
+          git add daily.js
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Headlines for $(TZ=Asia/Kolkata date -d yesterday +%F)"
+          git push

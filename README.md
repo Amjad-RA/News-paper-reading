@@ -16,13 +16,24 @@ Live page: https://amjad-ra.github.io/News-paper-reading/
 - `notes.js`: headlines by newspaper date, with Malayalam meaning, notes and key words. The Headlines tab shows the key ones by default (those that use a rule or a core word).
 - `guide.js`: the headline rules and their examples.
 - `core.js`: the core vocabulary shown in the Phrases tab.
+- `daily.js`: yesterday's top-news headlines, saved automatically (headline text only).
+
+## Daily headlines (automatic, one day behind)
+
+`.github/workflows/daily-headlines.yml` runs at 00:17 IST every night. It
+reads The Hindu's top-news RSS feed and saves only the headline text of
+stories published on the day that just ended into `daily.js`. No links,
+summaries, sections or images are stored. Videos, shorts and digests are
+skipped. To run it by hand: Actions → "Save yesterday's headlines" → Run
+workflow.
 
 ## Notice
 
 - Personal, non-commercial study project. Not affiliated with, endorsed by or
   connected to The Hindu or THG Publishing.
 - Headlines quoted for study are © The Hindu and link to the original stories
-  where available. No article text or images are stored here.
+  where available. Daily headlines are saved only after the day has ended,
+  as headline text without links. No article text or images are stored here.
 - The rules, notes and Malayalam meanings are original study aids.
 - The page asks search engines not to index it.
 - If you own any content here and want it removed, please open an issue.
