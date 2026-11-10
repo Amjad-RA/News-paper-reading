@@ -714,6 +714,40 @@ window.NOTES = [
     edition: "Online · top news (8–9 Nov)",
     items: [
       {
+        "title": "SDPI takes lead in campaign for Tirur district through Malappuram bifurcation",
+        "ml": "മലപ്പുറം വിഭജിച്ച് തിരൂർ ജില്ല രൂപീകരിക്കാനുള്ള പ്രചാരണത്തിന് എസ്ഡിപിഐ നേതൃത്വം നൽകുന്നു",
+        "section": "Kerala",
+        "note": "SDPI is leading a campaign to split Malappuram and form a new Tirur district.",
+        "noteMl": "മലപ്പുറം ജില്ല വിഭജിച്ച് തിരൂർ ജില്ല വേണമെന്ന ആവശ്യം.",
+        "words": [
+          {
+            "en": "takes lead",
+            "ml": "നേതൃത്വം ഏറ്റെടുക്കുന്നു"
+          },
+          {
+            "en": "bifurcation",
+            "ml": "രണ്ടായി വിഭജിക്കൽ"
+          }
+        ]
+      },
+      {
+        "title": "Anuj lights up Indian chess, becomes the 100th GM",
+        "ml": "ഇന്ത്യൻ ചെസിന് തിളക്കമേകി അനൂജ്; രാജ്യത്തെ 100-ാമത്തെ ഗ്രാൻഡ്മാസ്റ്റർ",
+        "section": "Sport",
+        "note": "Anuj Shrivatri has become India's 100th chess Grandmaster.",
+        "noteMl": "ഇന്ത്യയ്ക്ക് 100-ാമത്തെ ചെസ് ഗ്രാൻഡ്മാസ്റ്റർ.",
+        "words": [
+          {
+            "en": "lights up",
+            "ml": "തിളക്കമേകുന്നു, ആവേശം നൽകുന്നു"
+          },
+          {
+            "en": "GM (Grandmaster)",
+            "ml": "ഗ്രാൻഡ്മാസ്റ്റർ (ചെസ്)"
+          }
+        ]
+      },
+      {
         "title": "Special Sub-Inspector of Police beaten to death in Theni",
         "ml": "തേനിയിൽ സ്പെഷ്യൽ സബ് ഇൻസ്പെക്ടറെ അടിച്ചുകൊന്നു",
         "section": "Tamil Nadu",

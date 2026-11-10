@@ -16,16 +16,17 @@ Live page: https://amjad-ra.github.io/News-paper-reading/
 - `notes.js`: headlines by newspaper date, with Malayalam meaning, notes and key words. The Headlines tab shows the key ones by default (those that use a rule or a core word).
 - `guide.js`: the headline rules and their examples.
 - `core.js`: the core vocabulary shown in the Phrases tab.
-- `daily.js`: yesterday's top-news headlines, saved automatically (headline text only).
+- `daily.js`: top-news headlines for days that have ended, saved automatically (headline text only).
 
 ## Daily headlines (automatic, one day behind)
 
-`.github/workflows/daily-headlines.yml` runs at 00:17 IST every night. It
-reads The Hindu's top-news RSS feed and saves only the headline text of
-stories published on the day that just ended into `daily.js`. No links,
-summaries, sections or images are stored. Videos, shorts and digests are
-skipped. To run it by hand: Actions → "Save yesterday's headlines" → Run
-workflow.
+`.github/workflows/daily-headlines.yml` runs every 3 hours. It reads The
+Hindu's top-news RSS feed and keeps the headline text of today's stories in a
+private buffer (the GitHub Actions cache, not the repository). Once a day has
+ended (IST), that day's headlines are written to `daily.js`, so the page is
+always at least one day behind. No links, summaries, sections or images are
+stored; videos, shorts and digests are skipped. To run it by hand: Actions →
+"Save yesterday's headlines" → Run workflow.
 
 ## Notice
 

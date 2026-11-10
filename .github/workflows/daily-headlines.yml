@@ -1,8 +1,10 @@
 name: Save yesterday's headlines
 
+# Runs every 3 hours. Today's headlines wait in the Actions cache (not in the
+# repository); a day is written to daily.js only after it has ended (IST).
 on:
   schedule:
-    - cron: "47 18 * * *"   # 00:17 IST: saves the day that just ended
+    - cron: "23 */3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -20,12 +22,23 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python3 tools/daily_headlines.py
-      - name: Commit if changed
+      - name: Restore today's buffer
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/headline-buffer
+          key: headline-buffer-${{ github.run_id }}
+          restore-keys: headline-buffer-
+      - run: python3 tools/daily_headlines.py --buffer ~/headline-buffer/buffer.json
+      - name: Keep today's buffer for the next run
+        uses: actions/cache/save@v4
+        with:
+          path: ~/headline-buffer
+          key: headline-buffer-${{ github.run_id }}
+      - name: Commit if a finished day was added
         run: |
           git add daily.js
-          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          if git diff --cached --quiet; then echo "Nothing new to publish"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Headlines for $(TZ=Asia/Kolkata date -d yesterday +%F)"
+          git commit -m "Headlines for finished day(s) up to $(TZ=Asia/Kolkata date -d yesterday +%F)"
           git push

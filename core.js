@@ -152,6 +152,7 @@ window.CORE = [
     g: "Idioms", gm: "ശൈലികൾ",
     d: "Phrases whose meaning is not literal.", dm: "വാക്കർത്ഥമല്ല, ശൈലീ അർത്ഥമാണ്.",
     items: [
+      { en: "lights up", ml: "തിളക്കമേകുന്നു, ആവേശം നൽകുന്നു", m: ["\\blights? up\\b|\\blit up\\b"] },
       { en: "lock horns", ml: "ഏറ്റുമുട്ടുക", m: ["\\blocks? horns\\b"] },
       { en: "under a cloud", ml: "സംശയത്തിന്റെ നിഴലിൽ" },
       { en: "setback", ml: "തിരിച്ചടി", m: ["\\bsetbacks?\\b"] },
@@ -180,6 +181,7 @@ window.CORE = [
       { en: "CB / SPC", ml: "ക്രൈംബ്രാഞ്ച് / സംസ്ഥാന പോലീസ് മേധാവി", m: ["\\bCB\\b|\\bSPC\\b|\\bCrime Branch\\b"] },
       { en: "PSC", ml: "പബ്ലിക് സർവീസ് കമ്മീഷൻ", m: ["\\bPSC\\b"] },
       { en: "govt. / dept.", ml: "സർക്കാർ / വകുപ്പ്", m: ["\\bgovt\\b|\\bdept\\b|\\bgovernment\\b"] },
+      { en: "GM", ml: "ഗ്രാൻഡ്മാസ്റ്റർ (ചെസ്)", m: ["\\bGMs?\\b|\\bGrandmasters?\\b"] },
       { en: "AQI", ml: "വായു ഗുണനിലവാര സൂചിക", m: ["\\bAQI\\b"] },
       { en: "NGT", ml: "ദേശീയ ഹരിത ട്രൈബ്യൂണൽ", m: ["\\bNGT\\b"] },
       { en: "ex-", ml: "മുൻ (ex-President = മുൻ പ്രസിഡന്റ്)", m: ["\\bex-"] },
