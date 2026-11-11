@@ -27,7 +27,8 @@ window.GUIDE = [
       { h: "Kozhikode to host MERGE FUTURE 2027 business and technology summit in January", read: "Kozhikode will host the summit.", ml: "കോഴിക്കോട് ആതിഥ്യം വഹിക്കും." },
       { h: "Summary revision to begin in 6 States, U.T.s", read: "The summary revision will begin.", ml: "പുതുക്കൽ ആരംഭിക്കും." },
       { h: "Communal harmony committees to be formed in grama panchayats", read: "Committees will be formed.", ml: "സമിതികൾ രൂപീകരിക്കും." },
-      { h: "Minister Agnimitra Paul says rose water to be used for mist spraying in Kolkata; environmentalist slams move", read: "Rose water will be used...", ml: "പനിനീർ ഉപയോഗിക്കും (ഭാവി)." }
+      { h: "Minister Agnimitra Paul says rose water to be used for mist spraying in Kolkata; environmentalist slams move", read: "Rose water will be used...", ml: "പനിനീർ ഉപയോഗിക്കും (ഭാവി)." },
+      { h: "Blackstone to buy about 16% stake in India's IIFL Finance for $535 million", read: "Blackstone will buy a 16% stake.", ml: "വാങ്ങും (ഭാവി)." }
     ]
   },
   {
@@ -39,7 +40,8 @@ window.GUIDE = [
       { h: "3 held on charge of assault, robbery", read: "Three people have been held (arrested).", ml: "മൂന്നുപേരെ അറസ്റ്റ് ചെയ്തു." },
       { h: "India-born Nithya Raman elected Los Angeles mayor", read: "Nithya Raman has been elected.", ml: "തിരഞ്ഞെടുക്കപ്പെട്ടു." },
       { h: "19 Indian seafarers stranded in Yemen evacuated, Embassy says", read: "Seafarers who were stranded have been evacuated.", ml: "കുടുങ്ങിയവരെ ഒഴിപ്പിച്ചു." },
-      { h: "Habitual offender arrested for murdering 65-year-old woman in Bengaluru", read: "A habitual offender has been arrested...", ml: "അറസ്റ്റ് ചെയ്യപ്പെട്ടു." }
+      { h: "Habitual offender arrested for murdering 65-year-old woman in Bengaluru", read: "A habitual offender has been arrested...", ml: "അറസ്റ്റ് ചെയ്യപ്പെട്ടു." },
+      { h: "Suspension of senior IPS officer extended to March 2027", read: "The suspension has been extended.", ml: "സസ്പെൻഷൻ നീട്ടപ്പെട്ടു." }
     ]
   },
   {
@@ -58,7 +60,8 @@ window.GUIDE = [
     examples: [
       { h: "24-hour rule starts from detention: SC", read: "The Supreme Court says the 24-hour rule starts from detention.", ml: "സുപ്രീം കോടതി പറഞ്ഞു." },
       { h: "No compromise on safety aspects: AERB chief", read: "The AERB chief says there will be no compromise.", ml: "AERB മേധാവി പറഞ്ഞു." },
-      { h: "Egypt train collision kills 7, injures 125: Health Ministry", read: "The Health Ministry says the collision killed 7.", ml: "ആരോഗ്യ മന്ത്രാലയം പറയുന്നു." }
+      { h: "Egypt train collision kills 7, injures 125: Health Ministry", read: "The Health Ministry says the collision killed 7.", ml: "ആരോഗ്യ മന്ത്രാലയം പറയുന്നു." },
+      { h: "Israeli forces shoot dead 14-year-old in West Bank: Palestinian officials", read: "Palestinian officials say this.", ml: "പലസ്തീൻ അധികൃതർ പറയുന്നു." }
     ]
   },
   {
@@ -78,7 +81,8 @@ window.GUIDE = [
     examples: [
       { h: "BJP leaders meet President over 'irregularities' in KPSC", read: "BJP alleges irregularities; it is not proven.", ml: "'ക്രമക്കേട്' എന്നത് ആരോപണം മാത്രം." },
       { h: "'Zero tolerance against violence on campuses'", read: "These are the Minister's own words.", ml: "മന്ത്രി പറഞ്ഞ വാക്കുകൾ." },
-      { h: "Oil falls as Donald Trump says new Iran attacks ‘unlikely’", read: "'unlikely' is Trump's view, not the paper's.", ml: "'സാധ്യതയില്ല' എന്നത് ട്രംപിന്റെ വാക്ക്." }
+      { h: "Oil falls as Donald Trump says new Iran attacks ‘unlikely’", read: "'unlikely' is Trump's view, not the paper's.", ml: "'സാധ്യതയില്ല' എന്നത് ട്രംപിന്റെ വാക്ക്." },
+      { h: "After Bangladesh rules out passport for Hasina, India says ‘travel document’ needed", read: "'travel document' is India's wording.", ml: "'യാത്രാരേഖ' ഇന്ത്യയുടെ വാക്ക്." }
     ]
   },
   {
@@ -88,7 +92,8 @@ window.GUIDE = [
     examples: [
       { h: "Prithviraj, Kunchacko Boban Forest dept. brand ambassadors", read: "Prithviraj and Kunchacko Boban are the Forest department's brand ambassadors.", ml: "പൃഥ്വിരാജും കുഞ്ചാക്കോ ബോബനും." },
       { h: "3 held on charge of assault, robbery", read: "...on charges of assault and robbery.", ml: "ആക്രമണവും കവർച്ചയും." },
-      { h: "Fire engulfs Jammu’s Nehru Market, guts around 12 shops", read: "Fire engulfs the market and guts 12 shops.", ml: "തീ പടർന്നു, കടകൾ കത്തിനശിച്ചു." }
+      { h: "Fire engulfs Jammu’s Nehru Market, guts around 12 shops", read: "Fire engulfs the market and guts 12 shops.", ml: "തീ പടർന്നു, കടകൾ കത്തിനശിച്ചു." },
+      { h: "Congress questions Modi over Delhi air pollution, demands account of measures taken", read: "Congress questions Modi and demands an account.", ml: "ചോദ്യം ചെയ്യുന്നു, കണക്കും ചോദിക്കുന്നു." }
     ]
   },
   {
@@ -118,7 +123,8 @@ window.GUIDE = [
     examples: [
       { h: "OBC creamy layer ruling will not alter past allocations: SC", read: "the ruling ← on the creamy layer ← among OBCs", ml: "OBC ക്രീമി ലെയറിനെക്കുറിച്ചുള്ള വിധി." },
       { h: "In setback to govt., HC reinstates Milma union dissolved over Sabarimala ghee row", read: "the row ← over ghee ← at Sabarimala", ml: "ശബരിമല നെയ്യ് വിവാദം." },
-      { h: "Assam OIL facility fire: death toll rises to four as another injured dies; four suspended", read: "fire → at a facility → of OIL → in Assam", ml: "തീപിടിത്തം ← പ്ലാന്റിലെ ← ഓയിൽ ഇന്ത്യയുടെ ← അസമിലെ" }
+      { h: "Assam OIL facility fire: death toll rises to four as another injured dies; four suspended", read: "fire → at a facility → of OIL → in Assam", ml: "തീപിടിത്തം ← പ്ലാന്റിലെ ← ഓയിൽ ഇന്ത്യയുടെ ← അസമിലെ" },
+      { h: "ED attaches assets worth ₹18 crore linked to rice mill loan fraud case", read: "case → of fraud → on a loan → to a rice mill", ml: "കേസ് ← തട്ടിപ്പ് ← വായ്പ ← അരി മിൽ" }
     ]
   },
   {
@@ -129,7 +135,9 @@ window.GUIDE = [
       { h: "Excursion row: CCTV footage released", read: "row = controversy", ml: "row = വിവാദം" },
       { h: "Draft report on Labour Codes moots higher minimum wages, wider eligibility for bonus", read: "moots = proposes", ml: "moot = നിർദേശിക്കുക" },
       { h: "No chopper deal was pending when CM took special flight, SPC tells Lok Ayukta", read: "chopper = helicopter", ml: "chopper = ഹെലികോപ്റ്റർ" },
-      { h: "Democrats eye Musk, Miller probes after midterm rout", read: "eye = plan; probes = investigations; rout = big win", ml: "eye = ലക്ഷ്യമിടുന്നു; probe = അന്വേഷണം; rout = തൂത്തുവാരൽ" }
+      { h: "Democrats eye Musk, Miller probes after midterm rout", read: "eye = plan; probes = investigations; rout = big win", ml: "eye = ലക്ഷ്യമിടുന്നു; probe = അന്വേഷണം; rout = തൂത്തുവാരൽ" },
+      { h: "NDA wrests Kadapa ZPTCs from YSRCP", read: "wrests = takes by force/wins away", ml: "wrest = പിടിച്ചെടുക്കുക" },
+      { h: "Murthy Yadav quits JSP over ticket denial", read: "quits = resigns from; over = because of", ml: "quit = വിടുക; over = ...നെച്ചൊല്ലി" }
     ]
   },
   {
@@ -140,7 +148,8 @@ window.GUIDE = [
       { h: "CPI(M), Congress lock horns over liquor licences", read: "lock horns = clash, fight", ml: "കൊമ്പുകോർക്കുക = ഏറ്റുമുട്ടുക" },
       { h: "CM's power purchase stance under a cloud", read: "under a cloud = in doubt", ml: "സംശയത്തിന്റെ നിഴലിൽ" },
       { h: "Ronaldo bids adieu to international football", read: "bid adieu = say goodbye, retire", ml: "വിടപറയുക" },
-      { h: "Pope Leo takes Milei to task as he visits divided Argentina", read: "take someone to task = criticise them", ml: "ശാസിക്കുക, വിമർശിക്കുക" }
+      { h: "Pope Leo takes Milei to task as he visits divided Argentina", read: "take someone to task = criticise them", ml: "ശാസിക്കുക, വിമർശിക്കുക" },
+      { h: "Law and order in coma in Tamil Nadu, says Stalin", read: "in coma = not working at all", ml: "പ്രവർത്തനരഹിതം" }
     ]
   },
   {

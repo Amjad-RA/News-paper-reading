@@ -1174,5 +1174,319 @@ window.NOTES = [
         "url": "https://www.thehindu.com/news/national/tamil-nadu/ngt-issues-notice-to-tirunelveli-collector-over-threats-to-tamirabharani-fish-species/article71679299.ece"
       }
     ]
+  },
+  {
+    date: "2026-11-10",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "Onus on Uttar Pradesh to ensure undertrials allowed bail are released, says Supreme Court",
+        "ml": "ജാമ്യം ലഭിച്ച വിചാരണത്തടവുകാരെ മോചിപ്പിക്കേണ്ട ഉത്തരവാദിത്തം യുപിക്കെന്ന് സുപ്രീം കോടതി",
+        "section": "National",
+        "note": "The Supreme Court says it is the State's duty to free undertrials who already have bail.",
+        "noteMl": "ജാമ്യം കിട്ടിയവർ ജയിലിൽ തുടരരുത്.",
+        "words": [
+          {
+            "en": "onus",
+            "ml": "ഉത്തരവാദിത്തം, ബാധ്യത"
+          },
+          {
+            "en": "undertrials",
+            "ml": "വിചാരണത്തടവുകാർ"
+          }
+        ]
+      },
+      {
+        "title": "Myanmar army seizes key resistance headquarters and 10 bases held by opposition, state media says",
+        "ml": "പ്രതിപക്ഷത്തിന്റെ പ്രധാന ആസ്ഥാനവും 10 താവളങ്ങളും മ്യാൻമർ സൈന്യം പിടിച്ചെടുത്തെന്ന് സർക്കാർ മാധ്യമം",
+        "section": "World",
+        "note": "Myanmar's state media claims the army captured a key rebel headquarters and 10 bases.",
+        "noteMl": "വിമതരുടെ താവളങ്ങൾ സൈന്യം പിടിച്ചെന്ന് അവകാശവാദം.",
+        "words": [
+          {
+            "en": "seizes",
+            "ml": "പിടിച്ചെടുക്കുന്നു"
+          },
+          {
+            "en": "state media",
+            "ml": "സർക്കാർ നിയന്ത്രിത മാധ്യമം"
+          }
+        ]
+      },
+      {
+        "title": "Congress questions Modi over Delhi air pollution, demands account of measures taken",
+        "ml": "ഡൽഹി വായുമലിനീകരണത്തെച്ചൊല്ലി മോദിയെ ചോദ്യം ചെയ്ത് കോൺഗ്രസ്; സ്വീകരിച്ച നടപടികളുടെ കണക്ക് ആവശ്യപ്പെട്ടു",
+        "section": "National",
+        "note": "Congress asks the PM what has been done about Delhi's polluted air.",
+        "noteMl": "മലിനീകരണം തടയാൻ എന്ത് ചെയ്തു എന്ന് കോൺഗ്രസ്.",
+        "words": [
+          {
+            "en": "demands account",
+            "ml": "കണക്ക് ആവശ്യപ്പെടുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Kerala PSC chairperson M.R. Baiju refuses to appear before Crime Branch again",
+        "ml": "ക്രൈംബ്രാഞ്ചിന് മുന്നിൽ വീണ്ടും ഹാജരാകാൻ വിസമ്മതിച്ച് പിഎസ്‌സി ചെയർമാൻ എം.ആർ. ബൈജു",
+        "section": "Kerala",
+        "note": "The PSC chairman has declined a second round of questioning by the Crime Branch.",
+        "noteMl": "വീണ്ടും ചോദ്യം ചെയ്യലിന് ഹാജരാകില്ല.",
+        "words": [
+          {
+            "en": "appear before",
+            "ml": "...മുന്നിൽ ഹാജരാകുക"
+          }
+        ]
+      },
+      {
+        "title": "Israeli forces shoot dead 14-year-old in West Bank: Palestinian officials",
+        "ml": "വെസ്റ്റ് ബാങ്കിൽ ഇസ്രായേൽ സേന 14 വയസ്സുകാരനെ വെടിവെച്ചുകൊന്നു: പലസ്തീൻ അധികൃതർ",
+        "section": "World",
+        "note": "Palestinian officials say Israeli troops killed a teenage boy in the West Bank.",
+        "noteMl": "പലസ്തീൻ അധികൃതരുടെ ആരോപണം.",
+        "words": [
+          {
+            "en": "shoot dead",
+            "ml": "വെടിവെച്ചുകൊല്ലുക"
+          }
+        ]
+      },
+      {
+        "title": "Committee to be set up for transparent procurement of library books: Minister Rajmohan",
+        "ml": "ലൈബ്രറി പുസ്തകങ്ങൾ സുതാര്യമായി വാങ്ങാൻ സമിതി രൂപീകരിക്കും: മന്ത്രി രാജ്മോഹൻ",
+        "section": "Tamil Nadu",
+        "note": "A panel will be formed so that books for libraries are bought openly and fairly.",
+        "noteMl": "പുസ്തകം വാങ്ങൽ സുതാര്യമാക്കാൻ സമിതി.",
+        "words": [
+          {
+            "en": "to be set up",
+            "ml": "രൂപീകരിക്കും"
+          },
+          {
+            "en": "procurement",
+            "ml": "സംഭരണം, വാങ്ങൽ"
+          }
+        ]
+      },
+      {
+        "title": "After Bangladesh rules out passport for Hasina, India says ‘travel document’ needed",
+        "ml": "ഹസീനയ്ക്ക് പാസ്പോർട്ട് നൽകില്ലെന്ന് ബംഗ്ലാദേശ്; 'യാത്രാരേഖ' വേണമെന്ന് ഇന്ത്യ",
+        "section": "World",
+        "note": "Bangladesh will not issue Sheikh Hasina a passport; India says she needs some travel document.",
+        "noteMl": "പാസ്പോർട്ട് നിഷേധിച്ചു; യാത്രാരേഖ വേണമെന്ന് ഇന്ത്യ.",
+        "words": [
+          {
+            "en": "rules out",
+            "ml": "തള്ളിക്കളയുന്നു, സാധ്യത നിഷേധിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "ED attaches assets worth ₹18 crore linked to rice mill loan fraud case",
+        "ml": "അരി മിൽ വായ്പാ തട്ടിപ്പ് കേസിൽ ₹18 കോടിയുടെ സ്വത്ത് ഇഡി കണ്ടുകെട്ടി",
+        "section": "National",
+        "note": "The Enforcement Directorate froze property worth ₹18 crore in a loan fraud case.",
+        "noteMl": "വായ്പാ തട്ടിപ്പ് കേസിൽ സ്വത്ത് കണ്ടുകെട്ടി.",
+        "words": [
+          {
+            "en": "ED (Enforcement Directorate)",
+            "ml": "എൻഫോഴ്സ്മെന്റ് ഡയറക്ടറേറ്റ്"
+          },
+          {
+            "en": "attaches",
+            "ml": "(സ്വത്ത്) കണ്ടുകെട്ടുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Government plans curbs on film promotions and commercial events in educational institutions",
+        "ml": "വിദ്യാഭ്യാസ സ്ഥാപനങ്ങളിൽ സിനിമാ പ്രമോഷനും വാണിജ്യ പരിപാടികൾക്കും നിയന്ത്രണം വരുന്നു",
+        "section": "National",
+        "note": "The government wants to limit film promotions and business events on campuses.",
+        "noteMl": "ക്യാമ്പസുകളിൽ സിനിമാ പ്രചാരണത്തിന് നിയന്ത്രണം.",
+        "words": [
+          {
+            "en": "curbs",
+            "ml": "നിയന്ത്രണങ്ങൾ"
+          }
+        ]
+      },
+      {
+        "title": "Law and order in coma in Tamil Nadu, says Stalin",
+        "ml": "തമിഴ്നാട്ടിൽ ക്രമസമാധാനം കോമയിലെന്ന് സ്റ്റാലിൻ",
+        "section": "Tamil Nadu",
+        "note": "Stalin says law and order in the State has completely broken down.",
+        "noteMl": "ക്രമസമാധാനം തകർന്നെന്ന് വിമർശനം.",
+        "words": [
+          {
+            "en": "law and order",
+            "ml": "ക്രമസമാധാനം"
+          },
+          {
+            "en": "in coma",
+            "ml": "പ്രവർത്തനരഹിതം (ശൈലി)"
+          }
+        ]
+      },
+      {
+        "title": "Sri Lankan boat drifts into Indian waters due to bad weather, two fishermen detained at Pamban",
+        "ml": "മോശം കാലാവസ്ഥയിൽ ശ്രീലങ്കൻ ബോട്ട് ഇന്ത്യൻ കടലിലേക്ക് ഒഴുകിയെത്തി; രണ്ട് മത്സ്യത്തൊഴിലാളികൾ കസ്റ്റഡിയിൽ",
+        "section": "Tamil Nadu",
+        "note": "Bad weather pushed a Sri Lankan boat into Indian waters; two fishermen were held.",
+        "noteMl": "രണ്ടുപേരെ പാമ്പനിൽ തടഞ്ഞുവെച്ചു.",
+        "words": [
+          {
+            "en": "drifts",
+            "ml": "ഒഴുകിനീങ്ങുന്നു"
+          },
+          {
+            "en": "detained",
+            "ml": "കസ്റ്റഡിയിലെടുത്തു"
+          }
+        ]
+      },
+      {
+        "title": "NDA wrests Kadapa ZPTCs from YSRCP",
+        "ml": "കടപ്പയിലെ ZPTC സീറ്റുകൾ YSRCP-യിൽ നിന്ന് NDA പിടിച്ചെടുത്തു",
+        "section": "Andhra Pradesh",
+        "note": "The NDA won district council seats in Kadapa that the YSRCP used to hold.",
+        "noteMl": "YSRCP കോട്ടയിൽ NDA ജയം.",
+        "words": [
+          {
+            "en": "wrests",
+            "ml": "ബലമായി പിടിച്ചെടുക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Madras High Court restrains thermal power plant workers from going on strike",
+        "ml": "താപവൈദ്യുത നിലയ ജീവനക്കാരുടെ സമരം മദ്രാസ് ഹൈക്കോടതി തടഞ്ഞു",
+        "section": "Tamil Nadu",
+        "note": "The High Court has stopped power plant workers from striking for now.",
+        "noteMl": "സമരത്തിന് കോടതി വിലക്ക്.",
+        "words": [
+          {
+            "en": "restrains",
+            "ml": "തടയുന്നു (കോടതി)"
+          }
+        ]
+      },
+      {
+        "title": "Over 74 lakh voters missing from Tamil Nadu electoral rolls, says citizens’ collective",
+        "ml": "തമിഴ്നാട് വോട്ടർ പട്ടികയിൽ നിന്ന് 74 ലക്ഷത്തിലധികം പേർ കാണാനില്ലെന്ന് പൗര കൂട്ടായ്മ",
+        "section": "Tamil Nadu",
+        "note": "A citizens' group says more than 74 lakh names are missing from the voter list.",
+        "noteMl": "വോട്ടർ പട്ടികയിൽ വലിയ കുറവ് എന്ന് ആരോപണം.",
+        "words": [
+          {
+            "en": "electoral rolls",
+            "ml": "വോട്ടർ പട്ടിക"
+          },
+          {
+            "en": "collective",
+            "ml": "കൂട്ടായ്മ"
+          }
+        ]
+      },
+      {
+        "title": "Suspension of senior IPS officer extended to March 2027",
+        "ml": "മുതിർന്ന ഐപിഎസ് ഉദ്യോഗസ്ഥന്റെ സസ്പെൻഷൻ 2027 മാർച്ച് വരെ നീട്ടി",
+        "section": "Andhra Pradesh",
+        "note": "A senior police officer's suspension has been lengthened to March 2027.",
+        "noteMl": "സസ്പെൻഷൻ നീട്ടി.",
+        "words": [
+          {
+            "en": "IPS (Indian Police Service)",
+            "ml": "ഇന്ത്യൻ പോലീസ് സർവീസ്"
+          },
+          {
+            "en": "extended",
+            "ml": "നീട്ടി"
+          }
+        ]
+      },
+      {
+        "title": "Murthy Yadav quits JSP over ticket denial",
+        "ml": "സീറ്റ് നിഷേധിച്ചതിനെച്ചൊല്ലി മൂർത്തി യാദവ് ജനസേന പാർട്ടി വിട്ടു",
+        "section": "Andhra Pradesh",
+        "note": "He left the Jana Sena Party because it did not give him an election ticket.",
+        "noteMl": "സീറ്റ് കിട്ടാത്തതിനാൽ പാർട്ടി വിട്ടു.",
+        "words": [
+          {
+            "en": "quits",
+            "ml": "രാജിവെക്കുന്നു, വിടുന്നു"
+          },
+          {
+            "en": "ticket denial",
+            "ml": "സ്ഥാനാർഥിത്വം നിഷേധിക്കൽ"
+          }
+        ]
+      },
+      {
+        "title": "Blackstone to buy about 16% stake in India's IIFL Finance for $535 million",
+        "ml": "IIFL ഫിനാൻസിന്റെ 16% ഓഹരി 535 ദശലക്ഷം ഡോളറിന് ബ്ലാക്ക്സ്റ്റോൺ വാങ്ങും",
+        "section": "Business",
+        "note": "US investment firm Blackstone will buy a 16% share of IIFL Finance.",
+        "noteMl": "ഓഹരി വാങ്ങൽ പ്രഖ്യാപനം.",
+        "words": [
+          {
+            "en": "stake",
+            "ml": "ഓഹരി പങ്കാളിത്തം"
+          },
+          {
+            "en": "to buy",
+            "ml": "വാങ്ങും"
+          }
+        ]
+      },
+      {
+        "title": "Three persons convicted in ₹26.58-lakh commercial tax fraud case in Keralam",
+        "ml": "₹26.58 ലക്ഷത്തിന്റെ വാണിജ്യ നികുതി തട്ടിപ്പ് കേസിൽ മൂന്നുപേർ കുറ്റക്കാർ",
+        "section": "Kerala",
+        "note": "A court found three people guilty in a commercial tax fraud case.",
+        "noteMl": "നികുതി തട്ടിപ്പിൽ ശിക്ഷ.",
+        "words": [
+          {
+            "en": "convicted",
+            "ml": "കുറ്റക്കാരെന്ന് വിധിച്ചു"
+          }
+        ]
+      },
+      {
+        "title": "Ladakh announces hill council elections, but fails to assuage protesting civil society groups",
+        "ml": "ലഡാക്കിൽ ഹിൽ കൗൺസിൽ തിരഞ്ഞെടുപ്പ് പ്രഖ്യാപിച്ചു; പ്രതിഷേധിക്കുന്ന സംഘടനകളെ തൃപ്തിപ്പെടുത്താനായില്ല",
+        "section": "National",
+        "note": "Elections were announced, but protest groups are still not satisfied.",
+        "noteMl": "പ്രഖ്യാപനത്തിലും പ്രതിഷേധം തീർന്നില്ല.",
+        "words": [
+          {
+            "en": "assuage",
+            "ml": "ശമിപ്പിക്കുക, തൃപ്തിപ്പെടുത്തുക"
+          },
+          {
+            "en": "civil society",
+            "ml": "പൗരസമൂഹം"
+          }
+        ]
+      },
+      {
+        "title": "CID unearth webland scam, four arrested",
+        "ml": "വെബ്‌ലാൻഡ് തട്ടിപ്പ് സിഐഡി കണ്ടെത്തി; നാലുപേർ അറസ്റ്റിൽ",
+        "section": "Andhra Pradesh",
+        "note": "Investigators exposed a fraud in online land records and arrested four people.",
+        "noteMl": "ഓൺലൈൻ ഭൂരേഖാ തട്ടിപ്പ്.",
+        "words": [
+          {
+            "en": "unearth",
+            "ml": "പുറത്തുകൊണ്ടുവരിക, കണ്ടെത്തുക"
+          },
+          {
+            "en": "scam",
+            "ml": "തട്ടിപ്പ്, അഴിമതി"
+          }
+        ]
+      }
+    ]
   }
 ];
