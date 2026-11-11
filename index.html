@@ -247,10 +247,15 @@
   </footer>
 </div>
 
-<script src="guide.js"></script>
-<script src="core.js"></script>
-<script src="notes.js"></script>
-<script src="daily.js"></script>
+<script>
+  // Load the data files fresh on every visit, so new notes show without waiting for the browser cache.
+  (function () {
+    var v = Date.now();
+    ["guide.js", "core.js", "notes.js", "daily.js"].forEach(function (f) {
+      document.write('<script src="' + f + '?v=' + v + '"><\/script>');
+    });
+  })();
+</script>
 <script>
 (function () {
   const $ = (s) => document.querySelector(s);
