@@ -1488,5 +1488,483 @@ window.NOTES = [
         ]
       }
     ]
+  },
+  {
+    date: "2026-11-11",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "Bihar Cabinet hikes 3% DA for employees, pensioners",
+        "ml": "ജീവനക്കാർക്കും പെൻഷൻകാർക്കും 3% ഡിഎ വർധിപ്പിച്ച് ബിഹാർ മന്ത്രിസഭ",
+        "section": "National",
+        "note": "Bihar raised the dearness allowance of its staff and pensioners by 3%.",
+        "noteMl": "ക്ഷാമബത്ത 3% കൂട്ടി.",
+        "words": [
+          {
+            "en": "hikes",
+            "ml": "വർധിപ്പിക്കുന്നു"
+          },
+          {
+            "en": "DA (dearness allowance)",
+            "ml": "ക്ഷാമബത്ത"
+          }
+        ]
+      },
+      {
+        "title": "Hemant Soren recommends CBI probe into Nisha Bhagat’s death case",
+        "ml": "നിഷ ഭഗതിന്റെ മരണക്കേസിൽ സിബിഐ അന്വേഷണത്തിന് ഹേമന്ത് സോറന്റെ ശുപാർശ",
+        "section": "National",
+        "note": "The Jharkhand CM wants the CBI to investigate a death case.",
+        "noteMl": "കേസ് സിബിഐക്ക് വിടാൻ ശുപാർശ.",
+        "words": [
+          {
+            "en": "CBI",
+            "ml": "കേന്ദ്ര അന്വേഷണ ഏജൻസി (സിബിഐ)"
+          },
+          {
+            "en": "probe",
+            "ml": "അന്വേഷണം"
+          }
+        ]
+      },
+      {
+        "title": "Bombay High Court declines request for hearing each day in quota petitions for Maratha reservation",
+        "ml": "മറാഠാ സംവരണ ഹർജികളിൽ ദിവസേന വാദം കേൾക്കണമെന്ന ആവശ്യം ബോംബെ ഹൈക്കോടതി തള്ളി",
+        "section": "National",
+        "note": "The court refused to hear the Maratha quota cases every day.",
+        "noteMl": "ദിവസേന വാദം കേൾക്കില്ല.",
+        "words": [
+          {
+            "en": "declines",
+            "ml": "നിരസിക്കുന്നു"
+          },
+          {
+            "en": "quota",
+            "ml": "സംവരണം"
+          }
+        ]
+      },
+      {
+        "title": "NCP’s Rajesh Patil secures Gokul Dairy chairperson post; setback for Congress",
+        "ml": "ഗോകുൽ ഡയറി അധ്യക്ഷസ്ഥാനം എൻസിപിയുടെ രാജേഷ് പാട്ടീലിന്; കോൺഗ്രസിന് തിരിച്ചടി",
+        "section": "National",
+        "note": "An NCP leader won the dairy co-operative's top post, a loss for Congress.",
+        "noteMl": "കോൺഗ്രസിന് തിരിച്ചടി.",
+        "words": [
+          {
+            "en": "secures",
+            "ml": "നേടുന്നു"
+          },
+          {
+            "en": "setback",
+            "ml": "തിരിച്ചടി"
+          }
+        ]
+      },
+      {
+        "title": "Register FIR in public library book ‘scam’ case, Madras HC directs DVAC",
+        "ml": "ലൈബ്രറി പുസ്തക 'അഴിമതി' കേസിൽ എഫ്ഐആർ രജിസ്റ്റർ ചെയ്യാൻ വിജിലൻസിനോട് മദ്രാസ് ഹൈക്കോടതി",
+        "section": "Tamil Nadu",
+        "note": "The High Court told the vigilance wing to file a case over library book purchases.",
+        "noteMl": "വിജിലൻസ് കേസെടുക്കണം.",
+        "words": [
+          {
+            "en": "directs",
+            "ml": "നിർദേശിക്കുന്നു"
+          },
+          {
+            "en": "FIR",
+            "ml": "പ്രഥമ വിവര റിപ്പോർട്ട്"
+          }
+        ]
+      },
+      {
+        "title": "TVK MLA facing allegations of sending obscene messages to Kallakurichi Collector denies charge",
+        "ml": "കളക്ടർക്ക് അശ്ലീല സന്ദേശം അയച്ചെന്ന ആരോപണം നിഷേധിച്ച് ടിവികെ എംഎൽഎ",
+        "section": "Tamil Nadu",
+        "note": "The MLA says the accusation against him is untrue.",
+        "noteMl": "ആരോപണം നിഷേധിച്ചു.",
+        "words": [
+          {
+            "en": "denies charge",
+            "ml": "ആരോപണം നിഷേധിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Delhi HC disposes of contempt plea against AITA office-bearers",
+        "ml": "AITA ഭാരവാഹികൾക്കെതിരായ കോടതിയലക്ഷ്യ ഹർജി ഡൽഹി ഹൈക്കോടതി തീർപ്പാക്കി",
+        "section": "Sport",
+        "note": "The court closed a contempt petition against tennis association officials.",
+        "noteMl": "ഹർജി തീർപ്പാക്കി.",
+        "words": [
+          {
+            "en": "disposes of",
+            "ml": "(ഹർജി) തീർപ്പാക്കുന്നു"
+          },
+          {
+            "en": "contempt plea",
+            "ml": "കോടതിയലക്ഷ്യ ഹർജി"
+          }
+        ]
+      },
+      {
+        "title": "Govt. prohibits export of unsorted lithium-ion battery waste, scrap",
+        "ml": "തരംതിരിക്കാത്ത ലിഥിയം-അയോൺ ബാറ്ററി മാലിന്യത്തിന്റെ കയറ്റുമതി സർക്കാർ നിരോധിച്ചു",
+        "section": "Business",
+        "note": "Exporting unsorted lithium battery waste is now banned.",
+        "noteMl": "ബാറ്ററി മാലിന്യ കയറ്റുമതിക്ക് വിലക്ക്.",
+        "words": [
+          {
+            "en": "prohibits",
+            "ml": "നിരോധിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Mother Dairy raises milk prices by ₹2-4 per litre, effective November 12",
+        "ml": "മദർ ഡയറി പാൽവില ലിറ്ററിന് ₹2-4 കൂട്ടി; നവംബർ 12 മുതൽ പ്രാബല്യം",
+        "section": "Business",
+        "note": "Milk becomes ₹2–4 dearer per litre from 12 November.",
+        "noteMl": "പാൽവില കൂടി.",
+        "words": [
+          {
+            "en": "effective",
+            "ml": "...മുതൽ പ്രാബല്യത്തിൽ"
+          }
+        ]
+      },
+      {
+        "title": "What is Megaspeed International, the firm under scanner over Nvidia CEO Jensen Huang affair",
+        "ml": "എൻവിഡിയ സിഇഒ വിവാദത്തിൽ അന്വേഷണം നേരിടുന്ന മെഗാസ്പീഡ് ഇന്റർനാഷണൽ എന്താണ്",
+        "section": "Business",
+        "note": "An explainer on the company being investigated in the Nvidia CEO affair.",
+        "noteMl": "വിശദീകരണ ലേഖനം.",
+        "words": [
+          {
+            "en": "under scanner",
+            "ml": "അന്വേഷണ വിധേയം"
+          }
+        ]
+      },
+      {
+        "title": "Former Pakistan PM Imran Khan back in jail after medical treatment, sources say",
+        "ml": "ചികിത്സയ്ക്ക് ശേഷം ഇമ്രാൻ ഖാൻ വീണ്ടും ജയിലിലെന്ന് വൃത്തങ്ങൾ",
+        "section": "World",
+        "note": "Unnamed sources say Imran Khan has been returned to jail after treatment.",
+        "noteMl": "ചികിത്സ കഴിഞ്ഞ് ജയിലിൽ.",
+        "words": [
+          {
+            "en": "sources say",
+            "ml": "വൃത്തങ്ങൾ പറയുന്നു (പേര് വെളിപ്പെടുത്താത്തവർ)"
+          }
+        ]
+      },
+      {
+        "title": "Court summons former Keralam DGP R. Sreelekha in Rahul Gandhi defamation case",
+        "ml": "രാഹുൽ ഗാന്ധി മാനനഷ്ടക്കേസിൽ മുൻ ഡിജിപി ആർ. ശ്രീലേഖയ്ക്ക് കോടതി സമൻസ്",
+        "section": "Kerala",
+        "note": "A court has ordered the former police chief to appear in a defamation case.",
+        "noteMl": "കോടതിയിൽ ഹാജരാകാൻ സമൻസ്.",
+        "words": [
+          {
+            "en": "summons",
+            "ml": "ഹാജരാകാൻ ഉത്തരവിടുന്നു"
+          },
+          {
+            "en": "defamation",
+            "ml": "മാനനഷ്ടം"
+          }
+        ]
+      },
+      {
+        "title": "Amid call for Ladakh protest, CEO prohibits dharnas in Leh, Kargil over upcoming polls",
+        "ml": "പ്രതിഷേധ ആഹ്വാനത്തിനിടെ ലേയിലും കാർഗിലിലും ധർണകൾ നിരോധിച്ച് തിരഞ്ഞെടുപ്പ് ഓഫീസർ",
+        "section": "National",
+        "note": "Because of the coming elections, sit-in protests are banned in Leh and Kargil.",
+        "noteMl": "തിരഞ്ഞെടുപ്പ് കാരണം ധർണ നിരോധനം.",
+        "words": [
+          {
+            "en": "amid",
+            "ml": "...നിടയിൽ"
+          },
+          {
+            "en": "dharnas",
+            "ml": "ധർണകൾ, കുത്തിയിരിപ്പ് സമരം"
+          }
+        ]
+      },
+      {
+        "title": "Man detained for making hoax bomb threat in Coimbatore",
+        "ml": "വ്യാജ ബോംബ് ഭീഷണി മുഴക്കിയയാൾ കോയമ്പത്തൂരിൽ കസ്റ്റഡിയിൽ",
+        "section": "Tamil Nadu",
+        "note": "Police held a man who made a fake bomb threat.",
+        "noteMl": "വ്യാജ ഭീഷണി; ഒരാൾ പിടിയിൽ.",
+        "words": [
+          {
+            "en": "hoax",
+            "ml": "വ്യാജം, കബളിപ്പിക്കൽ"
+          },
+          {
+            "en": "detained",
+            "ml": "കസ്റ്റഡിയിലെടുത്തു"
+          }
+        ]
+      },
+      {
+        "title": "Liberia-flagged VLCC hit in Persian Gulf, six Indian seafarers aboard: Sarbananda Sonowal",
+        "ml": "ആറ് ഇന്ത്യൻ നാവികരുള്ള ലൈബീരിയൻ കപ്പൽ പേർഷ്യൻ ഗൾഫിൽ ആക്രമിക്കപ്പെട്ടു: സർബാനന്ദ സോനോവാൾ",
+        "section": "World",
+        "note": "The Shipping Minister says a large oil tanker with six Indians on board was hit.",
+        "noteMl": "ഇന്ത്യക്കാരുള്ള ടാങ്കറിന് നേരെ ആക്രമണം.",
+        "words": [
+          {
+            "en": "VLCC",
+            "ml": "വളരെ വലിയ എണ്ണക്കപ്പൽ"
+          },
+          {
+            "en": "aboard",
+            "ml": "കപ്പലിൽ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    date: "2026-11-12",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "UN peacekeepers failed to protect civilians before South Sudan massacre: Amnesty",
+        "ml": "ദക്ഷിണ സുഡാൻ കൂട്ടക്കൊലയ്ക്ക് മുമ്പ് സാധാരണക്കാരെ സംരക്ഷിക്കുന്നതിൽ യുഎൻ സമാധാനസേന പരാജയപ്പെട്ടു: ആംനസ്റ്റി",
+        "section": "World",
+        "note": "Amnesty International blames UN troops for not protecting people.",
+        "noteMl": "യുഎൻ സേനയ്ക്കെതിരെ ആംനസ്റ്റി.",
+        "words": [
+          {
+            "en": "peacekeepers",
+            "ml": "സമാധാനസേന"
+          },
+          {
+            "en": "massacre",
+            "ml": "കൂട്ടക്കൊല"
+          }
+        ]
+      },
+      {
+        "title": "Trump defends Iran war in Veterans Day address",
+        "ml": "വെറ്ററൻസ് ദിന പ്രസംഗത്തിൽ ഇറാൻ യുദ്ധത്തെ ന്യായീകരിച്ച് ട്രംപ്",
+        "section": "World",
+        "note": "In a speech honouring ex-soldiers, Trump justified the war with Iran.",
+        "noteMl": "യുദ്ധത്തെ ന്യായീകരിച്ചു.",
+        "words": [
+          {
+            "en": "defends",
+            "ml": "ന്യായീകരിക്കുന്നു"
+          },
+          {
+            "en": "address",
+            "ml": "പ്രസംഗം"
+          }
+        ]
+      },
+      {
+        "title": "AAP meets CAQM, complains about alleged AQI manipulation",
+        "ml": "AQI-യിൽ കൃത്രിമം കാണിക്കുന്നുവെന്ന് ആരോപിച്ച് AAP വായു ഗുണനിലവാര കമ്മീഷനെ കണ്ടു",
+        "section": "Delhi",
+        "note": "AAP says air-quality numbers are being tampered with, and complained to the commission.",
+        "noteMl": "AQI കണക്കിൽ കൃത്രിമമെന്ന് ആരോപണം.",
+        "words": [
+          {
+            "en": "alleged",
+            "ml": "ആരോപിക്കപ്പെടുന്ന"
+          },
+          {
+            "en": "manipulation",
+            "ml": "കൃത്രിമം"
+          }
+        ]
+      },
+      {
+        "title": "Punjab polls: Congress begins campaign; BJP takes a dig",
+        "ml": "പഞ്ചാബ് തിരഞ്ഞെടുപ്പ്: കോൺഗ്രസ് പ്രചാരണം തുടങ്ങി; ബിജെപിയുടെ പരിഹാസം",
+        "section": "National",
+        "note": "Congress started campaigning in Punjab and the BJP mocked it.",
+        "noteMl": "ബിജെപി കളിയാക്കി.",
+        "words": [
+          {
+            "en": "takes a dig",
+            "ml": "പരിഹസിക്കുന്നു, കുത്തുവാക്ക് പറയുന്നു"
+          },
+          {
+            "en": "polls",
+            "ml": "തിരഞ്ഞെടുപ്പ്"
+          }
+        ]
+      },
+      {
+        "title": "Keralam government centralising power in Chief Minister’s office: Pinarayi Vijayan",
+        "ml": "സർക്കാർ അധികാരം മുഖ്യമന്ത്രിയുടെ ഓഫീസിൽ കേന്ദ്രീകരിക്കുന്നു: പിണറായി വിജയൻ",
+        "section": "Kerala",
+        "note": "Pinarayi Vijayan accuses the government of putting all power in the CM's office.",
+        "noteMl": "അധികാര കേന്ദ്രീകരണമെന്ന് വിമർശനം.",
+        "words": [
+          {
+            "en": "centralising",
+            "ml": "കേന്ദ്രീകരിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "MP alleges intelligence failure over Nanjangud drug racket",
+        "ml": "നഞ്ചൻഗുഡ് ലഹരി റാക്കറ്റിൽ ഇന്റലിജൻസ് വീഴ്ചയെന്ന് എംപി",
+        "section": "Karnataka",
+        "note": "An MP says intelligence agencies missed a drug ring.",
+        "noteMl": "രഹസ്യാന്വേഷണ വീഴ്ചയെന്ന് ആരോപണം.",
+        "words": [
+          {
+            "en": "alleges",
+            "ml": "ആരോപിക്കുന്നു"
+          },
+          {
+            "en": "racket",
+            "ml": "തട്ടിപ്പ് സംഘം, റാക്കറ്റ്"
+          }
+        ]
+      },
+      {
+        "title": "Madras High Court sets aside one-month simple imprisonment imposed on IAS officer Anshul Mishra in contempt proceedings",
+        "ml": "കോടതിയലക്ഷ്യക്കേസിൽ ഐഎഎസ് ഉദ്യോഗസ്ഥന് വിധിച്ച ഒരു മാസത്തെ തടവ് മദ്രാസ് ഹൈക്കോടതി റദ്ദാക്കി",
+        "section": "Tamil Nadu",
+        "note": "The High Court cancelled a one-month jail term given to an IAS officer.",
+        "noteMl": "തടവുശിക്ഷ റദ്ദാക്കി.",
+        "words": [
+          {
+            "en": "sets aside",
+            "ml": "(വിധി) റദ്ദാക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Rupee falls 33 paise to close at 94.04 against U.S. dollar",
+        "ml": "ഡോളറിനെതിരെ രൂപ 33 പൈസ ഇടിഞ്ഞ് 94.04-ൽ ക്ലോസ് ചെയ്തു",
+        "section": "Business",
+        "note": "The rupee weakened by 33 paise against the dollar.",
+        "noteMl": "രൂപയുടെ മൂല്യം ഇടിഞ്ഞു.",
+        "words": [
+          {
+            "en": "falls",
+            "ml": "ഇടിയുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Markets extend gains for 3rd day; Sensex ends above 81,900 on FII inflows, lower crude oil",
+        "ml": "തുടർച്ചയായ മൂന്നാം ദിവസവും വിപണി നേട്ടത്തിൽ; വിദേശ നിക്ഷേപവും എണ്ണവിലയിടിവും സെൻസെക്സിനെ 81,900-ന് മുകളിലെത്തിച്ചു",
+        "section": "Business",
+        "note": "Shares rose for a third day, helped by foreign investment and cheaper oil.",
+        "noteMl": "ഓഹരി വിപണി മുന്നേറ്റം.",
+        "words": [
+          {
+            "en": "extend gains",
+            "ml": "നേട്ടം തുടരുന്നു"
+          },
+          {
+            "en": "on",
+            "ml": "...കാരണം (on FII inflows)"
+          }
+        ]
+      },
+      {
+        "title": "Palaniswami declines to spell out AIADMK stand on possible no-confidence motion against TVK govt.",
+        "ml": "ടിവികെ സർക്കാരിനെതിരായ അവിശ്വാസ പ്രമേയത്തിൽ എഐഎഡിഎംകെ നിലപാട് വ്യക്തമാക്കാതെ പളനിസ്വാമി",
+        "section": "Tamil Nadu",
+        "note": "Palaniswami would not say how his party will vote on a no-confidence motion.",
+        "noteMl": "നിലപാട് വെളിപ്പെടുത്തിയില്ല.",
+        "words": [
+          {
+            "en": "spell out",
+            "ml": "വ്യക്തമാക്കുക"
+          },
+          {
+            "en": "no-confidence motion",
+            "ml": "അവിശ്വാസ പ്രമേയം"
+          }
+        ]
+      },
+      {
+        "title": "Michael Carrick sacked as Manchester United manager after club’s worst start to a Premier League season",
+        "ml": "ക്ലബ്ബിന്റെ ഏറ്റവും മോശം തുടക്കത്തിന് പിന്നാലെ മാഞ്ചസ്റ്റർ യുണൈറ്റഡ് മാനേജർ കാരിക്കിനെ പുറത്താക്കി",
+        "section": "Sport",
+        "note": "Manchester United fired its manager after a very poor start to the season.",
+        "noteMl": "മാനേജറെ പുറത്താക്കി.",
+        "words": [
+          {
+            "en": "sacked",
+            "ml": "പിരിച്ചുവിട്ടു, പുറത്താക്കി"
+          }
+        ]
+      },
+      {
+        "title": "Tamil Nadu Cyber Crime Wing busts illegal SIM box racket in Chennai; two arrested",
+        "ml": "ചെന്നൈയിലെ അനധികൃത സിം ബോക്സ് റാക്കറ്റ് സൈബർ ക്രൈം വിഭാഗം തകർത്തു; രണ്ടുപേർ അറസ്റ്റിൽ",
+        "section": "Tamil Nadu",
+        "note": "Cyber police broke up an illegal call-routing setup and arrested two.",
+        "noteMl": "റാക്കറ്റ് പിടികൂടി.",
+        "words": [
+          {
+            "en": "busts",
+            "ml": "(സംഘത്തെ) തകർക്കുന്നു, പിടികൂടുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Keralam braces for more rains as low-pressure area likely over Bay of Bengal by November 13",
+        "ml": "ബംഗാൾ ഉൾക്കടലിൽ ന്യൂനമർദ സാധ്യത; കൂടുതൽ മഴയ്ക്ക് ഒരുങ്ങി കേരളം",
+        "section": "Kerala",
+        "note": "Kerala expects more rain because a low-pressure area may form.",
+        "noteMl": "കൂടുതൽ മഴയ്ക്ക് സാധ്യത.",
+        "words": [
+          {
+            "en": "braces for",
+            "ml": "...നെ നേരിടാൻ ഒരുങ്ങുന്നു"
+          },
+          {
+            "en": "low-pressure area",
+            "ml": "ന്യൂനമർദം"
+          }
+        ]
+      },
+      {
+        "title": "Noel Tata retires as Tata Investment chaiperson; Bahram Vakil to succeed him",
+        "ml": "ടാറ്റ ഇൻവെസ്റ്റ്മെന്റ് അധ്യക്ഷസ്ഥാനത്ത് നിന്ന് നോയൽ ടാറ്റ വിരമിച്ചു; ബഹ്റാം വക്കീൽ പിൻഗാമി",
+        "section": "Business",
+        "note": "Noel Tata steps down; Bahram Vakil will take over.",
+        "noteMl": "പുതിയ അധ്യക്ഷൻ വരും.",
+        "words": [
+          {
+            "en": "to succeed",
+            "ml": "പിൻഗാമിയാകും"
+          }
+        ]
+      },
+      {
+        "title": "CPI seeks probe into ‘poll discrepancies’",
+        "ml": "'തിരഞ്ഞെടുപ്പ് പൊരുത്തക്കേടുകളിൽ' അന്വേഷണം വേണമെന്ന് സിപിഐ",
+        "section": "National",
+        "note": "CPI wants an inquiry into what it calls irregularities in the polls.",
+        "noteMl": "അന്വേഷണം ആവശ്യപ്പെട്ടു.",
+        "words": [
+          {
+            "en": "seeks probe",
+            "ml": "അന്വേഷണം ആവശ്യപ്പെടുന്നു"
+          },
+          {
+            "en": "discrepancies",
+            "ml": "പൊരുത്തക്കേടുകൾ"
+          }
+        ]
+      }
+    ]
   }
 ];

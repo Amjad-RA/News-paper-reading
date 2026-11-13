@@ -28,7 +28,8 @@ window.GUIDE = [
       { h: "Summary revision to begin in 6 States, U.T.s", read: "The summary revision will begin.", ml: "പുതുക്കൽ ആരംഭിക്കും." },
       { h: "Communal harmony committees to be formed in grama panchayats", read: "Committees will be formed.", ml: "സമിതികൾ രൂപീകരിക്കും." },
       { h: "Minister Agnimitra Paul says rose water to be used for mist spraying in Kolkata; environmentalist slams move", read: "Rose water will be used...", ml: "പനിനീർ ഉപയോഗിക്കും (ഭാവി)." },
-      { h: "Blackstone to buy about 16% stake in India's IIFL Finance for $535 million", read: "Blackstone will buy a 16% stake.", ml: "വാങ്ങും (ഭാവി)." }
+      { h: "Blackstone to buy about 16% stake in India's IIFL Finance for $535 million", read: "Blackstone will buy a 16% stake.", ml: "വാങ്ങും (ഭാവി)." },
+      { h: "Noel Tata retires as Tata Investment chaiperson; Bahram Vakil to succeed him", read: "Bahram Vakil will succeed him.", ml: "പിൻഗാമിയാകും." }
     ]
   },
   {
@@ -50,7 +51,8 @@ window.GUIDE = [
     ml: "സ്ഥലം ലാഭിക്കാൻ a, an, the, is, are എന്നിവ ഒഴിവാക്കും. വായിക്കുമ്പോൾ മനസ്സിൽ അവ ചേർത്ത് വായിക്കുക.",
     examples: [
       { h: "Saudi Arabia warns of danger in oil hub", read: "Saudi Arabia warns of a danger in an oil hub.", ml: "എണ്ണ കേന്ദ്രത്തിൽ അപകടഭീഷണിയെന്ന് മുന്നറിയിപ്പ്." },
-      { h: "PSC chief, members, under CB scanner", read: "The PSC chief and members are under the Crime Branch's scanner.", ml: "ക്രൈംബ്രാഞ്ച് അന്വേഷണത്തിൽ." }
+      { h: "PSC chief, members, under CB scanner", read: "The PSC chief and members are under the Crime Branch's scanner.", ml: "ക്രൈംബ്രാഞ്ച് അന്വേഷണത്തിൽ." },
+      { h: "Former Pakistan PM Imran Khan back in jail after medical treatment, sources say", read: "Imran Khan is back in jail...", ml: "'is' ഒഴിവാക്കി." }
     ]
   },
   {
@@ -61,7 +63,8 @@ window.GUIDE = [
       { h: "24-hour rule starts from detention: SC", read: "The Supreme Court says the 24-hour rule starts from detention.", ml: "സുപ്രീം കോടതി പറഞ്ഞു." },
       { h: "No compromise on safety aspects: AERB chief", read: "The AERB chief says there will be no compromise.", ml: "AERB മേധാവി പറഞ്ഞു." },
       { h: "Egypt train collision kills 7, injures 125: Health Ministry", read: "The Health Ministry says the collision killed 7.", ml: "ആരോഗ്യ മന്ത്രാലയം പറയുന്നു." },
-      { h: "Israeli forces shoot dead 14-year-old in West Bank: Palestinian officials", read: "Palestinian officials say this.", ml: "പലസ്തീൻ അധികൃതർ പറയുന്നു." }
+      { h: "Israeli forces shoot dead 14-year-old in West Bank: Palestinian officials", read: "Palestinian officials say this.", ml: "പലസ്തീൻ അധികൃതർ പറയുന്നു." },
+      { h: "UN peacekeepers failed to protect civilians before South Sudan massacre: Amnesty", read: "Amnesty says so.", ml: "ആംനസ്റ്റി പറയുന്നു." }
     ]
   },
   {
@@ -71,7 +74,8 @@ window.GUIDE = [
     examples: [
       { h: "Nedumbassery crash: car's speed put at 162 kmph", read: "About the Nedumbassery crash: the car's speed is estimated at 162 kmph.", ml: "നെടുമ്പാശ്ശേരി അപകടം: വേഗം 162 കി.മീ." },
       { h: "Cheranalloor car crash: High Court grants anticipatory bail to judge", read: "About the Cheranalloor crash: the HC granted bail.", ml: "ചേരാനല്ലൂർ അപകടം: മുൻകൂർ ജാമ്യം." },
-      { h: "Rajajinagar murders: Two more bodies recovered near Chamundi hills in Mysuru", read: "About the Rajajinagar murders: two more bodies were found.", ml: "വിഷയം: രാജാജിനഗർ കൊലപാതകങ്ങൾ." }
+      { h: "Rajajinagar murders: Two more bodies recovered near Chamundi hills in Mysuru", read: "About the Rajajinagar murders: two more bodies were found.", ml: "വിഷയം: രാജാജിനഗർ കൊലപാതകങ്ങൾ." },
+      { h: "Punjab polls: Congress begins campaign; BJP takes a dig", read: "Topic: Punjab polls. News: Congress starts, BJP mocks.", ml: "വിഷയം: പഞ്ചാബ് തിരഞ്ഞെടുപ്പ്." }
     ]
   },
   {
@@ -82,7 +86,8 @@ window.GUIDE = [
       { h: "BJP leaders meet President over 'irregularities' in KPSC", read: "BJP alleges irregularities; it is not proven.", ml: "'ക്രമക്കേട്' എന്നത് ആരോപണം മാത്രം." },
       { h: "'Zero tolerance against violence on campuses'", read: "These are the Minister's own words.", ml: "മന്ത്രി പറഞ്ഞ വാക്കുകൾ." },
       { h: "Oil falls as Donald Trump says new Iran attacks ‘unlikely’", read: "'unlikely' is Trump's view, not the paper's.", ml: "'സാധ്യതയില്ല' എന്നത് ട്രംപിന്റെ വാക്ക്." },
-      { h: "After Bangladesh rules out passport for Hasina, India says ‘travel document’ needed", read: "'travel document' is India's wording.", ml: "'യാത്രാരേഖ' ഇന്ത്യയുടെ വാക്ക്." }
+      { h: "After Bangladesh rules out passport for Hasina, India says ‘travel document’ needed", read: "'travel document' is India's wording.", ml: "'യാത്രാരേഖ' ഇന്ത്യയുടെ വാക്ക്." },
+      { h: "CPI seeks probe into ‘poll discrepancies’", read: "'poll discrepancies' is CPI's claim.", ml: "CPI-യുടെ ആരോപണം മാത്രം." }
     ]
   },
   {
@@ -113,7 +118,8 @@ window.GUIDE = [
       { h: "SC questions curbs as Delhi AQI nears 400", read: "...while Delhi's AQI nears 400.", ml: "AQI 400-ലേക്ക് അടുക്കവേ." },
       { h: "Railway tracks turn fatal as train knocks down tiger on Kollam-Shencottah route", read: "...because a train knocked down a tiger.", ml: "ട്രെയിൻ ഇടിച്ചതോടെ." },
       { h: "Pope Leo takes Milei to task as he visits divided Argentina", read: "...while he visits Argentina.", ml: "സന്ദർശിക്കുന്നതിനിടെ." },
-      { h: "Air pollution over 50 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali", read: "...because people defied the ban.", ml: "നിരോധനം ലംഘിച്ചതിനാൽ." }
+      { h: "Air pollution over 50 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali", read: "...because people defied the ban.", ml: "നിരോധനം ലംഘിച്ചതിനാൽ." },
+      { h: "Keralam braces for more rains as low-pressure area likely over Bay of Bengal by November 13", read: "...because a low-pressure area is likely.", ml: "ന്യൂനമർദം കാരണം." }
     ]
   },
   {
@@ -137,7 +143,8 @@ window.GUIDE = [
       { h: "No chopper deal was pending when CM took special flight, SPC tells Lok Ayukta", read: "chopper = helicopter", ml: "chopper = ഹെലികോപ്റ്റർ" },
       { h: "Democrats eye Musk, Miller probes after midterm rout", read: "eye = plan; probes = investigations; rout = big win", ml: "eye = ലക്ഷ്യമിടുന്നു; probe = അന്വേഷണം; rout = തൂത്തുവാരൽ" },
       { h: "NDA wrests Kadapa ZPTCs from YSRCP", read: "wrests = takes by force/wins away", ml: "wrest = പിടിച്ചെടുക്കുക" },
-      { h: "Murthy Yadav quits JSP over ticket denial", read: "quits = resigns from; over = because of", ml: "quit = വിടുക; over = ...നെച്ചൊല്ലി" }
+      { h: "Murthy Yadav quits JSP over ticket denial", read: "quits = resigns from; over = because of", ml: "quit = വിടുക; over = ...നെച്ചൊല്ലി" },
+      { h: "Tamil Nadu Cyber Crime Wing busts illegal SIM box racket in Chennai; two arrested", read: "busts = breaks up; racket = illegal business", ml: "bust = പിടികൂടുക; racket = തട്ടിപ്പ് സംഘം" }
     ]
   },
   {
@@ -149,7 +156,8 @@ window.GUIDE = [
       { h: "CM's power purchase stance under a cloud", read: "under a cloud = in doubt", ml: "സംശയത്തിന്റെ നിഴലിൽ" },
       { h: "Ronaldo bids adieu to international football", read: "bid adieu = say goodbye, retire", ml: "വിടപറയുക" },
       { h: "Pope Leo takes Milei to task as he visits divided Argentina", read: "take someone to task = criticise them", ml: "ശാസിക്കുക, വിമർശിക്കുക" },
-      { h: "Law and order in coma in Tamil Nadu, says Stalin", read: "in coma = not working at all", ml: "പ്രവർത്തനരഹിതം" }
+      { h: "Law and order in coma in Tamil Nadu, says Stalin", read: "in coma = not working at all", ml: "പ്രവർത്തനരഹിതം" },
+      { h: "Punjab polls: Congress begins campaign; BJP takes a dig", read: "take a dig = make fun of", ml: "പരിഹസിക്കുക" }
     ]
   },
   {
@@ -157,7 +165,8 @@ window.GUIDE = [
     pattern: "SC, HC, ECI, CM, CB, PSC, U.T., AQI, govt., dept.",
     ml: "SC = സുപ്രീം കോടതി · HC = ഹൈക്കോടതി · ECI = തിരഞ്ഞെടുപ്പ് കമ്മീഷൻ · CM = മുഖ്യമന്ത്രി · CB = ക്രൈംബ്രാഞ്ച് · PSC = പബ്ലിക് സർവീസ് കമ്മീഷൻ · U.T. = കേന്ദ്രഭരണ പ്രദേശം · AQI = വായു ഗുണനിലവാര സൂചിക · govt. = സർക്കാർ · dept. = വകുപ്പ്",
     examples: [
-      { h: "In setback to govt., HC reinstates Milma union dissolved over Sabarimala ghee row", read: "govt. = government, HC = High Court", ml: "സർക്കാർ, ഹൈക്കോടതി" }
+      { h: "In setback to govt., HC reinstates Milma union dissolved over Sabarimala ghee row", read: "govt. = government, HC = High Court", ml: "സർക്കാർ, ഹൈക്കോടതി" },
+      { h: "Bihar Cabinet hikes 3% DA for employees, pensioners", read: "DA = dearness allowance", ml: "DA = ക്ഷാമബത്ത" }
     ]
   },
   {
