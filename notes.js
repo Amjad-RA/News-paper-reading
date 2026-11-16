@@ -1966,5 +1966,681 @@ window.NOTES = [
         ]
       }
     ]
+  },
+  {
+    date: "2026-11-13",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "Restrictions on me arbitrary, vague: Sonam Wangchuk",
+        "ml": "എനിക്കെതിരായ നിയന്ത്രണങ്ങൾ ഏകപക്ഷീയവും അവ്യക്തവും: സോനം വാങ്ചുക്",
+        "section": "National",
+        "note": "Sonam Wangchuk says the curbs placed on him have no clear basis.",
+        "noteMl": "നിയന്ത്രണങ്ങൾ ന്യായമല്ലെന്ന് വാങ്ചുക്.",
+        "words": [
+          {
+            "en": "arbitrary",
+            "ml": "ഏകപക്ഷീയം"
+          },
+          {
+            "en": "vague",
+            "ml": "അവ്യക്തം"
+          }
+        ]
+      },
+      {
+        "title": "Palaniswami rejects speculation of Dhinakaran, Sasikala being readmitted into AIADMK",
+        "ml": "ദിനകരനെയും ശശികലയെയും എഐഎഡിഎംകെയിൽ തിരിച്ചെടുക്കുമെന്ന അഭ്യൂഹം പളനിസ്വാമി തള്ളി",
+        "section": "Tamil Nadu",
+        "note": "Palaniswami says the two leaders will not be taken back into the party.",
+        "noteMl": "തിരിച്ചെടുക്കില്ല.",
+        "words": [
+          {
+            "en": "speculation",
+            "ml": "അഭ്യൂഹം"
+          },
+          {
+            "en": "readmitted",
+            "ml": "തിരിച്ചെടുക്കപ്പെട്ട"
+          }
+        ]
+      },
+      {
+        "title": "Gang held for possession of 500 kg red sanders near Sholinghur in Ranipet",
+        "ml": "500 കിലോ രക്തചന്ദനവുമായി സംഘം പിടിയിൽ",
+        "section": "Tamil Nadu",
+        "note": "Police caught a group carrying 500 kg of red sandalwood.",
+        "noteMl": "രക്തചന്ദനം പിടികൂടി.",
+        "words": [
+          {
+            "en": "held",
+            "ml": "അറസ്റ്റ് ചെയ്യപ്പെട്ടു"
+          },
+          {
+            "en": "possession",
+            "ml": "കൈവശം വെക്കൽ"
+          }
+        ]
+      },
+      {
+        "title": "TNPDCL seeks nod to procure 3,000 MW",
+        "ml": "3,000 മെഗാവാട്ട് വൈദ്യുതി വാങ്ങാൻ അനുമതി തേടി TNPDCL",
+        "section": "Tamil Nadu",
+        "note": "The power utility wants approval to buy 3,000 MW of electricity.",
+        "noteMl": "വൈദ്യുതി വാങ്ങാൻ അനുമതി തേടി.",
+        "words": [
+          {
+            "en": "seeks nod",
+            "ml": "അനുമതി തേടുന്നു"
+          },
+          {
+            "en": "procure",
+            "ml": "വാങ്ങുക, സംഭരിക്കുക"
+          }
+        ]
+      },
+      {
+        "title": "CPI(M) leader P. Rajeeve flays police action against protesters in Keralam’s Thiruvananthapuram",
+        "ml": "പ്രതിഷേധക്കാർക്കെതിരായ പോലീസ് നടപടിയെ പി. രാജീവ് രൂക്ഷമായി വിമർശിച്ചു",
+        "section": "Kerala",
+        "note": "P. Rajeeve strongly criticised how police dealt with protesters.",
+        "noteMl": "പോലീസ് നടപടിക്കെതിരെ വിമർശനം.",
+        "words": [
+          {
+            "en": "flays",
+            "ml": "രൂക്ഷമായി വിമർശിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "SFI activists booked for protesting against Minister at Maharaja’s College in Keralam’s Kochi granted anticipatory bail",
+        "ml": "മന്ത്രിക്കെതിരെ പ്രതിഷേധിച്ചതിന് കേസെടുത്ത എസ്എഫ്ഐ പ്രവർത്തകർക്ക് മുൻകൂർ ജാമ്യം",
+        "section": "Kerala",
+        "note": "Students who faced a case for protesting got bail before arrest.",
+        "noteMl": "മുൻകൂർ ജാമ്യം ലഭിച്ചു.",
+        "words": [
+          {
+            "en": "booked",
+            "ml": "കേസെടുക്കപ്പെട്ട"
+          },
+          {
+            "en": "anticipatory bail",
+            "ml": "മുൻകൂർ ജാമ്യം"
+          }
+        ]
+      },
+      {
+        "title": "A2B sells majority stake to Bodhi Tree in $180-million deal",
+        "ml": "180 ദശലക്ഷം ഡോളർ ഇടപാടിൽ A2B ഭൂരിപക്ഷ ഓഹരി ബോധി ട്രീക്ക് വിറ്റു",
+        "section": "Business",
+        "note": "The restaurant chain sold most of its ownership to an investor.",
+        "noteMl": "ഭൂരിപക്ഷ ഓഹരി വിൽപ്പന.",
+        "words": [
+          {
+            "en": "majority stake",
+            "ml": "ഭൂരിപക്ഷ ഓഹരി"
+          }
+        ]
+      },
+      {
+        "title": "Amidst simmering tensions, India-Bangladesh consular dialogue postponed",
+        "ml": "സംഘർഷം പുകയുന്നതിനിടെ ഇന്ത്യ-ബംഗ്ലാദേശ് കോൺസുലാർ ചർച്ച മാറ്റിവെച്ചു",
+        "section": "World",
+        "note": "With tension slowly rising, talks between the two countries were put off.",
+        "noteMl": "ചർച്ച മാറ്റിവെച്ചു.",
+        "words": [
+          {
+            "en": "simmering",
+            "ml": "പുകഞ്ഞുകൊണ്ടിരിക്കുന്ന"
+          },
+          {
+            "en": "postponed",
+            "ml": "മാറ്റിവെച്ചു"
+          }
+        ]
+      },
+      {
+        "title": "Mahadev betting app kingpin sent to judicial custody till November 19",
+        "ml": "മഹാദേവ് ബെറ്റിങ് ആപ്പ് മുഖ്യസൂത്രധാരൻ നവംബർ 19 വരെ ജുഡീഷ്യൽ കസ്റ്റഡിയിൽ",
+        "section": "National",
+        "note": "The main man behind the betting app was sent to jail custody by the court.",
+        "noteMl": "കോടതി കസ്റ്റഡിയിലേക്ക്.",
+        "words": [
+          {
+            "en": "kingpin",
+            "ml": "മുഖ്യസൂത്രധാരൻ, തലവൻ"
+          },
+          {
+            "en": "judicial custody",
+            "ml": "ജുഡീഷ്യൽ കസ്റ്റഡി"
+          }
+        ]
+      },
+      {
+        "title": "Crime Branch arrests Kerala Pravasi Association chief for alleged extortion attempt",
+        "ml": "പണം തട്ടാൻ ശ്രമിച്ചെന്ന ആരോപണത്തിൽ പ്രവാസി അസോസിയേഷൻ മേധാവിയെ ക്രൈംബ്രാഞ്ച് അറസ്റ്റ് ചെയ്തു",
+        "section": "Kerala",
+        "note": "He is accused of trying to get money through threats.",
+        "noteMl": "ഭീഷണിപ്പെടുത്തി പണം തട്ടൽ ശ്രമം.",
+        "words": [
+          {
+            "en": "extortion",
+            "ml": "ഭീഷണിപ്പെടുത്തി പണം തട്ടൽ"
+          },
+          {
+            "en": "alleged",
+            "ml": "ആരോപിക്കപ്പെടുന്ന"
+          }
+        ]
+      },
+      {
+        "title": "AAP-BJP spar over dead fish in Yamuna ahead of Chhath Puja",
+        "ml": "ഛഠ് പൂജയ്ക്ക് മുന്നോടിയായി യമുനയിലെ ചത്ത മീനുകളെച്ചൊല്ലി AAP-BJP വാക്പോര്",
+        "section": "Delhi",
+        "note": "The two parties argued over dead fish found in the river.",
+        "noteMl": "യമുനയിലെ മീനുകൾ: വാക്പോര്.",
+        "words": [
+          {
+            "en": "spar",
+            "ml": "വാക്പോര് നടത്തുക"
+          },
+          {
+            "en": "ahead of",
+            "ml": "...നു മുന്നോടിയായി"
+          }
+        ]
+      },
+      {
+        "title": "India's Paytm gets preliminary RBI nod for wallet licence; shares hit record high",
+        "ml": "വാലറ്റ് ലൈസൻസിന് പേടിഎമ്മിന് ആർബിഐയുടെ പ്രാഥമിക അനുമതി; ഓഹരി റെക്കോർഡ് ഉയരത്തിൽ",
+        "section": "Business",
+        "note": "Paytm got early approval from the RBI and its share price jumped.",
+        "noteMl": "ആർബിഐ അനുമതി, ഓഹരി കുതിപ്പ്.",
+        "words": [
+          {
+            "en": "nod",
+            "ml": "അനുമതി"
+          },
+          {
+            "en": "preliminary",
+            "ml": "പ്രാഥമിക"
+          }
+        ]
+      },
+      {
+        "title": "India's exports up 29.9% in October; trade deficit narrows to $20.09 billion",
+        "ml": "ഒക്ടോബറിൽ കയറ്റുമതി 29.9% ഉയർന്നു; വ്യാപാരക്കമ്മി 20.09 ബില്യൺ ഡോളറായി കുറഞ്ഞു",
+        "section": "Business",
+        "note": "Exports grew sharply and the gap between imports and exports got smaller.",
+        "noteMl": "കയറ്റുമതി കൂടി, കമ്മി കുറഞ്ഞു.",
+        "words": [
+          {
+            "en": "trade deficit",
+            "ml": "വ്യാപാരക്കമ്മി"
+          },
+          {
+            "en": "narrows",
+            "ml": "കുറയുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Man held for planting hoax ‘hijack’ threat in Kolkata-Mumbai Air India flight",
+        "ml": "എയർ ഇന്ത്യ വിമാനത്തിൽ വ്യാജ 'റാഞ്ചൽ' ഭീഷണി; ഒരാൾ പിടിയിൽ",
+        "section": "National",
+        "note": "A man was arrested for a fake hijack threat on a flight.",
+        "noteMl": "വ്യാജ ഭീഷണി.",
+        "words": [
+          {
+            "en": "hoax",
+            "ml": "വ്യാജം"
+          },
+          {
+            "en": "hijack",
+            "ml": "(വിമാനം) റാഞ്ചൽ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    date: "2026-11-14",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "Manipur probe panel gets sixth extension; no sign of report yet",
+        "ml": "മണിപ്പൂർ അന്വേഷണ സമിതിക്ക് ആറാം തവണയും കാലാവധി നീട്ടി; റിപ്പോർട്ട് ഇനിയും ഇല്ല",
+        "section": "National",
+        "note": "The inquiry panel got more time again but has still not reported.",
+        "noteMl": "ആറാം തവണ നീട്ടി.",
+        "words": [
+          {
+            "en": "probe panel",
+            "ml": "അന്വേഷണ സമിതി"
+          },
+          {
+            "en": "extension",
+            "ml": "കാലാവധി നീട്ടൽ"
+          }
+        ]
+      },
+      {
+        "title": "Palaniswami continues tirade against TVK regime on investment, law and order, crime",
+        "ml": "നിക്ഷേപം, ക്രമസമാധാനം, കുറ്റകൃത്യം എന്നിവയിൽ ടിവികെ ഭരണത്തിനെതിരെ പളനിസ്വാമിയുടെ ആക്രമണം തുടരുന്നു",
+        "section": "Tamil Nadu",
+        "note": "Palaniswami keeps up his sharp attacks on the State government.",
+        "noteMl": "വിമർശനം തുടരുന്നു.",
+        "words": [
+          {
+            "en": "tirade",
+            "ml": "രൂക്ഷമായ വാക്കാക്രമണം"
+          },
+          {
+            "en": "regime",
+            "ml": "ഭരണകൂടം"
+          }
+        ]
+      },
+      {
+        "title": "Madras High Court refuses to reject election plea against Udhayanidhi’s win from Chepauk-Thiruvallikeni",
+        "ml": "ഉദയനിധിയുടെ ജയത്തിനെതിരായ തിരഞ്ഞെടുപ്പ് ഹർജി തള്ളാൻ മദ്രാസ് ഹൈക്കോടതി വിസമ്മതിച്ചു",
+        "section": "Tamil Nadu",
+        "note": "The case challenging Udhayanidhi's election will go on.",
+        "noteMl": "ഹർജി നിലനിൽക്കും.",
+        "words": [
+          {
+            "en": "election plea",
+            "ml": "തിരഞ്ഞെടുപ്പ് ഹർജി"
+          }
+        ]
+      },
+      {
+        "title": "Take steps to control inflation, Anbumani Ramadoss tells State govt.",
+        "ml": "വിലക്കയറ്റം നിയന്ത്രിക്കാൻ നടപടി വേണമെന്ന് സംസ്ഥാന സർക്കാരിനോട് അൻബുമണി",
+        "section": "Tamil Nadu",
+        "note": "Anbumani asks the State to act against rising prices.",
+        "noteMl": "വിലക്കയറ്റം തടയണം.",
+        "words": [
+          {
+            "en": "inflation",
+            "ml": "വിലക്കയറ്റം"
+          }
+        ]
+      },
+      {
+        "title": "Students among 24 dead in bus-truck collision in Assam’s Kaziranga",
+        "ml": "അസമിലെ കാസിരംഗയിൽ ബസ്-ട്രക്ക് കൂട്ടിയിടിയിൽ മരിച്ച 24 പേരിൽ വിദ്യാർഥികളും",
+        "section": "National",
+        "note": "Some of the 24 killed in a road crash were students.",
+        "noteMl": "വാഹനാപകടത്തിൽ 24 മരണം.",
+        "words": [
+          {
+            "en": "among",
+            "ml": "...ഇടയിൽ, ...ഉൾപ്പെടെ"
+          },
+          {
+            "en": "collision",
+            "ml": "കൂട്ടിയിടി"
+          }
+        ]
+      },
+      {
+        "title": "After CBI, ED arrests Mahadev betting app scam accused",
+        "ml": "സിബിഐക്ക് പിന്നാലെ മഹാദേവ് ആപ്പ് തട്ടിപ്പ് പ്രതിയെ ഇഡിയും അറസ്റ്റ് ചെയ്തു",
+        "section": "National",
+        "note": "A second agency has now arrested the betting app fraud accused.",
+        "noteMl": "ഇഡിയും അറസ്റ്റ് ചെയ്തു.",
+        "words": [
+          {
+            "en": "accused",
+            "ml": "പ്രതി"
+          }
+        ]
+      },
+      {
+        "title": "Delhi HC takes suo motu cognisance of illegal construction on Sriniwaspuri drain",
+        "ml": "ഓടയ്ക്ക് മുകളിലെ അനധികൃത നിർമാണത്തിൽ ഡൽഹി ഹൈക്കോടതി സ്വമേധയാ കേസെടുത്തു",
+        "section": "Delhi",
+        "note": "The court took up the issue on its own, without a petition.",
+        "noteMl": "സ്വമേധയാ കേസ്.",
+        "words": [
+          {
+            "en": "suo motu",
+            "ml": "സ്വമേധയാ"
+          },
+          {
+            "en": "cognisance",
+            "ml": "(കോടതി) പരിഗണനയ്ക്കെടുക്കൽ"
+          }
+        ]
+      },
+      {
+        "title": "Avian influenza confirmed in Tamil Nadu’s Cuddalore; over 1,500 chickens culled",
+        "ml": "കടലൂരിൽ പക്ഷിപ്പനി സ്ഥിരീകരിച്ചു; 1,500-ലധികം കോഴികളെ കൊന്നൊടുക്കി",
+        "section": "Tamil Nadu",
+        "note": "Bird flu was confirmed and many chickens were killed to stop it spreading.",
+        "noteMl": "പക്ഷിപ്പനി; കോഴികളെ കൊന്നു.",
+        "words": [
+          {
+            "en": "avian influenza",
+            "ml": "പക്ഷിപ്പനി"
+          },
+          {
+            "en": "culled",
+            "ml": "(രോഗം തടയാൻ) കൊന്നൊടുക്കി"
+          }
+        ]
+      },
+      {
+        "title": "South Sudan postpones first national elections until February",
+        "ml": "ദക്ഷിണ സുഡാൻ ആദ്യ ദേശീയ തിരഞ്ഞെടുപ്പ് ഫെബ്രുവരിയിലേക്ക് മാറ്റി",
+        "section": "World",
+        "note": "The country's first national vote has been delayed to February.",
+        "noteMl": "തിരഞ്ഞെടുപ്പ് മാറ്റിവെച്ചു.",
+        "words": [
+          {
+            "en": "postpones",
+            "ml": "മാറ്റിവെക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "TRAI crackdown on spam: Over 1.24 lakh mobile connections barred or disconnected in July-September",
+        "ml": "സ്പാമിനെതിരെ ട്രായ് നടപടി: 1.24 ലക്ഷത്തിലധികം മൊബൈൽ കണക്ഷനുകൾ വിലക്കി",
+        "section": "Business",
+        "note": "The telecom regulator cut off over 1.24 lakh numbers used for spam.",
+        "noteMl": "സ്പാം നമ്പറുകൾ റദ്ദാക്കി.",
+        "words": [
+          {
+            "en": "crackdown",
+            "ml": "കർശന നടപടി"
+          },
+          {
+            "en": "barred",
+            "ml": "വിലക്കി"
+          }
+        ]
+      },
+      {
+        "title": "Row erupts at SRFTI over denial of entry to filmmaker Ronny Sen",
+        "ml": "സംവിധായകൻ റോണി സെന്നിന് പ്രവേശനം നിഷേധിച്ചതിനെച്ചൊല്ലി SRFTI-ൽ വിവാദം",
+        "section": "National",
+        "note": "A dispute broke out after a filmmaker was not allowed in.",
+        "noteMl": "പ്രവേശന നിഷേധം: വിവാദം.",
+        "words": [
+          {
+            "en": "row erupts",
+            "ml": "വിവാദം പൊട്ടിപ്പുറപ്പെടുന്നു"
+          },
+          {
+            "en": "denial",
+            "ml": "നിഷേധം"
+          }
+        ]
+      },
+      {
+        "title": "Trump tells advisers he may hold off on Iran attacks barring new provocations, sources say",
+        "ml": "പുതിയ പ്രകോപനമില്ലെങ്കിൽ ഇറാൻ ആക്രമണം നീട്ടിവെച്ചേക്കുമെന്ന് ട്രംപ് ഉപദേശകരോട്; വൃത്തങ്ങൾ",
+        "section": "World",
+        "note": "Unnamed sources say Trump may pause attacks on Iran unless provoked.",
+        "noteMl": "ആക്രമണം തൽക്കാലം നിർത്തിയേക്കും.",
+        "words": [
+          {
+            "en": "hold off",
+            "ml": "നീട്ടിവെക്കുക"
+          },
+          {
+            "en": "barring",
+            "ml": "...ഇല്ലെങ്കിൽ, ഒഴികെ"
+          }
+        ]
+      },
+      {
+        "title": "Media access order puts MG University on collision course with Minister",
+        "ml": "മാധ്യമ പ്രവേശന ഉത്തരവ്: എംജി സർവകലാശാലയും മന്ത്രിയും നേർക്കുനേർ",
+        "section": "Kerala",
+        "note": "A university order on media access has set it against the Minister.",
+        "noteMl": "സർവകലാശാല-മന്ത്രി ഏറ്റുമുട്ടൽ.",
+        "words": [
+          {
+            "en": "collision course",
+            "ml": "ഏറ്റുമുട്ടലിന്റെ വഴി (ശൈലി)"
+          }
+        ]
+      },
+      {
+        "title": "‘Alive’ to voters’ need to find their names on the electoral roll, ECI assures Supreme Court",
+        "ml": "വോട്ടർ പട്ടികയിൽ പേര് കണ്ടെത്താനുള്ള ആവശ്യത്തെക്കുറിച്ച് 'ബോധവാന്മാർ' എന്ന് ECI സുപ്രീം കോടതിക്ക് ഉറപ്പ്",
+        "section": "National",
+        "note": "The Election Commission told the court it is aware of voters' concerns.",
+        "noteMl": "കമ്മീഷന്റെ ഉറപ്പ്.",
+        "words": [
+          {
+            "en": "alive to",
+            "ml": "...നെക്കുറിച്ച് ബോധവാന്മാർ"
+          },
+          {
+            "en": "assures",
+            "ml": "ഉറപ്പ് നൽകുന്നു"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    date: "2026-11-15",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "In Jharkhand, even jails are not safe: Babulal Marandi",
+        "ml": "ജാർഖണ്ഡിൽ ജയിലുകൾ പോലും സുരക്ഷിതമല്ല: ബാബുലാൽ മറാണ്ടി",
+        "section": "National",
+        "note": "The BJP leader says law and order is so bad that even jails are unsafe.",
+        "noteMl": "ക്രമസമാധാനത്തിനെതിരെ വിമർശനം.",
+        "words": [
+          {
+            "en": "even",
+            "ml": "പോലും"
+          }
+        ]
+      },
+      {
+        "title": "Man held for conducting ‘reconnaissance’ of sensitive locations in Mumbai",
+        "ml": "മുംബൈയിലെ സുപ്രധാന ഇടങ്ങൾ 'നിരീക്ഷിച്ച' ആൾ പിടിയിൽ",
+        "section": "National",
+        "note": "Police arrested a man they say was scouting key places.",
+        "noteMl": "ഒരാൾ പിടിയിൽ.",
+        "words": [
+          {
+            "en": "reconnaissance",
+            "ml": "രഹസ്യ നിരീക്ഷണം"
+          },
+          {
+            "en": "sensitive",
+            "ml": "സുരക്ഷാപ്രാധാന്യമുള്ള"
+          }
+        ]
+      },
+      {
+        "title": "25 kg of chloral hydrate seized, five arrested in adulterated toddy raids",
+        "ml": "മായം ചേർത്ത കള്ള് റെയ്ഡിൽ 25 കിലോ ക്ലോറൽ ഹൈഡ്രേറ്റ് പിടിച്ചു; അഞ്ചുപേർ അറസ്റ്റിൽ",
+        "section": "Telangana",
+        "note": "Raids on fake toddy found a banned chemical and led to five arrests.",
+        "noteMl": "റെയ്ഡിൽ അറസ്റ്റ്.",
+        "words": [
+          {
+            "en": "adulterated",
+            "ml": "മായം ചേർത്ത"
+          },
+          {
+            "en": "seized",
+            "ml": "പിടിച്ചെടുത്തു"
+          }
+        ]
+      },
+      {
+        "title": "2 persons held in Tanishq gold heist in Madurai; main accused still at large, say police",
+        "ml": "മധുര സ്വർണക്കവർച്ച: രണ്ടുപേർ പിടിയിൽ; മുഖ്യപ്രതി ഒളിവിലെന്ന് പോലീസ്",
+        "section": "Tamil Nadu",
+        "note": "Two were caught for the jewellery robbery; the main suspect is still free.",
+        "noteMl": "മുഖ്യപ്രതി ഒളിവിൽ.",
+        "words": [
+          {
+            "en": "heist",
+            "ml": "വൻ കവർച്ച"
+          },
+          {
+            "en": "at large",
+            "ml": "ഒളിവിൽ, പിടികിട്ടാതെ"
+          }
+        ]
+      },
+      {
+        "title": "Massive fire at Gurugram woollens market guts around 25 shops; no injuries",
+        "ml": "ഗുരുഗ്രാം കമ്പിളി മാർക്കറ്റിൽ വൻ തീപിടിത്തം; 25 കടകൾ കത്തിനശിച്ചു, ആർക്കും പരിക്കില്ല",
+        "section": "National",
+        "note": "A big fire destroyed about 25 shops; nobody was hurt.",
+        "noteMl": "കടകൾ കത്തിനശിച്ചു.",
+        "words": [
+          {
+            "en": "guts",
+            "ml": "പൂർണമായി കത്തിനശിപ്പിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Mahanagar Gas hikes CNG prices in Mumbai by ₹1.5/kg, sixth hike since May",
+        "ml": "മുംബൈയിൽ സിഎൻജി വില കിലോയ്ക്ക് ₹1.5 കൂട്ടി; മേയ്ക്ക് ശേഷം ആറാം വർധന",
+        "section": "Business",
+        "note": "CNG is dearer again in Mumbai, the sixth rise since May.",
+        "noteMl": "സിഎൻജി വില കൂടി.",
+        "words": [
+          {
+            "en": "hikes",
+            "ml": "വർധിപ്പിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "U.S. suggested Kyiv cede land to Russia in exchange for joining NATO, says Zelenskyy",
+        "ml": "നാറ്റോ അംഗത്വത്തിന് പകരം റഷ്യയ്ക്ക് ഭൂമി വിട്ടുകൊടുക്കാൻ യുഎസ് നിർദേശിച്ചെന്ന് സെലൻസ്കി",
+        "section": "World",
+        "note": "Zelenskyy says the U.S. proposed giving up land in return for NATO entry.",
+        "noteMl": "ഭൂമി വിട്ടുകൊടുക്കാൻ നിർദേശം.",
+        "words": [
+          {
+            "en": "cede",
+            "ml": "വിട്ടുകൊടുക്കുക"
+          },
+          {
+            "en": "in exchange for",
+            "ml": "...ന് പകരമായി"
+          }
+        ]
+      },
+      {
+        "title": "India votes against UNGA resolution calling for global moratorium on death penalty",
+        "ml": "വധശിക്ഷ ആഗോളതലത്തിൽ നിർത്തിവെക്കണമെന്ന യുഎൻ പ്രമേയത്തിനെതിരെ ഇന്ത്യ വോട്ട് ചെയ്തു",
+        "section": "World",
+        "note": "India opposed a UN call to pause the death penalty worldwide.",
+        "noteMl": "പ്രമേയത്തെ എതിർത്തു.",
+        "words": [
+          {
+            "en": "moratorium",
+            "ml": "താൽക്കാലിക നിർത്തിവെക്കൽ"
+          },
+          {
+            "en": "UNGA",
+            "ml": "യുഎൻ പൊതുസഭ"
+          }
+        ]
+      },
+      {
+        "title": "PNB eyes ₹200 crore quarterly profit each from credit card, cash management verticals",
+        "ml": "ക്രെഡിറ്റ് കാർഡ്, ക്യാഷ് മാനേജ്മെന്റ് വിഭാഗങ്ങളിൽ നിന്ന് പാദത്തിൽ ₹200 കോടി ലാഭം ലക്ഷ്യമിട്ട് PNB",
+        "section": "Business",
+        "note": "The bank aims to earn ₹200 crore a quarter from each of two units.",
+        "noteMl": "ലാഭ ലക്ഷ്യം.",
+        "words": [
+          {
+            "en": "eyes",
+            "ml": "ലക്ഷ്യമിടുന്നു"
+          },
+          {
+            "en": "verticals",
+            "ml": "ബിസിനസ് വിഭാഗങ്ങൾ"
+          }
+        ]
+      },
+      {
+        "title": "Benjamin Netanyahu calls for Israeli unity government, Eisenkot dismisses ‘tricks’",
+        "ml": "ഐക്യ സർക്കാർ വേണമെന്ന് നെതന്യാഹു; 'തന്ത്രങ്ങൾ' എന്ന് തള്ളി ഐസൻകോട്ട്",
+        "section": "World",
+        "note": "Netanyahu wants a unity government; his rival calls it a trick.",
+        "noteMl": "ഐക്യ സർക്കാർ ആവശ്യം തള്ളി.",
+        "words": [
+          {
+            "en": "dismisses",
+            "ml": "തള്ളിക്കളയുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Murder of BJP worker by own party members sparks speculation of intra-party feud in West Bengal",
+        "ml": "സ്വന്തം പാർട്ടിക്കാർ ബിജെപി പ്രവർത്തകനെ കൊന്നത് പാർട്ടിക്കുള്ളിലെ കലഹത്തെക്കുറിച്ച് അഭ്യൂഹമുയർത്തി",
+        "section": "West Bengal",
+        "note": "The killing has led to talk of infighting within the party.",
+        "noteMl": "പാർട്ടിക്കുള്ളിൽ ഭിന്നതയെന്ന് സംശയം.",
+        "words": [
+          {
+            "en": "sparks",
+            "ml": "...ക്ക് തിരികൊളുത്തുന്നു, ഉണ്ടാക്കുന്നു"
+          },
+          {
+            "en": "feud",
+            "ml": "പക, കലഹം"
+          }
+        ]
+      },
+      {
+        "title": "Power outage during Minister’s meeting: TNEB JE placed under suspension in Virudhunagar",
+        "ml": "മന്ത്രിയുടെ യോഗത്തിനിടെ വൈദ്യുതി മുടക്കം: ജൂനിയർ എഞ്ചിനീയർക്ക് സസ്പെൻഷൻ",
+        "section": "Tamil Nadu",
+        "note": "An engineer was suspended after power failed during a ministerial meeting.",
+        "noteMl": "എഞ്ചിനീയർക്ക് സസ്പെൻഷൻ.",
+        "words": [
+          {
+            "en": "placed under suspension",
+            "ml": "സസ്പെൻഡ് ചെയ്തു"
+          }
+        ]
+      },
+      {
+        "title": "P. Viswanathan and Selvaperunthagai spar over comments on T.N.’s law and order situation",
+        "ml": "തമിഴ്നാട്ടിലെ ക്രമസമാധാനത്തെച്ചൊല്ലി വിശ്വനാഥനും സെൽവപെരുന്തഗൈയും തമ്മിൽ വാക്പോര്",
+        "section": "Tamil Nadu",
+        "note": "Two leaders traded words over law and order remarks.",
+        "noteMl": "വാക്പോര്.",
+        "words": [
+          {
+            "en": "spar",
+            "ml": "വാക്പോര് നടത്തുക"
+          }
+        ]
+      },
+      {
+        "title": "Southeast Asian leaders denounce violence in Myanmar, extend ban on its leader",
+        "ml": "മ്യാൻമറിലെ അക്രമത്തെ അപലപിച്ച് ആസിയാൻ നേതാക്കൾ; നേതാവിനുള്ള വിലക്ക് നീട്ടി",
+        "section": "World",
+        "note": "ASEAN leaders condemned the violence and kept Myanmar's ruler barred.",
+        "noteMl": "അക്രമത്തെ അപലപിച്ചു.",
+        "words": [
+          {
+            "en": "denounce",
+            "ml": "അപലപിക്കുക"
+          }
+        ]
+      }
+    ]
   }
 ];
