@@ -2642,5 +2642,598 @@ window.NOTES = [
         ]
       }
     ]
+  },
+  {
+    date: "2026-11-16",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "Violent protests erupt in Hasina’s hometown as tensions rise over her proposed return to Bangladesh",
+        "ml": "ഹസീനയുടെ തിരിച്ചുവരവിനെച്ചൊല്ലി സംഘർഷം; ജന്മനാട്ടിൽ അക്രമാസക്ത പ്രതിഷേധം",
+        "section": "World",
+        "note": "Plans for Sheikh Hasina to return have led to violent protests in her home town.",
+        "noteMl": "തിരിച്ചുവരവ് പദ്ധതിക്കെതിരെ പ്രതിഷേധം.",
+        "words": [
+          {
+            "en": "erupt",
+            "ml": "പൊട്ടിപ്പുറപ്പെടുന്നു"
+          },
+          {
+            "en": "as",
+            "ml": "...മ്പോൾ"
+          }
+        ]
+      },
+      {
+        "title": "Eight injured as building collapses during hotel construction in Delhi’s Paharganj",
+        "ml": "ഡൽഹിയിൽ നിർമാണത്തിലിരുന്ന ഹോട്ടൽ കെട്ടിടം തകർന്ന് എട്ടുപേർക്ക് പരിക്ക്",
+        "section": "Delhi",
+        "note": "A building under construction fell, hurting eight people.",
+        "noteMl": "കെട്ടിടം തകർന്നു.",
+        "words": [
+          {
+            "en": "collapses",
+            "ml": "തകർന്നുവീഴുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "West Bengal BJP president alleges conversions at missionary schools; draws flak",
+        "ml": "മിഷനറി സ്കൂളുകളിൽ മതപരിവർത്തനമെന്ന് ബംഗാൾ ബിജെപി അധ്യക്ഷൻ; വിമർശനം",
+        "section": "West Bengal",
+        "note": "His claim about religious conversions in schools was widely criticised.",
+        "noteMl": "ആരോപണത്തിന് വിമർശനം.",
+        "words": [
+          {
+            "en": "draws flak",
+            "ml": "വിമർശനം നേരിടുന്നു"
+          },
+          {
+            "en": "alleges",
+            "ml": "ആരോപിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Tamil Nadu government withdraws 600 cases against farmers and teachers",
+        "ml": "കർഷകർക്കും അധ്യാപകർക്കുമെതിരായ 600 കേസുകൾ തമിഴ്നാട് സർക്കാർ പിൻവലിച്ചു",
+        "section": "Tamil Nadu",
+        "note": "The State dropped 600 cases filed against farmers and teachers.",
+        "noteMl": "കേസുകൾ പിൻവലിച്ചു.",
+        "words": [
+          {
+            "en": "withdraws",
+            "ml": "പിൻവലിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Delhi Paharganj building collapse: FIR filed against property owner, contractor",
+        "ml": "പഹാഡ്ഗഞ്ച് കെട്ടിടം തകർച്ച: ഉടമയ്ക്കും കരാറുകാരനുമെതിരെ എഫ്ഐആർ",
+        "section": "Delhi",
+        "note": "Police registered a case against the owner and the builder.",
+        "noteMl": "കേസ് രജിസ്റ്റർ ചെയ്തു.",
+        "words": [
+          {
+            "en": "FIR filed",
+            "ml": "എഫ്ഐആർ രജിസ്റ്റർ ചെയ്തു"
+          }
+        ]
+      },
+      {
+        "title": "Ram temple donation theft: Congress seeks new SIT reporting exclusively to Supreme Court",
+        "ml": "രാമക്ഷേത്ര സംഭാവന മോഷണം: സുപ്രീം കോടതിക്ക് മാത്രം റിപ്പോർട്ട് ചെയ്യുന്ന പുതിയ SIT വേണമെന്ന് കോൺഗ്രസ്",
+        "section": "National",
+        "note": "Congress wants a special team that answers only to the Supreme Court.",
+        "noteMl": "പുതിയ അന്വേഷണ സംഘം വേണം.",
+        "words": [
+          {
+            "en": "SIT",
+            "ml": "പ്രത്യേക അന്വേഷണ സംഘം"
+          }
+        ]
+      },
+      {
+        "title": "SIO activists detained in pre-dawn swoop before Israel-T-Hub event in Hyderabad",
+        "ml": "പുലർച്ചെ നടത്തിയ മിന്നൽ നടപടിയിൽ എസ്ഐഒ പ്രവർത്തകർ കസ്റ്റഡിയിൽ",
+        "section": "Telangana",
+        "note": "Police held student activists early in the morning before an event.",
+        "noteMl": "മുൻകരുതൽ കസ്റ്റഡി.",
+        "words": [
+          {
+            "en": "swoop",
+            "ml": "മിന്നൽ നടപടി, റെയ്ഡ്"
+          },
+          {
+            "en": "detained",
+            "ml": "കസ്റ്റഡിയിലെടുത്തു"
+          }
+        ]
+      },
+      {
+        "title": "Police bust examination cheating racket in Jammu; 14 arrested",
+        "ml": "ജമ്മുവിൽ പരീക്ഷാ കോപ്പിയടി റാക്കറ്റ് പോലീസ് തകർത്തു; 14 അറസ്റ്റ്",
+        "section": "National",
+        "note": "Police broke up an exam cheating gang and arrested 14.",
+        "noteMl": "കോപ്പിയടി സംഘം പിടിയിൽ.",
+        "words": [
+          {
+            "en": "bust",
+            "ml": "പിടികൂടുക"
+          },
+          {
+            "en": "racket",
+            "ml": "തട്ടിപ്പ് സംഘം"
+          }
+        ]
+      },
+      {
+        "title": "U.S. govt seeks 24-year prison term for Nikhil Gupta in Pannun murder-for-hire plot",
+        "ml": "പന്നൂൻ വധഗൂഢാലോചനക്കേസിൽ നിഖിൽ ഗുപ്തയ്ക്ക് 24 വർഷം തടവ് ആവശ്യപ്പെട്ട് യുഎസ്",
+        "section": "World",
+        "note": "U.S. prosecutors want 24 years in jail for Nikhil Gupta.",
+        "noteMl": "24 വർഷം തടവ് ആവശ്യം.",
+        "words": [
+          {
+            "en": "plot",
+            "ml": "ഗൂഢാലോചന"
+          },
+          {
+            "en": "murder-for-hire",
+            "ml": "കൂലിക്കൊല"
+          }
+        ]
+      },
+      {
+        "title": "Release White Paper on books procured for libraries in the last 20 years, High Court tells T.N. government",
+        "ml": "20 വർഷത്തെ ലൈബ്രറി പുസ്തക സംഭരണത്തെക്കുറിച്ച് ധവളപത്രം ഇറക്കണമെന്ന് ഹൈക്കോടതി",
+        "section": "Tamil Nadu",
+        "note": "The court wants the State to publish a full report on library book purchases.",
+        "noteMl": "ധവളപത്രം വേണം.",
+        "words": [
+          {
+            "en": "White Paper",
+            "ml": "ധവളപത്രം (ഔദ്യോഗിക വിശദ റിപ്പോർട്ട്)"
+          }
+        ]
+      },
+      {
+        "title": "Delhi car blast: SC allows transfer of cases to capital for joint trial",
+        "ml": "ഡൽഹി കാർ സ്ഫോടനം: കേസുകൾ സംയുക്ത വിചാരണയ്ക്ക് തലസ്ഥാനത്തേക്ക് മാറ്റാൻ സുപ്രീം കോടതി അനുമതി",
+        "section": "National",
+        "note": "The cases can now be heard together in Delhi.",
+        "noteMl": "സംയുക്ത വിചാരണ.",
+        "words": [
+          {
+            "en": "joint trial",
+            "ml": "സംയുക്ത വിചാരണ"
+          }
+        ]
+      },
+      {
+        "title": "Trump says ‘would not mind’ Huang being reinstated at Nvidia",
+        "ml": "ഹുവാങ്ങിനെ എൻവിഡിയയിൽ തിരിച്ചെടുക്കുന്നതിൽ 'വിരോധമില്ല' എന്ന് ട്രംപ്",
+        "section": "Business",
+        "note": "Trump is fine with Jensen Huang returning as Nvidia's chief.",
+        "noteMl": "തിരിച്ചുവരവിന് പിന്തുണ.",
+        "words": [
+          {
+            "en": "reinstated",
+            "ml": "തിരികെ നിയമിക്കപ്പെട്ട"
+          }
+        ]
+      },
+      {
+        "title": "CBI arrests two NCB Sub-Inspectors in alleged ₹25-lakh bribery case",
+        "ml": "₹25 ലക്ഷം കൈക്കൂലിക്കേസിൽ രണ്ട് NCB സബ് ഇൻസ്പെക്ടർമാരെ CBI അറസ്റ്റ് ചെയ്തു",
+        "section": "National",
+        "note": "Two narcotics bureau officers were arrested for taking a bribe.",
+        "noteMl": "കൈക്കൂലി കേസ്.",
+        "words": [
+          {
+            "en": "bribery",
+            "ml": "കൈക്കൂലി"
+          },
+          {
+            "en": "NCB",
+            "ml": "നാർക്കോട്ടിക്സ് കൺട്രോൾ ബ്യൂറോ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    date: "2026-11-17",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "MLAs cannot threaten government officials and browbeat them into submission: Madras High Court",
+        "ml": "എംഎൽഎമാർക്ക് ഉദ്യോഗസ്ഥരെ ഭീഷണിപ്പെടുത്തി വരുതിയിലാക്കാനാവില്ല: മദ്രാസ് ഹൈക്കോടതി",
+        "section": "Tamil Nadu",
+        "note": "The court says lawmakers must not bully officials.",
+        "noteMl": "ഉദ്യോഗസ്ഥരെ ഭീഷണിപ്പെടുത്തരുത്.",
+        "words": [
+          {
+            "en": "browbeat",
+            "ml": "ഭീഷണിപ്പെടുത്തി വഴങ്ങിക്കുക"
+          }
+        ]
+      },
+      {
+        "title": "Eight killed, 26 injured as bus plunges into 100-metre gorge in Uttarakhand's Tehri Garhwal",
+        "ml": "ഉത്തരാഖണ്ഡിൽ ബസ് 100 മീറ്റർ താഴ്ചയിലേക്ക് മറിഞ്ഞ് എട്ട് മരണം, 26 പേർക്ക് പരിക്ക്",
+        "section": "National",
+        "note": "A bus fell into a deep gorge, killing eight.",
+        "noteMl": "ബസ് അപകടം.",
+        "words": [
+          {
+            "en": "plunges",
+            "ml": "കുത്തനെ വീഴുന്നു"
+          },
+          {
+            "en": "gorge",
+            "ml": "മലയിടുക്ക്"
+          }
+        ]
+      },
+      {
+        "title": "Tokyo lodges protest after aircraft believed to be Russian violate Japan airspace",
+        "ml": "റഷ്യൻ എന്ന് കരുതുന്ന വിമാനങ്ങൾ വ്യോമാതിർത്തി ലംഘിച്ചു; ജപ്പാൻ പ്രതിഷേധം അറിയിച്ചു",
+        "section": "World",
+        "note": "Japan formally complained after planes, thought to be Russian, entered its airspace.",
+        "noteMl": "ഔദ്യോഗിക പ്രതിഷേധം.",
+        "words": [
+          {
+            "en": "lodges protest",
+            "ml": "ഔദ്യോഗികമായി പ്രതിഷേധം അറിയിക്കുന്നു"
+          },
+          {
+            "en": "Tokyo",
+            "ml": "ജപ്പാൻ സർക്കാർ (തലസ്ഥാനത്തിന്റെ പേര്)"
+          }
+        ]
+      },
+      {
+        "title": "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’",
+        "ml": "ടാറ്റ സൺസ് ലിസ്റ്റിങ്ങിനെ പിന്തുണച്ച് ജിമ്മി ടാറ്റ; നോയലിനെതിരെ 'പിൻവാതിൽ പിടിച്ചെടുക്കൽ' ആരോപണം",
+        "section": "Business",
+        "note": "Jimmy Tata supports listing Tata Sons and accuses Noel of a hidden takeover.",
+        "noteMl": "കുടുംബത്തിനുള്ളിൽ തർക്കം.",
+        "words": [
+          {
+            "en": "backs",
+            "ml": "പിന്തുണയ്ക്കുന്നു"
+          },
+          {
+            "en": "takeover",
+            "ml": "നിയന്ത്രണം പിടിച്ചെടുക്കൽ"
+          }
+        ]
+      },
+      {
+        "title": "Export duty on diesel hiked ₹2.5/litre, ATF ₹1.5/litre, petrol remains nil",
+        "ml": "ഡീസൽ കയറ്റുമതി തീരുവ ലിറ്ററിന് ₹2.5, എടിഎഫ് ₹1.5 കൂട്ടി; പെട്രോളിന് ഇല്ല",
+        "section": "Business",
+        "note": "The tax on exporting diesel and jet fuel went up; petrol stays tax-free.",
+        "noteMl": "കയറ്റുമതി തീരുവ കൂട്ടി.",
+        "words": [
+          {
+            "en": "export duty",
+            "ml": "കയറ്റുമതി തീരുവ"
+          },
+          {
+            "en": "hiked",
+            "ml": "കൂട്ടി"
+          }
+        ]
+      },
+      {
+        "title": "U.S. federal court strikes down fixed terms for student, exchange visas",
+        "ml": "വിദ്യാർഥി വിസകൾക്ക് നിശ്ചിത കാലാവധി എന്ന നിയമം യുഎസ് കോടതി റദ്ദാക്കി",
+        "section": "World",
+        "note": "A U.S. court cancelled a rule fixing time limits on student visas.",
+        "noteMl": "നിയമം റദ്ദാക്കി.",
+        "words": [
+          {
+            "en": "strikes down",
+            "ml": "(നിയമം) റദ്ദാക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Bilkis Bano case: Supreme Court suspends sentence, grants bail to two convicts",
+        "ml": "ബിൽക്കിസ് ബാനോ കേസ്: രണ്ട് കുറ്റവാളികളുടെ ശിക്ഷ സുപ്രീം കോടതി മരവിപ്പിച്ചു, ജാമ്യം നൽകി",
+        "section": "National",
+        "note": "The Supreme Court paused the sentence of two convicts and gave them bail.",
+        "noteMl": "ശിക്ഷ മരവിപ്പിച്ചു.",
+        "words": [
+          {
+            "en": "suspends sentence",
+            "ml": "ശിക്ഷ മരവിപ്പിക്കുന്നു"
+          },
+          {
+            "en": "convicts",
+            "ml": "കുറ്റവാളികൾ"
+          }
+        ]
+      },
+      {
+        "title": "Kerala High Court refers petition challenging clean chit to Chief Minister in Punarjani case to Chief Justice",
+        "ml": "പുനർജനി കേസിൽ മുഖ്യമന്ത്രിക്ക് ക്ലീൻ ചിറ്റ് നൽകിയതിനെതിരായ ഹർജി ചീഫ് ജസ്റ്റിസിന് വിട്ടു",
+        "section": "Kerala",
+        "note": "The petition against the CM's clean chit goes to the Chief Justice.",
+        "noteMl": "ഹർജി ചീഫ് ജസ്റ്റിസിന്.",
+        "words": [
+          {
+            "en": "clean chit",
+            "ml": "കുറ്റവിമുക്ത സാക്ഷ്യം, ക്ലീൻ ചിറ്റ്"
+          },
+          {
+            "en": "refers",
+            "ml": "കൈമാറുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Six witnesses turn hostile in Abhimanyu murder trial",
+        "ml": "അഭിമന്യു വധക്കേസ് വിചാരണയിൽ ആറ് സാക്ഷികൾ കൂറുമാറി",
+        "section": "Kerala",
+        "note": "Six witnesses went back on their earlier statements in court.",
+        "noteMl": "സാക്ഷികൾ കൂറുമാറി.",
+        "words": [
+          {
+            "en": "turn hostile",
+            "ml": "(സാക്ഷി) കൂറുമാറുക"
+          }
+        ]
+      },
+      {
+        "title": "Turn your bulldozer towards EC: Akhilesh Yadav taunts CM Yogi Adityanath",
+        "ml": "ബുൾഡോസർ തിരഞ്ഞെടുപ്പ് കമ്മീഷന് നേരെ തിരിക്കൂ: യോഗിയെ പരിഹസിച്ച് അഖിലേഷ്",
+        "section": "National",
+        "note": "Akhilesh mocks the UP CM, telling him to aim his bulldozer at the EC.",
+        "noteMl": "പരിഹാസം.",
+        "words": [
+          {
+            "en": "taunts",
+            "ml": "പരിഹസിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Opposition seeks judicial probe into ‘irregularities’ in Keralam govt.’s power purchase deals",
+        "ml": "വൈദ്യുതി വാങ്ങൽ കരാറുകളിലെ 'ക്രമക്കേടുകളിൽ' ജുഡീഷ്യൽ അന്വേഷണം വേണമെന്ന് പ്രതിപക്ഷം",
+        "section": "Kerala",
+        "note": "The Opposition wants a judge-led inquiry into power purchase deals.",
+        "noteMl": "ജുഡീഷ്യൽ അന്വേഷണം ആവശ്യം.",
+        "words": [
+          {
+            "en": "judicial probe",
+            "ml": "ജുഡീഷ്യൽ അന്വേഷണം"
+          }
+        ]
+      },
+      {
+        "title": "SC upholds stay on Azam Khan’s conviction in fake birth certificate case, extends relief to wife, son",
+        "ml": "അസം ഖാന്റെ ശിക്ഷയ്ക്കുള്ള സ്റ്റേ സുപ്രീം കോടതി ശരിവെച്ചു; ഭാര്യയ്ക്കും മകനും ആശ്വാസം",
+        "section": "National",
+        "note": "The Supreme Court kept the stay in place and gave the same relief to his family.",
+        "noteMl": "സ്റ്റേ തുടരും.",
+        "words": [
+          {
+            "en": "upholds",
+            "ml": "ശരിവെക്കുന്നു"
+          },
+          {
+            "en": "relief",
+            "ml": "ആശ്വാസം (കോടതി)"
+          }
+        ]
+      },
+      {
+        "title": "Suresh Gopi mocks E20 petrol critics",
+        "ml": "E20 പെട്രോൾ വിമർശകരെ പരിഹസിച്ച് സുരേഷ് ഗോപി",
+        "section": "Kerala",
+        "note": "The Minister made fun of those who criticise ethanol-blended petrol.",
+        "noteMl": "വിമർശകർക്ക് പരിഹാസം.",
+        "words": [
+          {
+            "en": "mocks",
+            "ml": "പരിഹസിക്കുന്നു"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    date: "2026-11-18",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "Won’t allow hiring of outsiders, hire locals: J&K CM Omar Abdullah to companies",
+        "ml": "പുറത്തുനിന്നുള്ളവരെ നിയമിക്കാൻ അനുവദിക്കില്ല, നാട്ടുകാരെ നിയമിക്കൂ: കമ്പനികളോട് ഒമർ അബ്ദുള്ള",
+        "section": "National",
+        "note": "Omar Abdullah tells companies to give jobs to local people.",
+        "noteMl": "നാട്ടുകാർക്ക് ജോലി.",
+        "words": [
+          {
+            "en": "outsiders",
+            "ml": "പുറത്തുനിന്നുള്ളവർ"
+          }
+        ]
+      },
+      {
+        "title": "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
+        "ml": "'തെറ്റുകൾ' സമ്മതിച്ച് മുൻ എൻവിഡിയ സിഇഒ; കമ്പനി ആഗ്രഹിച്ചാൽ തിരിച്ചുവരാൻ താൽപര്യം",
+        "section": "Business",
+        "note": "Jensen Huang admits mistakes and hints he would come back.",
+        "noteMl": "തിരിച്ചുവരവിന് സൂചന.",
+        "words": [
+          {
+            "en": "acknowledges",
+            "ml": "സമ്മതിക്കുന്നു"
+          },
+          {
+            "en": "signals",
+            "ml": "സൂചന നൽകുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Russian military transport plane crashes in Siberia, killing 19: Defence Ministry",
+        "ml": "സൈബീരിയയിൽ റഷ്യൻ സൈനിക വിമാനം തകർന്ന് 19 മരണം: പ്രതിരോധ മന്ത്രാലയം",
+        "section": "World",
+        "note": "Russia's Defence Ministry says a military plane crash killed 19.",
+        "noteMl": "വിമാനാപകടം.",
+        "words": [
+          {
+            "en": "crashes",
+            "ml": "തകർന്നുവീഴുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Ruckus erupts between SFI activists and police over setting up bookstalls near Calcutta University",
+        "ml": "പുസ്തകസ്റ്റാൾ സ്ഥാപിക്കുന്നതിനെച്ചൊല്ലി എസ്എഫ്ഐ-പോലീസ് സംഘർഷം",
+        "section": "West Bengal",
+        "note": "Students and police clashed over bookstalls.",
+        "noteMl": "ബഹളം.",
+        "words": [
+          {
+            "en": "ruckus",
+            "ml": "ബഹളം, സംഘർഷം"
+          }
+        ]
+      },
+      {
+        "title": "NGT declines to stay EC given to Musi river front project",
+        "ml": "മൂസി നദീതീര പദ്ധതിയുടെ പാരിസ്ഥിതികാനുമതി സ്റ്റേ ചെയ്യാൻ NGT വിസമ്മതിച്ചു",
+        "section": "Telangana",
+        "note": "The green tribunal refused to pause the project's environmental clearance.",
+        "noteMl": "അനുമതി തുടരും.",
+        "words": [
+          {
+            "en": "stay",
+            "ml": "തൽക്കാലം നിർത്തിവെക്കൽ"
+          },
+          {
+            "en": "EC (environmental clearance)",
+            "ml": "പാരിസ്ഥിതികാനുമതി"
+          }
+        ]
+      },
+      {
+        "title": "Tension erupts outside Vanchiyoor court after verdict in Ranjith murder case",
+        "ml": "രഞ്ജിത്ത് വധക്കേസ് വിധിക്ക് പിന്നാലെ വഞ്ചിയൂർ കോടതിക്ക് പുറത്ത് സംഘർഷം",
+        "section": "Kerala",
+        "note": "There was trouble outside the court after the judgment.",
+        "noteMl": "വിധിക്ക് ശേഷം സംഘർഷം.",
+        "words": [
+          {
+            "en": "verdict",
+            "ml": "വിധി"
+          }
+        ]
+      },
+      {
+        "title": "Thirupparankundram row: T.N. govt pushes for stay of HC order to avoid breach of peace",
+        "ml": "തിരുപ്പറങ്കുന്റം വിവാദം: സമാധാന ലംഘനം ഒഴിവാക്കാൻ ഹൈക്കോടതി ഉത്തരവിന് സ്റ്റേ തേടി സർക്കാർ",
+        "section": "Tamil Nadu",
+        "note": "The State wants the High Court order paused to keep the peace.",
+        "noteMl": "സ്റ്റേ തേടി.",
+        "words": [
+          {
+            "en": "breach of peace",
+            "ml": "സമാധാന ലംഘനം"
+          }
+        ]
+      },
+      {
+        "title": "Three arrested as Telangana’s EAGLE Force busts Snapchat-based drug network in Hyderabad",
+        "ml": "സ്നാപ്ചാറ്റ് വഴിയുള്ള ലഹരി ശൃംഖല തകർത്തു; മൂന്നുപേർ അറസ്റ്റിൽ",
+        "section": "Telangana",
+        "note": "A police unit broke up a drug ring run through Snapchat.",
+        "noteMl": "ലഹരി ശൃംഖല പിടിയിൽ.",
+        "words": [
+          {
+            "en": "busts",
+            "ml": "പിടികൂടുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "RBI may hike interest rates by 75 basis points by Q2 CY27: Goldman Sachs",
+        "ml": "2027 രണ്ടാം പാദത്തോടെ ആർബിഐ പലിശ 0.75% കൂട്ടിയേക്കും: ഗോൾഡ്മാൻ സാക്സ്",
+        "section": "Business",
+        "note": "A global bank expects the RBI to raise rates by 0.75 percentage points.",
+        "noteMl": "പലിശ കൂടിയേക്കും.",
+        "words": [
+          {
+            "en": "basis points",
+            "ml": "ബേസിസ് പോയിന്റ് (100 = 1%)"
+          }
+        ]
+      },
+      {
+        "title": "AAIB probe report into AI 171 crash at ‘fag end’, Centre tells Supreme Court",
+        "ml": "AI 171 അപകട അന്വേഷണ റിപ്പോർട്ട് 'അവസാന ഘട്ടത്തിൽ' എന്ന് കേന്ദ്രം സുപ്രീം കോടതിയിൽ",
+        "section": "National",
+        "note": "The government says the crash report is almost finished.",
+        "noteMl": "റിപ്പോർട്ട് ഉടൻ.",
+        "words": [
+          {
+            "en": "fag end",
+            "ml": "അവസാന ഭാഗം"
+          }
+        ]
+      },
+      {
+        "title": "Cyclone Akvan veers north and may cross anywhere from Narsapur to Puri, 10 Andhra districts on rain alert",
+        "ml": "അക്വാൻ ചുഴലിക്കാറ്റ് വടക്കോട്ട് ദിശമാറി; 10 ആന്ധ്ര ജില്ലകളിൽ മഴ മുന്നറിയിപ്പ്",
+        "section": "Andhra Pradesh",
+        "note": "The cyclone changed direction northward; ten districts are on alert.",
+        "noteMl": "ദിശമാറി, മുന്നറിയിപ്പ്.",
+        "words": [
+          {
+            "en": "veers",
+            "ml": "ദിശ മാറുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Bombay High Court quashes ICICI Bank’s nod to prosecute ex-CEO Chanda Kochhar in ‘loan fraud’ case",
+        "ml": "ചന്ദ കൊച്ചാറിനെ പ്രോസിക്യൂട്ട് ചെയ്യാനുള്ള ഐസിഐസിഐ അനുമതി ബോംബെ ഹൈക്കോടതി റദ്ദാക്കി",
+        "section": "Business",
+        "note": "The court cancelled the bank's approval to prosecute its former CEO.",
+        "noteMl": "അനുമതി റദ്ദാക്കി.",
+        "words": [
+          {
+            "en": "quashes",
+            "ml": "റദ്ദാക്കുന്നു"
+          },
+          {
+            "en": "nod",
+            "ml": "അനുമതി"
+          }
+        ]
+      },
+      {
+        "title": "Bangladesh deploys paramilitary as unrest grows over Hasina's return",
+        "ml": "ഹസീനയുടെ തിരിച്ചുവരവിനെച്ചൊല്ലി അസ്വസ്ഥത; ബംഗ്ലാദേശ് അർധസൈനികരെ വിന്യസിച്ചു",
+        "section": "World",
+        "note": "Security forces were sent out as protests over Hasina spread.",
+        "noteMl": "അർധസൈനിക വിന്യാസം.",
+        "words": [
+          {
+            "en": "deploys",
+            "ml": "വിന്യസിക്കുന്നു"
+          },
+          {
+            "en": "unrest",
+            "ml": "അസ്വസ്ഥത, സംഘർഷം"
+          }
+        ]
+      }
+    ]
   }
 ];
