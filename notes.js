@@ -3235,5 +3235,571 @@ window.NOTES = [
         ]
       }
     ]
+  },
+  {
+    date: "2026-11-19",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "U.S., Venezuela sign deal to re-establish military ties: Hegseth",
+        "ml": "സൈനിക ബന്ധം പുനഃസ്ഥാപിക്കാൻ യുഎസും വെനസ്വേലയും കരാർ ഒപ്പിട്ടു: ഹെഗ്സെത്",
+        "section": "World",
+        "note": "The U.S. Defence Secretary says the two countries agreed to restore military links.",
+        "noteMl": "സൈനിക കരാർ.",
+        "words": [
+          {
+            "en": "re-establish",
+            "ml": "പുനഃസ്ഥാപിക്കുക"
+          },
+          {
+            "en": "ties",
+            "ml": "ബന്ധം"
+          }
+        ]
+      },
+      {
+        "title": "NIA arrests Khalistan Zindabad Force ‘supporter’ deported from U.S. in Rajpura-Shambhu blast case",
+        "ml": "യുഎസിൽ നിന്ന് നാടുകടത്തിയ ഖാലിസ്ഥാൻ സംഘടനാ 'അനുകൂലിയെ' NIA അറസ്റ്റ് ചെയ്തു",
+        "section": "National",
+        "note": "The NIA arrested a man sent back from the U.S. in a blast case.",
+        "noteMl": "സ്ഫോടനക്കേസിൽ അറസ്റ്റ്.",
+        "words": [
+          {
+            "en": "NIA",
+            "ml": "ദേശീയ അന്വേഷണ ഏജൻസി"
+          },
+          {
+            "en": "deported",
+            "ml": "നാടുകടത്തപ്പെട്ട"
+          }
+        ]
+      },
+      {
+        "title": "HC directs State government not to open any new Tasmac liquor shops in Tamil Nadu",
+        "ml": "പുതിയ ടാസ്മാക് മദ്യശാലകൾ തുറക്കരുതെന്ന് ഹൈക്കോടതി",
+        "section": "Tamil Nadu",
+        "note": "The High Court has told the State not to open more liquor outlets.",
+        "noteMl": "പുതിയ മദ്യശാലകൾ വേണ്ട.",
+        "words": [
+          {
+            "en": "directs",
+            "ml": "നിർദേശിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "BMC to raze ancestral home of Dawood Ibrahim",
+        "ml": "ദാവൂദ് ഇബ്രാഹിമിന്റെ തറവാട് വീട് ബിഎംസി പൊളിക്കും",
+        "section": "National",
+        "note": "Mumbai's civic body will pull down Dawood Ibrahim's family house.",
+        "noteMl": "വീട് പൊളിക്കും.",
+        "words": [
+          {
+            "en": "raze",
+            "ml": "ഇടിച്ചുനിരത്തുക"
+          },
+          {
+            "en": "ancestral",
+            "ml": "പൂർവികരുടെ, തറവാട്"
+          }
+        ]
+      },
+      {
+        "title": "Armed robbers loot jewellery worth more than ₹30 crore at gunpoint in Bihar’s Bettiah",
+        "ml": "ബിഹാറിൽ തോക്കുചൂണ്ടി ₹30 കോടിയിലധികം വിലയുള്ള ആഭരണങ്ങൾ കൊള്ളയടിച്ചു",
+        "section": "National",
+        "note": "Gunmen robbed jewellery worth over ₹30 crore.",
+        "noteMl": "വൻ കവർച്ച.",
+        "words": [
+          {
+            "en": "loot",
+            "ml": "കൊള്ളയടിക്കുക"
+          },
+          {
+            "en": "at gunpoint",
+            "ml": "തോക്കുചൂണ്ടി"
+          }
+        ]
+      },
+      {
+        "title": "World Court finds Myanmar committed genocide against Rohingya population",
+        "ml": "റോഹിംഗ്യകൾക്കെതിരെ മ്യാൻമർ വംശഹത്യ നടത്തിയെന്ന് ലോക കോടതി",
+        "section": "World",
+        "note": "The International Court of Justice ruled that Myanmar committed genocide.",
+        "noteMl": "വംശഹത്യയെന്ന് വിധി.",
+        "words": [
+          {
+            "en": "genocide",
+            "ml": "വംശഹത്യ"
+          },
+          {
+            "en": "World Court",
+            "ml": "അന്താരാഷ്ട്ര നീതിന്യായ കോടതി (ICJ)"
+          }
+        ]
+      },
+      {
+        "title": "Malaysia to end visa-free entry to Indians from January 1, 2027",
+        "ml": "2027 ജനുവരി 1 മുതൽ ഇന്ത്യക്കാർക്കുള്ള വിസരഹിത പ്രവേശനം മലേഷ്യ നിർത്തും",
+        "section": "World",
+        "note": "Indians will need a visa for Malaysia from next year.",
+        "noteMl": "വിസ വേണ്ടിവരും.",
+        "words": [
+          {
+            "en": "visa-free",
+            "ml": "വിസ വേണ്ടാത്ത"
+          }
+        ]
+      },
+      {
+        "title": "BJP mocks Rahul Gandhi's U.S. remarks, says AI can predict his speeches",
+        "ml": "രാഹുലിന്റെ യുഎസ് പരാമർശങ്ങളെ പരിഹസിച്ച് ബിജെപി; AI-ക്ക് പ്രസംഗം പ്രവചിക്കാമെന്ന്",
+        "section": "National",
+        "note": "The BJP made fun of Rahul Gandhi's speeches abroad.",
+        "noteMl": "പരിഹാസം.",
+        "words": [
+          {
+            "en": "mocks",
+            "ml": "പരിഹസിക്കുന്നു"
+          },
+          {
+            "en": "remarks",
+            "ml": "പരാമർശങ്ങൾ"
+          }
+        ]
+      },
+      {
+        "title": "Rupee rallies for fourth session to close 5 paise higher at 93.36 against U.S. dollar",
+        "ml": "തുടർച്ചയായ നാലാം ദിവസവും രൂപ മുന്നേറി; 5 പൈസ ഉയർന്ന് 93.36",
+        "section": "Business",
+        "note": "The rupee gained for the fourth trading day in a row.",
+        "noteMl": "രൂപ ശക്തമായി.",
+        "words": [
+          {
+            "en": "rallies",
+            "ml": "തിരിച്ചുകയറുന്നു, മുന്നേറുന്നു"
+          },
+          {
+            "en": "session",
+            "ml": "വ്യാപാര ദിനം"
+          }
+        ]
+      },
+      {
+        "title": "DRI seizes over 70 kg of heroin worth ₹700 crore in Chennai",
+        "ml": "ചെന്നൈയിൽ ₹700 കോടി വിലയുള്ള 70 കിലോയിലധികം ഹെറോയിൻ DRI പിടിച്ചെടുത്തു",
+        "section": "Tamil Nadu",
+        "note": "Revenue intelligence officers caught a huge drug haul.",
+        "noteMl": "വൻ ലഹരിവേട്ട.",
+        "words": [
+          {
+            "en": "DRI",
+            "ml": "റവന്യൂ ഇന്റലിജൻസ് ഡയറക്ടറേറ്റ്"
+          }
+        ]
+      },
+      {
+        "title": "Yunus's ancestral home set ablaze as violence grips Bangladesh",
+        "ml": "ബംഗ്ലാദേശിൽ അക്രമം പടരുന്നതിനിടെ യൂനുസിന്റെ തറവാട് വീടിന് തീയിട്ടു",
+        "section": "World",
+        "note": "Rioters burned Yunus's family home as violence spread.",
+        "noteMl": "വീടിന് തീയിട്ടു.",
+        "words": [
+          {
+            "en": "set ablaze",
+            "ml": "തീയിട്ടു"
+          },
+          {
+            "en": "grips",
+            "ml": "പിടിമുറുക്കുന്നു, ബാധിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Congress relieves 25 AICC secretaries of responsibilities in organisational reshuffle",
+        "ml": "സംഘടനാ അഴിച്ചുപണിയിൽ 25 AICC സെക്രട്ടറിമാരെ കോൺഗ്രസ് ചുമതലയിൽ നിന്ന് ഒഴിവാക്കി",
+        "section": "National",
+        "note": "Congress removed 25 party secretaries from their posts.",
+        "noteMl": "പാർട്ടി അഴിച്ചുപണി.",
+        "words": [
+          {
+            "en": "reshuffle",
+            "ml": "അഴിച്ചുപണി"
+          },
+          {
+            "en": "relieves",
+            "ml": "ചുമതലയിൽ നിന്ന് ഒഴിവാക്കുന്നു"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    date: "2026-11-20",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "CBI secures deportation of murder accused wanted by Kerala Police from UAE",
+        "ml": "കേരള പോലീസ് തേടുന്ന കൊലക്കേസ് പ്രതിയെ യുഎഇയിൽ നിന്ന് CBI നാട്ടിലെത്തിച്ചു",
+        "section": "Kerala",
+        "note": "The CBI got the UAE to send back a murder suspect.",
+        "noteMl": "പ്രതിയെ തിരികെ എത്തിച്ചു.",
+        "words": [
+          {
+            "en": "deportation",
+            "ml": "നാടുകടത്തൽ"
+          },
+          {
+            "en": "wanted",
+            "ml": "(പോലീസ്) തേടുന്ന"
+          }
+        ]
+      },
+      {
+        "title": "Kerala High Court disposes of PILs against reconstitution of Waqf Board",
+        "ml": "വഖഫ് ബോർഡ് പുനഃസംഘടനയ്ക്കെതിരായ പൊതുതാൽപര്യ ഹർജികൾ ഹൈക്കോടതി തീർപ്പാക്കി",
+        "section": "Kerala",
+        "note": "The court closed public-interest cases on the Waqf Board.",
+        "noteMl": "ഹർജികൾ തീർപ്പാക്കി.",
+        "words": [
+          {
+            "en": "disposes of",
+            "ml": "തീർപ്പാക്കുന്നു"
+          },
+          {
+            "en": "reconstitution",
+            "ml": "പുനഃസംഘടന"
+          }
+        ]
+      },
+      {
+        "title": "Draft of COP31 cover text drops references to fossil fuel phase-out, net zero dates",
+        "ml": "COP31 കരടിൽ നിന്ന് ഫോസിൽ ഇന്ധന ഘട്ടംഘട്ടമായ നിർത്തലും നെറ്റ് സീറോ തീയതികളും ഒഴിവാക്കി",
+        "section": "World",
+        "note": "The climate summit's draft no longer mentions ending fossil fuels.",
+        "noteMl": "കരടിൽ നിന്ന് ഒഴിവാക്കി.",
+        "words": [
+          {
+            "en": "drops",
+            "ml": "ഒഴിവാക്കുന്നു"
+          },
+          {
+            "en": "phase-out",
+            "ml": "ഘട്ടംഘട്ടമായി നിർത്തൽ"
+          }
+        ]
+      },
+      {
+        "title": "Anthropic soars in Wall Street debut despite AI jitters",
+        "ml": "AI ആശങ്കകൾക്കിടയിലും വാൾസ്ട്രീറ്റ് അരങ്ങേറ്റത്തിൽ ആന്ത്രോപിക് കുതിച്ചു",
+        "section": "Business",
+        "note": "The AI company's shares jumped on its first day despite market worries.",
+        "noteMl": "ഓഹരി കുതിപ്പ്.",
+        "words": [
+          {
+            "en": "soars",
+            "ml": "കുതിച്ചുയരുന്നു"
+          },
+          {
+            "en": "debut",
+            "ml": "അരങ്ങേറ്റം"
+          },
+          {
+            "en": "jitters",
+            "ml": "ആശങ്ക, പരിഭ്രാന്തി"
+          }
+        ]
+      },
+      {
+        "title": "California Attorney General subpoenas Nvidia over chips, former CEO’s affair",
+        "ml": "ചിപ്പുകളും മുൻ സിഇഒയുടെ ബന്ധവും: എൻവിഡിയയ്ക്ക് കാലിഫോർണിയ അറ്റോർണി ജനറലിന്റെ സമൻസ്",
+        "section": "Business",
+        "note": "California's top lawyer has legally demanded records from Nvidia.",
+        "noteMl": "നിയമപരമായ സമൻസ്.",
+        "words": [
+          {
+            "en": "subpoenas",
+            "ml": "രേഖ/ഹാജർ ആവശ്യപ്പെട്ട് സമൻസ് അയയ്ക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Madhya Pradesh scraps two-child policy for Govt employees after 25 years",
+        "ml": "25 വർഷത്തിന് ശേഷം സർക്കാർ ജീവനക്കാരുടെ രണ്ട് കുട്ടി നയം മധ്യപ്രദേശ് റദ്ദാക്കി",
+        "section": "National",
+        "note": "The State has ended its two-child rule for government staff.",
+        "noteMl": "നയം റദ്ദാക്കി.",
+        "words": [
+          {
+            "en": "scraps",
+            "ml": "റദ്ദാക്കുന്നു, ഉപേക്ഷിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Video of Bihar CM’s security ‘pushing’ Nishant sparks row",
+        "ml": "ബിഹാർ മുഖ്യമന്ത്രിയുടെ സുരക്ഷാ ഉദ്യോഗസ്ഥർ നിശാന്തിനെ 'തള്ളുന്ന' വീഡിയോ വിവാദമായി",
+        "section": "National",
+        "note": "A video of guards apparently pushing a man has caused controversy.",
+        "noteMl": "വീഡിയോ വിവാദം.",
+        "words": [
+          {
+            "en": "sparks row",
+            "ml": "വിവാദത്തിന് തിരികൊളുത്തുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Rajasthan High Court denies interim stay in IAS officer corruption probe",
+        "ml": "ഐഎഎസ് ഉദ്യോഗസ്ഥനെതിരായ അഴിമതി അന്വേഷണത്തിന് ഇടക്കാല സ്റ്റേ നിഷേധിച്ചു",
+        "section": "National",
+        "note": "The court refused to pause the corruption inquiry for now.",
+        "noteMl": "അന്വേഷണം തുടരും.",
+        "words": [
+          {
+            "en": "interim stay",
+            "ml": "ഇടക്കാല സ്റ്റേ"
+          }
+        ]
+      },
+      {
+        "title": "Delhi High Court stays Lokpal proceedings against Defence Secretary",
+        "ml": "പ്രതിരോധ സെക്രട്ടറിക്കെതിരായ ലോക്പാൽ നടപടികൾ ഡൽഹി ഹൈക്കോടതി സ്റ്റേ ചെയ്തു",
+        "section": "National",
+        "note": "The court halted the Lokpal case against the Defence Secretary.",
+        "noteMl": "നടപടികൾക്ക് സ്റ്റേ.",
+        "words": [
+          {
+            "en": "stays",
+            "ml": "(നടപടി) സ്റ്റേ ചെയ്യുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Stock markets defy global rout; Sensex jumps 898 points, Nifty climbs to 25,800",
+        "ml": "ആഗോള തകർച്ചയെ മറികടന്ന് ഓഹരി വിപണി; സെൻസെക്സ് 898 പോയിന്റ് ഉയർന്നു",
+        "section": "Business",
+        "note": "Indian shares rose even though world markets fell sharply.",
+        "noteMl": "വിപണി മുന്നേറ്റം.",
+        "words": [
+          {
+            "en": "defy",
+            "ml": "വകവെക്കാതിരിക്കുക"
+          },
+          {
+            "en": "rout",
+            "ml": "കനത്ത തകർച്ച"
+          }
+        ]
+      },
+      {
+        "title": "Replace Russian junk with American weapons system: U.S. lawmaker to India",
+        "ml": "റഷ്യൻ പാഴ്വസ്തുക്കൾക്ക് പകരം അമേരിക്കൻ ആയുധങ്ങൾ വാങ്ങൂ: ഇന്ത്യയോട് യുഎസ് നിയമനിർമാതാവ്",
+        "section": "World",
+        "note": "A U.S. lawmaker urges India to switch from Russian to American arms.",
+        "noteMl": "യുഎസ് ആയുധം വാങ്ങൂ.",
+        "words": [
+          {
+            "en": "lawmaker",
+            "ml": "നിയമനിർമാതാവ് (എംപി)"
+          }
+        ]
+      },
+      {
+        "title": "ED mistakenly raids fisherman’s house in Keralam’s Kozhikode; triggers protests",
+        "ml": "ഇഡി അബദ്ധത്തിൽ മത്സ്യത്തൊഴിലാളിയുടെ വീട്ടിൽ റെയ്ഡ് നടത്തി; പ്രതിഷേധം",
+        "section": "Kerala",
+        "note": "The ED searched the wrong house, leading to protests.",
+        "noteMl": "തെറ്റായ റെയ്ഡ്.",
+        "words": [
+          {
+            "en": "mistakenly",
+            "ml": "അബദ്ധത്തിൽ"
+          },
+          {
+            "en": "triggers",
+            "ml": "ഉണ്ടാക്കുന്നു, കാരണമാകുന്നു"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    date: "2026-11-21",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "Infra push and low base effect pushes core sector growth to series-high of 10.9% in October 2026",
+        "ml": "അടിസ്ഥാന സൗകര്യ ഊന്നലും കുറഞ്ഞ അടിസ്ഥാനവും: പ്രധാന മേഖലാ വളർച്ച 10.9% റെക്കോർഡിൽ",
+        "section": "Business",
+        "note": "Core industries grew 10.9%, helped by infrastructure work and a weak last year.",
+        "noteMl": "വളർച്ച റെക്കോർഡിൽ.",
+        "words": [
+          {
+            "en": "low base effect",
+            "ml": "കഴിഞ്ഞ വർഷത്തെ കുറഞ്ഞ കണക്കിന്റെ ഫലം"
+          },
+          {
+            "en": "infra",
+            "ml": "അടിസ്ഥാന സൗകര്യം"
+          }
+        ]
+      },
+      {
+        "title": "Court rejects anticipatory bail pleas of six in Siddaramaiah ‘sting’ case",
+        "ml": "സിദ്ധരാമയ്യ 'സ്റ്റിങ്' കേസിൽ ആറുപേരുടെ മുൻകൂർ ജാമ്യാപേക്ഷ കോടതി തള്ളി",
+        "section": "Karnataka",
+        "note": "The court said no to early bail for six people in a secret-camera case.",
+        "noteMl": "ജാമ്യം നിഷേധിച്ചു.",
+        "words": [
+          {
+            "en": "sting",
+            "ml": "രഹസ്യ ക്യാമറ ഓപ്പറേഷൻ"
+          }
+        ]
+      },
+      {
+        "title": "India says no change in its position on Indus Water Treaty as Pakistan minister attends SCO forum in Delhi",
+        "ml": "പാക് മന്ത്രി ഡൽഹിയിലെത്തിയപ്പോഴും സിന്ധു നദീജല കരാറിൽ നിലപാടിൽ മാറ്റമില്ലെന്ന് ഇന്ത്യ",
+        "section": "National",
+        "note": "India's stand on the water treaty stays the same even with a Pakistani minister visiting.",
+        "noteMl": "നിലപാടിൽ മാറ്റമില്ല.",
+        "words": [
+          {
+            "en": "position",
+            "ml": "നിലപാട്"
+          }
+        ]
+      },
+      {
+        "title": "U.S. court sentences Indian national Nikhil Gupta to 235 months in jail in Pannun murder plot",
+        "ml": "പന്നൂൻ വധഗൂഢാലോചന: നിഖിൽ ഗുപ്തയ്ക്ക് 235 മാസം തടവ്",
+        "section": "World",
+        "note": "A U.S. court gave Nikhil Gupta about 19.5 years in prison.",
+        "noteMl": "തടവുശിക്ഷ.",
+        "words": [
+          {
+            "en": "sentences",
+            "ml": "ശിക്ഷ വിധിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "BJP’s invitation to Pakistan’s Minister vindicates Abdullah’s stance: J&K Deputy Chief Minister",
+        "ml": "പാക് മന്ത്രിയെ ക്ഷണിച്ചത് അബ്ദുള്ളയുടെ നിലപാട് ശരിവെക്കുന്നു: ജമ്മു-കശ്മീർ ഉപമുഖ്യമന്ത്രി",
+        "section": "National",
+        "note": "He says inviting a Pakistani minister proves Abdullah was right.",
+        "noteMl": "നിലപാട് ശരിയെന്ന് തെളിഞ്ഞു.",
+        "words": [
+          {
+            "en": "vindicates",
+            "ml": "ശരിയെന്ന് തെളിയിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Transgender persons to be roped in for tax collection in West Bengal",
+        "ml": "ബംഗാളിൽ നികുതി പിരിവിന് ട്രാൻസ്ജെൻഡർ വ്യക്തികളെ ഉൾപ്പെടുത്തും",
+        "section": "West Bengal",
+        "note": "Transgender people will be employed to help collect taxes.",
+        "noteMl": "നികുതി പിരിവിൽ പങ്കാളിത്തം.",
+        "words": [
+          {
+            "en": "roped in",
+            "ml": "ഉൾപ്പെടുത്തുക, കൂട്ടിച്ചേർക്കുക"
+          }
+        ]
+      },
+      {
+        "title": "Chandel district official issues advisory after spurious liquor kills 11 in Manipur",
+        "ml": "മണിപ്പൂരിൽ വ്യാജമദ്യം കഴിച്ച് 11 മരണം; ജില്ലാ ഭരണകൂടം മുന്നറിയിപ്പ് നൽകി",
+        "section": "National",
+        "note": "Fake liquor killed 11 people, and officials issued a warning.",
+        "noteMl": "വ്യാജമദ്യ ദുരന്തം.",
+        "words": [
+          {
+            "en": "spurious",
+            "ml": "വ്യാജം"
+          },
+          {
+            "en": "advisory",
+            "ml": "മുന്നറിയിപ്പ് നിർദേശം"
+          }
+        ]
+      },
+      {
+        "title": "Comments by Abhishek Banerjee painful but not contemptuous: Calcutta High Court",
+        "ml": "അഭിഷേക് ബാനർജിയുടെ പരാമർശങ്ങൾ വേദനാജനകം, എന്നാൽ കോടതിയലക്ഷ്യമല്ല: കൊൽക്കത്ത ഹൈക്കോടതി",
+        "section": "West Bengal",
+        "note": "The court found his remarks hurtful but not contempt of court.",
+        "noteMl": "കോടതിയലക്ഷ്യമല്ല.",
+        "words": [
+          {
+            "en": "contemptuous",
+            "ml": "കോടതിയലക്ഷ്യപരം, അവഹേളനപരം"
+          }
+        ]
+      },
+      {
+        "title": "Padmaja’s BJP exit reopens old wounds in Congress",
+        "ml": "പത്മജയുടെ ബിജെപി വിടവാങ്ങൽ കോൺഗ്രസിൽ പഴയ മുറിവുകൾ തുറന്നു",
+        "section": "Kerala",
+        "note": "Padmaja leaving the BJP has revived old hurt within Congress.",
+        "noteMl": "പഴയ തർക്കങ്ങൾ വീണ്ടും.",
+        "words": [
+          {
+            "en": "reopens old wounds",
+            "ml": "പഴയ മുറിവുകൾ വീണ്ടും തുറക്കുന്നു (ശൈലി)"
+          }
+        ]
+      },
+      {
+        "title": "14-year-old hacker held for trying to sell private data of 4,000 Agniveers on dark web: Delhi Police",
+        "ml": "4,000 അഗ്നിവീറുകളുടെ സ്വകാര്യ വിവരം വിൽക്കാൻ ശ്രമിച്ച 14-കാരൻ ഹാക്കർ പിടിയിൽ: ഡൽഹി പോലീസ്",
+        "section": "National",
+        "note": "Police say a 14-year-old tried to sell soldiers' personal data online.",
+        "noteMl": "ഹാക്കർ പിടിയിൽ.",
+        "words": [
+          {
+            "en": "dark web",
+            "ml": "ഡാർക്ക് വെബ് (രഹസ്യ ഇന്റർനെറ്റ്)"
+          }
+        ]
+      },
+      {
+        "title": "Telangana ACB traps Panchayat Secretary accepting ₹10,000 bribe for widow pension sanction",
+        "ml": "വിധവാ പെൻഷന് ₹10,000 കൈക്കൂലി വാങ്ങിയ പഞ്ചായത്ത് സെക്രട്ടറിയെ ACB കുടുക്കി",
+        "section": "Telangana",
+        "note": "Anti-corruption officers caught an official taking a bribe.",
+        "noteMl": "കൈക്കൂലിക്കാരൻ പിടിയിൽ.",
+        "words": [
+          {
+            "en": "ACB",
+            "ml": "അഴിമതി വിരുദ്ധ ബ്യൂറോ"
+          },
+          {
+            "en": "traps",
+            "ml": "കുടുക്കുന്നു (കയ്യോടെ പിടിക്കുന്നു)"
+          }
+        ]
+      },
+      {
+        "title": "Thousands of govt staff, teachers lay siege to Keralam Secretariat demanding service benefits, pay revision",
+        "ml": "ശമ്പള പരിഷ്കരണം ആവശ്യപ്പെട്ട് ആയിരക്കണക്കിന് ജീവനക്കാരും അധ്യാപകരും സെക്രട്ടേറിയറ്റ് ഉപരോധിച്ചു",
+        "section": "Kerala",
+        "note": "Thousands of staff surrounded the Secretariat demanding a pay revision.",
+        "noteMl": "സെക്രട്ടേറിയറ്റ് ഉപരോധം.",
+        "words": [
+          {
+            "en": "lay siege",
+            "ml": "ഉപരോധിക്കുക"
+          },
+          {
+            "en": "pay revision",
+            "ml": "ശമ്പള പരിഷ്കരണം"
+          }
+        ]
+      }
+    ]
   }
 ];

@@ -29,7 +29,9 @@ window.GUIDE = [
       { h: "Communal harmony committees to be formed in grama panchayats", read: "Committees will be formed.", ml: "സമിതികൾ രൂപീകരിക്കും." },
       { h: "Minister Agnimitra Paul says rose water to be used for mist spraying in Kolkata; environmentalist slams move", read: "Rose water will be used...", ml: "പനിനീർ ഉപയോഗിക്കും (ഭാവി)." },
       { h: "Blackstone to buy about 16% stake in India's IIFL Finance for $535 million", read: "Blackstone will buy a 16% stake.", ml: "വാങ്ങും (ഭാവി)." },
-      { h: "Noel Tata retires as Tata Investment chaiperson; Bahram Vakil to succeed him", read: "Bahram Vakil will succeed him.", ml: "പിൻഗാമിയാകും." }
+      { h: "Noel Tata retires as Tata Investment chaiperson; Bahram Vakil to succeed him", read: "Bahram Vakil will succeed him.", ml: "പിൻഗാമിയാകും." },
+      { h: "BMC to raze ancestral home of Dawood Ibrahim", read: "BMC will demolish the house.", ml: "പൊളിക്കും." },
+      { h: "Transgender persons to be roped in for tax collection in West Bengal", read: "They will be roped in.", ml: "ഉൾപ്പെടുത്തും." }
     ]
   },
   {
@@ -44,7 +46,8 @@ window.GUIDE = [
       { h: "Habitual offender arrested for murdering 65-year-old woman in Bengaluru", read: "A habitual offender has been arrested...", ml: "അറസ്റ്റ് ചെയ്യപ്പെട്ടു." },
       { h: "Suspension of senior IPS officer extended to March 2027", read: "The suspension has been extended.", ml: "സസ്പെൻഷൻ നീട്ടപ്പെട്ടു." },
       { h: "Avian influenza confirmed in Tamil Nadu’s Cuddalore; over 1,500 chickens culled", read: "Bird flu has been confirmed; chickens were culled.", ml: "സ്ഥിരീകരിക്കപ്പെട്ടു; കൊന്നൊടുക്കപ്പെട്ടു." },
-      { h: "Export duty on diesel hiked ₹2.5/litre, ATF ₹1.5/litre, petrol remains nil", read: "Export duty has been hiked.", ml: "തീരുവ കൂട്ടപ്പെട്ടു." }
+      { h: "Export duty on diesel hiked ₹2.5/litre, ATF ₹1.5/litre, petrol remains nil", read: "Export duty has been hiked.", ml: "തീരുവ കൂട്ടപ്പെട്ടു." },
+      { h: "Yunus's ancestral home set ablaze as violence grips Bangladesh", read: "The home was set ablaze.", ml: "തീയിടപ്പെട്ടു." }
     ]
   },
   {
@@ -55,7 +58,8 @@ window.GUIDE = [
       { h: "Saudi Arabia warns of danger in oil hub", read: "Saudi Arabia warns of a danger in an oil hub.", ml: "എണ്ണ കേന്ദ്രത്തിൽ അപകടഭീഷണിയെന്ന് മുന്നറിയിപ്പ്." },
       { h: "PSC chief, members, under CB scanner", read: "The PSC chief and members are under the Crime Branch's scanner.", ml: "ക്രൈംബ്രാഞ്ച് അന്വേഷണത്തിൽ." },
       { h: "Former Pakistan PM Imran Khan back in jail after medical treatment, sources say", read: "Imran Khan is back in jail...", ml: "'is' ഒഴിവാക്കി." },
-      { h: "Students among 24 dead in bus-truck collision in Assam’s Kaziranga", read: "Students are among the 24 who died...", ml: "'are', 'the' ഒഴിവാക്കി." }
+      { h: "Students among 24 dead in bus-truck collision in Assam’s Kaziranga", read: "Students are among the 24 who died...", ml: "'are', 'the' ഒഴിവാക്കി." },
+      { h: "Comments by Abhishek Banerjee painful but not contemptuous: Calcutta High Court", read: "The comments are painful but not contemptuous.", ml: "'are' ഒഴിവാക്കി." }
     ]
   },
   {
@@ -69,7 +73,8 @@ window.GUIDE = [
       { h: "Israeli forces shoot dead 14-year-old in West Bank: Palestinian officials", read: "Palestinian officials say this.", ml: "പലസ്തീൻ അധികൃതർ പറയുന്നു." },
       { h: "UN peacekeepers failed to protect civilians before South Sudan massacre: Amnesty", read: "Amnesty says so.", ml: "ആംനസ്റ്റി പറയുന്നു." },
       { h: "In Jharkhand, even jails are not safe: Babulal Marandi", read: "Babulal Marandi says so.", ml: "ബാബുലാൽ മറാണ്ടി പറയുന്നു." },
-      { h: "Russian military transport plane crashes in Siberia, killing 19: Defence Ministry", read: "The Defence Ministry says so.", ml: "പ്രതിരോധ മന്ത്രാലയം പറയുന്നു." }
+      { h: "Russian military transport plane crashes in Siberia, killing 19: Defence Ministry", read: "The Defence Ministry says so.", ml: "പ്രതിരോധ മന്ത്രാലയം പറയുന്നു." },
+      { h: "U.S., Venezuela sign deal to re-establish military ties: Hegseth", read: "Hegseth says so.", ml: "ഹെഗ്സെത് പറയുന്നു." }
     ]
   },
   {
@@ -96,7 +101,8 @@ window.GUIDE = [
       { h: "After Bangladesh rules out passport for Hasina, India says ‘travel document’ needed", read: "'travel document' is India's wording.", ml: "'യാത്രാരേഖ' ഇന്ത്യയുടെ വാക്ക്." },
       { h: "CPI seeks probe into ‘poll discrepancies’", read: "'poll discrepancies' is CPI's claim.", ml: "CPI-യുടെ ആരോപണം മാത്രം." },
       { h: "Man held for conducting ‘reconnaissance’ of sensitive locations in Mumbai", read: "'reconnaissance' is the police's word.", ml: "പോലീസിന്റെ ആരോപണം." },
-      { h: "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’", read: "'back-door takeover' is Jimmy Tata's accusation.", ml: "ജിമ്മി ടാറ്റയുടെ ആരോപണം." }
+      { h: "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’", read: "'back-door takeover' is Jimmy Tata's accusation.", ml: "ജിമ്മി ടാറ്റയുടെ ആരോപണം." },
+      { h: "Video of Bihar CM’s security ‘pushing’ Nishant sparks row", read: "'pushing' is how the video is described, not proven.", ml: "'തള്ളൽ' ആരോപണം മാത്രം." }
     ]
   },
   {
@@ -118,7 +124,8 @@ window.GUIDE = [
     examples: [
       { h: "Resubmit enumeration form: ECI to ousted voters", read: "The ECI tells ousted voters to resubmit the form.", ml: "കമ്മീഷൻ വോട്ടർമാരോട് പറയുന്നു." },
       { h: "Do not fear prosecution, SC tells excluded voters", read: "Here 'tells' is written out.", ml: "സുപ്രീം കോടതി വോട്ടർമാരോട്." },
-      { h: "Won’t allow hiring of outsiders, hire locals: J&K CM Omar Abdullah to companies", read: "Omar Abdullah tells companies...", ml: "ഒമർ അബ്ദുള്ള കമ്പനികളോട് പറയുന്നു." }
+      { h: "Won’t allow hiring of outsiders, hire locals: J&K CM Omar Abdullah to companies", read: "Omar Abdullah tells companies...", ml: "ഒമർ അബ്ദുള്ള കമ്പനികളോട് പറയുന്നു." },
+      { h: "Replace Russian junk with American weapons system: U.S. lawmaker to India", read: "A U.S. lawmaker tells India...", ml: "യുഎസ് നിയമനിർമാതാവ് ഇന്ത്യയോട്." }
     ]
   },
   {
@@ -131,7 +138,8 @@ window.GUIDE = [
       { h: "Pope Leo takes Milei to task as he visits divided Argentina", read: "...while he visits Argentina.", ml: "സന്ദർശിക്കുന്നതിനിടെ." },
       { h: "Air pollution over 50 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali", read: "...because people defied the ban.", ml: "നിരോധനം ലംഘിച്ചതിനാൽ." },
       { h: "Keralam braces for more rains as low-pressure area likely over Bay of Bengal by November 13", read: "...because a low-pressure area is likely.", ml: "ന്യൂനമർദം കാരണം." },
-      { h: "Eight killed, 26 injured as bus plunges into 100-metre gorge in Uttarakhand's Tehri Garhwal", read: "...when a bus plunged into a gorge.", ml: "ബസ് വീണപ്പോൾ." }
+      { h: "Eight killed, 26 injured as bus plunges into 100-metre gorge in Uttarakhand's Tehri Garhwal", read: "...when a bus plunged into a gorge.", ml: "ബസ് വീണപ്പോൾ." },
+      { h: "India says no change in its position on Indus Water Treaty as Pakistan minister attends SCO forum in Delhi", read: "...while a Pakistani minister attends.", ml: "പാക് മന്ത്രി പങ്കെടുക്കുമ്പോൾ." }
     ]
   },
   {
@@ -158,7 +166,8 @@ window.GUIDE = [
       { h: "NDA wrests Kadapa ZPTCs from YSRCP", read: "wrests = takes by force/wins away", ml: "wrest = പിടിച്ചെടുക്കുക" },
       { h: "Murthy Yadav quits JSP over ticket denial", read: "quits = resigns from; over = because of", ml: "quit = വിടുക; over = ...നെച്ചൊല്ലി" },
       { h: "Tamil Nadu Cyber Crime Wing busts illegal SIM box racket in Chennai; two arrested", read: "busts = breaks up; racket = illegal business", ml: "bust = പിടികൂടുക; racket = തട്ടിപ്പ് സംഘം" },
-      { h: "AAP-BJP spar over dead fish in Yamuna ahead of Chhath Puja", read: "spar = argue publicly", ml: "spar = വാക്പോര്" }
+      { h: "AAP-BJP spar over dead fish in Yamuna ahead of Chhath Puja", read: "spar = argue publicly", ml: "spar = വാക്പോര്" },
+      { h: "Madhya Pradesh scraps two-child policy for Govt employees after 25 years", read: "scraps = cancels", ml: "scrap = റദ്ദാക്കുക" }
     ]
   },
   {
@@ -175,7 +184,9 @@ window.GUIDE = [
       { h: "Media access order puts MG University on collision course with Minister", read: "on a collision course = heading for a clash", ml: "ഏറ്റുമുട്ടലിലേക്ക്" },
       { h: "2 persons held in Tanishq gold heist in Madurai; main accused still at large, say police", read: "at large = not yet caught", ml: "ഒളിവിൽ" },
       { h: "West Bengal BJP president alleges conversions at missionary schools; draws flak", read: "draw flak = be criticised", ml: "വിമർശനം നേരിടുക" },
-      { h: "Six witnesses turn hostile in Abhimanyu murder trial", read: "turn hostile = go back on earlier evidence", ml: "കൂറുമാറുക" }
+      { h: "Six witnesses turn hostile in Abhimanyu murder trial", read: "turn hostile = go back on earlier evidence", ml: "കൂറുമാറുക" },
+      { h: "Padmaja’s BJP exit reopens old wounds in Congress", read: "reopen old wounds = bring back old hurt", ml: "പഴയ വേദന വീണ്ടും" },
+      { h: "Thousands of govt staff, teachers lay siege to Keralam Secretariat demanding service benefits, pay revision", read: "lay siege = surround in protest", ml: "ഉപരോധിക്കുക" }
     ]
   },
   {
@@ -185,7 +196,8 @@ window.GUIDE = [
     examples: [
       { h: "In setback to govt., HC reinstates Milma union dissolved over Sabarimala ghee row", read: "govt. = government, HC = High Court", ml: "സർക്കാർ, ഹൈക്കോടതി" },
       { h: "Bihar Cabinet hikes 3% DA for employees, pensioners", read: "DA = dearness allowance", ml: "DA = ക്ഷാമബത്ത" },
-      { h: "CBI arrests two NCB Sub-Inspectors in alleged ₹25-lakh bribery case", read: "CBI = Central Bureau of Investigation; NCB = Narcotics Control Bureau", ml: "സിബിഐ; നാർക്കോട്ടിക്സ് കൺട്രോൾ ബ്യൂറോ" }
+      { h: "CBI arrests two NCB Sub-Inspectors in alleged ₹25-lakh bribery case", read: "CBI = Central Bureau of Investigation; NCB = Narcotics Control Bureau", ml: "സിബിഐ; നാർക്കോട്ടിക്സ് കൺട്രോൾ ബ്യൂറോ" },
+      { h: "DRI seizes over 70 kg of heroin worth ₹700 crore in Chennai", read: "DRI = Directorate of Revenue Intelligence", ml: "റവന്യൂ ഇന്റലിജൻസ് ഡയറക്ടറേറ്റ്" }
     ]
   },
   {
