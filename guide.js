@@ -47,7 +47,9 @@ window.GUIDE = [
       { h: "Suspension of senior IPS officer extended to March 2027", read: "The suspension has been extended.", ml: "സസ്പെൻഷൻ നീട്ടപ്പെട്ടു." },
       { h: "Avian influenza confirmed in Tamil Nadu’s Cuddalore; over 1,500 chickens culled", read: "Bird flu has been confirmed; chickens were culled.", ml: "സ്ഥിരീകരിക്കപ്പെട്ടു; കൊന്നൊടുക്കപ്പെട്ടു." },
       { h: "Export duty on diesel hiked ₹2.5/litre, ATF ₹1.5/litre, petrol remains nil", read: "Export duty has been hiked.", ml: "തീരുവ കൂട്ടപ്പെട്ടു." },
-      { h: "Yunus's ancestral home set ablaze as violence grips Bangladesh", read: "The home was set ablaze.", ml: "തീയിടപ്പെട്ടു." }
+      { h: "Yunus's ancestral home set ablaze as violence grips Bangladesh", read: "The home was set ablaze.", ml: "തീയിടപ്പെട്ടു." },
+      { h: "Palarivattom SHO suspended over alleged links with accused in forgery case", read: "The SHO has been suspended.", ml: "സസ്പെൻഡ് ചെയ്യപ്പെട്ടു." },
+      { h: "‘Money-doubling’ fraud racket busted", read: "The racket was busted.", ml: "പിടികൂടപ്പെട്ടു." }
     ]
   },
   {
@@ -59,7 +61,8 @@ window.GUIDE = [
       { h: "PSC chief, members, under CB scanner", read: "The PSC chief and members are under the Crime Branch's scanner.", ml: "ക്രൈംബ്രാഞ്ച് അന്വേഷണത്തിൽ." },
       { h: "Former Pakistan PM Imran Khan back in jail after medical treatment, sources say", read: "Imran Khan is back in jail...", ml: "'is' ഒഴിവാക്കി." },
       { h: "Students among 24 dead in bus-truck collision in Assam’s Kaziranga", read: "Students are among the 24 who died...", ml: "'are', 'the' ഒഴിവാക്കി." },
-      { h: "Comments by Abhishek Banerjee painful but not contemptuous: Calcutta High Court", read: "The comments are painful but not contemptuous.", ml: "'are' ഒഴിവാക്കി." }
+      { h: "Comments by Abhishek Banerjee painful but not contemptuous: Calcutta High Court", read: "The comments are painful but not contemptuous.", ml: "'are' ഒഴിവാക്കി." },
+      { h: "Inquiry into his old foreign visits based on false allegations, says Naveen Patnaik", read: "The inquiry is based on false allegations.", ml: "'is' ഒഴിവാക്കി." }
     ]
   },
   {
@@ -74,7 +77,8 @@ window.GUIDE = [
       { h: "UN peacekeepers failed to protect civilians before South Sudan massacre: Amnesty", read: "Amnesty says so.", ml: "ആംനസ്റ്റി പറയുന്നു." },
       { h: "In Jharkhand, even jails are not safe: Babulal Marandi", read: "Babulal Marandi says so.", ml: "ബാബുലാൽ മറാണ്ടി പറയുന്നു." },
       { h: "Russian military transport plane crashes in Siberia, killing 19: Defence Ministry", read: "The Defence Ministry says so.", ml: "പ്രതിരോധ മന്ത്രാലയം പറയുന്നു." },
-      { h: "U.S., Venezuela sign deal to re-establish military ties: Hegseth", read: "Hegseth says so.", ml: "ഹെഗ്സെത് പറയുന്നു." }
+      { h: "U.S., Venezuela sign deal to re-establish military ties: Hegseth", read: "Hegseth says so.", ml: "ഹെഗ്സെത് പറയുന്നു." },
+      { h: "Nvidia faces U.S. accounting probe amid deepening turmoil: media", read: "Media reports say so.", ml: "മാധ്യമങ്ങൾ പറയുന്നു." }
     ]
   },
   {
@@ -87,7 +91,8 @@ window.GUIDE = [
       { h: "Rajajinagar murders: Two more bodies recovered near Chamundi hills in Mysuru", read: "About the Rajajinagar murders: two more bodies were found.", ml: "വിഷയം: രാജാജിനഗർ കൊലപാതകങ്ങൾ." },
       { h: "Punjab polls: Congress begins campaign; BJP takes a dig", read: "Topic: Punjab polls. News: Congress starts, BJP mocks.", ml: "വിഷയം: പഞ്ചാബ് തിരഞ്ഞെടുപ്പ്." },
       { h: "TRAI crackdown on spam: Over 1.24 lakh mobile connections barred or disconnected in July-September", read: "Topic: TRAI's spam crackdown.", ml: "വിഷയം: സ്പാമിനെതിരായ നടപടി." },
-      { h: "Bilkis Bano case: Supreme Court suspends sentence, grants bail to two convicts", read: "Topic: Bilkis Bano case.", ml: "വിഷയം: ബിൽക്കിസ് ബാനോ കേസ്." }
+      { h: "Bilkis Bano case: Supreme Court suspends sentence, grants bail to two convicts", read: "Topic: Bilkis Bano case.", ml: "വിഷയം: ബിൽക്കിസ് ബാനോ കേസ്." },
+      { h: "Uttar Pradesh polls: SP, Congress kick off seat-sharing talks", read: "Topic: UP polls.", ml: "വിഷയം: യുപി തിരഞ്ഞെടുപ്പ്." }
     ]
   },
   {
@@ -102,7 +107,8 @@ window.GUIDE = [
       { h: "CPI seeks probe into ‘poll discrepancies’", read: "'poll discrepancies' is CPI's claim.", ml: "CPI-യുടെ ആരോപണം മാത്രം." },
       { h: "Man held for conducting ‘reconnaissance’ of sensitive locations in Mumbai", read: "'reconnaissance' is the police's word.", ml: "പോലീസിന്റെ ആരോപണം." },
       { h: "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’", read: "'back-door takeover' is Jimmy Tata's accusation.", ml: "ജിമ്മി ടാറ്റയുടെ ആരോപണം." },
-      { h: "Video of Bihar CM’s security ‘pushing’ Nishant sparks row", read: "'pushing' is how the video is described, not proven.", ml: "'തള്ളൽ' ആരോപണം മാത്രം." }
+      { h: "Video of Bihar CM’s security ‘pushing’ Nishant sparks row", read: "'pushing' is how the video is described, not proven.", ml: "'തള്ളൽ' ആരോപണം മാത്രം." },
+      { h: "CCPA slaps ₹10 lakh fine on firm for selling ‘anti-drone gun’ on IndiaMART", read: "'anti-drone gun' is how the product was sold.", ml: "വിൽപ്പനക്കാരുടെ അവകാശവാദം." }
     ]
   },
   {
@@ -114,7 +120,8 @@ window.GUIDE = [
       { h: "3 held on charge of assault, robbery", read: "...on charges of assault and robbery.", ml: "ആക്രമണവും കവർച്ചയും." },
       { h: "Fire engulfs Jammu’s Nehru Market, guts around 12 shops", read: "Fire engulfs the market and guts 12 shops.", ml: "തീ പടർന്നു, കടകൾ കത്തിനശിച്ചു." },
       { h: "Congress questions Modi over Delhi air pollution, demands account of measures taken", read: "Congress questions Modi and demands an account.", ml: "ചോദ്യം ചെയ്യുന്നു, കണക്കും ചോദിക്കുന്നു." },
-      { h: "Southeast Asian leaders denounce violence in Myanmar, extend ban on its leader", read: "They denounce violence and extend the ban.", ml: "അപലപിച്ചു, വിലക്കും നീട്ടി." }
+      { h: "Southeast Asian leaders denounce violence in Myanmar, extend ban on its leader", read: "They denounce violence and extend the ban.", ml: "അപലപിച്ചു, വിലക്കും നീട്ടി." },
+      { h: "Dhanraj murder case: Court convicts three accused, acquits 17 others", read: "Court convicts three and acquits 17.", ml: "മൂന്നുപേർ കുറ്റക്കാർ, 17 പേർ വിമുക്തർ." }
     ]
   },
   {
@@ -139,7 +146,8 @@ window.GUIDE = [
       { h: "Air pollution over 50 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali", read: "...because people defied the ban.", ml: "നിരോധനം ലംഘിച്ചതിനാൽ." },
       { h: "Keralam braces for more rains as low-pressure area likely over Bay of Bengal by November 13", read: "...because a low-pressure area is likely.", ml: "ന്യൂനമർദം കാരണം." },
       { h: "Eight killed, 26 injured as bus plunges into 100-metre gorge in Uttarakhand's Tehri Garhwal", read: "...when a bus plunged into a gorge.", ml: "ബസ് വീണപ്പോൾ." },
-      { h: "India says no change in its position on Indus Water Treaty as Pakistan minister attends SCO forum in Delhi", read: "...while a Pakistani minister attends.", ml: "പാക് മന്ത്രി പങ്കെടുക്കുമ്പോൾ." }
+      { h: "India says no change in its position on Indus Water Treaty as Pakistan minister attends SCO forum in Delhi", read: "...while a Pakistani minister attends.", ml: "പാക് മന്ത്രി പങ്കെടുക്കുമ്പോൾ." },
+      { h: "Vance, Rubio meet with Qatari PM as uncertainty mounts over Trump's intentions with Iran", read: "...while uncertainty grows.", ml: "അനിശ്ചിതത്വം കൂടുമ്പോൾ." }
     ]
   },
   {
@@ -167,7 +175,8 @@ window.GUIDE = [
       { h: "Murthy Yadav quits JSP over ticket denial", read: "quits = resigns from; over = because of", ml: "quit = വിടുക; over = ...നെച്ചൊല്ലി" },
       { h: "Tamil Nadu Cyber Crime Wing busts illegal SIM box racket in Chennai; two arrested", read: "busts = breaks up; racket = illegal business", ml: "bust = പിടികൂടുക; racket = തട്ടിപ്പ് സംഘം" },
       { h: "AAP-BJP spar over dead fish in Yamuna ahead of Chhath Puja", read: "spar = argue publicly", ml: "spar = വാക്പോര്" },
-      { h: "Madhya Pradesh scraps two-child policy for Govt employees after 25 years", read: "scraps = cancels", ml: "scrap = റദ്ദാക്കുക" }
+      { h: "Madhya Pradesh scraps two-child policy for Govt employees after 25 years", read: "scraps = cancels", ml: "scrap = റദ്ദാക്കുക" },
+      { h: "Gold, copper, aluminium dive to at least 7-month lows", read: "dive = fall sharply", ml: "dive = കുത്തനെ ഇടിയുക" }
     ]
   },
   {
@@ -186,7 +195,9 @@ window.GUIDE = [
       { h: "West Bengal BJP president alleges conversions at missionary schools; draws flak", read: "draw flak = be criticised", ml: "വിമർശനം നേരിടുക" },
       { h: "Six witnesses turn hostile in Abhimanyu murder trial", read: "turn hostile = go back on earlier evidence", ml: "കൂറുമാറുക" },
       { h: "Padmaja’s BJP exit reopens old wounds in Congress", read: "reopen old wounds = bring back old hurt", ml: "പഴയ വേദന വീണ്ടും" },
-      { h: "Thousands of govt staff, teachers lay siege to Keralam Secretariat demanding service benefits, pay revision", read: "lay siege = surround in protest", ml: "ഉപരോധിക്കുക" }
+      { h: "Thousands of govt staff, teachers lay siege to Keralam Secretariat demanding service benefits, pay revision", read: "lay siege = surround in protest", ml: "ഉപരോധിക്കുക" },
+      { h: "Nitin Nabin announces his team; Smriti Irani, Ram Madhav make a comeback, Amit Malviya out", read: "make a comeback = return", ml: "തിരിച്ചുവരിക" },
+      { h: "Markets take heavy drubbing dragged by banks; Sensex plunges 1,484 points, Nifty dives to 25,349.65", read: "take a drubbing = suffer a heavy defeat/fall", ml: "കനത്ത തകർച്ച" }
     ]
   },
   {
@@ -197,7 +208,8 @@ window.GUIDE = [
       { h: "In setback to govt., HC reinstates Milma union dissolved over Sabarimala ghee row", read: "govt. = government, HC = High Court", ml: "സർക്കാർ, ഹൈക്കോടതി" },
       { h: "Bihar Cabinet hikes 3% DA for employees, pensioners", read: "DA = dearness allowance", ml: "DA = ക്ഷാമബത്ത" },
       { h: "CBI arrests two NCB Sub-Inspectors in alleged ₹25-lakh bribery case", read: "CBI = Central Bureau of Investigation; NCB = Narcotics Control Bureau", ml: "സിബിഐ; നാർക്കോട്ടിക്സ് കൺട്രോൾ ബ്യൂറോ" },
-      { h: "DRI seizes over 70 kg of heroin worth ₹700 crore in Chennai", read: "DRI = Directorate of Revenue Intelligence", ml: "റവന്യൂ ഇന്റലിജൻസ് ഡയറക്ടറേറ്റ്" }
+      { h: "DRI seizes over 70 kg of heroin worth ₹700 crore in Chennai", read: "DRI = Directorate of Revenue Intelligence", ml: "റവന്യൂ ഇന്റലിജൻസ് ഡയറക്ടറേറ്റ്" },
+      { h: "India, China hold 10-day talks to ease LAC tensions in Arunachal Pradesh", read: "LAC = Line of Actual Control", ml: "യഥാർഥ നിയന്ത്രണ രേഖ" }
     ]
   },
   {

@@ -3801,5 +3801,563 @@ window.NOTES = [
         ]
       }
     ]
+  },
+  {
+    date: "2026-11-22",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "Woman killed, newlywed couple critical as fire engulfs West Delhi home; neighbours break window to rescue family",
+        "ml": "പശ്ചിമ ഡൽഹിയിൽ വീടിന് തീപിടിച്ച് സ്ത്രീ മരിച്ചു; നവദമ്പതികളുടെ നില ഗുരുതരം",
+        "section": "Delhi",
+        "note": "A house fire killed a woman; neighbours broke a window to save the rest.",
+        "noteMl": "വീട്ടിൽ തീപിടിത്തം.",
+        "words": [
+          {
+            "en": "engulfs",
+            "ml": "(തീ) വിഴുങ്ങുന്നു"
+          },
+          {
+            "en": "critical",
+            "ml": "ഗുരുതരാവസ്ഥയിൽ"
+          }
+        ]
+      },
+      {
+        "title": "Eisenkot invites Netanyahu’s party for Israeli coalition talks",
+        "ml": "സഖ്യ ചർച്ചയ്ക്ക് നെതന്യാഹുവിന്റെ പാർട്ടിയെ ക്ഷണിച്ച് ഐസൻകോട്ട്",
+        "section": "World",
+        "note": "Eisenkot asked Netanyahu's party to talk about forming a government together.",
+        "noteMl": "സഖ്യ ചർച്ച.",
+        "words": [
+          {
+            "en": "coalition",
+            "ml": "സഖ്യം (കൂട്ടുകക്ഷി)"
+          }
+        ]
+      },
+      {
+        "title": "Police complaint against WB LoP, police officers for fabrication of affidavits before ECI",
+        "ml": "സത്യവാങ്മൂലം വ്യാജമായി ഉണ്ടാക്കിയെന്ന് ബംഗാൾ പ്രതിപക്ഷ നേതാവിനെതിരെ പോലീസ് പരാതി",
+        "section": "West Bengal",
+        "note": "A complaint says the Opposition leader and some officers faked affidavits.",
+        "noteMl": "വ്യാജ സത്യവാങ്മൂലം ആരോപണം.",
+        "words": [
+          {
+            "en": "fabrication",
+            "ml": "വ്യാജമായി ഉണ്ടാക്കൽ"
+          },
+          {
+            "en": "affidavits",
+            "ml": "സത്യവാങ്മൂലങ്ങൾ"
+          }
+        ]
+      },
+      {
+        "title": "SC seeks report from administrator on plea to restrain office-bearers, members of BCA from functioning",
+        "ml": "BCA ഭാരവാഹികളെ പ്രവർത്തനത്തിൽ നിന്ന് തടയണമെന്ന ഹർജിയിൽ സുപ്രീം കോടതി റിപ്പോർട്ട് തേടി",
+        "section": "National",
+        "note": "The Supreme Court asked for a report before deciding on the cricket body's officials.",
+        "noteMl": "റിപ്പോർട്ട് തേടി.",
+        "words": [
+          {
+            "en": "restrain",
+            "ml": "തടയുക"
+          }
+        ]
+      },
+      {
+        "title": "CCPA slaps ₹10 lakh fine on firm for selling ‘anti-drone gun’ on IndiaMART",
+        "ml": "'ആന്റി-ഡ്രോൺ ഗൺ' വിറ്റ കമ്പനിക്ക് ₹10 ലക്ഷം പിഴ",
+        "section": "Business",
+        "note": "The consumer protection authority fined a seller ₹10 lakh.",
+        "noteMl": "വൻ പിഴ.",
+        "words": [
+          {
+            "en": "slaps fine",
+            "ml": "പിഴ ചുമത്തുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Gold, copper, aluminium dive to at least 7-month lows",
+        "ml": "സ്വർണം, ചെമ്പ്, അലുമിനിയം വില ഏഴുമാസത്തെ താഴ്ചയിലേക്ക് ഇടിഞ്ഞു",
+        "section": "Business",
+        "note": "Metal prices fell to their lowest in at least seven months.",
+        "noteMl": "ലോഹവില ഇടിഞ്ഞു.",
+        "words": [
+          {
+            "en": "dive",
+            "ml": "കുത്തനെ ഇടിയുക"
+          }
+        ]
+      },
+      {
+        "title": "U.P. Police mistakenly give guard of honour to Owaisi in Saharanpur, probe ordered",
+        "ml": "അബദ്ധത്തിൽ ഒവൈസിക്ക് യുപി പോലീസിന്റെ ഗാർഡ് ഓഫ് ഓണർ; അന്വേഷണത്തിന് ഉത്തരവ്",
+        "section": "National",
+        "note": "Police gave a ceremonial salute by mistake; an inquiry was ordered.",
+        "noteMl": "അന്വേഷണം.",
+        "words": [
+          {
+            "en": "guard of honour",
+            "ml": "ആചാരപരമായ സല്യൂട്ട്"
+          },
+          {
+            "en": "probe ordered",
+            "ml": "അന്വേഷണത്തിന് ഉത്തരവിട്ടു"
+          }
+        ]
+      },
+      {
+        "title": "Nitin Nabin announces his team; Smriti Irani, Ram Madhav make a comeback, Amit Malviya out",
+        "ml": "നിതിൻ നബീന്റെ പുതിയ സംഘം; സ്മൃതി ഇറാനിയും റാം മാധവും തിരിച്ചെത്തി, അമിത് മാളവ്യ പുറത്ത്",
+        "section": "National",
+        "note": "The BJP chief named his team: two leaders return, one is dropped.",
+        "noteMl": "പുതിയ ടീം.",
+        "words": [
+          {
+            "en": "make a comeback",
+            "ml": "തിരിച്ചുവരിക"
+          },
+          {
+            "en": "out",
+            "ml": "പുറത്ത് (ഒഴിവാക്കപ്പെട്ടു)"
+          }
+        ]
+      },
+      {
+        "title": "Botcha urges Governor to recommend dismissal of Chandrababu Naidu government",
+        "ml": "നായിഡു സർക്കാരിനെ പിരിച്ചുവിടാൻ ശുപാർശ ചെയ്യണമെന്ന് ഗവർണറോട് ബോച്ച",
+        "section": "Andhra Pradesh",
+        "note": "Botcha asks the Governor to recommend sacking the State government.",
+        "noteMl": "സർക്കാർ പിരിച്ചുവിടണം.",
+        "words": [
+          {
+            "en": "dismissal",
+            "ml": "പിരിച്ചുവിടൽ"
+          }
+        ]
+      },
+      {
+        "title": "Manipur hooch tragedy toll rises to 17; sample sent to Kolkata lab",
+        "ml": "മണിപ്പൂർ വ്യാജമദ്യ ദുരന്തം: മരണം 17 ആയി; സാമ്പിൾ കൊൽക്കത്ത ലാബിലേക്ക്",
+        "section": "National",
+        "note": "Deaths from the illicit liquor have risen to 17.",
+        "noteMl": "മരണസംഖ്യ ഉയർന്നു.",
+        "words": [
+          {
+            "en": "hooch",
+            "ml": "വ്യാജ/നാടൻ മദ്യം"
+          },
+          {
+            "en": "toll",
+            "ml": "മരണസംഖ്യ"
+          }
+        ]
+      },
+      {
+        "title": "BMTC spare parts ‘scam’: FIR against 21 officials, employees and suppliers over alleged ₹3.97-crore fraud",
+        "ml": "BMTC സ്പെയർ പാർട്സ് 'തട്ടിപ്പ്': 21 പേർക്കെതിരെ എഫ്ഐആർ",
+        "section": "Karnataka",
+        "note": "Police booked 21 people over an alleged fraud in buying bus parts.",
+        "noteMl": "തട്ടിപ്പ് കേസ്.",
+        "words": [
+          {
+            "en": "scam",
+            "ml": "തട്ടിപ്പ്"
+          }
+        ]
+      },
+      {
+        "title": "Nvidia faces U.S. accounting probe amid deepening turmoil: media",
+        "ml": "പ്രതിസന്ധി രൂക്ഷമാകുന്നതിനിടെ എൻവിഡിയയ്ക്കെതിരെ അക്കൗണ്ടിങ് അന്വേഷണം: മാധ്യമങ്ങൾ",
+        "section": "Business",
+        "note": "Media report a U.S. inquiry into Nvidia's accounts.",
+        "noteMl": "അക്കൗണ്ട് അന്വേഷണം.",
+        "words": [
+          {
+            "en": "turmoil",
+            "ml": "കലുഷിതാവസ്ഥ, പ്രതിസന്ധി"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    date: "2026-11-23",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "COP31 talks fail as EU, others reject any climate deal without language on a fossil fuel phase-out",
+        "ml": "ഫോസിൽ ഇന്ധനം നിർത്തൽ ഇല്ലാത്ത കരാർ EU തള്ളി; COP31 ചർച്ച പരാജയം",
+        "section": "World",
+        "note": "The climate talks collapsed because the EU wanted fossil fuel phase-out in the text.",
+        "noteMl": "ചർച്ച പരാജയപ്പെട്ടു.",
+        "words": [
+          {
+            "en": "reject",
+            "ml": "തള്ളിക്കളയുക"
+          }
+        ]
+      },
+      {
+        "title": "Kasimedu fisherfolk withdraw strike after Minister’s intervention",
+        "ml": "മന്ത്രിയുടെ ഇടപെടലിനെ തുടർന്ന് കാശിമേട് മത്സ്യത്തൊഴിലാളികൾ സമരം പിൻവലിച്ചു",
+        "section": "Tamil Nadu",
+        "note": "Fishers ended their strike after the Minister stepped in.",
+        "noteMl": "സമരം പിൻവലിച്ചു.",
+        "words": [
+          {
+            "en": "withdraw",
+            "ml": "പിൻവലിക്കുക"
+          },
+          {
+            "en": "intervention",
+            "ml": "ഇടപെടൽ"
+          }
+        ]
+      },
+      {
+        "title": "Palarivattom SHO suspended over alleged links with accused in forgery case",
+        "ml": "വ്യാജരേഖ കേസ് പ്രതിയുമായി ബന്ധമെന്ന ആരോപണം: പാലാരിവട്ടം SHO-ക്ക് സസ്പെൻഷൻ",
+        "section": "Kerala",
+        "note": "A station house officer was suspended for alleged ties with an accused.",
+        "noteMl": "എസ്എച്ച്ഒക്ക് സസ്പെൻഷൻ.",
+        "words": [
+          {
+            "en": "SHO",
+            "ml": "സ്റ്റേഷൻ ഹൗസ് ഓഫീസർ"
+          },
+          {
+            "en": "forgery",
+            "ml": "വ്യാജരേഖ ചമയ്ക്കൽ"
+          }
+        ]
+      },
+      {
+        "title": "FSSAI orders prosecution against Bisleri International for unsafe packaged drinking water",
+        "ml": "സുരക്ഷിതമല്ലാത്ത കുപ്പിവെള്ളം: ബിസ്ലേരിക്കെതിരെ പ്രോസിക്യൂഷന് FSSAI ഉത്തരവ്",
+        "section": "Business",
+        "note": "The food regulator ordered legal action against a water brand.",
+        "noteMl": "നിയമനടപടി.",
+        "words": [
+          {
+            "en": "FSSAI",
+            "ml": "ഭക്ഷ്യസുരക്ഷാ അതോറിറ്റി"
+          }
+        ]
+      },
+      {
+        "title": "Wanted man held after 14 months for mob attack on Delhi police team in Chhatarpur",
+        "ml": "പോലീസ് സംഘത്തെ ആക്രമിച്ച കേസിൽ 14 മാസമായി തേടുന്നയാൾ പിടിയിൽ",
+        "section": "Delhi",
+        "note": "A man wanted for over a year for attacking police was caught.",
+        "noteMl": "ഒടുവിൽ പിടിയിൽ.",
+        "words": [
+          {
+            "en": "wanted",
+            "ml": "(പോലീസ്) തേടുന്ന"
+          },
+          {
+            "en": "mob",
+            "ml": "ആൾക്കൂട്ടം"
+          }
+        ]
+      },
+      {
+        "title": "Raut alleges BJP offers funds to secure support for Delimitation Bill",
+        "ml": "മണ്ഡല പുനർനിർണയ ബില്ലിന് പിന്തുണ നേടാൻ ബിജെപി പണം വാഗ്ദാനം ചെയ്യുന്നുവെന്ന് റാവുത്ത്",
+        "section": "National",
+        "note": "Sanjay Raut claims the BJP is offering money for votes on a bill.",
+        "noteMl": "ആരോപണം.",
+        "words": [
+          {
+            "en": "delimitation",
+            "ml": "മണ്ഡല പുനർനിർണയം"
+          }
+        ]
+      },
+      {
+        "title": "Tata Sons board meet postponed to November 30 after Noel raises concerns",
+        "ml": "നോയൽ ആശങ്ക ഉന്നയിച്ചതോടെ ടാറ്റ സൺസ് ബോർഡ് യോഗം നവംബർ 30-ലേക്ക് മാറ്റി",
+        "section": "Business",
+        "note": "The board meeting was pushed back after concerns were raised.",
+        "noteMl": "യോഗം മാറ്റി.",
+        "words": [
+          {
+            "en": "raises concerns",
+            "ml": "ആശങ്ക ഉന്നയിക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "‘Stop acting like Baahubali,’ says Supreme Court to Bihar judicial officer for FIR against Superintendent of Police",
+        "ml": "'ബാഹുബലിയെപ്പോലെ പെരുമാറരുത്': ബിഹാർ ജുഡീഷ്യൽ ഓഫീസറോട് സുപ്രീം കോടതി",
+        "section": "National",
+        "note": "The Supreme Court scolded a judge for acting beyond his powers.",
+        "noteMl": "കോടതിയുടെ ശാസന.",
+        "words": [
+          {
+            "en": "acting like",
+            "ml": "...പോലെ പെരുമാറുക"
+          }
+        ]
+      },
+      {
+        "title": "Rupee snaps 5-day rally; tumbles 30 paise to settle at 92.92 against U.S. dollar",
+        "ml": "അഞ്ചുദിവസത്തെ മുന്നേറ്റം അവസാനിച്ചു; രൂപ 30 പൈസ ഇടിഞ്ഞു",
+        "section": "Business",
+        "note": "The rupee's winning run ended with a 30-paise fall.",
+        "noteMl": "രൂപ ഇടിഞ്ഞു.",
+        "words": [
+          {
+            "en": "snaps",
+            "ml": "(തുടർച്ച) മുറിയുന്നു"
+          },
+          {
+            "en": "tumbles",
+            "ml": "കുത്തനെ ഇടിയുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "Markets take heavy drubbing dragged by banks; Sensex plunges 1,484 points, Nifty dives to 25,349.65",
+        "ml": "ബാങ്ക് ഓഹരികൾ വലിച്ചു; വിപണിക്ക് കനത്ത തകർച്ച, സെൻസെക്സ് 1,484 പോയിന്റ് ഇടിഞ്ഞു",
+        "section": "Business",
+        "note": "Bank shares pulled the market down sharply.",
+        "noteMl": "വിപണി തകർച്ച.",
+        "words": [
+          {
+            "en": "drubbing",
+            "ml": "കനത്ത തോൽവി/തകർച്ച"
+          },
+          {
+            "en": "dragged by",
+            "ml": "...കാരണം താഴേക്ക് വലിക്കപ്പെട്ട്"
+          }
+        ]
+      },
+      {
+        "title": "Dhanraj murder case: Court convicts three accused, acquits 17 others",
+        "ml": "ധനരാജ് വധക്കേസ്: മൂന്നുപേർ കുറ്റക്കാർ, 17 പേരെ വെറുതെവിട്ടു",
+        "section": "Kerala",
+        "note": "Three were found guilty and 17 were freed.",
+        "noteMl": "വിധി.",
+        "words": [
+          {
+            "en": "convicts",
+            "ml": "കുറ്റക്കാരെന്ന് വിധിക്കുന്നു"
+          },
+          {
+            "en": "acquits",
+            "ml": "കുറ്റവിമുക്തരാക്കുന്നു"
+          }
+        ]
+      },
+      {
+        "title": "SAD open to alliances for Chandigarh civic polls, sparks buzz over potential BJP re-alignment",
+        "ml": "ചണ്ഡീഗഢ് തിരഞ്ഞെടുപ്പിന് സഖ്യത്തിന് SAD തയ്യാർ; ബിജെപിയുമായി വീണ്ടും കൂട്ടുകെട്ടെന്ന് അഭ്യൂഹം",
+        "section": "National",
+        "note": "The Akali Dal is open to alliances, leading to talk of a return to the BJP.",
+        "noteMl": "സഖ്യ അഭ്യൂഹം.",
+        "words": [
+          {
+            "en": "sparks buzz",
+            "ml": "ചർച്ചയ്ക്ക്/അഭ്യൂഹത്തിന് തിരികൊളുത്തുന്നു"
+          },
+          {
+            "en": "re-alignment",
+            "ml": "പുനഃക്രമീകരണം"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    date: "2026-11-24",
+    edition: "Online · top news",
+    items: [
+      {
+        "title": "Vance, Rubio meet with Qatari PM as uncertainty mounts over Trump's intentions with Iran",
+        "ml": "ഇറാൻ വിഷയത്തിൽ അനിശ്ചിതത്വം കൂടുന്നതിനിടെ വാൻസും റൂബിയോയും ഖത്തർ പ്രധാനമന്ത്രിയെ കണ്ടു",
+        "section": "World",
+        "note": "U.S. leaders met Qatar's PM while doubts grow about Trump's Iran plans.",
+        "noteMl": "അനിശ്ചിതത്വം.",
+        "words": [
+          {
+            "en": "mounts",
+            "ml": "വർധിക്കുന്നു"
+          },
+          {
+            "en": "uncertainty",
+            "ml": "അനിശ്ചിതത്വം"
+          }
+        ]
+      },
+      {
+        "title": "Nagpur Bench grants parole to prisoner for marriage",
+        "ml": "വിവാഹത്തിന് തടവുകാരന് നാഗ്പൂർ ബെഞ്ച് പരോൾ അനുവദിച്ചു",
+        "section": "National",
+        "note": "The court let a prisoner out temporarily to get married.",
+        "noteMl": "പരോൾ.",
+        "words": [
+          {
+            "en": "parole",
+            "ml": "പരോൾ (താൽക്കാലിക മോചനം)"
+          }
+        ]
+      },
+      {
+        "title": "Uttar Pradesh polls: SP, Congress kick off seat-sharing talks",
+        "ml": "യുപി തിരഞ്ഞെടുപ്പ്: എസ്പിയും കോൺഗ്രസും സീറ്റ് വിഭജന ചർച്ച തുടങ്ങി",
+        "section": "National",
+        "note": "SP and Congress have begun talks on dividing seats.",
+        "noteMl": "സീറ്റ് ചർച്ച.",
+        "words": [
+          {
+            "en": "kick off",
+            "ml": "തുടങ്ങുക"
+          },
+          {
+            "en": "seat-sharing",
+            "ml": "സീറ്റ് വിഭജനം"
+          }
+        ]
+      },
+      {
+        "title": "India, China hold 10-day talks to ease LAC tensions in Arunachal Pradesh",
+        "ml": "അരുണാചലിലെ LAC സംഘർഷം കുറയ്ക്കാൻ ഇന്ത്യ-ചൈന 10 ദിവസത്തെ ചർച്ച",
+        "section": "National",
+        "note": "The two countries talked for ten days to calm the border.",
+        "noteMl": "അതിർത്തി ചർച്ച.",
+        "words": [
+          {
+            "en": "LAC",
+            "ml": "യഥാർഥ നിയന്ത്രണ രേഖ"
+          },
+          {
+            "en": "ease",
+            "ml": "കുറയ്ക്കുക, ലഘൂകരിക്കുക"
+          }
+        ]
+      },
+      {
+        "title": "Federal appeals court gives President Donald Trump path to erasing hush money conviction",
+        "ml": "ഹഷ് മണി കേസിലെ ശിക്ഷ ഒഴിവാക്കാൻ ട്രംപിന് വഴി തുറന്ന് അപ്പീൽ കോടതി",
+        "section": "World",
+        "note": "A U.S. appeals court opened a way for Trump to clear a conviction.",
+        "noteMl": "ശിക്ഷ നീക്കാൻ വഴി.",
+        "words": [
+          {
+            "en": "hush money",
+            "ml": "വായടപ്പിക്കാൻ നൽകിയ പണം"
+          }
+        ]
+      },
+      {
+        "title": "Inquiry into his old foreign visits based on false allegations, says Naveen Patnaik",
+        "ml": "വിദേശയാത്രകളെക്കുറിച്ചുള്ള അന്വേഷണം വ്യാജ ആരോപണങ്ങളിൽ അധിഷ്ഠിതമെന്ന് നവീൻ പട്നായിക്",
+        "section": "National",
+        "note": "Naveen Patnaik says the probe is built on untrue claims.",
+        "noteMl": "ആരോപണങ്ങൾ വ്യാജം.",
+        "words": [
+          {
+            "en": "based on",
+            "ml": "...അടിസ്ഥാനമാക്കി"
+          }
+        ]
+      },
+      {
+        "title": "Violence erupts in Pithapuram amid JSP councillors’ sparring over vice-chairman pick",
+        "ml": "വൈസ് ചെയർമാൻ തിരഞ്ഞെടുപ്പിനെച്ചൊല്ലി ജനസേന കൗൺസിലർമാരുടെ തർക്കം; പിതാപുരത്ത് അക്രമം",
+        "section": "Andhra Pradesh",
+        "note": "A fight among councillors over a post turned violent.",
+        "noteMl": "അക്രമം.",
+        "words": [
+          {
+            "en": "sparring",
+            "ml": "വാക്പോര്"
+          },
+          {
+            "en": "pick",
+            "ml": "തിരഞ്ഞെടുപ്പ്"
+          }
+        ]
+      },
+      {
+        "title": "State appeals against DMK ex-Minister Ponmudy’s acquittal in ₹28.37-crore red sand quarrying case",
+        "ml": "മണൽ ഖനന കേസിൽ പൊൻമുടിയെ കുറ്റവിമുക്തനാക്കിയതിനെതിരെ സർക്കാർ അപ്പീൽ",
+        "section": "Tamil Nadu",
+        "note": "The State is challenging the former Minister's acquittal.",
+        "noteMl": "അപ്പീൽ.",
+        "words": [
+          {
+            "en": "acquittal",
+            "ml": "കുറ്റവിമുക്തനാക്കൽ"
+          }
+        ]
+      },
+      {
+        "title": "SC admits appeal filed by SASTRA against Madras High Court’s eviction order",
+        "ml": "കുടിയൊഴിപ്പിക്കൽ ഉത്തരവിനെതിരായ SASTRA-യുടെ അപ്പീൽ സുപ്രീം കോടതി ഫയലിൽ സ്വീകരിച്ചു",
+        "section": "Tamil Nadu",
+        "note": "The Supreme Court agreed to hear the university's appeal.",
+        "noteMl": "അപ്പീൽ സ്വീകരിച്ചു.",
+        "words": [
+          {
+            "en": "admits",
+            "ml": "(ഹർജി) ഫയലിൽ സ്വീകരിക്കുന്നു"
+          },
+          {
+            "en": "eviction",
+            "ml": "കുടിയൊഴിപ്പിക്കൽ"
+          }
+        ]
+      },
+      {
+        "title": "Lula wins a record fourth presidential term as Brazil defeats far-right, defies Trump and Meta",
+        "ml": "തീവ്രവലതുപക്ഷത്തെ തോൽപ്പിച്ച് ലുല റെക്കോർഡ് നാലാം തവണ പ്രസിഡന്റ്",
+        "section": "World",
+        "note": "Lula won a fourth term, beating the far right.",
+        "noteMl": "ലുലയ്ക്ക് ജയം.",
+        "words": [
+          {
+            "en": "defies",
+            "ml": "വകവെക്കാതിരിക്കുന്നു"
+          },
+          {
+            "en": "far-right",
+            "ml": "തീവ്രവലതുപക്ഷം"
+          }
+        ]
+      },
+      {
+        "title": "China announces shock corruption probe into Politburo member",
+        "ml": "പൊളിറ്റ്ബ്യൂറോ അംഗത്തിനെതിരെ അപ്രതീക്ഷിത അഴിമതി അന്വേഷണം",
+        "section": "World",
+        "note": "China surprised many by investigating a top party leader.",
+        "noteMl": "അപ്രതീക്ഷിത അന്വേഷണം.",
+        "words": [
+          {
+            "en": "shock",
+            "ml": "അപ്രതീക്ഷിതമായ (വിശേഷണം)"
+          }
+        ]
+      },
+      {
+        "title": "‘Money-doubling’ fraud racket busted",
+        "ml": "'പണം ഇരട്ടിപ്പിക്കൽ' തട്ടിപ്പ് സംഘം പിടിയിൽ",
+        "section": "Andhra Pradesh",
+        "note": "Police broke up a gang promising to double people's money.",
+        "noteMl": "തട്ടിപ്പ് സംഘം.",
+        "words": [
+          {
+            "en": "busted",
+            "ml": "പിടികൂടപ്പെട്ടു"
+          }
+        ]
+      }
+    ]
   }
 ];
