@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#f3f8f4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f1612" media="(prefers-color-scheme: dark)">
-<meta name="description" content="Learn to read English newspaper headlines with Malayalam explanations, using real newspaper headlines. Personal, non-commercial study project.">
+<meta name="description" content="Learn the skill of reading English newspaper headlines, with Malayalam explanations. Personal, non-commercial study project.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600&family=Source+Serif+4:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -172,6 +172,30 @@
   footer { color: var(--muted); font-size: 13px; padding: 24px 0 40px; border-top: 1px solid var(--border); }
   footer p { margin: 0 0 8px; }
 
+
+  /* Practice cards and the headline checker */
+  .checker { background: var(--accent-soft); border-radius: var(--radius); padding: 14px; margin: 14px 0 6px; }
+  .checker label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 6px; }
+  .checker label .ml { font-weight: 400; margin-left: 4px; }
+  .checker textarea { width: 100%; min-height: 64px; resize: vertical; font: 600 17px/1.35 "Source Serif 4", Georgia, serif; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--text); }
+  .checker textarea:focus { outline: 2px solid var(--accent); outline-offset: 0; border-color: transparent; }
+  .checker .out { margin-top: 10px; }
+  .checker .out:empty { display: none; }
+  .verdict { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+  .hd .read { font-size: 14px; color: var(--muted); margin: 0 0 4px; }
+  .hd .big { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 18px; line-height: 1.4; margin: 0 0 6px; }
+  .hd .big mark, .checker .big mark { background: var(--hl); }
+  .points { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .points li { background: var(--surface-2); border-radius: 10px; padding: 8px 12px; font-size: 14px; }
+  .points li b { color: var(--accent-strong); }
+  .points li .ml { display: block; font-size: 14px; margin-top: 2px; }
+  .points .hit { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; }
+  .tag { display: inline-block; font-size: 12px; color: var(--muted); margin-left: 6px; }
+  .tools { display: flex; gap: 8px; align-items: center; }
+  .btn { min-height: 38px; border: 1px solid var(--border); background: var(--surface); color: var(--accent-strong); border-radius: 999px; padding: 0 14px; font-size: 14px; font-weight: 600; cursor: pointer; }
+  .rule .practise { margin-top: 6px; }
+  .rule .seen { font-size: 12px; font-weight: 600; color: var(--accent-strong); background: var(--accent-soft); border-radius: 999px; padding: 1px 8px; margin-left: 6px; white-space: nowrap; }
+
   /* Wider screens */
   @media (min-width: 600px) {
     header { padding: 32px 0 14px; }
@@ -197,13 +221,13 @@
   <header>
     <div class="kicker">Personal study project</div>
     <h1><span class="h1-ml" lang="ml">പത്രം പഠിക്കാം</span> <span class="h1-en">Pathram Padikkam: Learn Newspaper English</span></h1>
-    <p class="sub">Learn the rules and phrases of headline English, then practise on real headlines. <span class="ml">ഇംഗ്ലീഷ് പത്രം തടസ്സമില്ലാതെ വായിക്കാൻ.</span></p>
+    <p class="sub">A skill, not the news: learn how headline English works, then practise on headlines picked because they teach something. <span class="ml">വാർത്ത അറിയാനല്ല, ഇംഗ്ലീഷ് പത്രം വായിക്കാൻ പഠിക്കാൻ.</span></p>
   </header>
 
   <nav class="tabs" role="tablist">
     <button role="tab" data-tab="learn">Learn</button>
     <button role="tab" data-tab="phrases">Phrases</button>
-    <button role="tab" data-tab="headlines">Headlines</button>
+    <button role="tab" data-tab="practice">Practice</button>
     <span class="sp"></span>
     <button type="button" class="icon-btn" id="theme" aria-label="Toggle theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:block"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
   </nav>
@@ -222,36 +246,39 @@
       <div id="phrases"></div>
     </section>
 
-    <section class="panel" id="p-headlines">
+    <section class="panel" id="p-practice">
+      <div class="checker">
+        <label for="try">Read a headline from your paper <span class="ml" lang="ml">പത്രത്തിലെ ഒരു തലക്കെട്ട് ഇവിടെ എഴുതി നോക്കൂ</span></label>
+        <textarea id="try" placeholder="e.g. Two held as police bust fake job racket" spellcheck="false"></textarea>
+        <div class="out" id="tryout" aria-live="polite"></div>
+      </div>
       <div class="toolbar">
         <label class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input id="q" type="search" placeholder="Search headlines… / തിരയുക" aria-label="Search headlines"></label>
-        <div class="seg" role="group" aria-label="View">
-          <button type="button" data-view="list" aria-pressed="true">List</button>
-          <button type="button" data-view="detail" aria-pressed="false">Detailed</button>
+        <div class="tools">
+          <button type="button" class="btn" id="shuffle">Shuffle</button>
+          <label class="check"><input type="checkbox" class="practice"> Hide Malayalam</label>
         </div>
-        <label class="check"><input type="checkbox" class="practice"> Practice</label>
       </div>
-      <nav class="types" id="hsrc" aria-label="Headline source"></nav>
-      <p class="srcinfo" id="srcinfo" hidden>Top-news headlines saved automatically after each day ends, so this list is always one day behind. Only the headline text is kept. <span class="ml" lang="ml">ഓരോ ദിവസവും കഴിഞ്ഞ ശേഷം തലക്കെട്ടുകൾ മാത്രം തനിയെ ചേർക്കുന്നു. മലയാളം അർത്ഥം വേണമെങ്കിൽ Claude-നോട് ചോദിക്കുക.</span></p>
+      <nav class="types" id="hrules" aria-label="Practise one rule"></nav>
       <div class="count" id="hcount" aria-live="polite"></div>
       <div id="headlines"></div>
     </section>
   </main>
 
   <footer>
-    <p><b>Personal, non-commercial study project.</b> Not affiliated with, endorsed by or connected to The Hindu or THG Publishing.</p>
-    <p>Headlines quoted for study are © <a href="https://www.thehindu.com/" rel="noopener">The Hindu</a> and link to the original where available; read the full stories there. No article text or images are copied. Daily headlines are saved only after the day has ended, as headline text without links. The rules, notes and Malayalam meanings are study aids written for this page.</p>
-    <p class="ml">ഇത് വ്യക്തിപരമായ പഠനത്തിനുള്ള പേജ് മാത്രം; ദി ഹിന്ദുവുമായി ബന്ധമില്ല.</p>
+    <p><b>Personal, non-commercial study project</b> for learning to read English newspapers. It is not a news source: headlines are kept only because of how they are written, not for their news.</p>
+    <p>Headlines quoted for study are from newspapers such as <a href="https://www.thehindu.com/" rel="noopener">The Hindu</a> and remain © their publishers. Only the headline text is quoted; no article text, links or images are kept. Not affiliated with any newspaper. The rules, word lists and Malayalam meanings are study aids written for this page.</p>
+    <p class="ml">ഇത് വ്യക്തിപരമായ പഠനത്തിനുള്ള പേജ് മാത്രം; വാർത്താ മാധ്യമമല്ല.</p>
     <p>If you own any content here and want it removed, please open an issue on the <a href="https://github.com/Amjad-RA/News-paper-reading/issues" rel="noopener">GitHub repository</a>.</p>
   </footer>
 </div>
 
 <script>
-  // Load the data files fresh on every visit, so new notes show without waiting for the browser cache.
+  // Load the data files fresh on every visit, so new headlines show without waiting for the browser cache.
   (function () {
     var v = Date.now();
-    ["guide.js", "core.js", "notes.js", "daily.js"].forEach(function (f) {
+    ["guide.js", "core.js", "headlines.js", "analyze.js"].forEach(function (f) {
       document.write('<script src="' + f + '?v=' + v + '"><\/script>');
     });
   })();
@@ -265,54 +292,49 @@
   };
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const reEsc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const mark = (s, term) => {
     const e = esc(s);
     if (!term) return e;
-    const re = new RegExp(esc(term).replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
-    return e.replace(re, (m) => `<mark>${m}</mark>`);
+    return e.replace(new RegExp(reEsc(esc(term)), "gi"), (m) => `<mark>${m}</mark>`);
   };
-  const fmtDate = (iso) => {
-    const d = new Date(iso + "T00:00:00");
-    return isNaN(d) ? (iso || "") : d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
+  // Highlight every piece of text in `parts` inside `text`.
+  const markParts = (text, parts) => {
+    const ps = [...new Set(parts.filter((p) => p && p.trim().length > 1 || p === ","))].sort((a, b) => b.length - a.length);
+    if (!ps.length) return esc(text);
+    const re = new RegExp(ps.map(reEsc).join("|"), "g");
+    let out = "", last = 0;
+    for (const m of text.matchAll(re)) {
+      out += esc(text.slice(last, m.index)) + `<mark>${esc(m[0])}</mark>`;
+      last = m.index + m[0].length;
+    }
+    return out + esc(text.slice(last));
   };
   const chev = `<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>`;
 
   const GUIDE = Array.isArray(window.GUIDE) ? window.GUIDE : [];
-  const headlines = (Array.isArray(window.NOTES) ? window.NOTES : [])
-    .slice()
-    .sort((a, b) => String(b.date).localeCompare(String(a.date)))
-    .flatMap((d) => (d.items || []).map((it) => ({ ...it, date: d.date })));
-  // Yesterday's headlines saved after each day ends (daily.js): headline text only.
-  {
-    const have = new Set(headlines.map((h) => h.title.toLowerCase()));
-    (Array.isArray(window.DAILY) ? window.DAILY : []).forEach((d) => (d.items || []).forEach((t) => {
-      if (typeof t !== "string" || !t || have.has(t.toLowerCase())) return;
-      have.add(t.toLowerCase());
-      headlines.push({ title: t, date: d.date, daily: true });
-    }));
-    headlines.sort((a, b) => String(b.date).localeCompare(String(a.date)));
-  }
+  const CORE = Array.isArray(window.CORE) ? window.CORE : [];
+  const analyze = window.analyzeHeadline || (() => ({ rules: [], words: [], score: 0 }));
+
+  // headlines.js: each entry is "Headline" or ["Headline", "Malayalam meaning"].
+  const seen = new Set();
+  const headlines = (Array.isArray(window.HEADLINES) ? window.HEADLINES : []).map((h, n) => {
+    const [title, ml] = Array.isArray(h) ? h : [h, ""];
+    return { title: String(title || "").replace(/\s+/g, " ").trim(), ml: ml || "", n };
+  }).filter((h) => h.title && !seen.has(h.title.toLowerCase()) && seen.add(h.title.toLowerCase()))
+    .map((h) => ({ ...h, a: analyze(h.title) }))
+    .reverse(); // newest additions first
   const byTitle = new Map(headlines.map((h) => [h.title, h]));
+  const ruleCount = GUIDE.map((r, i) => headlines.filter((h) => h.a.rules.some((x) => x.i === i)).length);
 
-  // Which rules each headline illustrates (from the guide's examples).
-  const rulesFor = new Map();
-  GUIDE.forEach((r, i) => (r.examples || []).forEach((ex) => {
-    if (!rulesFor.has(ex.h)) rulesFor.set(ex.h, []);
-    if (!rulesFor.get(ex.h).includes(i)) rulesFor.get(ex.h).push(i);
-  }));
-
-  // Core vocabulary (core.js), counted against your headlines so the most
-  // repeated words come first in each group.
-  const reEsc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const phrases = (Array.isArray(window.CORE) ? window.CORE : []).flatMap((grp, gi) =>
+  // Core vocabulary (core.js) that appears in the headlines, most repeated first.
+  const phrases = CORE.flatMap((grp, gi) =>
     grp.items.map((it, ii) => {
+      const src = headlines.filter((h) => h.a.words.some((w) => w.p.gi === gi && w.p.ii === ii));
       const rx = (it.m || ["\\b" + reEsc(it.en) + "\\b"]).map((x) => new RegExp(x, /^[A-Z]/.test(it.en) ? "" : "i"));
-      const src = headlines.filter((h) => rx.some((r) => r.test(h.title))).map((h) => h.title);
       return { ...it, gi, ii, rx, src };
-    }).filter((p) => p.src.length) // only words that actually appear in a headline
+    }).filter((p) => p.src.length)
       .sort((x, y) => y.src.length - x.src.length || x.ii - y.ii));
-  // Key headlines: ones that teach a rule or use a core word. The rest are one-off stories.
-  const keyTitles = new Set([...rulesFor.keys(), ...phrases.flatMap((p) => p.src)]);
 
   // Theme
   const savedTheme = store.get("theme");
@@ -343,7 +365,8 @@
   }, true);
 
   // Tabs
-  let tab = ["learn", "phrases", "headlines"].includes(store.get("tab")) ? store.get("tab") : "learn";
+  let tab = store.get("tab") === "headlines" ? "practice" : store.get("tab");
+  if (!["learn", "phrases", "practice"].includes(tab)) tab = "learn";
   function showTab(t) {
     tab = t; store.set("tab", t);
     document.querySelectorAll(".tabs [data-tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === t)));
@@ -358,23 +381,30 @@
         <p><b>How to use this page</b></p>
         <ol class="steps">
           <li>Read the ${GUIDE.length} rules below: headline English has its own grammar. <span class="ml">തലക്കെട്ടുകൾക്ക് സ്വന്തം വ്യാകരണമുണ്ട്.</span></li>
-          <li>Learn the ${phrases.length} words in <b>Phrases</b>, taken from real headlines, most repeated first. <span class="ml">ഈ വാക്കുകൾ അറിഞ്ഞാൽ പത്രം എളുപ്പം.</span></li>
-          <li>In <b>Headlines</b>, turn on <b>Practice</b>, read each headline, say its meaning, then tap to check. <span class="ml">സ്വയം പരീക്ഷിക്കുക.</span></li>
+          <li>Learn the ${phrases.length} words in <b>Phrases</b>, most repeated first. <span class="ml">ഈ വാക്കുകൾ അറിഞ്ഞാൽ പത്രം എളുപ്പം.</span></li>
+          <li>In <b>Practice</b>, read each headline in full in your head, then open it to check what you should have noticed. <span class="ml">സ്വയം വായിച്ച് പരിശോധിക്കുക.</span></li>
+          <li>Then try a headline from your own paper in the box at the top of <b>Practice</b>. <span class="ml">സ്വന്തം പത്രത്തിലെ തലക്കെട്ട് പരീക്ഷിക്കുക.</span></li>
         </ol>
       </div>
       ${GUIDE.map((r, i) => `
         <details class="rule" id="rule-${i + 1}">
           <summary><span class="num">${i + 1}</span>
-            <span style="flex:1"><h3>${esc(r.title)}</h3><span class="pattern">${esc(r.pattern)}</span></span>${chev}
+            <span style="flex:1"><h3>${esc(r.title)}${ruleCount[i] ? `<span class="seen" title="Headlines that use it">×${ruleCount[i]}</span>` : ""}</h3><span class="pattern">${esc(r.pattern)}</span></span>${chev}
           </summary>
           <div class="rule-body">
             <p class="ml">${esc(r.ml)}</p>
             ${(r.examples || []).map((ex) => `
               <div class="ex"><div class="h">${esc(ex.h)}</div>
                 <div class="r">${esc(ex.read)}</div><div class="ml">${esc(ex.ml)}</div></div>`).join("")}
+            ${ruleCount[i] ? `<button type="button" class="btn practise" data-practise="${i}">Practise this rule: ${ruleCount[i]} headlines</button>` : ""}
           </div>
         </details>`).join("")}`;
   }
+  $("#p-learn").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-practise]"); if (!b) return;
+    hrule = b.dataset.practise; store.set("hrule", hrule);
+    renderRules(); renderHeadlines(); showTab("practice"); window.scrollTo(0, 0);
+  });
 
   // Phrases
   let pterm = "";
@@ -383,7 +413,6 @@
     rx.forEach((r) => { out = out.replace(new RegExp(r.source, r.flags + "g"), (m) => `<b>${m}</b>`); });
     return out;
   };
-  // Type filter: "all" or a group index. Each group is a collapsible section.
   let ptype = store.get("ptype") || "all";
   if (ptype !== "all" && !phrases.some((p) => String(p.gi) === ptype)) ptype = "all";
   let closedGroups = new Set((store.get("pclosed") || "").split(",").filter(Boolean));
@@ -422,97 +451,105 @@
         <li class="ph"><span class="top"><span class="en" lang="en">${mark(p.en, pterm)}</span>
           <span class="seen" title="Headlines that use it" aria-label="in ${p.src.length} headline${p.src.length === 1 ? "" : "s"}">×${p.src.length}</span></span>
           ${mlSpan(p.ml, pterm)}${p.tip ? `<span class="tip">${mark(p.tip, pterm)}</span>` : ""}
-          ${p.src.length ? `<span class="src">“${hl(p.src[0], p.rx)}”</span>` : ""}
+          <span class="src">“${hl(p.src[0].title, p.rx)}”</span>
           ${p.src.length > 1 ? `<details class="more"${t ? " open" : ""}><summary>View ${p.src.length - 1} more example${p.src.length > 2 ? "s" : ""}</summary>
-            <ul>${p.src.slice(1).map((h) => `<li>“${hl(h, p.rx)}”${mlSpan((byTitle.get(h) || {}).ml, "")}</li>`).join("")}</ul></details>` : ""}</li>`).join("")}</ul></details>` : "";
+            <ul>${p.src.slice(1).map((h) => `<li>“${hl(h.title, p.rx)}”${mlSpan(h.ml, "")}</li>`).join("")}</ul></details>` : ""}</li>`).join("")}</ul></details>` : "";
     }).join("");
   }
 
-  // Headlines
-  let term = "";
-  let view = store.get("view") === "detail" ? "detail" : "list";
-  let allH = store.get("allh") === "1";
-  $("#hcount").addEventListener("click", (e) => {
-    if (!e.target.closest("#togall")) return;
-    allH = !allH; store.set("allh", allH ? "1" : "0"); renderHeadlines();
-  });
-  const matches = (it) => !term || [it.title, it.ml, it.note, it.noteMl, it.section,
-    ...(it.words || []).flatMap((w) => [w.en, w.ml])].join(" ").toLowerCase().includes(term.toLowerCase());
-  const meta = (it) => [fmtDate(it.date), it.section].filter(Boolean).map(esc).join(" · ") +
-    (it.daily ? ` <span class="badge" title="Saved automatically; no notes yet">Daily</span>` : "");
-
-  // Source filter: everything, only headlines with notes, or only daily headlines.
-  const dailyItems = headlines.filter((h) => h.daily);
-  let hsrc = ["all", "notes", "daily"].includes(store.get("hsrc2")) ? store.get("hsrc2") : "all";
-  function renderSrc() {
-    const btn = (k, label, n) => `<button type="button" data-hsrc="${k}" aria-pressed="${hsrc === k}">${label} <span class="n">${n}</span></button>`;
-    $("#hsrc").innerHTML = btn("all", "All", headlines.length) +
-      btn("notes", "With notes", headlines.length - dailyItems.length) + btn("daily", "Daily", dailyItems.length);
-    $("#srcinfo").hidden = hsrc !== "daily";
+  // What a headline teaches, worked out from its text.
+  function breakdown(title, a) {
+    const parts = [...a.rules.flatMap((r) => r.hits), ...a.words.flatMap((w) => w.hits)];
+    // Rules spotted through core words show under "Newspaper words"; keep them here only for extra hits.
+    const wordHits = new Set(a.words.flatMap((w) => w.hits.map((x) => x.toLowerCase())));
+    const rules = a.rules.map((r) => GUIDE[r.i].coreGroup ? { ...r, hits: r.hits.filter((x) => !wordHits.has(x.toLowerCase())) } : r)
+      .filter((r) => !GUIDE[r.i].coreGroup || r.hits.length);
+    return `
+      <p class="big">${markParts(title, parts)}</p>
+      <p class="read">Read it in full: put back the small words (a, the, is, are, has been). <span class="ml">ഒഴിവാക്കിയ ചെറുവാക്കുകൾ മനസ്സിൽ ചേർത്ത് വായിക്കുക.</span></p>
+      ${rules.length ? `<div class="lbl">Notice</div><ul class="points">${rules.map((r) => {
+        const g = GUIDE[r.i];
+        return `<li>${r.hits.length ? `<span class="hit">${esc(r.hits.join(" · "))}</span> → ` : ""}<b>${esc(g.title)}</b>
+          <button type="button" class="linkbtn tag" data-rule="${r.i + 1}">Rule ${r.i + 1}</button>
+          <span class="ml">${esc(g.ml.split(/(?<=\.)\s/)[0])}</span></li>`;
+      }).join("")}</ul>` : ""}
+      ${a.words.length ? `<div class="lbl">Newspaper words</div><ul class="words">${a.words.map((w) =>
+        `<li>${esc(w.hits[0])}<span class="ml">${esc(w.p.ml)}</span>${w.p.tip ? `<span class="tag">${esc(w.p.tip)}</span>` : ""}</li>`).join("")}</ul>` : ""}
+      ${!rules.length && !a.words.length ? `<p class="verdict">Nothing special found. Read it slowly and add the small words back. <span class="ml">പ്രത്യേക നിയമങ്ങളൊന്നും കണ്ടില്ല.</span></p>` : ""}`;
   }
-  $("#hsrc").addEventListener("click", (e) => {
-    const b = e.target.closest("[data-hsrc]"); if (!b) return;
-    hsrc = b.dataset.hsrc; store.set("hsrc2", hsrc); renderSrc(); renderHeadlines();
+
+  // Checker: read any headline.
+  let tt;
+  $("#try").addEventListener("input", (e) => {
+    clearTimeout(tt);
+    tt = setTimeout(() => {
+      const t = e.target.value.replace(/\s+/g, " ").trim();
+      if (!t) { $("#tryout").innerHTML = ""; return; }
+      const a = analyze(t);
+      const known = byTitle.has(t);
+      $("#tryout").innerHTML = breakdown(t, a) + `<p class="verdict">${known ? "This one is already in your practice list."
+        : a.score >= 2 ? `A good headline to learn from (${a.score} things to notice). To keep it, add it as one line to <code>headlines.js</code>.`
+        : a.score === 1 ? "Only one thing to notice here."
+        : ""}</p>`;
+    }, 150);
   });
 
+  // Practice list
+  let term = "";
+  let shuffled = null;
+  let hrule = store.get("hrule") || "all";
+  if (hrule !== "all" && !ruleCount[+hrule]) hrule = "all";
+  function renderRules() {
+    const btn = (k, label, n) => `<button type="button" data-hrule="${k}" aria-pressed="${hrule === k}">${esc(label)} <span class="n">${n}</span></button>`;
+    $("#hrules").innerHTML = btn("all", "All", headlines.length) +
+      GUIDE.map((r, i) => ruleCount[i] ? btn(String(i), `${i + 1}. ${r.short || r.title}`, ruleCount[i]) : "").join("");
+  }
+  $("#hrules").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-hrule]"); if (!b) return;
+    hrule = b.dataset.hrule; store.set("hrule", hrule); renderRules(); renderHeadlines();
+  });
+  $("#shuffle").addEventListener("click", () => {
+    shuffled = headlines.map((h) => [Math.random(), h]).sort((x, y) => x[0] - y[0]).map((x) => x[1]);
+    renderHeadlines();
+  });
+  const matches = (h) => !term || [h.title, h.ml].join(" ").toLowerCase().includes(term.toLowerCase());
 
   function renderHeadlines() {
-    document.querySelectorAll(".seg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
-    const src = hsrc === "daily" ? dailyItems : hsrc === "notes" ? headlines.filter((h) => !h.daily) : headlines;
-    const pool = allH || term ? src : src.filter((h) => keyTitles.has(h.title));
+    const pool = (shuffled || headlines).filter((h) => hrule === "all" || h.a.rules.some((r) => String(r.i) === hrule));
     const items = pool.filter(matches);
-    $("#hcount").innerHTML = term ? `${items.length} of ${src.length} headlines`
-      : allH ? `All ${src.length} headlines · <button type="button" class="linkbtn" id="togall">Key only</button>`
-      : `${items.length} key headlines (use a rule or a core word) · <button type="button" class="linkbtn" id="togall">Show all ${src.length}</button>`;
+    const scope = hrule === "all" ? "" : ` using rule ${+hrule + 1}`;
+    $("#hcount").textContent = term ? `${items.length} of ${pool.length} headlines${scope}`
+      : `${items.length} headlines${scope} · read each one, then open it to check`;
     const out = $("#headlines");
     if (!items.length) {
-      if (hsrc === "daily" && !dailyItems.length) { $("#hcount").textContent = ""; out.innerHTML = `<div class="empty"><h2>No daily headlines yet</h2><p>They are saved just after midnight, one day behind.</p></div>`; return; }
       out.innerHTML = headlines.length
         ? `<div class="empty"><h2>Nothing matches “${esc(term)}”</h2></div>`
-        : `<div class="empty"><h2>No headlines yet</h2><p>Add them to <code>notes.js</code>.</p></div>`;
+        : `<div class="empty"><h2>No headlines yet</h2><p>Add them to <code>headlines.js</code>, one per line.</p></div>`;
       return;
     }
-    if (view === "list") {
-      out.innerHTML = `<ul class="list">${items.map((it) => `
-        <li><div class="t">${mark(it.title, term)}</div>${mlSpan(it.ml, term)}<span class="meta">${meta(it)}</span></li>`).join("")}</ul>`;
-      return;
-    }
-    out.innerHTML = `<div class="acc">${items.map((it) => {
-      const rs = rulesFor.get(it.title) || [];
-      return `
+    out.innerHTML = `<div class="acc">${items.map((h) => `
       <details class="hd"${term ? " open" : ""}>
-        <summary><span class="sum-main"><span class="d">${mark(it.title, term)}</span>${mlSpan(it.ml, term)}<span class="meta">${meta(it)}</span></span>${chev}</summary>
-        <div class="hd-body"><div>
-          ${it.note ? `<p>${mark(it.note, term)}</p>` : ""}
-          ${it.noteMl ? `<p class="ml noteml">${mark(it.noteMl, term)}</p>` : ""}
-          ${it.words && it.words.length ? `<div class="lbl">Key phrases</div><ul class="words">${it.words.map((w) =>
-            `<li>${mark(w.en, term)}<span class="ml">${mark(w.ml, term)}</span></li>`).join("")}</ul>` : ""}
-          ${rs.length ? `<div class="lbl">Headline rules used</div><div class="rules-used">${rs.map((i) =>
-            `<button type="button" data-rule="${i + 1}">Rule ${i + 1}: ${esc(GUIDE[i].title)}</button>`).join("")}</div>` : ""}
-          ${it.url ? `<p><a href="${esc(it.url)}" target="_blank" rel="noopener">Read the full story</a></p>` : ""}
-        </div></div>
-      </details>`; }).join("")}</div>`;
+        <summary><span class="sum-main"><span class="d">${mark(h.title, term)}</span>${mlSpan(h.ml, term)}</span>${chev}</summary>
+        <div class="hd-body"><div>${breakdown(h.title, h.a)}</div></div>
+      </details>`).join("")}</div>`;
   }
 
-  $("#headlines").addEventListener("click", (e) => {
+  document.addEventListener("click", (e) => {
     const b = e.target.closest("[data-rule]");
     if (!b) return;
     showTab("learn");
     const d = document.getElementById("rule-" + b.dataset.rule);
     d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" });
   });
-  document.querySelectorAll(".seg button").forEach((b) => b.addEventListener("click", () => {
-    view = b.dataset.view; store.set("view", view); renderHeadlines();
-  }));
   let t1, t2;
   $("#q").addEventListener("input", (e) => { clearTimeout(t1); t1 = setTimeout(() => { term = e.target.value.trim(); renderHeadlines(); }, 120); });
   $("#pq").addEventListener("input", (e) => { clearTimeout(t2); t2 = setTimeout(() => { pterm = e.target.value.trim(); renderPhrases(); }, 120); });
 
-  renderLearn(); renderTypes(); renderPhrases(); renderSrc(); renderHeadlines(); showTab(tab);
+  renderLearn(); renderTypes(); renderPhrases(); renderRules(); renderHeadlines(); showTab(tab);
 
-  // Guide examples should be real headlines from notes.js.
+  // Guide examples should be headlines from headlines.js.
   GUIDE.forEach((r) => (r.examples || []).forEach((ex) => {
-    if (!byTitle.has(ex.h)) console.warn("Guide example not in notes.js:", ex.h);
+    if (!byTitle.has(ex.h)) console.warn("Guide example not in headlines.js:", ex.h);
   }));
 })();
 </script>

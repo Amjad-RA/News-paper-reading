@@ -1,10 +1,11 @@
 /*
  * Core newspaper vocabulary: the short list worth learning. A word shows in
- * the Phrases tab only once it appears in a headline in notes.js.
+ * the Phrases tab only once it appears in a headline in headlines.js.
  *
  * Only words that keep coming back in Indian English newspapers are kept here.
- * One-off words (names, sports slang, single-story terms) stay with their
- * headline in notes.js and are not shown in the Phrases tab.
+ * One-off words (names, sports slang, single-story terms) are left out.
+ * These are also the words the page explains inside each headline, so adding
+ * a word here teaches it in every headline that uses it, old and new.
  *
  * Each group: { g: "English name", gm: "Malayalam name",
  *               d / dm: one-line description in English / Malayalam, items: [...] }
@@ -12,8 +13,8 @@
  *              regex strings used to count how often it appears in your
  *              headlines; defaults to the word itself) }
  *
- * The page counts each word in the headlines in notes.js, so the most
- * repeated words rise to the top as you add more papers.
+ * The page counts each word in the headlines in headlines.js, so the most
+ * repeated words rise to the top as you add more headlines.
  */
 window.CORE = [
   {
