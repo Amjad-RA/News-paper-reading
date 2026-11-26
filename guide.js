@@ -1,8 +1,11 @@
 /*
  * How to read a newspaper headline: the rules of "headline English".
- * Every example is a real headline collected in notes.js.
+ * Every example is a headline from headlines.js.
  *
  * Each rule:
+ *   id        name used by analyze.js to spot the rule in any headline
+ *   short     a two-word name for the rule chips in Practice
+ *   coreGroup optional: the rule is spotted through words of this core.js group
  *   title    short English name of the rule
  *   ml       the rule in Malayalam (what to do when you see it)
  *   pattern  what it looks like in a headline
@@ -10,6 +13,7 @@
  */
 window.GUIDE = [
   {
+    id: "present", short: "Present = past",
     title: "Present tense means it already happened",
     pattern: "Subject + verb (present): seizes, questions, defends",
     ml: "തലക്കെട്ടിൽ present tense കണ്ടാൽ അത് ഇപ്പോൾ നടക്കുന്നതല്ല, ഇന്നലെ നടന്ന കാര്യമാണ്. വാർത്തയ്ക്ക് പുതുമ തോന്നിക്കാൻ ഇങ്ങനെ എഴുതുന്നു.",
@@ -20,6 +24,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "future", short: "to = future",
     title: "\"to\" + verb means the future",
     pattern: "X to do / X to be done",
     ml: "'to' + verb = വരാൻ പോകുന്നത് (will). 'to be' + past participle = ചെയ്യപ്പെടാൻ പോകുന്നു.",
@@ -35,6 +40,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "passive", short: "Passive",
     title: "A lone past participle means passive: \"is/was\" is dropped",
     pattern: "Noun + shifted / elected / held / traced",
     ml: "'is', 'was', 'has been' ഒഴിവാക്കും. Verb-ന്റെ മൂന്നാം രൂപം മാത്രം കണ്ടാൽ: ആരോ അയാളെ / അതിനെ ചെയ്തു (passive).",
@@ -53,6 +59,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "dropped", short: "Dropped words",
     title: "Small words are left out",
     pattern: "No a / an / the / is / are",
     ml: "സ്ഥലം ലാഭിക്കാൻ a, an, the, is, are എന്നിവ ഒഴിവാക്കും. വായിക്കുമ്പോൾ മനസ്സിൽ അവ ചേർത്ത് വായിക്കുക.",
@@ -66,6 +73,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "colonEnd", short: "Who said it",
     title: "A colon at the end tells you who said it",
     pattern: "Statement: Speaker",
     ml: "അവസാനം ': SC' പോലെ കണ്ടാൽ, മുന്നിലുള്ളത് ആ വ്യക്തിയോ സ്ഥാപനമോ പറഞ്ഞതാണ്. പത്രത്തിന്റെ അഭിപ്രായമല്ല.",
@@ -82,6 +90,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "colonTopic", short: "Topic first",
     title: "A colon in the middle introduces the topic",
     pattern: "Topic: what happened",
     ml: "തുടക്കത്തിൽ വിഷയം, colon-ന് ശേഷം പുതിയ വിവരം.",
@@ -96,6 +105,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "quotes", short: "Quotes = claim",
     title: "Quotation marks mean a claim, not a fact",
     pattern: "'quoted words'",
     ml: "Quote-ൽ ഉള്ളത് ആരോ പറഞ്ഞതോ ആരോപിച്ചതോ ആണ്. പത്രം അത് ശരിയെന്ന് പറയുന്നില്ല.",
@@ -112,6 +122,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "comma", short: "Comma = and",
     title: "A comma means \"and\"",
     pattern: "A, B",
     ml: "തലക്കെട്ടിൽ comma = 'and'.",
@@ -125,6 +136,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "xToY", short: "X to Y",
     title: "\"X to Y\" means X tells Y",
     pattern: "Message: Sender to Receiver",
     ml: "'ECI to voters' = തിരഞ്ഞെടുപ്പ് കമ്മീഷൻ വോട്ടർമാരോട് പറയുന്നു. 'tells' പലപ്പോഴും ഒഴിവാക്കും.",
@@ -136,6 +148,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "as", short: "as",
     title: "\"as\" means while or because",
     pattern: "X happens as Y happens",
     ml: "'as' = ...ന്നതിനിടെ / ...ന്നതിനാൽ.",
@@ -151,6 +164,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "stacked", short: "Stacked nouns",
     title: "Stacked nouns: read them backwards",
     pattern: "Noun Noun Noun + main noun",
     ml: "പല noun-കൾ ഒന്നിച്ചു വന്നാൽ അവസാനത്തെ വാക്കാണ് പ്രധാനം. പിന്നിൽ നിന്ന് മുന്നോട്ട് വായിക്കുക.",
@@ -163,6 +177,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "headwords", short: "Headline words", coreGroup: "Headline verbs",
     title: "Short \"headline words\" stand in for long ones",
     pattern: "row, curb, held, probe, moot, quash, seize, chopper",
     ml: "സ്ഥലം കുറവായതിനാൽ ചെറിയ, ശക്തമായ വാക്കുകൾ. ഇവ പഠിച്ചാൽ പകുതി തലക്കെട്ടും മനസ്സിലാകും. പൂർണ പട്ടിക 'Phrases' ടാബിൽ.",
@@ -180,6 +195,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "idioms", short: "Idioms", coreGroup: "Idioms",
     title: "Idioms are not literal",
     pattern: "lock horns, under a cloud, bid adieu, Men in Blue",
     ml: "ഇവയുടെ വാക്കർത്ഥമല്ല, ശൈലി അർത്ഥമാണ് എടുക്കേണ്ടത്.",
@@ -201,6 +217,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "abbr", short: "Abbreviations", coreGroup: "Abbreviations",
     title: "Abbreviations",
     pattern: "SC, HC, ECI, CM, CB, PSC, U.T., AQI, govt., dept.",
     ml: "SC = സുപ്രീം കോടതി · HC = ഹൈക്കോടതി · ECI = തിരഞ്ഞെടുപ്പ് കമ്മീഷൻ · CM = മുഖ്യമന്ത്രി · CB = ക്രൈംബ്രാഞ്ച് · PSC = പബ്ലിക് സർവീസ് കമ്മീഷൻ · U.T. = കേന്ദ്രഭരണ പ്രദേശം · AQI = വായു ഗുണനിലവാര സൂചിക · govt. = സർക്കാർ · dept. = വകുപ്പ്",
@@ -213,6 +230,7 @@ window.GUIDE = [
     ]
   },
   {
+    id: "labels", short: "Labels",
     title: "Read the labels around the headline",
     pattern: "Kicker above · deck below · dateline · \"Continued on page\"",
     ml: "തലക്കെട്ടിന് മുകളിലെ ചെറിയ ലേബൽ (kicker: 'Recruitment row', 'Prized possession') വിഷയം പറയും. താഴെയുള്ള deck/strapline വിശദാംശം നൽകും. ആദ്യ ഖണ്ഡിക (lead) ആര്, എന്ത്, എപ്പോൾ, എവിടെ എന്ന് പറയും. 'NEW DELHI' പോലുള്ള dateline വാർത്ത എവിടെ നിന്നാണെന്ന് കാണിക്കും.",
