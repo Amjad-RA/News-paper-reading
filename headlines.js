@@ -289,5 +289,15 @@ window.HEADLINES = [
   ["SC admits appeal filed by SASTRA against Madras High Court’s eviction order", "കുടിയൊഴിപ്പിക്കൽ ഉത്തരവിനെതിരായ SASTRA-യുടെ അപ്പീൽ സുപ്രീം കോടതി ഫയലിൽ സ്വീകരിച്ചു"],
   ["Lula wins a record fourth presidential term as Brazil defeats far-right, defies Trump and Meta", "തീവ്രവലതുപക്ഷത്തെ തോൽപ്പിച്ച് ലുല റെക്കോർഡ് നാലാം തവണ പ്രസിഡന്റ്"],
   ["China announces shock corruption probe into Politburo member", "പൊളിറ്റ്ബ്യൂറോ അംഗത്തിനെതിരെ അപ്രതീക്ഷിത അഴിമതി അന്വേഷണം"],
-  ["‘Money-doubling’ fraud racket busted", "'പണം ഇരട്ടിപ്പിക്കൽ' തട്ടിപ്പ് സംഘം പിടിയിൽ"]
+  ["‘Money-doubling’ fraud racket busted", "'പണം ഇരട്ടിപ്പിക്കൽ' തട്ടിപ്പ് സംഘം പിടിയിൽ"],
+  ["14 arrested as J&K Police bust exam cheating racket; mobiles, wireless sets seized", "ജമ്മു കശ്മീർ പോലീസ് പരീക്ഷാ തട്ടിപ്പ് സംഘത്തെ പിടികൂടി; 14 പേർ അറസ്റ്റിൽ, മൊബൈലുകളും വയർലെസ് സെറ്റുകളും പിടിച്ചെടുത്തു"],
+  ["Odisha orders early evacuation of vulnerable areas as cyclone threat looms", "ചുഴലിക്കാറ്റ് ഭീഷണി ആസന്നമായതോടെ അപകടസാധ്യതയുള്ള പ്രദേശങ്ങളിൽ നിന്ന് നേരത്തേ ആളുകളെ ഒഴിപ്പിക്കാൻ ഒഡീഷ ഉത്തരവിട്ടു"],
+  ["Traffic curbs, diversions announced for CII Summit in Visakhapatnam", "വിശാഖപട്ടണത്തെ CII ഉച്ചകോടിക്കായി ഗതാഗത നിയന്ത്രണങ്ങളും വഴിതിരിച്ചുവിടലും പ്രഖ്യാപിച്ചു"],
+  ["Calcutta High Court restrains KMC polls until challenge on delimitation decided", "മണ്ഡല പുനർനിർണയത്തിനെതിരായ ഹർജിയിൽ തീരുമാനമാകുംവരെ KMC തിരഞ്ഞെടുപ്പ് കൽക്കട്ട ഹൈക്കോടതി തടഞ്ഞു"],
+  ["Malaysia to repatriate another 6,803 Myanmar nationals despite ICJ genocide ruling", "ICJ വംശഹത്യ വിധി ഉണ്ടായിട്ടും 6,803 മ്യാൻമർ പൗരന്മാരെ കൂടി മലേഷ്യ തിരിച്ചയയ്ക്കും"],
+  ["Govt. to set up skill centre for youth, women: Delhi CM", "യുവാക്കൾക്കും സ്ത്രീകൾക്കുമായി സർക്കാർ നൈപുണ്യ കേന്ദ്രം സ്ഥാപിക്കും: ഡൽഹി മുഖ്യമന്ത്രി"],
+  ["Kerala High Court dismisses lawyer’s plea for contempt proceedings against judge", "ജഡ്ജിക്കെതിരെ കോടതിയലക്ഷ്യ നടപടി ആവശ്യപ്പെട്ട അഭിഭാഷകന്റെ ഹർജി ഹൈക്കോടതി തള്ളി"],
+  ["SIR: Draft electoral roll released in Vellore, nearby districts", "SIR: വെല്ലൂരിലും സമീപ ജില്ലകളിലും കരട് വോട്ടർ പട്ടിക പ്രസിദ്ധീകരിച്ചു"],
+  ["U.S. set to slap tariffs on China, EU and others after probe on excess industrial capacity: report", "അധിക വ്യാവസായിക ശേഷിയെക്കുറിച്ചുള്ള അന്വേഷണത്തിന് ശേഷം ചൈന, EU എന്നിവയ്ക്ക് മേൽ യുഎസ് തീരുവ ചുമത്താനൊരുങ്ങുന്നു: റിപ്പോർട്ട്"],
+  ["Booze on tap: Liquor 'flows' from handpump in UP's Jhansi village, woman arrested", "ടാപ്പ് തുറന്നാൽ മദ്യം: യുപിയിലെ ഝാൻസി ഗ്രാമത്തിൽ ഹാൻഡ്പമ്പിൽ നിന്ന് മദ്യം 'ഒഴുകി'; സ്ത്രീ അറസ്റ്റിൽ"]
 ];
