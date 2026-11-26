@@ -96,6 +96,7 @@
         const pluralSubject = (/s$/.test(prev) && !sForm(prev)) || /^(police|people)$/i.test(prev) ||
           ws[i - 2] === "and" || rawWs.slice(0, i - 1).some((x) => /,$/.test(x));
         if (!(sForm(w) || (base(w) && pluralSubject))) continue;
+        if (/,$/.test(rawWs[i])) continue; // "Traffic curbs, diversions": a list of nouns
         if (i === ws.length - 1) break; // "Punjab polls:" is a noun, not a verb
         // "Railway tracks turn": a plural noun followed by its verb.
         if (sForm(w) && base(next) && !NOUNY.has(next)) { hits.push(next); break; }
@@ -135,6 +136,7 @@
         if (!(/^[a-z-]{2,}ed$|^[a-z-]{3,}en$/.test(w) || IRREG.has(w)) || NOT_PASSIVE.has(w) || /(teen|een|men)$/.test(w)) continue;
         const prev = bare(ws[i - 1]).toLowerCase();
         if (AUX.has(prev) || DET.has(prev) || prev === "be") continue;
+        if (w === "set" && bare(ws[i + 1] || "") === "to") continue; // "set to" = about to (a headline word)
         const endsClause = /[,;:]$/.test(raw) || i === ws.length - 1;
         const next = i + 1 < ws.length ? bare(ws[i + 1]) : "";
         // "Raman elected Los Angeles mayor": a capital after it counts only when a name comes before it.
@@ -191,7 +193,8 @@
     },
     abbr(t) {
       const m = t.match(/\b(?:[A-Z]{2,6}s?|[A-Z](?:\.[A-Z])+\.?|U\.T\.s?)(?![a-z])|\b(?:govt|dept|Govt|Dept)\./g) || [];
-      return [...new Set(m)].filter((x) => !/^(I|A)$/.test(x));
+      const set = new Set(m);
+      return [...set].filter((x) => !/^(I|A)$/.test(x) && !set.has(x + "."));
     }
   };
 
