@@ -365,7 +365,8 @@
   }, true);
 
   // Tabs
-  let tab = store.get("tab") === "headlines" ? "practice" : store.get("tab");
+  // A link can open a tab directly: index.html#learn, #phrases or #practice.
+  let tab = location.hash.slice(1) || (store.get("tab") === "headlines" ? "practice" : store.get("tab"));
   if (!["learn", "phrases", "practice"].includes(tab)) tab = "learn";
   function showTab(t) {
     tab = t; store.set("tab", t);
@@ -373,6 +374,10 @@
     document.querySelectorAll(".panel").forEach((p) => (p.hidden = p.id !== "p-" + t));
   }
   document.querySelectorAll(".tabs [data-tab]").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab)));
+  window.addEventListener("hashchange", () => {
+    const t = location.hash.slice(1);
+    if (["learn", "phrases", "practice"].includes(t)) showTab(t);
+  });
 
   // Learn
   function renderLearn() {
